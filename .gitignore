@@ -1,6 +1,14 @@
-# build output (GitHub Actions builds it)
+# local configuration (admin password, mail login)
+config.php
+# runtime data written on the server
+content/.runtime/
+content/backups/
+public/uploads/*
+!public/uploads/.htaccess
+!public/uploads/README.md
+# generated / local
 site/
-# original Claude Design handoff (reference only)
+public/_dev/
 handoff/
 __pycache__/
 .DS_Store

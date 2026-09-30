@@ -1,0 +1,15 @@
+{
+  "path": "/design-system/",
+  "name": "Design systém",
+  "editable": false,
+  "meta": {
+    "title": "Design systém | Century 2000",
+    "description": ""
+  },
+  "options": {
+    "css": [
+      "design-system"
+    ]
+  },
+  "sections": []
+}

@@ -1,0 +1,355 @@
+{
+  "path": "/o-nas/",
+  "name": "O nás",
+  "editable": true,
+  "meta": {
+    "title": "O nás – textilní výroba ve Zruči nad Sázavou od roku 2000 | Century 2000",
+    "description": "CENTURY 2000 s.r.o. šije bytový a hotelový textil ve Zruči nad Sázavou od roku 2000. Vlastní dílna, 20 šicích strojů a italské know-how."
+  },
+  "options": {
+    "image": "/assets/fotky/sici-dilna-celek.webp"
+  },
+  "sections": [
+    {
+      "key": "uvodni-blok",
+      "label": "Úvodní blok",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "O nás"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Hlavní nadpis (desktop)",
+          "value": "Šijeme ve Zruči nad Sázavou od roku 2000"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (desktop)",
+          "value": "Jsme rodinná dílna s průmyslovou kapacitou. Ušijeme jeden závěs do obýváku stejně pečlivě jako vybavení celého hotelu. <mark class=\"todo o-nas-hero__note\">[DOPLNIT: potvrdit „rodinná“]</mark>"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/sici-dilna-celek.webp",
+            "alt": "Světlá šicí dílna s řadami průmyslových šicích strojů"
+          }
+        }
+      ]
+    },
+    {
+      "key": "nas-pribeh",
+      "label": "Náš příběh",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Náš příběh"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Z areálu Sázavanu do pražských hotelů i do zahraničí"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Společnost CENTURY 2000 s.r.o. vznikla v roce 2000 v bývalém areálu Sázavan ve Zruči nad Sázavou. Od začátku se věnujeme šití bytových dekorací ve spolupráci s bytovými designéry a architekty."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Postupně jsme rozšířili výrobu o hotelový program, strojní prošívání a prodej metráže. Dnes šijeme pro pětihvězdičkové hotely v Praze i pro zákazníky v Itálii, Německu, Anglii a Rakousku."
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "[DOPLNIT: 2–3 milníky s rokem, např. první hotelová zakázka, nový prošívací stroj]"
+        }
+      ]
+    },
+    {
+      "key": "dilna-v-cislech",
+      "label": "Dílna v číslech",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/pokladaci-stul-strih.webp",
+            "alt": "Dlouhý pokládací stůl s rozloženou látkou připravenou ke střihu"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Dílna v číslech"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popisek",
+          "value": "rok založení"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "2000"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Popisek",
+          "value": "šicích strojů"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "20"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Popisek",
+          "value": "šířka pokládacích stolů"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "330 cm"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Popisek",
+          "value": "Meca pro kontinuální a Resta pro uzavřený vzor"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "2 prošívací stroje"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Popisek",
+          "value": "export do Itálie, Německa, Anglie a Rakouska"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "4 země"
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "[DOPLNIT: počet zaměstnanců]"
+        }
+      ]
+    },
+    {
+      "key": "italske-know-how",
+      "label": "Italské know-how",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Italské know-how"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Domácí řemeslo, zahraniční zkušenosti"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Úzce spolupracujeme s italským partnerem. Díky tomu máme přístup k moderním technologiím a materiálům a spojujeme je s pečlivou prací naší dílny. <mark class=\"todo italske-know-how__note\">[DOPLNIT: název partnera a v čem spolupráce spočívá]</mark>"
+        }
+      ]
+    },
+    {
+      "key": "na-cem-si-zakladame",
+      "label": "Na čem si zakládáme",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Na čem si zakládáme"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Kvalitní materiály"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Vybíráme látky, které vydrží praní i provoz hotelu."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Precizní zpracování"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Každý šev a sklad kontrolujeme před předáním."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Individuální přístup"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Každá zakázka je ušitá na míru."
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Spolehlivost a flexibilita"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Text",
+          "value": "Držíme termíny a umíme reagovat na změny."
+        }
+      ]
+    },
+    {
+      "key": "lide",
+      "label": "Lidé",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Text",
+          "value": "Portrét jednatele – reálné focení"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Lidé"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Ing. Vladimír Vobecký"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "jednatel společnosti"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "[DOPLNIT: 1–2 věty od jednatele, např. proč firmu vede]"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "+420 603 287 803"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "vobecky@century2000.cz"
+        }
+      ]
+    },
+    {
+      "key": "vyzva-na-konci-stranky",
+      "label": "Výzva na konci stránky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/ruce-pri-siti.webp",
+            "alt": "Ruce švadleny připínají lem lněného závěsu špendlíky"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Podívejte se k nám do dílny"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Rádi vám ukážeme látky, vzorky i výrobu. Domluvte si návštěvu."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Kontaktujte nás"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Pracujte s námi"
+        }
+      ]
+    }
+  ]
+}

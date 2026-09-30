@@ -1,4 +1,4 @@
-# Builds the site and publishes it to GitHub Pages on every push to main.
+# Exports the PHP site as static HTML and publishes it to GitHub Pages on every push to main.
 # The Pages copy is a client preview: hidden from search engines (--demo).
 name: Deploy preview to GitHub Pages
 
@@ -21,10 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: python3 build.py --demo --base /${{ github.event.repository.name }}
+      # PHP is preinstalled on ubuntu-latest
+      - run: php -v && php tools/export-static.php --demo --base /${{ github.event.repository.name }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

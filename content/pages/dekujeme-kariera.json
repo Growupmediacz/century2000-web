@@ -1,0 +1,41 @@
+{
+  "path": "/dekujeme-kariera/",
+  "name": "Děkujeme (kariéra)",
+  "editable": true,
+  "meta": {
+    "title": "Děkujeme za zájem | Century 2000",
+    "description": ""
+  },
+  "options": {},
+  "sections": [
+    {
+      "key": "dekujeme-kariera",
+      "label": "Děkujeme (kariéra)",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Hlavní nadpis",
+          "value": "Děkujeme za zájem"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Vaši zprávu jsme dostali. Ozveme se vám co nejdřív."
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/kariera-zauceni.webp",
+            "alt": "Zkušená švadlena zaučuje mladší kolegyni u šicího stroje"
+          }
+        }
+      ]
+    }
+  ]
+}

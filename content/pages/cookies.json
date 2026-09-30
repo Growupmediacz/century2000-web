@@ -1,0 +1,158 @@
+{
+  "path": "/cookies/",
+  "name": "Zásady cookies",
+  "editable": true,
+  "meta": {
+    "title": "Zásady cookies | Century 2000",
+    "description": ""
+  },
+  "options": {},
+  "sections": [
+    {
+      "key": "zasady-cookies",
+      "label": "Zásady cookies",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Hlavní nadpis",
+          "value": "Zásady cookies"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Cookies jsou malé soubory, které web ukládá do vašeho prohlížeče. Nezbytné cookies používáme vždy, ostatní jen s vaším souhlasem."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Jaké cookies používáme"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Kategorie"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "K čemu slouží"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Příklad"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Souhlas"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Nezbytné"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "fungování webu a uložení vaší volby cookies"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Buňka tabulky (desktop)",
+          "value": "cookie s volbou souhlasu <mark class=\"todo zasady-cookies__note\">[DOPLNIT: název a doba]</mark>"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "není potřeba"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Analytické"
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "anonymní statistiky návštěvnosti, abychom věděli, co na webu funguje"
+        },
+        {
+          "key": "t13",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "Google Analytics 4: _ga, _ga_* (až 2 roky)"
+        },
+        {
+          "key": "t14",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "ano"
+        },
+        {
+          "key": "t15",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Marketingové"
+        },
+        {
+          "key": "t16",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "zobrazení relevantní reklamy a měření její úspěšnosti"
+        },
+        {
+          "key": "t17",
+          "type": "text",
+          "label": "Doplnit (desktop)",
+          "value": "[DOPLNIT: Google Ads / Meta, pokud se budou používat]"
+        },
+        {
+          "key": "t18",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Jak souhlas změnit"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Text",
+          "value": "Svou volbu můžete kdykoli změnit přes odkaz <strong class=\"zasady-cookies__strong\">Nastavení cookies</strong> v patičce webu. Cookies můžete také smazat nebo zablokovat v nastavení prohlížeče."
+        },
+        {
+          "key": "t19",
+          "type": "text",
+          "label": "Tlačítko",
+          "value": "Změnit nastavení cookies"
+        },
+        {
+          "key": "t20",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Kontakt"
+        },
+        {
+          "key": "r3",
+          "type": "rich",
+          "label": "Text",
+          "value": "S dotazy nám napište na <a class=\"zasady-cookies__link\" href=\"mailto:info@century2000.cz\">info@century2000.cz</a>. Více o zpracování údajů najdete v <a class=\"zasady-cookies__link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásadách ochrany osobních údajů</a>."
+        }
+      ]
+    }
+  ]
+}

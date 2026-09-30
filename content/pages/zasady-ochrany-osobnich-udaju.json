@@ -1,0 +1,212 @@
+{
+  "path": "/zasady-ochrany-osobnich-udaju/",
+  "name": "Zásady ochrany osobních údajů",
+  "editable": true,
+  "meta": {
+    "title": "Zásady ochrany osobních údajů | Century 2000",
+    "description": ""
+  },
+  "options": {},
+  "sections": [
+    {
+      "key": "zasady-ochrany-osobnich-udaju",
+      "label": "Zásady ochrany osobních údajů",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Hlavní nadpis",
+          "value": "Zásady ochrany osobních údajů"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Jak zpracováváme osobní údaje, které nám pošlete přes web. Účinné od <mark class=\"todo zasady-ochrany-osobnich-udaju__note\">[DOPLNIT: datum]</mark>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "1. Správce osobních údajů"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Text",
+          "value": "Správcem je CENTURY 2000 s.r.o., IČ 26141116, se sídlem Okružní 600, 285 22 Zruč nad Sázavou <mark class=\"todo zasady-ochrany-osobnich-udaju__note\">[DOPLNIT: potvrdit adresu]</mark>. Kontakt pro otázky k osobním údajům: <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"mailto:info@century2000.cz\">info@century2000.cz</a>, <a class=\"zasady-ochrany-osobnich-udaju__link-2\" href=\"tel:+420603287803\">+420 603 287 803</a>."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "2. Jaké údaje zpracováváme a proč"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Účel"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Údaje"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Právní základ"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Jak dlouho"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Vyřízení poptávky a příprava nabídky"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "jméno, e-mail, telefon, firma, obsah zprávy, přílohy"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "jednání o uzavření smlouvy"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Doplnit (desktop)",
+          "value": "[DOPLNIT: např. 3 roky od poslední komunikace]"
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Plnění smlouvy a účetnictví"
+        },
+        {
+          "key": "t13",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "identifikační a fakturační údaje"
+        },
+        {
+          "key": "t14",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "plnění smlouvy, právní povinnost"
+        },
+        {
+          "key": "t15",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "po dobu stanovenou zákonem (účetní a daňové předpisy)"
+        },
+        {
+          "key": "t16",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Výběr zaměstnanců"
+        },
+        {
+          "key": "t17",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "jméno, kontakt, životopis, zkušenosti"
+        },
+        {
+          "key": "t18",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "jednání o pracovní smlouvě / souhlas"
+        },
+        {
+          "key": "t19",
+          "type": "text",
+          "label": "Doplnit (desktop)",
+          "value": "[DOPLNIT: např. 6 měsíců, déle jen se souhlasem]"
+        },
+        {
+          "key": "t20",
+          "type": "text",
+          "label": "Záhlaví tabulky (desktop)",
+          "value": "Měření návštěvnosti webu"
+        },
+        {
+          "key": "t21",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "cookies a online identifikátory"
+        },
+        {
+          "key": "t22",
+          "type": "text",
+          "label": "Buňka tabulky (desktop)",
+          "value": "souhlas"
+        },
+        {
+          "key": "r3",
+          "type": "rich",
+          "label": "Buňka tabulky (desktop)",
+          "value": "viz <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"/cookies/\">Zásady cookies</a>"
+        },
+        {
+          "key": "t23",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "3. Kdo má k údajům přístup"
+        },
+        {
+          "key": "r4",
+          "type": "rich",
+          "label": "Text",
+          "value": "Údaje neprodáváme. Přístup k nim mohou mít jen naši dodavatelé, kteří nám pomáhají web a komunikaci provozovat: poskytovatel hostingu webu <mark class=\"todo zasady-ochrany-osobnich-udaju__note\">[DOPLNIT]</mark>, Microsoft (e-mail, Microsoft 365), Google (Google Analytics, jen se souhlasem) <mark class=\"todo zasady-ochrany-osobnich-udaju__note\">[DOPLNIT: další, např. účetní]</mark>."
+        },
+        {
+          "key": "t24",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "4. Vaše práva"
+        },
+        {
+          "key": "r5",
+          "type": "rich",
+          "label": "Text",
+          "value": "Máte právo požádat o přístup ke svým údajům, jejich opravu nebo výmaz, omezení zpracování a přenositelnost. Můžete vznést námitku proti zpracování a kdykoli odvolat souhlas. Stačí napsat na <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"mailto:info@century2000.cz\">info@century2000.cz</a>."
+        },
+        {
+          "key": "r6",
+          "type": "rich",
+          "label": "Text",
+          "value": "Pokud se domníváte, že s údaji nezacházíme správně, můžete podat stížnost u Úřadu pro ochranu osobních údajů (<a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"https://www.uoou.cz\" target=\"_blank\" rel=\"noopener\">www.uoou.cz</a>)."
+        },
+        {
+          "key": "t25",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "5. Cookies"
+        },
+        {
+          "key": "r7",
+          "type": "rich",
+          "label": "Text",
+          "value": "Informace o cookies najdete v <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"/cookies/\">Zásadách cookies</a>."
+        }
+      ]
+    }
+  ]
+}

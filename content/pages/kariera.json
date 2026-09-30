@@ -1,0 +1,322 @@
+{
+  "path": "/kariera/",
+  "name": "Kariéra",
+  "editable": true,
+  "meta": {
+    "title": "Kariéra – práce švadleny ve Zruči nad Sázavou | Century 2000",
+    "description": "Hledáme švadleny a kolegy do textilní dílny ve Zruči nad Sázavou. Stabilní firma od roku 2000, práce Po–Pá bez víkendů."
+  },
+  "options": {
+    "image": "/assets/fotky/kariera-svadlena.webp"
+  },
+  "sections": [
+    {
+      "key": "uvodni-blok",
+      "label": "Úvodní blok",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Kariéra"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Hlavní nadpis (desktop)",
+          "value": "Hledáme šikovné ruce do naší dílny"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text (desktop)",
+          "value": "Šijeme pro hotely, které zná celý svět. Přidejte se k týmu, který si na kvalitě zakládá už přes 25 let."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Otevřené pozice"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Poslat životopis"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/kariera-svadlena.webp",
+            "alt": "Švadlena šije závěs na průmyslovém šicím stroji"
+          }
+        }
+      ]
+    },
+    {
+      "key": "proc-pracovat-u-nas",
+      "label": "Proč pracovat u nás",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/kariera-zauceni.webp",
+            "alt": "Zkušená švadlena zaučuje mladší kolegyni u šicího stroje"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Proč pracovat u nás"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Stabilní firma"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Šijeme nepřetržitě od roku 2000."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Pracovní doba bez víkendů"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Pondělí až pátek od 7:00."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Práce blízko domova"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Dílna je přímo ve Zruči nad Sázavou."
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Zaučení"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Text",
+          "value": "Nové kolegy zaučíme na profesionálních strojích."
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Zajímavé zakázky"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text",
+          "value": "Vaše práce skončí v pětihvězdičkových hotelech."
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "[DOPLNIT: benefity – stravenky, příspěvky, dovolená navíc…]"
+        }
+      ]
+    },
+    {
+      "key": "otevrene-pozice",
+      "label": "Otevřené pozice",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Otevřené pozice"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Švadlena / švadlena bytových dekorací"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "[DOPLNIT: aktuální pozice]"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "<span><strong class=\"otevrene-pozice__strong\">Úvazek:</strong> plný úvazek</span><span><strong class=\"otevrene-pozice__strong\">Místo:</strong> Zruč nad Sázavou</span>"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Chci se přihlásit"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Co budete dělat"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Položka",
+          "value": "<span>šití závěsů, záclon a dekorací podle zakázky</span>"
+        },
+        {
+          "key": "r3",
+          "type": "rich",
+          "label": "Položka",
+          "value": "<span>práce na průmyslových šicích strojích</span>"
+        },
+        {
+          "key": "r4",
+          "type": "rich",
+          "label": "Položka",
+          "value": "<span>kontrola kvality hotových kusů</span>"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Co očekáváme"
+        },
+        {
+          "key": "r5",
+          "type": "rich",
+          "label": "Položka",
+          "value": "<span>zkušenost se šitím vítána, ale není podmínkou</span>"
+        },
+        {
+          "key": "r6",
+          "type": "rich",
+          "label": "Položka",
+          "value": "<span>pečlivost a smysl pro detail</span>"
+        },
+        {
+          "key": "r7",
+          "type": "rich",
+          "label": "Položka",
+          "value": "<span>chuť učit se</span>"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Co nabízíme"
+        },
+        {
+          "key": "r8",
+          "type": "rich",
+          "label": "Položka",
+          "value": "<span>stabilní práci, zaučení, <mark class=\"todo otevrene-pozice__note\">[DOPLNIT: mzda / benefity]</mark></span>"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Obsluha prošívacího stroje"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "[DOPLNIT: pokud aktuální]"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Není tu vaše pozice?"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text",
+          "value": "Pošlete nám životopis i tak. Ozveme se, až budeme hledat někoho, jako jste vy."
+        }
+      ]
+    },
+    {
+      "key": "formular-pro-uchazece",
+      "label": "Formulář pro uchazeče",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Ozvěte se nám"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Životopis (nepovinné, PDF/DOC/fotka)"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Odesláním souhlasíte se zpracováním osobních údajů pro účely výběru zaměstnanců. <a class=\"formular-pro-uchazece__link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásady ochrany osobních údajů</a>"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Raději osobně?"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Zavolejte na"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "+420 603 287 803"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "(Po–Pá 7:00–15:30)."
+        }
+      ]
+    }
+  ]
+}

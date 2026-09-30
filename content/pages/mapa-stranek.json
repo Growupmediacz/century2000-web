@@ -1,0 +1,104 @@
+{
+  "path": "/mapa-stranek/",
+  "name": "Mapa stránek",
+  "editable": true,
+  "meta": {
+    "title": "Mapa stránek | Century 2000",
+    "description": ""
+  },
+  "options": {},
+  "sections": [
+    {
+      "key": "mapa-stranek",
+      "label": "Mapa stránek",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Hlavní nadpis",
+          "value": "Mapa stránek"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Hlavní stránka"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Služby"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Bytový textil na míru"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Hotelový textil"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Strojní prošívání"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Matracové chrániče a potahy"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Látky a metráž"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Reference"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "O nás"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Kariéra"
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Kontakt"
+        },
+        {
+          "key": "t13",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Zásady ochrany osobních údajů"
+        },
+        {
+          "key": "t14",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Zásady cookies"
+        }
+      ]
+    }
+  ]
+}

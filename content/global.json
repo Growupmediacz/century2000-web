@@ -1,0 +1,153 @@
+{
+  "sections": [
+    {
+      "key": "paticka",
+      "label": "Patička",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/logo/century2000-logo-svetle.svg",
+            "alt": "CENTURY 2000 s.r.o."
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Text",
+          "value": "Zakázková výroba bytového a hotelového textilu ve Zruči nad Sázavou od roku 2000."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Služby"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Bytový textil na míru"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Hotelový textil"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Strojní prošívání"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Matracové chrániče a potahy"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Látky a metráž"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Firma"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "O nás"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Reference"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Kariéra"
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "E-shop ↗"
+        },
+        {
+          "key": "t13",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Kontakt"
+        },
+        {
+          "key": "t14",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "+420 603 287 803"
+        },
+        {
+          "key": "t15",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "info@century2000.cz"
+        },
+        {
+          "key": "t16",
+          "type": "text",
+          "label": "Text",
+          "value": "Po–Pá 7:00–15:30"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Adresa",
+          "value": "<span>CENTURY 2000 s.r.o., Okružní 600, 285 22 Zruč nad Sázavou <mark class=\"todo site-footer__todo\">[DOPLNIT: potvrdit adresu]</mark></span> <span>IČ 26141116, DIČ CZ26141116</span> <span>Datová schránka jq7vgn3</span>"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Text",
+          "value": "© <span data-year>2026</span> CENTURY 2000 s.r.o."
+        },
+        {
+          "key": "t17",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Zásady ochrany osobních údajů"
+        },
+        {
+          "key": "t18",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Zásady cookies"
+        },
+        {
+          "key": "t19",
+          "type": "text",
+          "label": "Tlačítko",
+          "value": "Nastavení cookies"
+        },
+        {
+          "key": "t20",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Mapa stránek"
+        }
+      ]
+    }
+  ]
+}

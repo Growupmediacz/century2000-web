@@ -1,0 +1,665 @@
+{
+  "path": "/strojni-prosivani/",
+  "name": "Strojní prošívání",
+  "editable": true,
+  "meta": {
+    "title": "Strojní prošívání látek a prošev metráže do šíře 280 cm | Century 2000",
+    "description": "Prošíváme polyesterová rouna a netkané textilie v kontinuálním i uzavřeném vzoru. Stroje Meca a Resta, gramáže roun 80–400 g."
+  },
+  "options": {
+    "image": "/assets/fotky/strojni-prosivani-stroj.webp"
+  },
+  "sections": [
+    {
+      "key": "uvodni-blok",
+      "label": "Úvodní blok",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Služby"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "/"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Položka (desktop)",
+          "value": "Strojní prošívání"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Hlavní nadpis (desktop)",
+          "value": "Strojní prošívání textilií pro výrobce"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text (desktop)",
+          "value": "Prošíváme třívrstvé materiály v kontinuálním vzoru do šíře 280 cm i v uzavřeném vzoru až 300 × 300 cm. Pro výrobce matrací, čalouníky i textilní firmy, v kusových i sériových zakázkách."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Poptat prošev"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Technické parametry"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/strojni-prosivani-stroj.webp",
+            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+          }
+        }
+      ]
+    },
+    {
+      "key": "z-ceho-se-prosivany-material-sklada",
+      "label": "Z čeho se prošívaný materiál skládá",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/prosivany-material-vrstvy.webp",
+            "alt": "Průřez prošívaného materiálu: vrchní látka, rouno a netkaná textilie"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Z čeho se prošívaný materiál skládá"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Tři vrstvy, jeden pevný materiál"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "1"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Vrchový materiál"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Látka, kterou dodáte vy, nebo ji zajistíme my."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "2"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Rouno"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "Polyesterové rouno v gramáži 80–400 g podle požadované měkkosti a objemu."
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Text",
+          "value": "3"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Netkaná textilie nebo podšívka"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text",
+          "value": "Spodní vrstva v gramáži 15–40 g."
+        }
+      ]
+    },
+    {
+      "key": "technicke-parametry",
+      "label": "Technické parametry",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Technické parametry"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popisek",
+          "value": "Kontinuální vzor (stroj Meca)"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Hodnota",
+          "value": "max. šíře 280 cm <mark class=\"todo technicke-parametry__note\">[DOPLNIT: ověřit 240 vs. 280 cm]</mark>"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Popisek",
+          "value": "Uzavřený vzor (stroj Resta)"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "až 300 × 300 cm"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Popisek",
+          "value": "PES rouno"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "80–400 g"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Popisek",
+          "value": "Netkaná textilie"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "15–40 g"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Popisek",
+          "value": "Vzory"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "široký sortiment, viz vzorník"
+        }
+      ]
+    },
+    {
+      "key": "stroje",
+      "label": "Stroje",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Stroje"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/detail-jehel-prosev.webp",
+            "alt": "Detail jehel a přítlačných patek při prošívání silné látky"
+          }
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Kontinuální prošev"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Metráž se prošívá v jednom kuse z rolí. Vhodné pro potahové materiály, chrániče a přehozy."
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/prosivani-uzavreny-vzor.webp",
+            "alt": "Prošívací stroj s rámem vyšívá medailonový vzor na čtvercový panel"
+          }
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Uzavřený vzor"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Samostatné panely s rámem a motivem uprostřed, typicky vrchní díly matrací."
+        }
+      ]
+    },
+    {
+      "key": "vzornik-prosevu",
+      "label": "Vzorník proševu",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Vzorník proševu"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Vyberte si vzor"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/vzor-prosevu-kosoctverec.webp",
+            "alt": "Vzor proševu kosočtverec"
+          }
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Popisek obrázku",
+          "value": "Kosočtverec"
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/vzor-prosevu-vlnovka.webp",
+            "alt": "Vzor proševu vlnovka"
+          }
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Popisek obrázku",
+          "value": "Vlnovka"
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/vzor-prosevu-ctverec.webp",
+            "alt": "Vzor proševu čtvercová mřížka"
+          }
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Popisek obrázku",
+          "value": "Čtvercová mřížka"
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/vzor-prosevu-ornament.webp",
+            "alt": "Vzor proševu ornament"
+          }
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Popisek obrázku",
+          "value": "Ornament"
+        },
+        {
+          "key": "img5",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/vzor-prosevu-rostlinny.webp",
+            "alt": "Vzor proševu s rostlinným motivem"
+          }
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Popisek obrázku",
+          "value": "Rostlinný motiv"
+        },
+        {
+          "key": "img6",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/vzor-prosevu-medailon.webp",
+            "alt": "Prošívaný panel s uzavřeným medailonovým vzorem"
+          }
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Popisek obrázku",
+          "value": "Uzavřený medailon"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Ukázka části vzorů. Kompletní vzorník vám pošleme na vyžádání. <mark class=\"todo vzornik-prosevu__note\">[DOPLNIT: vzory musí schválit klient]</mark>"
+        }
+      ]
+    },
+    {
+      "key": "co-potrebujeme-k-naceneni",
+      "label": "Co potřebujeme k nacenění",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/role-prosivaneho-materialu.webp",
+            "alt": "Role prošívaného materiálu s různými vzory ve skladu"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Co potřebujeme k nacenění"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "1"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Vrchový materiál – dodáte, nebo zajistíme"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "2"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Gramáž rouna a typ spodní vrstvy"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "3"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Vzor (číslo ze vzorníku nebo vlastní návrh)"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "4"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Text",
+          "value": "Šířka a metráž, u panelů rozměry a počet kusů"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Text",
+          "value": "5"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text",
+          "value": "Požadovaný termín"
+        }
+      ]
+    },
+    {
+      "key": "caste-dotazy",
+      "label": "Časté dotazy",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Časté dotazy"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Tlačítko",
+          "value": "<span>Prošijete i můj vlastní materiál?</span>"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "−"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "[DOPLNIT: ano/ne a podmínky]"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Tlačítko",
+          "value": "<span>Jaké je minimální množství?</span>"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "+"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "[DOPLNIT]"
+        },
+        {
+          "key": "r3",
+          "type": "rich",
+          "label": "Tlačítko",
+          "value": "<span>Vyrobíte i vlastní vzor?</span>"
+        }
+      ]
+    },
+    {
+      "key": "poptavka",
+      "label": "Poptávka",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Pošlete nám parametry, spočítáme cenu"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Napište nám, co potřebujete ušít. Ozveme se do <mark class=\"todo inquiry__todo\">[DOPLNIT: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Příloha (fotka, náčrt nebo výkres, max. 10 MB)"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Text",
+          "value": "Odesláním souhlasíte se <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">zpracováním osobních údajů</a> za účelem vyřízení poptávky."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Raději telefonicky?"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "+420 603 287 803"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "info@century2000.cz"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Po–Pá 7:00–15:30"
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzby",
+      "label": "Související služby",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Související služby"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/matracovy-chranic-4x3.webp",
+            "alt": "Bílý prošívaný matracový chránič na matraci"
+          }
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Matracové chrániče a potahy"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Chrániče s PUR zátěrem, prošívané chrániče, potahy na matrace a výplně polštářů."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Chrániče a potahy →"
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/latky-metraz-regal-4x3.webp",
+            "alt": "Regál s rolemi dekoračních látek seřazenými podle barev"
+          }
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Látky a metráž"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Dekorační látky, blackouty, dimouty, ubrusoviny a látky s nehořlavou úpravou."
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Látky a metráž →"
+        }
+      ]
+    }
+  ]
+}

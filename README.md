@@ -1,58 +1,69 @@
-# Century 2000 – web
+# Century 2000 – web s administrací
 
-Statický web (HTML, CSS, JavaScript) podle návrhu z Claude Design. Nepotřebuje databázi ani serverový jazyk. Hotový web je ve složce `site/` a nahrává se na jakýkoli hosting.
+Web v PHP (bez databáze) podle návrhu z Claude Design. Klient si v administraci na `/admin/` sám upraví texty, vymění obrázky a skryje sekce. Formuláře (poptávka, žádost o práci) se odesílají e-mailem.
 
-## Jak pracovat
-
-```bash
-python3 build.py          # sestaví src/ → site/
-python3 build.py serve    # sestaví a spustí náhled na http://localhost:8000
-```
-
-Upravuje se jen `src/`. Složka `site/` se při každém buildu vytvoří znovu.
+Požadavky: PHP 8.1+ s rozšířeními `gd` (s WebP), `mbstring`, `dom`. Webglobe to splňuje.
 
 ## Struktura
 
 ```
-src/
-  pages/        jedna stránka = jeden soubor (obsah + metadata v úvodním komentáři <!--page {...} -->)
-  partials/     hlavička, patička, cookie lišta – vkládají se přes <!-- @include header -->
-  assets/
-    css/base.css           barvy a písma (proměnné z design systému), základní styly
-    css/components.css     sdílené prvky (.btn-primary, .title-section, .eyebrow, .container…)
-                           a komponenty (.site-header, .site-footer, .cookie-bar, .service-card, .inquiry)
-    css/pages.css          sekce stránek, pojmenované podle sekcí v návrhu (.index-hero, .service-faq…)
-    css/design-system.css  jen pro interní stránku design systému
-    js/site.js             menu, FAQ, cookie lišta, validace formulářů
-    fotky/, logo/, reference-loga/
-build.py        build, SEO výstupy a náhledový server
-handoff/        původní návrh z Claude Design (jen pro referenci)
+public/            kořen webu (na hostingu složka www)
+  index.php        router: stránky, formuláře, sitemap.xml, robots.txt
+  .htaccess        čisté adresy, zabezpečení, cache
+  admin/           administrace (/admin/)
+  assets/          CSS, JS, fotky, loga
+  uploads/         obrázky nahrané v administraci
+app/               kód (není veřejně dostupný)
+  lib/             obsah, vykreslení, SEO, formuláře, e-mail
+  admin/           administrace – logika a obrazovky
+  templates/       HTML šablony stránek a společných částí (hlavička, patička, cookie lišta)
+content/           obsah upravovaný v administraci (JSON), zálohy verzí
+config.php         heslo do administrace a nastavení e-mailu (není v Gitu)
+tools/             pomocné skripty
 ```
 
-V `src` se odkazy píšou od kořene webu (`/kontakt/`, `/assets/...`). Build je převede na relativní cesty, takže web funguje v kořeni domény i v podsložce.
+**Kdo co upravuje:**
+- **klient v administraci:** texty, obrázky, zobrazení sekcí, titulky a popisy pro Google (ukládá se do `content/`)
+- **vývojář v kódu:** vzhled a rozvržení (`app/templates`, `public/assets/css`)
 
-## SEO a technika
+## Lokální vývoj
 
-- čisté adresy (`/kontakt/`, `/hotelovy-textil/`…)
-- `<title>`, description, canonical, Open Graph a Twitter karta na každé stránce
-- strukturovaná data: firma (LocalBusiness) na úvodu, Kontaktu a O nás, drobečková navigace na podstránkách
-- `sitemap.xml` a `robots.txt`
-- `noindex` pro děkovací stránky, 404, `/nahled/` a `/design-system/` (nejsou ani v sitemapě)
-- `.htaccess` pro Apache: vlastní stránka 404, cache a komprese
-- obrázky pod první sekcí se načítají líně, `aria-current` u aktivní položky menu
+```bash
+php tools/set-password.php          # vytvoří config.php a nastaví heslo do administrace
+php -S localhost:8000 -t public public/index.php
+```
 
-Doménu (`https://www.century2000.cz`) a údaje o firmě nastavíte na začátku `build.py`.
+Web poběží na http://localhost:8000, administrace na http://localhost:8000/admin/.
+Pro testování nastavte v `config.php` `'transport' => 'log'`. E-maily se pak neodesílají, ukládají se do `content/.runtime/mail/`.
+
+## Nasazení na Webglobe
+
+1. Na FTP nahrajte obsah složky `public/` do `www/` a vedle `www/` složky `app/`, `content/` a soubor `config.php`.
+   Pokud hosting soubory mimo `www/` nedovolí, dejte vše do `www/`. `.htaccess` pak zablokuje přístup do `app/`, `content/` a ke `config.php`.
+2. Složky `content/` a `www/uploads/` musí mít právo zápisu (PHP do nich ukládá).
+3. V `config.php` nastavte `mail.from` (schránka na doméně webu, např. `web@century2000.cz`) a `mail.to`.
+   `transport => 'mail'` funguje na Webglobe bez dalšího nastavení. Spolehlivější je `smtp` s přihlášením ke schránce.
+4. V `public/.htaccess` odkomentujte přesměrování na HTTPS a www.
+
+**Při dalších nasazeních nepřepisujte `content/`, `www/uploads/` ani `config.php`.** Jsou v nich úpravy klienta a hesla.
 
 ## Náhled pro klienta (GitHub Pages)
 
-Každý push do větve `main` spustí `.github/workflows/pages.yml`: ten sestaví web v ukázkovém režimu
-(`--demo` = skrytý před vyhledávači) a zveřejní ho na https://growupmediacz.github.io/century2000-web/.
+Každý push do `main` spustí `.github/workflows/pages.yml`. Ten web vyexportuje do statického HTML (`php tools/export-static.php --demo`) a zveřejní ho na https://growupmediacz.github.io/century2000-web/ (skrytý před vyhledávači).
+Náhled ukazuje obsah z Gitu, ne úpravy z administrace na ostrém webu. Formuláře v něm jen přesměrují na děkovací stránku.
 
-- `/nahled/` – přehled všech stránek na desktopu a mobilu vedle sebe
-- ostrý web pro hosting sestavíte bez přepínačů: `python3 build.py` a nahrajete obsah složky `site/`
+## Administrace
 
-## Před spuštěním ostrého webu
+- přihlášení jménem a heslem (heslo nastaví `php tools/set-password.php`), po 5 chybných pokusech se přihlašování na 15 minut zablokuje
+- stránky rozdělené na sekce: texty, formátovaný text (tučně, kurzíva, odkazy), obrázky s popisem a přepínač **Zobrazit sekci na webu**
+- nahrané fotky se automaticky otočí, zmenší na max. 2400 px a převedou do WebP
+- před každým uložením se uloží předchozí verze. **Historie verzí** umožní obnovit kteroukoli z posledních 30.
 
-- **Formuláře** se zatím jen zvalidují a přesměrují na děkovací stránku. Pro skutečné odesílání doplňte formuláři atribut `action` (PHP skript, Formspree, Netlify Forms…).
-- **Značky `[DOPLNIT: …]`** v textech – údaje k potvrzení klientem (adresa, doba výroby, montáž…). Adresa je i ve strukturovaných datech v `build.py`.
-- **Cookies:** souhlas se ukládá do `localStorage` (`c2000-consent`) a vyvolá událost `c2000-consent`. Na ni se napojí analytika, až bude potřeba.
+## SEO
+
+Čisté adresy, titulek a popis každé stránky (editovatelné), canonical, Open Graph, strukturovaná data firmy a drobečkové navigace, dynamická `sitemap.xml` a `robots.txt`, `noindex` pro děkovací stránky, 404 a interní stránky (`/nahled/`, `/design-system/`). Doménu a údaje o firmě nastavíte v `config.php` (`site_url`) a v `app/lib/seo.php`.
+
+## Před spuštěním
+
+- **Značky `[DOPLNIT: …]`** v textech – klient je doplní v administraci. Adresa firmy je i v `app/lib/seo.php`.
+- **Cookies:** souhlas se ukládá do prohlížeče (`c2000-consent`) a vyvolá událost `c2000-consent`, na kterou se napojí analytika.

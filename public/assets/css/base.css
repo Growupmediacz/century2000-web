@@ -1,0 +1,58 @@
+/* Century 2000 – design tokens and base styles */
+
+:root {
+  --ink-900: #2A2622;
+  --ink-700: #4A443C;
+  --ink-500: #6E675E;
+  --stone-300: #D6CEC1;
+  --field-border: #8C8478;
+  --line-200: #E7E0D6;
+  --cream-100: #F1EBE1;
+  --cream-50: #F8F5F0;
+  --paper: #FCFAF7;
+  --bronze-700: #856640;
+  --bronze-600: #9C7B4D;
+  --gold-300: #C9A978;
+  --sand-200: #D9C9AE;
+  --error: #A33A2A;
+  --white: #FFFFFF;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: Barlow, system-ui, sans-serif;
+  --font-script: Parisienne, cursive;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; background: var(--cream-50); }
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; }
+:where(a) { color: var(--bronze-700); }
+:where(a):hover { color: var(--ink-900); }
+img { max-width: 100%; }
+
+/* State toggled by assets/js/site.js (menus, accordions, cookie bar, form errors) */
+[data-if] { display: contents; }
+[data-if][hidden] { display: none; }
+
+/* Keyboard focus */
+:focus-visible { outline: 2px solid var(--bronze-700); outline-offset: 2px; }
+
+/* Service card: image zoom + bronze underline on hover/focus */
+.service-card > a:is(:hover, :focus-visible) img { transform: scale(1.03); }
+.service-card > a:is(:hover, :focus-visible) > span[aria-hidden="true"]:last-child { transform: scaleX(1); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
+
+/* ---------- Breakpoint visibility (wrappers use display: contents) ---------- */
+.show-desktop, .show-mobile, .show-from-900, .show-below-900 { display: contents; }
+@media (max-width: 1023px) { .show-desktop { display: none; } }
+@media (min-width: 1024px) { .show-mobile { display: none; } }
+@media (max-width: 899px) { .show-from-900 { display: none; } }
+@media (min-width: 900px) { .show-below-900 { display: none; } }
+
+/* Forms: spam trap (hidden from people) and server-side error message */
+.form-hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.form-alert { margin: 0; padding: 14px 16px; border: 1px solid var(--error); background: var(--white); color: var(--error); font-size: 15px; }
+.form-alert[hidden] { display: none; }

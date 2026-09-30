@@ -1,0 +1,750 @@
+{
+  "path": "/",
+  "name": "Úvod",
+  "editable": true,
+  "meta": {
+    "title": "Zakázková výroba bytového a hotelového textilu | Century 2000",
+    "description": "Šijeme závěsy, záclony a hotelový textil na míru, prošíváme metráž a prodáváme látky. Vlastní výroba ve Zruči nad Sázavou od roku 2000."
+  },
+  "options": {},
+  "sections": [
+    {
+      "key": "uvodni-blok",
+      "label": "Úvodní blok",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/hero-sici-dilna.webp",
+            "alt": "Švadlena šije lněný závěs na průmyslovém šicím stroji v textilní dílně"
+          }
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek (mobil)",
+          "value": {
+            "src": "/assets/fotky/hero-sici-dilna-mobil.webp",
+            "alt": "Ruce švadleny vedou krémovou lněnou látku pod jehlou šicího stroje"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Textil"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "s příběhem"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Hlavní nadpis",
+          "value": "Zakázková výroba textilu pro domovy, hotely i výrobce"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Od závěsů do obýváku po vybavení celého hotelu. Šijeme na míru ve vlastní dílně ve Zruči nad Sázavou už od roku 2000."
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Nezávazná poptávka"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Co šijeme"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Položka",
+          "value": "Kvalitní materiály"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Položka",
+          "value": "Vlastní výroba"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Položka",
+          "value": "Individuální přístup"
+        }
+      ]
+    },
+    {
+      "key": "pruh-duvery",
+      "label": "Pruh důvěry",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Text",
+          "value": "Šijeme pro hotely, které zná celý svět"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/reference-loga/four-seasons-praha.webp",
+            "alt": "Four Seasons Praha"
+          }
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/reference-loga/le-palais-praha.png",
+            "alt": "Le Palais Praha"
+          }
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/reference-loga/corinthia-praha-orez.png",
+            "alt": "Corinthia Praha"
+          }
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/reference-loga/hotel-international-brno.png",
+            "alt": "Hotel International Brno"
+          }
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Všechny reference →"
+        }
+      ]
+    },
+    {
+      "key": "rozcestnik-sluzeb",
+      "label": "Rozcestník služeb",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Co šijeme"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Jedna dílna, pět způsobů, jak vám můžeme pomoci"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/zavesy-na-miru-obyvak-4x3.webp",
+            "alt": "Krémové lněné závěsy s voálovou záclonou v obývacím pokoji"
+          }
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Bytový textil na míru"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Závěsy, záclony, římské rolety, japonské stěny i přehozy přesně podle vašeho okna a interiéru."
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Bytový textil →"
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/hotelovy-textil-pokoj-4x3.webp",
+            "alt": "Hotelový pokoj s těžkými závěsy, prošívaným běhounem a polštáři"
+          }
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Hotelový textil"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Kompletní textilní vybavení hotelů, penzionů a restaurací. Od závěsů na pokoje po rautové sukně."
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotelový textil →"
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/strojni-prosivani-stroj-4x3.webp",
+            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+          }
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Strojní prošívání"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Text",
+          "value": "Prošev roun a netkaných textilií do šíře 280 cm v kontinuálním i uzavřeném vzoru."
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text",
+          "value": "Strojní prošívání →"
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/matracovy-chranic-4x3.webp",
+            "alt": "Bílý prošívaný matracový chránič na matraci"
+          }
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Matracové chrániče a potahy"
+        },
+        {
+          "key": "t13",
+          "type": "text",
+          "label": "Text",
+          "value": "Chrániče s PUR zátěrem, prošívané chrániče, potahy na matrace a výplně polštářů."
+        },
+        {
+          "key": "t14",
+          "type": "text",
+          "label": "Text",
+          "value": "Chrániče a potahy →"
+        },
+        {
+          "key": "img5",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/latky-metraz-regal-4x3.webp",
+            "alt": "Regál s rolemi dekoračních látek seřazenými podle barev"
+          }
+        },
+        {
+          "key": "t15",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Látky a metráž"
+        },
+        {
+          "key": "t16",
+          "type": "text",
+          "label": "Text",
+          "value": "Dekorační látky, blackouty, dimouty, ubrusoviny a látky s nehořlavou úpravou."
+        },
+        {
+          "key": "t17",
+          "type": "text",
+          "label": "Text",
+          "value": "Látky a metráž →"
+        }
+      ]
+    },
+    {
+      "key": "pro-koho-sijeme",
+      "label": "Pro koho šijeme",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Podle toho, kdo jste"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Pro koho šijeme"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Pro domov"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Chcete závěsy, které sedí na centimetr, a ne hotové rozměry z obchodu."
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Bytový textil →"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Pro hotely a restaurace"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Potřebujete spolehlivého partnera na celý objekt i na doplňování po letech."
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotelový textil →"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Pro výrobce a firmy"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Text",
+          "value": "Hledáte prošev, chrániče nebo materiál v sériích a v dohodnutém termínu."
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text",
+          "value": "Strojní prošívání →"
+        }
+      ]
+    },
+    {
+      "key": "dilna-v-cislech",
+      "label": "Dílna v číslech",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Naše dílna v číslech"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popisek",
+          "value": "šijeme od roku"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "2000"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Popisek",
+          "value": "šicích strojů v dílně"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "20"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Popisek",
+          "value": "šířka pokládacích stolů"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "330 cm"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Popisek",
+          "value": "maximální šíře proševu <mark class=\"todo index-dilna-v-cislech__note\">[DOPLNIT: ověřit 240 vs. 280 cm]</mark>"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "280 cm"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Popisek",
+          "value": "exportujeme do Itálie, Německa, Anglie a Rakouska"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Hodnota",
+          "value": "4 země"
+        }
+      ]
+    },
+    {
+      "key": "jak-zakazka-probiha",
+      "label": "Jak zakázka probíhá",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Jak zakázka probíhá"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Od první zprávy po hotový textil"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "01"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Poptávka"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Napište, co potřebujete. Stačí rozměry, fotka nebo výkres."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "02"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Návrh a nabídka"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "Doporučíme materiál, pošleme vzorky a cenu."
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Text",
+          "value": "03"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Výroba"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text",
+          "value": "Zakázku ušijeme ve vlastní dílně ve Zruči nad Sázavou."
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Text",
+          "value": "04"
+        },
+        {
+          "key": "t13",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Předání"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Hotový textil vám předáme nebo doručíme. <mark class=\"todo index-jak-zakazka-probiha__note\">[DOPLNIT: montáž ano/ne]</mark>"
+        }
+      ]
+    },
+    {
+      "key": "reference",
+      "label": "Reference",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Reference"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Realizace, které mluví za nás"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Za více než 25 let jsme ušili textil pro pětihvězdičkové hotely, restaurace i desítky domácností."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Všechny reference"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotel Four Seasons"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Praha"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotel Le Palais"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotel Corinthia Tower"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotel International"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Text",
+          "value": "Brno"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text",
+          "value": "Palác u Kočků"
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotel 1. Republika"
+        },
+        {
+          "key": "t13",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotel Aqua"
+        },
+        {
+          "key": "t14",
+          "type": "text",
+          "label": "Text",
+          "value": "Průhonice"
+        }
+      ]
+    },
+    {
+      "key": "proc-century-2000",
+      "label": "Proč Century 2000",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/ruce-pri-siti.webp",
+            "alt": "Ruce švadleny připínají lem lněného závěsu špendlíky"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Tradice a kvalita"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Proč s námi šijí hotely i výrobci matrací"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Zakázková výroba na míru"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Ušijeme jeden závěs i vybavení celého hotelu."
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Více než 25 let na trhu"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Zkušenosti s českým i evropským trhem."
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Vlastní dílna a stroje"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "Vše vyrábíme sami, máme tak pod kontrolou kvalitu i termíny."
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Italské know-how"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Text",
+          "value": "Úzce spolupracujeme s italským partnerem."
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text",
+          "value": "„Kvalitní textil promění každý prostor v příjemné místo.“"
+        }
+      ]
+    },
+    {
+      "key": "vyzva-na-konci-stranky",
+      "label": "Výzva na konci stránky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Máte představu? My ji ušijeme."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Napište nám, co potřebujete. Ozveme se s dotazy nebo orientační nabídkou."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Odeslat poptávku"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "nebo zavolejte <a class=\"link-arrow index-zaverecne-cta__link\" href=\"tel:+420603287803\">+420 603 287 803</a>"
+        }
+      ]
+    }
+  ]
+}

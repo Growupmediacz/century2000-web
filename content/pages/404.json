@@ -1,0 +1,193 @@
+{
+  "path": "/404.html",
+  "name": "Stránka nenalezena (404)",
+  "editable": true,
+  "meta": {
+    "title": "Stránka nenalezena | Century 2000",
+    "description": ""
+  },
+  "options": {
+    "absolute": true
+  },
+  "sections": [
+    {
+      "key": "stranka-nenalezena",
+      "label": "Stránka nenalezena",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "404"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Hlavní nadpis",
+          "value": "Tuhle stránku jsme nenašli"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Možná byla přesunuta, nebo je v odkazu překlep. Zkuste některou z našich služeb:"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/zavesy-na-miru-obyvak-4x3.webp",
+            "alt": "Krémové lněné závěsy s voálovou záclonou v obývacím pokoji"
+          }
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (desktop)",
+          "value": "<span>Bytový textil na míru</span>"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "→"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text (desktop)",
+          "value": "Závěsy, záclony, římské rolety, japonské stěny i přehozy přesně podle vašeho okna a interiéru."
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/hotelovy-textil-pokoj-4x3.webp",
+            "alt": "Hotelový pokoj s těžkými závěsy, prošívaným běhounem a polštáři"
+          }
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Text (desktop)",
+          "value": "<span>Hotelový textil</span>"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text (desktop)",
+          "value": "Kompletní textilní vybavení hotelů, penzionů a restaurací. Od závěsů na pokoje po rautové sukně."
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/strojni-prosivani-stroj-4x3.webp",
+            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+          }
+        },
+        {
+          "key": "r3",
+          "type": "rich",
+          "label": "Text (desktop)",
+          "value": "<span>Strojní prošívání</span>"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text (desktop)",
+          "value": "Prošev roun a netkaných textilií do šíře 280 cm v kontinuálním i uzavřeném vzoru."
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/matracovy-chranic-4x3.webp",
+            "alt": "Bílý prošívaný matracový chránič na matraci"
+          }
+        },
+        {
+          "key": "r4",
+          "type": "rich",
+          "label": "Text (desktop)",
+          "value": "<span>Matracové chrániče a potahy</span>"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text (desktop)",
+          "value": "Chrániče s PUR zátěrem, prošívané chrániče, potahy na matrace a výplně polštářů."
+        },
+        {
+          "key": "img5",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/latky-metraz-regal-4x3.webp",
+            "alt": "Regál s rolemi dekoračních látek seřazenými podle barev"
+          }
+        },
+        {
+          "key": "r5",
+          "type": "rich",
+          "label": "Text (desktop)",
+          "value": "<span>Látky a metráž</span>"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Text (desktop)",
+          "value": "Dekorační látky, blackouty, dimouty, ubrusoviny a látky s nehořlavou úpravou."
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Text (mobil)",
+          "value": "Bytový textil na míru"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Text (mobil)",
+          "value": "Hotelový textil"
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Text (mobil)",
+          "value": "Strojní prošívání"
+        },
+        {
+          "key": "t13",
+          "type": "text",
+          "label": "Text (mobil)",
+          "value": "Matracové chrániče a potahy"
+        },
+        {
+          "key": "t14",
+          "type": "text",
+          "label": "Text (mobil)",
+          "value": "Látky a metráž"
+        },
+        {
+          "key": "t15",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Zpět na hlavní stránku"
+        },
+        {
+          "key": "t16",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Kontakt"
+        }
+      ]
+    }
+  ]
+}

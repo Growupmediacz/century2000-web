@@ -1,0 +1,391 @@
+{
+  "path": "/matracove-chranice-a-potahy/",
+  "name": "Matracové chrániče a potahy",
+  "editable": true,
+  "meta": {
+    "title": "Matracové chrániče s PUR zátěrem a potahy na matrace | Century 2000",
+    "description": "Vyrábíme matracové chrániče s PUR zátěrem, prošívané chrániče, potahy na matrace a výplně polštářů. Pro hotely i výrobce."
+  },
+  "options": {
+    "image": "/assets/fotky/matracovy-chranic.webp"
+  },
+  "sections": [
+    {
+      "key": "uvodni-blok",
+      "label": "Úvodní blok",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Služby"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "/"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Položka (desktop)",
+          "value": "Matracové chrániče a potahy"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Hlavní nadpis (desktop)",
+          "value": "Matracové chrániče a potahy z vlastní výroby"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text (desktop)",
+          "value": "Chráníme matrace v hotelech i domácnostech. Vyrábíme v rozměrech na míru i v sériích pro výrobce a prodejce matrací."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Poptat chrániče"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/matracovy-chranic.webp",
+            "alt": "Bílý prošívaný matracový chránič na matraci"
+          }
+        }
+      ]
+    },
+    {
+      "key": "produkty",
+      "label": "Produkty",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Produkty"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/chranic-pur-nepropustny.webp",
+            "alt": "Kapky vody na nepropustném matracovém chrániči"
+          }
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Chrániče s PUR zátěrem"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Nepropustná vrstva zastaví tekutiny, matrace zůstane suchá a čistá."
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/chranic-detail-rohu.webp",
+            "alt": "Roh matracového chrániče s pružnou gumou"
+          }
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Prošívané chrániče"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Měkká vrstva navíc pro pohodlní spání, s pružnou gumou po obvodu."
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/potah-na-matraci-zip.webp",
+            "alt": "Prošívaný potah matrace s rozepnutým zipem"
+          }
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Potahy na matrace"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Prošívané potahy se zipem, které jdou sundat a vyprat."
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/vyplne-polstaru.webp",
+            "alt": "Výplně polštářů a lněný povlak se zipem na dřevěném stole"
+          }
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Výplně polštářů"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Text",
+          "value": "Výplně do dekoračních i spácích polštářů v různých rozměrech."
+        }
+      ]
+    },
+    {
+      "key": "pro-koho",
+      "label": "Pro koho",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Pro koho"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Hotely a penziony"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Chrániče na všechna lůžka, snadná výměna a praní."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Výrobci a prodejci matrací"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Potahy a chrániče v sériích pod vaší značkou. <mark class=\"todo matracove-chranice-a-potahy-pro-koho__note\">[DOPLNIT: potvrdit výrobu pod cizí značkou]</mark>"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Domácnosti"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Chrániče i na atypické rozměry matrací."
+        }
+      ]
+    },
+    {
+      "key": "vlastni-prosev",
+      "label": "Vlastní prošev",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Kontrola kvality"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Vlastní prošev = kontrola kvality"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Prošívaný materiál na chrániče a potahy vyrábíme na vlastních strojích. Máme tak pod kontrolou kvalitu i termíny od prvního stehu."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Strojní prošívání"
+        }
+      ]
+    },
+    {
+      "key": "rozmery",
+      "label": "Rozměry",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Rozměry"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Vyrábíme ve standardních rozměrech i na míru. <mark class=\"todo rozmery__note\">[DOPLNIT: standardní rozměry a výšky matrací]</mark>"
+        }
+      ]
+    },
+    {
+      "key": "poptavka",
+      "label": "Poptávka",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Napište rozměry a počet kusů"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Napište nám, co potřebujete ušít. Ozveme se do <mark class=\"todo inquiry__todo\">[DOPLNIT: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Příloha (fotka, náčrt nebo výkres, max. 10 MB)"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Text",
+          "value": "Odesláním souhlasíte se <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">zpracováním osobních údajů</a> za účelem vyřízení poptávky."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Raději telefonicky?"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "+420 603 287 803"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "info@century2000.cz"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Po–Pá 7:00–15:30"
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzby",
+      "label": "Související služby",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Související služby"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/strojni-prosivani-stroj-4x3.webp",
+            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+          }
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Strojní prošívání"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Prošev roun a netkaných textilií do šíře 280 cm v kontinuálním i uzavřeném vzoru."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Strojní prošívání →"
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/hotelovy-textil-pokoj-4x3.webp",
+            "alt": "Hotelový pokoj s těžkými závěsy, prošívaným běhounem a polštáři"
+          }
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Hotelový textil"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Kompletní textilní vybavení hotelů, penzionů a restaurací. Od závěsů na pokoje po rautové sukně."
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotelový textil →"
+        }
+      ]
+    }
+  ]
+}

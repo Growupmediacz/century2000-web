@@ -1,0 +1,71 @@
+{
+  "path": "/dekujeme/",
+  "name": "Děkujeme (poptávka)",
+  "editable": true,
+  "meta": {
+    "title": "Děkujeme za poptávku | Century 2000",
+    "description": ""
+  },
+  "options": {},
+  "sections": [
+    {
+      "key": "dekujeme",
+      "label": "Děkujeme",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Hlavní nadpis",
+          "value": "Děkujeme, poptávku máme"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Ozveme se vám do <mark class=\"todo dekujeme__note\">[DOPLNIT: 1 pracovního dne]</mark>. Když to spěchá, zavolejte nám na <a class=\"dekujeme__link\" href=\"tel:+420603287803\">+420 603 287 803</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Mezitím se můžete podívat"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Odkaz / tlačítko",
+          "value": "<span>Reference</span>"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "→"
+        },
+        {
+          "key": "r3",
+          "type": "rich",
+          "label": "Odkaz / tlačítko",
+          "value": "<span>O nás</span>"
+        },
+        {
+          "key": "r4",
+          "type": "rich",
+          "label": "Odkaz / tlačítko",
+          "value": "<span>Hlavní stránka</span>"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/ruce-pri-siti.webp",
+            "alt": "Ruce švadleny připínají lem lněného závěsu špendlíky"
+          }
+        }
+      ]
+    }
+  ]
+}
