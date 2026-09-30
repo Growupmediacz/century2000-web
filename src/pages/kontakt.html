@@ -1,0 +1,148 @@
+<!--page
+{
+  "path": "/kontakt/",
+  "title": "Kontakt a poptávka – CENTURY 2000 s.r.o., Zruč nad Sázavou",
+  "description": "Napište nám poptávku nebo zavolejte na +420 603 287 803. Textilní výroba CENTURY 2000 s.r.o., Zruč nad Sázavou, Po–Pá 7:00–15:30.",
+  "name": "Kontakt"
+}
+-->
+<div class="page">
+  <!-- @include header -->
+  <main>
+    <section class="kontakt-hero" data-screen-label="Hero" aria-labelledby="hero-h1">
+      <div class="container kontakt-hero__inner">
+        <span class="rule kontakt-hero__rule" aria-hidden="true"></span>
+        <h1 class="title-hero kontakt-hero__title" id="hero-h1">Napište nám, co potřebujete ušít</h1>
+        <p class="text kontakt-hero__text">Stačí pár vět, rozměry nebo fotka. Ozveme se s dotazy nebo orientační nabídkou.</p>
+      </div>
+    </section>
+    <section class="kontakt-poptavka" data-screen-label="Poptávka">
+      <div class="container kontakt-poptavka__inner">
+        <div class="inquiry" data-c="PoptavkovyFormular" data-p-service="" data-p-placeholder="Popište, co potřebujete – rozměry, množství, termín…" data-p-aside="kontakt" id="poptavka">
+  <div class="show-below-900">
+    <div class="inquiry__contact-top">
+      <a class="btn-primary inquiry__call" href="tel:+420603287803">Zavolat +420 603 287 803</a>
+      <a class="inquiry__mail" href="mailto:info@century2000.cz">info@century2000.cz</a>
+      <dl class="inquiry__facts--top">
+        <div class="inquiry__fact"><dt class="eyebrow inquiry__fact-label">Pracovní doba</dt><dd class="inquiry__fact-value--dark">Po–Pá 7:00–15:30</dd></div>
+        <div class="inquiry__fact"><dt class="eyebrow inquiry__fact-label">Datová schránka</dt><dd class="inquiry__fact-value--dark">jq7vgn3</dd></div>
+      </dl>
+    </div>
+  </div>
+  <form class="inquiry__form" data-on-submit="submit" data-thanks="/dekujeme/" novalidate method="post" enctype="multipart/form-data">
+    <div class="inquiry__intro">
+      <h2 class="title-section">Poptávka</h2>
+        <p class="text inquiry__lead">Napište nám, co potřebujete ušít. Ozveme se do <mark class="todo inquiry__todo">[DOPLNIT: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou.</p>
+    </div>
+    <label class="inquiry__field">
+      <span class="inquiry__field-label">O jakou službu jde?</span>
+      <span class="inquiry__select-wrap">
+        <select class="field inquiry__select" name="service">
+          <option value="" selected>—</option>
+          <option>Bytový textil</option>
+          <option>Hotelový textil</option>
+          <option>Strojní prošívání</option>
+          <option>Matracové chrániče a potahy</option>
+          <option>Látky a metráž</option>
+          <option>Jiné</option>
+        </select>
+        <span class="inquiry__select-arrow" aria-hidden="true"></span>
+      </span>
+    </label>
+    <div class="inquiry__row">
+      <label class="inquiry__field--half">
+        <span class="inquiry__field-label">Jméno a příjmení*</span>
+        <input class="field inquiry__input" type="text" autocomplete="name" aria-invalid="false" name="name">
+        <span data-if="e.name" hidden><span class="inquiry__error">Vyplňte prosím toto pole.</span></span>
+      </label>
+      <label class="inquiry__field--half">
+        <span class="inquiry__field-label">E-mail*</span>
+        <input class="field inquiry__input" type="email" autocomplete="email" aria-invalid="false" name="email">
+        <span data-if="e.emailEmpty" hidden><span class="inquiry__error">Vyplňte prosím toto pole.</span></span>
+        <span data-if="e.emailInvalid" hidden><span class="inquiry__error">Zadejte platný e-mail.</span></span>
+      </label>
+    </div>
+    <div class="inquiry__row">
+      <label class="inquiry__field--half">
+        <span class="inquiry__field-label">Telefon</span>
+        <input class="field inquiry__input" type="tel" autocomplete="tel" name="phone">
+      </label>
+      <label class="inquiry__field--half">
+        <span class="inquiry__field-label">Firma (nepovinné)</span>
+        <input class="field inquiry__input" type="text" autocomplete="organization" name="company">
+      </label>
+    </div>
+    <label class="inquiry__field">
+      <span class="inquiry__field-label">Co potřebujete?*</span>
+      <textarea class="field inquiry__textarea" rows="5" placeholder="Popište, co potřebujete – rozměry, množství, termín…" aria-invalid="false" name="message"></textarea>
+      <span data-if="e.message" hidden><span class="inquiry__error">Vyplňte prosím toto pole.</span></span>
+    </label>
+    <div class="inquiry__file">
+      <span class="inquiry__field-label">Příloha (fotka, náčrt nebo výkres, max. 10 MB)</span>
+      <label class="inquiry__file-drop">
+        <input class="inquiry__file-input" type="file" data-on-change="onFile" name="attachment">
+        <span class="btn-secondary inquiry__file-btn">Vybrat soubor</span>
+        <span class="text-muted inquiry__file-name"></span>
+      </label>
+      <div data-if="e.file" hidden><span class="inquiry__error">Soubor je větší než 10 MB.</span></div>
+    </div>
+    <p class="text-muted inquiry__consent">Odesláním souhlasíte se <a class="inquiry__consent-link" href="/zasady-ochrany-osobnich-udaju/">zpracováním osobních údajů</a> za účelem vyřízení poptávky.</p>
+    <button class="btn-primary inquiry__submit" type="submit">Odeslat poptávku</button>
+  </form>
+  <div class="show-from-900">
+  <aside class="inquiry__aside--kontakt">
+    <dl class="inquiry__facts">
+      <div class="inquiry__fact-row"><dt class="eyebrow inquiry__fact-label">Telefon</dt><dd class="inquiry__fact-value"><a class="serif inquiry__fact-phone" href="tel:+420603287803">+420 603 287 803</a></dd></div>
+      <div class="inquiry__fact-row"><dt class="eyebrow inquiry__fact-label">E-mail</dt><dd class="inquiry__fact-value"><a class="inquiry__fact-email" href="mailto:info@century2000.cz">info@century2000.cz</a></dd></div>
+      <div class="inquiry__fact-row--hours"><dt class="eyebrow inquiry__fact-label">Pracovní doba</dt><dd class="inquiry__fact-value--dark">Po–Pá 7:00–15:30</dd></div>
+      <div class="inquiry__fact-row--last"><dt class="eyebrow inquiry__fact-label">Datová schránka</dt><dd class="inquiry__fact-value--dark">jq7vgn3</dd></div>
+    </dl>
+  </aside>
+  </div>
+</div>
+      </div>
+    </section>
+    <section data-screen-label="Jednatel, adresa a fakturace">
+      <div class="container section-pad jednatel-adresa-a-fakturace__inner">
+        <div class="jednatel-adresa-a-fakturace__stack-2">
+          <h2 class="title-card" id="h-jednatel">Jednatel</h2>
+          <p class="jednatel-adresa-a-fakturace__text-2">Ing. Vladimír Vobecký</p>
+          <div class="jednatel-adresa-a-fakturace__stack">
+            <a class="link-arrow jednatel-adresa-a-fakturace__link" href="tel:+420603287803">+420 603 287 803</a>
+            <a class="link-arrow jednatel-adresa-a-fakturace__link" href="mailto:vobecky@century2000.cz">vobecky@century2000.cz</a>
+          </div>
+        </div>
+        <div class="jednatel-adresa-a-fakturace__stack-2">
+          <h2 class="title-card" id="h-adresa">Adresa a fakturace</h2>
+          <address class="jednatel-adresa-a-fakturace__address">
+            <span class="jednatel-adresa-a-fakturace__label">CENTURY 2000 s.r.o.</span>
+            <span>Okružní 600</span>
+            <span>285 22 Zruč nad Sázavou</span>
+          </address>
+          <p class="jednatel-adresa-a-fakturace__text"><mark class="todo jednatel-adresa-a-fakturace__note">[DOPLNIT: potvrdit, zda je správně Okružní 600, nebo Tomáše Bati 600]</mark></p>
+          <p class="jednatel-adresa-a-fakturace__text-3"><span>IČ: 26141116</span><span>DIČ: CZ26141116</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="jak-nas-najit" data-screen-label="Jak nás najít" aria-labelledby="h-mapa">
+      <div class="container section-pad jak-nas-najit__inner">
+        <div class="jak-nas-najit__stack-2">
+          <div class="jak-nas-najit__stack">
+          <span class="rule jak-nas-najit__rule" aria-hidden="true"></span>
+          <h2 class="title-section jak-nas-najit__heading" id="h-mapa">Jak nás najít</h2>
+        </div>
+          <p class="text">Najdete nás v areálu bývalého Sázavanu ve Zruči nad Sázavou.</p>
+          <p class="jak-nas-najit__text"><mark class="todo jak-nas-najit__note">[DOPLNIT: vjezd, parkování, která budova / vchod]</mark></p>
+          <a class="btn-primary jak-nas-najit__btn" href="https://mapy.cz/zakladni?q=Okru%C5%BEn%C3%AD%20600%2C%20285%2022%20Zru%C4%8D%20nad%20S%C3%A1zavou" target="_blank" rel="noopener">Navigovat</a>
+        </div>
+        <div class="jak-nas-najit__box">
+          <div class="jak-nas-najit__row" role="img" aria-label="Mapa – vložíme při implementaci"><span class="jak-nas-najit__label">Mapa – vložíme při implementaci</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- @include footer -->
+  <div class="page__cookie-dock">
+    <!-- @include cookie-bar -->
+  </div>
+</div>

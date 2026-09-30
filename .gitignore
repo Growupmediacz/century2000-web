@@ -1,0 +1,7 @@
+# build output (GitHub Actions builds it)
+site/
+# original Claude Design handoff (reference only)
+handoff/
+__pycache__/
+.DS_Store
+.claude/
