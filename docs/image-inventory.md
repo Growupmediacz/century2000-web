@@ -56,7 +56,7 @@ Zdroj: záloha starého webu 19. 2. 2024 (galerie `com_droppics`, varianta `full
 | Reference ostatni-realizace: foto 9 | `assets/realizace/ostatni-realizace/09.webp` | galerie 13, `Tatry-III.JPG` | 1280×960 | původní galerie |
 | Reference ostatni-realizace: foto 10 | `assets/realizace/ostatni-realizace/10.webp` | galerie 13, `Tatry-Sykorova.JPG` | 1280×960 | původní galerie |
 
-Úpravy při převodu: otočení podle EXIF, zmenšení na max. 1280 px, WebP (q 80), varianta 640 px. Skutečné fotky referencí nebyly AI upravovány. Možné zvětšení (upscale) čeká na schválení, viz sekce 4.
+Úpravy při převodu: otočení podle EXIF, zmenšení na max. 1280 px, WebP (q 80), varianta 640 px. Skutečné fotky referencí jsou od 9. 10. 2026 **zvětšené a barevně sjednocené** (viz sekce 4). Obsah fotografií se nemění (žádná generativní AI).
 
 ## 2. Ilustrační obrázky vytvořené pomocí AI (od 9. 10. 2026)
 
@@ -89,4 +89,9 @@ Dodavatelské vzorníky (`prodej-metraze/*.jpg`: Rongo, Bifosc, Jacquard Mikonos
 
 ## 4. Higgsfield pilot (5 vzorků ke schválení)
 
-Výsledky a komentář: `docs/higgsfield-pilot.md`. Do repozitáře se zatím žádný upravený soubor nedostal.
+Výsledky pilotu: `docs/higgsfield-pilot.md`.
+
+### Reference: zvětšení a filtr (9. 10. 2026)
+- Všech 47 fotek referencí (hlavní + galerie) prošlo zvětšením na 2K přes Higgsfield (nástroj Upscale, bez generativních zásahů, ověřeno v pilotu). U 37 fotek proběhlo zvětšení u Higgsfieldu, u 9 fotek (jejich úlohy v Higgsfieldu zůstaly viset) je použito lokální zvětšení Lanczos s jemným doostřením. Tyto soubory jdou kdykoli nahradit: `hotel-1-republika-praha/01`, `hotel-aqua-praha-pruhonice/02`, `hotel-corinthia-tower-praha/02`, `hotel-four-season-praha/hlavni`, `hotel-le-palais-praha/02`, `ostatni-realizace/01`, `ostatni-realizace/03`, `palac-u-kocku-praha/04`, `palac-u-kocku-praha/05`.
+- **Filtr (varianta „jemný“):** napůl aplikované vyvážení bílé (potlačení žlutého nádechu), mírné snížení sytosti (asi 8 %), měkčí stíny, jemný krémový závoj. Všechny fotky mají stejné nastavení, barvy a vzory látek zůstávají rozeznatelné. Postup je zdokumentovaný v tomto souboru, parametry jsou v popisu PR.
+- Zdrojem pro zvětšení byly webové verze (WebP do 1280 px, u některých 800 px), ne původní JPEG ze zálohy.
