@@ -243,10 +243,13 @@
           "value": "Prošívané přehozy a dekorační polštáře ze stejné látky jako závěsy."
         },
         {
-          "key": "t13",
-          "type": "text",
-          "label": "Text",
-          "value": "Fotka chybí: ubrusy a potahy"
+          "key": "img6",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/ubrusy-potahy.webp",
+            "alt": "Jídelní stůl s ubrusem a židle s potahy v obývacím prostoru"
+          }
         },
         {
           "key": "t14",

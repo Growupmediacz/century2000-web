@@ -112,7 +112,7 @@
               </div>
             </li>
             <li class="co-sijeme__item">
-                <div class="co-sijeme__media"><?= t('co-sijeme.t13') ?></div>
+                <div class="co-sijeme__media-2"><img class="img-cover" src="<?= img('co-sijeme.img6') ?>" alt="<?= alt('co-sijeme.img6') ?>" decoding="async" loading="lazy"></div>
               <div class="co-sijeme__stack">
                 <h3 class="title-card"><?= t('co-sijeme.t14') ?></h3>
                 <p class="text co-sijeme__text"><?= t('co-sijeme.t15') ?></p>
