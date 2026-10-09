@@ -22,3 +22,7 @@ Po schválení doporučení provedu dávku (upscale vybraných fotek, ostatní k
 ## Aktualizace 9. 10. 2026
 
 Klient se rozhodl, že staré fotky do konceptu nezapadají. Nové ilustrace jsou vygenerované od nuly (viz `docs/image-inventory.md`, sekce 2). Reference zůstávají na skutečných fotkách, jejich případný upscale zůstává možností.
+
+## Aktualizace: reference zvětšeny a sjednoceny (9. 10. 2026)
+
+Podle schválení varianty 1 (jemný filtr) byly zvětšeny a barevně sjednoceny všechny fotky referencí. Detaily v `docs/image-inventory.md`, sekce 4.
