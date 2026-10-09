@@ -23,9 +23,9 @@
             <a class="btn-secondary index-hero__btn" href="#co-sijeme"><?= t('uvodni-blok.t6') ?></a>
           </div>
           <ul class="index-hero__list">
-            <li class="index-hero__item"><span class="index-hero__deco" aria-hidden="true"></span><?= t('uvodni-blok.t7') ?></li>
-            <li class="index-hero__item"><span class="index-hero__deco" aria-hidden="true"></span><?= t('uvodni-blok.t8') ?></li>
-            <li class="index-hero__item"><span class="index-hero__deco" aria-hidden="true"></span><?= t('uvodni-blok.t9') ?></li>
+            <li class="index-hero__item"><svg class="index-hero__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4 H16 L20 8 V20 H5 Z"></path><path d="M16 4 V8 H20"></path><path d="M8 12 H17 M8 15 H17 M8 18 H13"></path></svg><?= t('uvodni-blok.t7') ?></li>
+            <li class="index-hero__item"><svg class="index-hero__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20 H21"></path><path d="M6 20 V15 H10 V9 C10 7 11 6 13 6 H20 V10 H15 V15 H18 V20"></path><path d="M17 15 V18"></path><circle cx="6.5" cy="9" r="2"></circle></svg><?= t('uvodni-blok.t8') ?></li>
+            <li class="index-hero__item"><svg class="index-hero__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16 L14 6 L18 10 L8 20 Z"></path><path d="M7.5 12.5 L9.5 14.5 M10 10 L12 12 M12.5 7.5 L14.5 9.5"></path><path d="M20 4 L21 3"></path></svg><?= t('uvodni-blok.t9') ?></li>
           </ul>
         </div>
       </div>
