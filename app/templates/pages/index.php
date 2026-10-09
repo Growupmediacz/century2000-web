@@ -23,9 +23,9 @@
             <a class="btn-secondary index-hero__btn" href="#co-sijeme"><?= t('uvodni-blok.t6') ?></a>
           </div>
           <ul class="index-hero__list">
-            <li class="index-hero__item"><span class="index-hero__deco" aria-hidden="true"></span><?= t('uvodni-blok.t7') ?></li>
-            <li class="index-hero__item"><span class="index-hero__deco" aria-hidden="true"></span><?= t('uvodni-blok.t8') ?></li>
-            <li class="index-hero__item"><span class="index-hero__deco" aria-hidden="true"></span><?= t('uvodni-blok.t9') ?></li>
+            <li class="index-hero__item"><svg class="index-hero__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4 H16 L20 8 V20 H5 Z"></path><path d="M16 4 V8 H20"></path><path d="M8 12 H17 M8 15 H17 M8 18 H13"></path></svg><?= t('uvodni-blok.t7') ?></li>
+            <li class="index-hero__item"><svg class="index-hero__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20 H21"></path><path d="M6 20 V15 H10 V9 C10 7 11 6 13 6 H20 V10 H15 V15 H18 V20"></path><path d="M17 15 V18"></path><circle cx="6.5" cy="9" r="2"></circle></svg><?= t('uvodni-blok.t8') ?></li>
+            <li class="index-hero__item"><svg class="index-hero__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16 L14 6 L18 10 L8 20 Z"></path><path d="M7.5 12.5 L9.5 14.5 M10 10 L12 12 M12.5 7.5 L14.5 9.5"></path><path d="M20 4 L21 3"></path></svg><?= t('uvodni-blok.t9') ?></li>
           </ul>
         </div>
       </div>
@@ -126,19 +126,19 @@
         </div>
         <div class="pro-koho-sijeme__grid">
           <a class="pro-koho-sijeme__btn" href="/bytovy-textil-na-miru/">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#9C7B4D" stroke-width="1.25" aria-hidden="true"><path d="M6 19 L20 7 L34 19"></path><path d="M10 16 V33 H30 V16"></path><path d="M17 33 V24 H23 V33"></path></svg>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#9C7B4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7 H43"></path><path d="M9 7 C9 19 13 30 8 42"></path><path d="M14 7 C14 19 18 29 13 42"></path><path d="M39 7 C39 19 35 30 40 42"></path><path d="M34 7 C34 19 30 29 35 42"></path><rect x="19" y="13" width="10" height="22"></rect><path d="M24 13 V35 M19 24 H29"></path></svg>
             <h3 class="serif pro-koho-sijeme__subheading"><?= t('pro-koho-sijeme.t3') ?></h3>
             <p class="text pro-koho-sijeme__text"><?= t('pro-koho-sijeme.t4') ?></p>
             <span class="link-arrow pro-koho-sijeme__link"><?= t('pro-koho-sijeme.t5') ?></span>
           </a>
           <a class="pro-koho-sijeme__btn" href="/hotelovy-textil/">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#9C7B4D" stroke-width="1.25" aria-hidden="true"><path d="M5 30 V12"></path><path d="M5 22 H35 V30"></path><path d="M5 26 H35"></path><path d="M10 22 V18 H18 V22"></path></svg>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#9C7B4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 39 V12"></path><path d="M6 30 H42 V39"></path><path d="M6 35 H42"></path><rect x="10" y="22" width="12" height="8" rx="3"></rect><path d="M26 30 V26 C26 24 27 23 29 23 H39 C41 23 42 24 42 26 V30"></path><path d="M24 8 L25.2 10.8 L28 11.2 L26 13.2 L26.5 16 L24 14.6 L21.5 16 L22 13.2 L20 11.2 L22.8 10.8 Z"></path></svg>
             <h3 class="serif pro-koho-sijeme__subheading"><?= t('pro-koho-sijeme.t6') ?></h3>
             <p class="text pro-koho-sijeme__text"><?= t('pro-koho-sijeme.t7') ?></p>
             <span class="link-arrow pro-koho-sijeme__link"><?= t('pro-koho-sijeme.t8') ?></span>
           </a>
           <a class="pro-koho-sijeme__btn" href="/strojni-prosivani/">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#9C7B4D" stroke-width="1.25" aria-hidden="true"><rect x="7" y="7" width="26" height="26"></rect><path d="M7 20 L20 7 L33 20 L20 33 Z" stroke-dasharray="2 2"></path></svg>
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#9C7B4D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 28 L18 16 L30 28 L18 40 Z"></path><path d="M12 22 L24 34 M24 22 L12 34"></path><path d="M30 28 L42 16"></path><path d="M30 28 L36 34 L42 28 L36 22"></path><path d="M40 4 L28 20"></path><circle cx="40.5" cy="3.5" r="1.8"></circle></svg>
             <h3 class="serif pro-koho-sijeme__subheading"><?= t('pro-koho-sijeme.t9') ?></h3>
             <p class="text pro-koho-sijeme__text"><?= t('pro-koho-sijeme.t10') ?></p>
             <span class="link-arrow pro-koho-sijeme__link"><?= t('pro-koho-sijeme.t11') ?></span>

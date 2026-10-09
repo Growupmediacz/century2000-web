@@ -4561,3 +4561,11 @@
 .zasady-ochrany-osobnich-udaju__value {
   margin:0;
 }
+
+/* ===== index-hero ikony u výčtu předností ===== */
+.index-hero__ico {
+  flex:none;
+  width:26px;
+  height:26px;
+  color:var(--bronze-700);
+}

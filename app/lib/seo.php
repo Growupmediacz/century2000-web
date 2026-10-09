@@ -129,12 +129,15 @@ function seo_head(array $page): string
     }
     array_push($l,
         '<meta name="theme-color" content="#F8F5F0">',
-        '<link rel="icon" type="image/png" href="/assets/favicon-32x32.png">',
+        '<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">',
+        '<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">',
+        '<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">',
         '<link rel="preconnect" href="https://fonts.googleapis.com">',
         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=Parisienne&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap">'
     );
-    foreach (array_merge(['base', 'components', 'pages'], $page['options']['css'] ?? []) as $css) {
+    $l[] = '<script>if (!window.matchMedia || !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-anim")</script>';
+    foreach (array_merge(['base', 'components', 'pages'], $page['options']['css'] ?? [], ['animace']) as $css) {
         $l[] = '<link rel="stylesheet" href="/assets/css/' . $css . '.css?v=' . asset_version("css/$css.css") . '">';
     }
     $ga = (string) config('analytics.ga4_id', '');
@@ -142,6 +145,7 @@ function seo_head(array $page): string
         $l[] = '<meta name="c2000-ga4" content="' . e($ga) . '">'; // loaded by site.js only after consent
     }
     $l[] = '<script src="/assets/js/site.js?v=' . asset_version('js/site.js') . '" defer></script>';
+    $l[] = '<script src="/assets/js/animace.js?v=' . asset_version('js/animace.js') . '" defer></script>';
     if (!$noindex) {
         $ld = array_filter([in_array($page['path'], ['/', '/kontakt/', '/o-nas/'], true) ? organization_ld() : null, breadcrumb_ld($page), article_ld($page)]);
         foreach ($ld as $data) {
