@@ -58,7 +58,7 @@ function render_page(string $name): string
     }
     $GLOBALS['page'] = $page;
     ob_start();
-    include APP_DIR . "/templates/pages/$name.php";
+    include APP_DIR . '/templates/pages/' . ($page['options']['template'] ?? $name) . '.php';
     $body = trim((string) ob_get_clean());
 
     $html = "<!DOCTYPE html>\n<html lang=\"cs\">\n<head>\n" . seo_head($page) . "\n</head>\n<body>\n$body\n</body>\n</html>\n";
@@ -98,6 +98,11 @@ function handle_request(): void
     if (preg_match('#^/odeslat/(poptavka|kariera)/?$#', $path, $m)) {
         handle_form($m[1]);
         return;
+    }
+
+    $target = redirect_target($path);
+    if ($target !== null) {
+        redirect(str_starts_with($target, 'http') ? $target : url($target), 301);
     }
 
     $name = page_by_path($path);

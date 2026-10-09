@@ -1,0 +1,138 @@
+{
+  "path": "/reference/hotel-1-republika-praha/",
+  "name": "Hotel 1. Republika",
+  "editable": true,
+  "meta": {
+    "title": "Hotel 1. Republika, Praha: reference | Century 2000",
+    "description": "Zakázka pro hotel 1. Republika v Praze. Fotogalerie realizace."
+  },
+  "options": {
+    "type": "reference",
+    "template": "realizace",
+    "order": 4,
+    "featured": false,
+    "image": "/assets/realizace/hotel-1-republika-praha/hlavni.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Název (H1)",
+          "value": "Hotel 1. Republika"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Místo",
+          "value": "Praha"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní fotografie",
+          "value": {
+            "src": "/assets/realizace/hotel-1-republika-praha/hlavni.webp",
+            "alt": "Hotel 1. Republika: ukázka realizace"
+          }
+        }
+      ]
+    },
+    {
+      "key": "popis",
+      "label": "Popis realizace",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Co jsme šili (položky oddělte čárkou)",
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popis",
+          "value": "Zakázka pro hotel 1. Republika v Praze."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Poznámka o spolupráci",
+          "value": "Zakázka byla realizována ve spolupráci se studiem Dédecor a bytovou designérkou Dagmar Frulovou."
+        }
+      ]
+    },
+    {
+      "key": "galerie",
+      "label": "Fotogalerie",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Fotografie 1",
+          "value": {
+            "src": "/assets/realizace/hotel-1-republika-praha/01.webp",
+            "alt": "Hotelový pokoj s přehozem a závěsy"
+          }
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Fotografie 2",
+          "value": {
+            "src": "/assets/realizace/hotel-1-republika-praha/02.webp",
+            "alt": "Apartmá se závěsy a sedacím koutem"
+          }
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Fotografie 3",
+          "value": {
+            "src": "/assets/realizace/hotel-1-republika-praha/03.webp",
+            "alt": "Apartmá s přehozem a závěsy"
+          }
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Fotografie 4",
+          "value": {
+            "src": "/assets/realizace/hotel-1-republika-praha/04.webp",
+            "alt": "Dvoulůžkový pokoj se závěsy"
+          }
+        },
+        {
+          "key": "img5",
+          "type": "image",
+          "label": "Fotografie 5",
+          "value": {
+            "src": "/assets/realizace/hotel-1-republika-praha/05.webp",
+            "alt": "Pokoj s přehozem a polštáři"
+          }
+        },
+        {
+          "key": "img6",
+          "type": "image",
+          "label": "Fotografie 6",
+          "value": {
+            "src": "/assets/realizace/hotel-1-republika-praha/06.webp",
+            "alt": "Pokoj se dvěma lůžky a záclonami"
+          }
+        }
+      ]
+    }
+  ]
+}

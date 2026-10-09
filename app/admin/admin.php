@@ -39,6 +39,7 @@ function admin_handle(): void
         'save' => admin_save(),
         'history' => admin_history(),
         'restore' => admin_restore(),
+        'new' => admin_new(),
         default => admin_pages(),
     };
 }
@@ -143,10 +144,11 @@ function admin_documents(): array
     $docs = [];
     foreach (content_pages() as $name => $page) {
         if (!empty($page['editable'])) {
-            $docs[(string) $name] = ['label' => $page['name'], 'path' => $page['path'], 'sections' => count($page['sections'])];
+            $docs[(string) $name] = ['label' => $page['name'], 'path' => $page['path'], 'sections' => count($page['sections']),
+                'group' => match ($page['options']['type'] ?? '') { 'article' => 'articles', 'reference' => 'references', default => '' }];
         }
     }
-    $docs['global'] = ['label' => 'Patička (na všech stránkách)', 'path' => null, 'sections' => 1];
+    $docs['global'] = ['label' => 'Patička (na všech stránkách)', 'path' => null, 'sections' => 1, 'group' => ''];
     $rank = array_flip(ADMIN_ORDER);
     uksort($docs, fn($a, $b) => [$rank[$a] ?? 99, $a] <=> [$rank[$b] ?? 99, $b]);
     foreach ($docs as $name => &$doc) {
@@ -163,6 +165,72 @@ function admin_document(string $name): array
         exit('Stránka nenalezena.');
     }
     return [$docs[$name], content_load($name)];
+}
+
+/** Slug from a Czech title: "Látky na ubrusy!" → "latky-na-ubrusy". */
+function slugify(string $title): string
+{
+    $s = mb_strtolower($title);
+    $s = strtr($s, ['á' => 'a', 'č' => 'c', 'ď' => 'd', 'é' => 'e', 'ě' => 'e', 'í' => 'i', 'ň' => 'n', 'ó' => 'o',
+                    'ř' => 'r', 'š' => 's', 'ť' => 't', 'ú' => 'u', 'ů' => 'u', 'ý' => 'y', 'ž' => 'z']);
+    return mb_substr(trim(preg_replace('/[^a-z0-9]+/', '-', $s) ?? '', '-'), 0, 70);
+}
+
+/** Create a new article or reference from a skeleton and open it in the editor. */
+function admin_new(): void
+{
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        redirect(admin_url());
+    }
+    $type = (string) ($_POST['type'] ?? '');
+    $title = clean_text((string) ($_POST['title'] ?? ''), 120);
+    $slug = slugify($title);
+    if (!in_array($type, ['article', 'reference'], true) || $slug === '') {
+        flash('Zadejte název (písmena a číslice).', 'error');
+        redirect(admin_url());
+    }
+    $isArticle = $type === 'article';
+    $prefix = $isArticle ? 'clanek-' : 'realizace-';
+    $dir = $isArticle ? '/clanky/' : '/reference/';
+    if (is_file(content_file($prefix . $slug)) || page_by_path($dir . $slug . '/') !== null) {
+        flash('Stránka s takovým názvem už existuje.', 'error');
+        redirect(admin_url());
+    }
+    $f = fn(string $k, string $type, string $label, $value) => ['key' => $k, 'type' => $type, 'label' => $label, 'value' => $value];
+    $img = ['src' => '/assets/fotky/textura-prosev.webp', 'alt' => ''];
+    $today = date('Y-m-d');
+    if ($isArticle) {
+        $sections = [
+            ['key' => 'hlavicka', 'label' => 'Hlavička článku', 'hideable' => false, 'visible' => true, 'fields' => [
+                $f('t1', 'text', 'Nadpis (H1)', $title), $f('t2', 'text', 'Perex', ''), $f('img1', 'image', 'Hlavní obrázek', $img)]],
+        ];
+        foreach ([1, 2, 3] as $n) {
+            $sections[] = ['key' => "blok-$n", 'label' => "Odstavec $n", 'hideable' => true, 'visible' => $n === 1, 'fields' => [
+                $f('t1', 'text', 'Mezititulek (H2)', ''), $f('r1', 'rich', 'Text (odstavce oddělte prázdným řádkem)', ''), $f('t2', 'text', 'Odrážky (každá na nový řádek)', '')]];
+        }
+        $sections[] = ['key' => 'souvisejici-sluzba', 'label' => 'Související služba a výzva', 'hideable' => true, 'visible' => true, 'fields' => [
+            $f('t1', 'text', 'Štítek', 'Související služba'), $f('t2', 'text', 'Nadpis', 'Bytový textil na míru'),
+            $f('t3', 'text', 'Text', 'Závěsy, záclony, rolety, japonské stěny a přehozy šité podle vašich rozměrů.'),
+            $f('t4', 'text', 'Odkaz (adresa)', '/bytovy-textil-na-miru/'), $f('t5', 'text', 'Odkaz (text)', 'Bytový textil →')]];
+        $page = ['path' => "/clanky/$slug/", 'name' => $title, 'editable' => true, 'meta' => ['title' => mb_substr($title, 0, 45) . ' | Century 2000', 'description' => ''],
+            'options' => ['type' => 'article', 'template' => 'clanek', 'date' => $today, 'modified' => $today, 'order' => 0, 'image' => $img['src'], 'css' => ['obsah']], 'sections' => $sections];
+        // newest first: "order" 0 would sort first; drop it so the list sorts by date
+        unset($page['options']['order']);
+    } else {
+        $page = ['path' => "/reference/$slug/", 'name' => $title, 'editable' => true, 'meta' => ['title' => mb_substr($title, 0, 40) . ': reference | Century 2000', 'description' => ''],
+            'options' => ['type' => 'reference', 'template' => 'realizace', 'order' => 50, 'featured' => false, 'image' => $img['src'], 'css' => ['obsah']],
+            'sections' => [
+                ['key' => 'hlavicka', 'label' => 'Hlavička', 'hideable' => false, 'visible' => true, 'fields' => [
+                    $f('t1', 'text', 'Název (H1)', $title), $f('t2', 'text', 'Místo', ''), $f('img1', 'image', 'Hlavní fotografie', $img)]],
+                ['key' => 'popis', 'label' => 'Popis realizace', 'hideable' => false, 'visible' => true, 'fields' => [
+                    $f('t1', 'text', 'Co jsme šili (položky oddělte čárkou)', ''), $f('t2', 'text', 'Popis', ''), $f('t3', 'text', 'Poznámka o spolupráci', '')]],
+                ['key' => 'galerie', 'label' => 'Fotogalerie', 'hideable' => true, 'visible' => true, 'fields' => array_map(
+                    fn($n) => $f("img$n", 'image', "Fotografie $n", $img), range(1, 4))],
+            ]];
+    }
+    content_save($prefix . $slug, $page);
+    flash('Stránka je vytvořená. Doplňte texty a obrázky, poté ji uvidíte na webu.');
+    redirect(admin_url('edit', ['page' => $prefix . $slug]));
 }
 
 function admin_pages(): void

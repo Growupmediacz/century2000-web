@@ -66,7 +66,7 @@
               <p class="text"><?= t('proc-pracovat-u-nas.t11') ?></p>
             </div>
             <div class="proc-pracovat-u-nas__stack">
-              <p class="proc-pracovat-u-nas__text"><mark class="todo proc-pracovat-u-nas__note"><?= t('proc-pracovat-u-nas.t12') ?></mark></p>
+              <?php if (t('proc-pracovat-u-nas.t12') !== ''): ?><p class="proc-pracovat-u-nas__text"><?= t('proc-pracovat-u-nas.t12') ?></p><?php endif; ?>
             </div>
         </div>
         </div>
@@ -84,7 +84,7 @@
           <div class="otevrene-pozice__row-3">
             <div class="otevrene-pozice__stack-3">
               <h3 class="serif otevrene-pozice__subheading"><?= t('otevrene-pozice.t2') ?></h3>
-              <p class="otevrene-pozice__text-2"><mark class="todo otevrene-pozice__note"><?= t('otevrene-pozice.t3') ?></mark></p>
+              <?php if (t('otevrene-pozice.t3') !== ''): ?><p class="otevrene-pozice__text-2"><?= t('otevrene-pozice.t3') ?></p><?php endif; ?>
               <p class="otevrene-pozice__text-3"><?= rich('otevrene-pozice.r1') ?></p>
             </div>
             <a class="btn-primary otevrene-pozice__btn-2" href="#formular" data-on-click="applyMain"><?= t('otevrene-pozice.t4') ?></a>
@@ -107,7 +107,7 @@
         <article class="otevrene-pozice__row">
           <div class="otevrene-pozice__stack-2">
             <h3 class="title-card"><?= t('otevrene-pozice.t8') ?></h3>
-            <p class="otevrene-pozice__text-2"><mark class="todo otevrene-pozice__note"><?= t('otevrene-pozice.t9') ?></mark></p>
+            <?php if (t('otevrene-pozice.t9') !== ''): ?><p class="otevrene-pozice__text-2"><?= t('otevrene-pozice.t9') ?></p><?php endif; ?>
           </div>
           <a class="btn-secondary otevrene-pozice__btn" href="#formular" data-on-click="applyMachine"><?= t('otevrene-pozice.t4') ?></a>
         </article>

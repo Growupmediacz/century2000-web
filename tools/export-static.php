@@ -55,6 +55,19 @@ foreach (content_pages() as $name => $page) {
     file_put_contents($file, $html);
     $count++;
 }
+// Old Joomla URLs: static hosting has no 301, so each gets a small page with meta refresh and canonical link.
+foreach (redirect_map() as $old => $new) {
+    if ($old === '/index.php') {
+        continue;
+    }
+    $target = str_starts_with($new, 'http') ? $new : url($new);
+    $stub = '<!DOCTYPE html><html lang="cs"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Stránka se přesunula</title>'
+        . '<link rel="canonical" href="' . e($target) . '"><meta http-equiv="refresh" content="0; url=' . e($target) . '"></head>'
+        . '<body><p>Stránka se přesunula: <a href="' . e($target) . '">pokračovat</a>.</p></body></html>';
+    $file = $out . $old . '/index.html';
+    ensure_dir(dirname($file));
+    file_put_contents($file, $stub);
+}
 file_put_contents("$out/sitemap.xml", sitemap_xml());
 file_put_contents("$out/robots.txt", robots_txt());
 echo "exported $count pages -> " . basename($out) . "/\n";

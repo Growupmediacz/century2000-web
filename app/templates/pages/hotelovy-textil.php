@@ -210,34 +210,12 @@
           <a class="btn-secondary hotelovy-textil-reference__btn" href="/reference/"><?= t('reference.t3') ?></a>
         </div>
         <ul class="hotelovy-textil-reference__list">
+          <?php foreach (pages_of_type('reference') as $r): $pl = page_field($r, 'hlavicka', 't2'); ?>
             <li class="hotelovy-textil-reference__item">
-              <span class="serif hotelovy-textil-reference__label"><?= t('reference.t4') ?></span>
-              <span class="text-muted"><?= t('reference.t5') ?></span>
+              <a class="serif hotelovy-textil-reference__label" href="<?= e($r['path']) ?>"><?= e($r['name']) ?></a>
+              <span class="text-muted"><?= e((string) ($pl['value'] ?? '')) ?></span>
             </li>
-            <li class="hotelovy-textil-reference__item">
-              <span class="serif hotelovy-textil-reference__label"><?= t('reference.t6') ?></span>
-              <span class="text-muted"><?= t('reference.t5') ?></span>
-            </li>
-            <li class="hotelovy-textil-reference__item">
-              <span class="serif hotelovy-textil-reference__label"><?= t('reference.t7') ?></span>
-              <span class="text-muted"><?= t('reference.t5') ?></span>
-            </li>
-            <li class="hotelovy-textil-reference__item">
-              <span class="serif hotelovy-textil-reference__label"><?= t('reference.t8') ?></span>
-              <span class="text-muted"><?= t('reference.t9') ?></span>
-            </li>
-            <li class="hotelovy-textil-reference__item">
-              <span class="serif hotelovy-textil-reference__label"><?= t('reference.t10') ?></span>
-              <span class="text-muted"><?= t('reference.t5') ?></span>
-            </li>
-            <li class="hotelovy-textil-reference__item">
-              <span class="serif hotelovy-textil-reference__label"><?= t('reference.t11') ?></span>
-              <span class="text-muted"><?= t('reference.t5') ?></span>
-            </li>
-            <li class="hotelovy-textil-reference__item">
-              <span class="serif hotelovy-textil-reference__label"><?= t('reference.t12') ?></span>
-              <span class="text-muted"><?= t('reference.t13') ?></span>
-            </li>
+          <?php endforeach; ?>
         </ul>
       </div>
     </section>
@@ -272,7 +250,7 @@
               </h3>
               <div data-if="f.open" data-idx="1" hidden>
                 <div class="hotelovy-textil-faq__box-3">
-                  <mark class="todo hotelovy-textil-faq__note-2"><?= t('caste-dotazy.t5') ?></mark>
+                  <p class="text"><?= t('caste-dotazy.t5') ?></p>
                 </div>
               </div>
             </div>

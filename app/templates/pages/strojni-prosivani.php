@@ -254,7 +254,7 @@
               </h3>
               <div data-if="f.open" data-idx="0">
                 <div class="strojni-prosivani-faq__box-3">
-                  <mark class="todo strojni-prosivani-faq__note"><?= t('caste-dotazy.t3') ?></mark>
+                  <p class="text"><?= t('caste-dotazy.t3') ?></p>
                 </div>
               </div>
             </div>
@@ -267,7 +267,7 @@
               </h3>
               <div data-if="f.open" data-idx="1" hidden>
                 <div class="strojni-prosivani-faq__box-3">
-                  <mark class="todo strojni-prosivani-faq__note"><?= t('caste-dotazy.t5') ?></mark>
+                  <p class="text"><?= t('caste-dotazy.t5') ?></p>
                 </div>
               </div>
             </div>
@@ -280,7 +280,7 @@
               </h3>
               <div data-if="f.open" data-idx="2" hidden>
                 <div class="strojni-prosivani-faq__box-3">
-                  <mark class="todo strojni-prosivani-faq__note"><?= t('caste-dotazy.t5') ?></mark>
+                  <p class="text"><?= t('caste-dotazy.t6') ?></p>
                 </div>
               </div>
             </div>

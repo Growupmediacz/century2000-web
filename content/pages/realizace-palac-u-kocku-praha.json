@@ -1,0 +1,129 @@
+{
+  "path": "/reference/palac-u-kocku-praha/",
+  "name": "Palác u Kočků",
+  "editable": true,
+  "meta": {
+    "title": "Palác u Kočků, Praha: reference | Century 2000",
+    "description": "Zakázka pro Palác u Kočků v Praze. Fotogalerie realizace."
+  },
+  "options": {
+    "type": "reference",
+    "template": "realizace",
+    "order": 5,
+    "featured": false,
+    "image": "/assets/realizace/palac-u-kocku-praha/hlavni.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Název (H1)",
+          "value": "Palác u Kočků"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Místo",
+          "value": "Praha"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní fotografie",
+          "value": {
+            "src": "/assets/realizace/palac-u-kocku-praha/hlavni.webp",
+            "alt": "Palác u Kočků: ukázka realizace"
+          }
+        }
+      ]
+    },
+    {
+      "key": "popis",
+      "label": "Popis realizace",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Co jsme šili (položky oddělte čárkou)",
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popis",
+          "value": "Zakázka pro Palác u Kočků v Praze."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Poznámka o spolupráci",
+          "value": "Realizace proběhla ve spolupráci se studiem Dédecor a bytovou designérkou Dagmar Frulovou."
+        }
+      ]
+    },
+    {
+      "key": "galerie",
+      "label": "Fotogalerie",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Fotografie 1",
+          "value": {
+            "src": "/assets/realizace/palac-u-kocku-praha/01.webp",
+            "alt": "Pokoj se záclonami a lůžkem"
+          }
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Fotografie 2",
+          "value": {
+            "src": "/assets/realizace/palac-u-kocku-praha/02.webp",
+            "alt": "Jídelní kout se závěsy"
+          }
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Fotografie 3",
+          "value": {
+            "src": "/assets/realizace/palac-u-kocku-praha/03.webp",
+            "alt": "Ložnice se dvěma lůžky a závěsy"
+          }
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Fotografie 4",
+          "value": {
+            "src": "/assets/realizace/palac-u-kocku-praha/04.webp",
+            "alt": "Podkrovní pokoj se záclonou a přehozem"
+          }
+        },
+        {
+          "key": "img5",
+          "type": "image",
+          "label": "Fotografie 5",
+          "value": {
+            "src": "/assets/realizace/palac-u-kocku-praha/05.webp",
+            "alt": "Ložnice s přehozem a závěsem"
+          }
+        }
+      ]
+    }
+  ]
+}

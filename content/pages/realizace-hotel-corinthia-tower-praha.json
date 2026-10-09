@@ -1,0 +1,102 @@
+{
+  "path": "/reference/hotel-corinthia-tower-praha/",
+  "name": "Hotel Corinthia Tower",
+  "editable": true,
+  "meta": {
+    "title": "Hotel Corinthia Tower, Praha: reference | Century 2000",
+    "description": "Pro hotel Corinthia Tower v Praze jsme šili přehozy a prachovky na postele. Fotogalerie realizace."
+  },
+  "options": {
+    "type": "reference",
+    "template": "realizace",
+    "order": 3,
+    "featured": true,
+    "image": "/assets/realizace/hotel-corinthia-tower-praha/hlavni.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Název (H1)",
+          "value": "Hotel Corinthia Tower"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Místo",
+          "value": "Praha"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní fotografie",
+          "value": {
+            "src": "/assets/realizace/hotel-corinthia-tower-praha/hlavni.webp",
+            "alt": "Hotel Corinthia Tower: ukázka realizace"
+          }
+        }
+      ]
+    },
+    {
+      "key": "popis",
+      "label": "Popis realizace",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Co jsme šili (položky oddělte čárkou)",
+          "value": "přehozy, prachovky (sukně na postele)"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popis",
+          "value": "Pro hotel Corinthia Tower v Praze jsme šili přehozy a prachovky na postele."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Poznámka o spolupráci",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "galerie",
+      "label": "Fotogalerie",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Fotografie 1",
+          "value": {
+            "src": "/assets/realizace/hotel-corinthia-tower-praha/01.webp",
+            "alt": "Hotelový pokoj s přehozem a prachovkou"
+          }
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Fotografie 2",
+          "value": {
+            "src": "/assets/realizace/hotel-corinthia-tower-praha/02.webp",
+            "alt": "Detail přehozu na hotelové posteli"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "path": "/vzorkovniky/",
+  "name": "Vzorkovníky",
+  "editable": true,
+  "meta": {
+    "title": "Vzorkovníky látek ke stažení (PDF) | Century 2000",
+    "description": "Vzorkovníky nehořlavých dekoračních látek a dimoutů ke stažení v PDF. Textilní vzorkovnice na míru přes partnera Sampleworld."
+  },
+  "options": {
+    "template": "vzorkovniky",
+    "css": [
+      "obsah"
+    ],
+    "files": [
+      {
+        "file": "/downloads/vzorkovniky/t40-fr-canvas.pdf",
+        "title": "T40 · FR Canvas",
+        "size": "769 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t41-fr-number-one.pdf",
+        "title": "T41 · FR Number One",
+        "size": "769 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t44-fr-real.pdf",
+        "title": "T44 · FR Real",
+        "size": "769 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t45-fr-sateen-dimout.pdf",
+        "title": "T45 · FR Sateen Dimout",
+        "size": "769 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t47-fr-universal.pdf",
+        "title": "T47 · FR Universal",
+        "size": "413 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t49-fr-linara-dimout.pdf",
+        "title": "T49 · FR Linara Dimout",
+        "size": "629 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t50-fr-trench-dimout.pdf",
+        "title": "T50 · FR Trench Dimout",
+        "size": "629 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t52-fr-night.pdf",
+        "title": "T52 · FR Night",
+        "size": "628 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t57-fr-flamme.pdf",
+        "title": "T57 · FR Flamme",
+        "size": "378 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t59-fr-sunrise-dimout.pdf",
+        "title": "T59 · FR Sunrise Dimout",
+        "size": "628 kB"
+      },
+      {
+        "file": "/downloads/vzorkovniky/t61-fr-double-face.pdf",
+        "title": "T61 · FR Double Face",
+        "size": "403 kB"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "key": "uvodni-blok",
+      "label": "Úvodní blok",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Vzorkovníky ke stažení"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Vzorkovníky látek ve formátu PDF. Fyzický vzorkovník vám pošleme na vyžádání."
+        }
+      ]
+    },
+    {
+      "key": "ke-stazeni",
+      "label": "Seznam ke stažení",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Ke stažení"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Upozornění",
+          "value": "Upozorňujeme, že se barvy mohou od skutečnosti lišit v závislosti na nastavení vašeho monitoru nebo tiskárny."
+        }
+      ]
+    },
+    {
+      "key": "vzorkovnice-na-miru",
+      "label": "Textilní vzorkovnice na míru (partner)",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Textilní vzorkovnice na míru"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Výrobu textilních vzorkovnic zajišťuje náš partner Sampleworld. Vyrábí tyto typy:"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "knihy\nramínka\nkarty"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Kontakt",
+          "value": "Více informací najdete na stránkách partnera <a href=\"https://www.sampleworld.cz/\" target=\"_blank\">Sampleworld</a>, případně napište na <a href=\"mailto:info@sampleworld.cz\">info@sampleworld.cz</a>."
+        }
+      ]
+    }
+  ]
+}

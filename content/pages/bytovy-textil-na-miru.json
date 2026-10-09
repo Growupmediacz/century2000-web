@@ -184,8 +184,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/japonska-stena.webp",
-            "alt": "Japonská stěna ze střídavých lněných a průsvitných panelů u jídelního stolu"
+            "src": "/assets/foto/japonske-steny.webp",
+            "alt": "Japonské stěny na velkých oknech"
           }
         },
         {
@@ -205,8 +205,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/detail-zavesu-pelmet.webp",
-            "alt": "Detail řasení lněného závěsu pod čalouněným pelmetem s bronzovým lemem"
+            "src": "/assets/foto/pelmet-zaves.webp",
+            "alt": "Pelmet, závěsy a záclona"
           }
         },
         {
@@ -226,8 +226,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/prehoz-na-postel.webp",
-            "alt": "Prošívaný pískový přehoz a dekorační polštáře na manželské posteli"
+            "src": "/assets/foto/prehoz-s-volanem.webp",
+            "alt": "Přehoz s volánem přes postel"
           }
         },
         {
@@ -361,7 +361,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Pošlete nám rozměry a fotku okna. Zbytek doladíme spolu. <mark class=\"todo jak-zmerit-okno__note\">[DOPLNIT: nabízíte zaměření u zákazníka?]</mark>"
+          "value": "Pošlete nám rozměry a fotku okna. Zbytek doladíme spolu."
         }
       ]
     },
@@ -429,7 +429,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Cena a termín. <mark class=\"todo bytovy-textil-na-miru-jak-zakazka-probiha__note\">[DOPLNIT: obvyklá doba výroby]</mark>"
+          "value": "Domluvíme cenu a termín."
         },
         {
           "key": "t10",
@@ -447,7 +447,7 @@
           "key": "r2",
           "type": "rich",
           "label": "Text",
-          "value": "Hotové dekorace předáme nebo pošleme. <mark class=\"todo bytovy-textil-na-miru-jak-zakazka-probiha__note\">[DOPLNIT: montáž]</mark>"
+          "value": "Hotové dekorace předáme nebo pošleme. Montáž dle dohody."
         }
       ]
     },
@@ -497,7 +497,7 @@
           "key": "t5",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: obvykle X týdnů podle dostupnosti látky]"
+          "value": "Doba výroby závisí na zakázce a na dostupnosti látky. Termín vám sdělíme v nabídce."
         },
         {
           "key": "r3",
@@ -509,7 +509,7 @@
           "key": "t6",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT]"
+          "value": "Ano. Šijeme z našich materiálů i z látky, kterou dodáte."
         },
         {
           "key": "r4",
@@ -528,6 +528,12 @@
           "type": "text",
           "label": "Text",
           "value": "Ke každé zakázce vám předáme doporučení pro praní a údržbu podle zvolené látky."
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Odpověď: montáž",
+          "value": "Montáž dle dohody. Napište nám, jak potřebujete dekorace osadit."
         }
       ]
     },
@@ -547,7 +553,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Napište nám, co potřebujete ušít. Ozveme se do <mark class=\"todo inquiry__todo\">[DOPLNIT: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou."
+          "value": "Napište nám, co potřebujete ušít. Ozveme se vám s dotazy nebo orientační nabídkou."
         },
         {
           "key": "t2",

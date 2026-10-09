@@ -18,6 +18,8 @@
       <a class="site-footer__link" href="/o-nas/"><?= t('paticka.t9') ?></a>
       <a class="site-footer__link" href="/reference/"><?= t('paticka.t10') ?></a>
       <a class="site-footer__link" href="/kariera/"><?= t('paticka.t11') ?></a>
+      <a class="site-footer__link" href="/clanky/"><?= t('paticka.t21') ?></a>
+      <a class="site-footer__link" href="/vzorkovniky/"><?= t('paticka.t22') ?></a>
       <a class="site-footer__link" href="https://century2000-cz.webnode.cz" target="_blank" rel="noopener"><?= t('paticka.t12') ?></a>
     </div>
     <div class="site-footer__col">

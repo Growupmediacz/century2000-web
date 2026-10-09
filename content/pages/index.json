@@ -425,7 +425,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Popisek",
-          "value": "maximální šíře proševu <mark class=\"todo index-dilna-v-cislech__note\">[DOPLNIT: ověřit 240 vs. 280 cm]</mark>"
+          "value": "maximální šíře proševu"
         },
         {
           "key": "t8",
@@ -535,7 +535,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Hotový textil vám předáme nebo doručíme. <mark class=\"todo index-jak-zakazka-probiha__note\">[DOPLNIT: montáž ano/ne]</mark>"
+          "value": "Hotový textil vám předáme nebo doručíme. Montáž dle dohody."
         }
       ]
     },

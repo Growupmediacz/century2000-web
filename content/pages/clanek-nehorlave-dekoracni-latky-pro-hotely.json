@@ -1,0 +1,219 @@
+{
+  "path": "/clanky/nehorlave-dekoracni-latky-pro-hotely/",
+  "name": "Nehořlavé dekorační látky pro hotely a restaurace",
+  "editable": true,
+  "meta": {
+    "title": "Nehořlavé dekorační látky pro hotely | Century 2000",
+    "description": "Dekorační látky s nehořlavou úpravou šíře 300 cm, nehořlavé blackouty, dimouty a záclony. Normy BS 5867 Part 2B, M1 a B1."
+  },
+  "options": {
+    "type": "article",
+    "template": "clanek",
+    "date": "2026-10-09",
+    "modified": "2026-10-09",
+    "order": 2,
+    "image": "/assets/clanky/nehorlave-dekoracni-latky-pro-hotely.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička článku",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis (H1)",
+          "value": "Nehořlavé dekorační látky pro hotely a restaurace"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Perex",
+          "value": "Co nabízíme z nehořlavých látek pro hotely, restaurace a sály a na co se při výběru zeptat."
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní obrázek",
+          "value": {
+            "src": "/assets/clanky/nehorlave-dekoracni-latky-pro-hotely.webp",
+            "alt": "Restaurace hotelu Le Palais se závěsy a prostřenými stoly"
+          }
+        }
+      ]
+    },
+    {
+      "key": "blok-1",
+      "label": "Odstavec 1: Co nabízíme",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Co nabízíme"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Dekorační látky s nehořlavou úpravou dodáváme v šířce 300 cm, s uni vzorem i s vetkaným vzorem a v široké škále barev."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Normy a předpisy",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Normy a předpisy"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Materiály vyhovují evropským normám BS 5867 Part 2B, M1 a B1.<br><br>Použití textilu určují normy pro jednotlivé obory a ve veřejných prostorách také nařízení regionálních nebo místních úřadů. Požadavky na váš objekt si proto ověřte předem, s výběrem materiálu vám rádi pomůžeme."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Další nehořlavé materiály",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Další nehořlavé materiály"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Kromě dekoračních látek máme nehořlavé i další materiály:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "blackouty a dimouty v nehořlavém provedení (nabízíme je i v hořlavém)\nzáclony a voály, všechny v nehořlavém provedení"
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Od látky k hotovému textilu",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Od látky k hotovému textilu"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Z nehořlavých látek šijeme závěsy, záclony, přehozy i další textil pro hotelové provozy. Nemusíte kupovat látku zvlášť: ušijeme vám hotové výrobky na míru, nebo můžete koupit látku v metráži."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-5",
+      "label": "Odstavec 5: Vzorky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Vzorky"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Nehořlavé látky najdete ve <a href=\"/vzorkovniky/\">vzorkovnících ke stažení</a>. Barvy se mohou lišit podle nastavení monitoru nebo tiskárny, fyzický vzorek vám pošleme na vyžádání."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzba",
+      "label": "Související služba a výzva",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Štítek",
+          "value": "Související služba"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Hotelový textil"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Textilní vybavení hotelů, penzionů a restaurací od závěsů po rautové sukně."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz (adresa)",
+          "value": "/hotelovy-textil/"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz (text)",
+          "value": "Hotelový textil →"
+        }
+      ]
+    }
+  ]
+}

@@ -25,5 +25,6 @@ require APP_DIR . '/lib/render.php';
 require APP_DIR . '/lib/seo.php';
 require APP_DIR . '/lib/mailer.php';
 require APP_DIR . '/lib/forms.php';
+require APP_DIR . '/lib/redirects.php';
 
 $GLOBALS['config'] = load_config();

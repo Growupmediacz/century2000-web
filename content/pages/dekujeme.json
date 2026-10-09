@@ -24,7 +24,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Ozveme se vám do <mark class=\"todo dekujeme__note\">[DOPLNIT: 1 pracovního dne]</mark>. Když to spěchá, zavolejte nám na <a class=\"dekujeme__link\" href=\"tel:+420603287803\">+420 603 287 803</a>."
+          "value": "Ozveme se vám co nejdříve. Když to spěchá, zavolejte nám na <a class=\"dekujeme__link\" href=\"tel:+420603287803\">+420 603 287 803</a>."
         },
         {
           "key": "t2",

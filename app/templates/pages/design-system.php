@@ -30,7 +30,7 @@
           <div class="ds-barvy__stack">
             <div class="ds-barvy__box-10"></div>
             <div class="ds-barvy__row-2"><strong class="ds-barvy__strong">--sand-200</strong><span class="ds-barvy__label">#D9C9AE</span></div>
-            <span class="ds-barvy__label-3">Dekorativní plochy, značka DOPLNIT.</span>
+            <span class="ds-barvy__label-3">Dekorativní plochy, značka TODO.</span>
           </div>
           <div class="ds-barvy__stack">
             <div class="ds-barvy__box-13"></div>
@@ -140,7 +140,7 @@
         </div>
         <div class="ds-tlacitka-a-odkazy__stack">
           <span class="ds-tlacitka-a-odkazy__label-2">Placeholdery v návrhu</span>
-          <mark class="todo ds-tlacitka-a-odkazy__note">[DOPLNIT: montáž ano/ne]</mark>
+          <mark class="todo ds-tlacitka-a-odkazy__note">[TODO: montáž ano/ne]</mark>
           <div class="ds-tlacitka-a-odkazy__media">Fotka chybí: název souboru</div>
         </div>
       </div>
@@ -249,7 +249,7 @@
       <dl class="ds-tabulka-a-kroky__facts">
             <div class="ds-tabulka-a-kroky__grid">
               <dt class="ds-tabulka-a-kroky__term">Kontinuální vzor (stroj Meca)</dt>
-              <dd class="ds-tabulka-a-kroky__value">max. šíře 280 cm <mark class="todo ds-tabulka-a-kroky__note">[DOPLNIT: ověřit 240 vs. 280 cm]</mark></dd>
+              <dd class="ds-tabulka-a-kroky__value">max. šíře 280 cm <mark class="todo ds-tabulka-a-kroky__note">[TODO: ověřit 240 vs. 280 cm]</mark></dd>
             </div>
             <div class="ds-tabulka-a-kroky__grid">
               <dt class="ds-tabulka-a-kroky__term">Uzavřený vzor (stroj Resta)</dt>
@@ -303,7 +303,7 @@
               <span class="ds-faq__label" aria-hidden="true">−</span>
             </button>
             <div data-if="f.open" data-idx="0">
-              <div class="ds-faq__box-3"><mark class="todo ds-faq__note">[DOPLNIT: ano/ne a podmínky]</mark></div>
+              <div class="ds-faq__box-3"><mark class="todo ds-faq__note">[TODO: ano/ne a podmínky]</mark></div>
             </div>
           </div>
           <div class="ds-faq__box">
@@ -312,7 +312,7 @@
               <span class="ds-faq__label" aria-hidden="true">+</span>
             </button>
             <div data-if="f.open" data-idx="1" hidden>
-              <div class="ds-faq__box-3"><mark class="todo ds-faq__note">[DOPLNIT]</mark></div>
+              <div class="ds-faq__box-3"><mark class="todo ds-faq__note">[TODO]</mark></div>
             </div>
           </div>
           <div class="ds-faq__box">
@@ -321,7 +321,7 @@
               <span class="ds-faq__label" aria-hidden="true">+</span>
             </button>
             <div data-if="f.open" data-idx="2" hidden>
-              <div class="ds-faq__box-3"><mark class="todo ds-faq__note">[DOPLNIT]</mark></div>
+              <div class="ds-faq__box-3"><mark class="todo ds-faq__note">[TODO]</mark></div>
             </div>
           </div>
       </div>
@@ -337,7 +337,7 @@
     <p class="form-alert" id="formular-chyba" role="alert" hidden></p>
     <div class="inquiry__intro">
       <h2 class="title-section">Poptávka</h2>
-        <p class="text inquiry__lead">Napište nám, co potřebujete ušít. Ozveme se do <mark class="todo inquiry__todo">[DOPLNIT: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou.</p>
+        <p class="text inquiry__lead">Napište nám, co potřebujete ušít. Ozveme se do <mark class="todo inquiry__todo">[TODO: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou.</p>
     </div>
     <label class="inquiry__field">
       <span class="inquiry__field-label">O jakou službu jde?</span>

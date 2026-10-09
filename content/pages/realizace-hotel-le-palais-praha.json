@@ -1,0 +1,129 @@
+{
+  "path": "/reference/hotel-le-palais-praha/",
+  "name": "Hotel Le Palais",
+  "editable": true,
+  "meta": {
+    "title": "Hotel Le Palais, Praha: reference | Century 2000",
+    "description": "Zakázka pro hotel Le Palais v Praze. Fotogalerie realizace."
+  },
+  "options": {
+    "type": "reference",
+    "template": "realizace",
+    "order": 2,
+    "featured": true,
+    "image": "/assets/realizace/hotel-le-palais-praha/hlavni.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Název (H1)",
+          "value": "Hotel Le Palais"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Místo",
+          "value": "Praha"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní fotografie",
+          "value": {
+            "src": "/assets/realizace/hotel-le-palais-praha/hlavni.webp",
+            "alt": "Hotel Le Palais: ukázka realizace"
+          }
+        }
+      ]
+    },
+    {
+      "key": "popis",
+      "label": "Popis realizace",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Co jsme šili (položky oddělte čárkou)",
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popis",
+          "value": "Zakázka pro hotel Le Palais v Praze."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Poznámka o spolupráci",
+          "value": "Zakázka proběhla ve spolupráci se studiem Dédecor a bytovou designérkou Dagmar Frulovou."
+        }
+      ]
+    },
+    {
+      "key": "galerie",
+      "label": "Fotogalerie",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Fotografie 1",
+          "value": {
+            "src": "/assets/realizace/hotel-le-palais-praha/01.webp",
+            "alt": "Hala s lustry a závěsy mezi sloupy"
+          }
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Fotografie 2",
+          "value": {
+            "src": "/assets/realizace/hotel-le-palais-praha/02.webp",
+            "alt": "Knihovna se sedacím koutem a závěsy"
+          }
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Fotografie 3",
+          "value": {
+            "src": "/assets/realizace/hotel-le-palais-praha/03.webp",
+            "alt": "Salonní chodba se závěsy u oken"
+          }
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Fotografie 4",
+          "value": {
+            "src": "/assets/realizace/hotel-le-palais-praha/04.webp",
+            "alt": "Restaurace se závěsy a prostřenými stoly"
+          }
+        },
+        {
+          "key": "img5",
+          "type": "image",
+          "label": "Fotografie 5",
+          "value": {
+            "src": "/assets/realizace/hotel-le-palais-praha/05.webp",
+            "alt": "Restaurační sál se závěsy"
+          }
+        }
+      ]
+    }
+  ]
+}

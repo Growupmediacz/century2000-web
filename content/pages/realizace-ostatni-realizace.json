@@ -1,0 +1,174 @@
+{
+  "path": "/reference/ostatni-realizace/",
+  "name": "Ostatní realizace",
+  "editable": true,
+  "meta": {
+    "title": "Ostatní realizace: reference | Century 2000",
+    "description": "Výběr z dalších našich realizací. Fotogalerie realizace."
+  },
+  "options": {
+    "type": "reference",
+    "template": "realizace",
+    "order": 8,
+    "featured": false,
+    "image": "/assets/realizace/ostatni-realizace/hlavni.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Název (H1)",
+          "value": "Ostatní realizace"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Místo",
+          "value": ""
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní fotografie",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/hlavni.webp",
+            "alt": "Ostatní realizace: ukázka realizace"
+          }
+        }
+      ]
+    },
+    {
+      "key": "popis",
+      "label": "Popis realizace",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Co jsme šili (položky oddělte čárkou)",
+          "value": "závěsy, úvazy, záclony, vídeňské rolety, pelmety, přehozy"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popis",
+          "value": "Výběr z dalších našich realizací."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Poznámka o spolupráci",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "galerie",
+      "label": "Fotogalerie",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Fotografie 1",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/01.webp",
+            "alt": "Pelmet, závěsy a záclona"
+          }
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Fotografie 2",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/02.webp",
+            "alt": "Přehoz s volánem přes postel"
+          }
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Fotografie 3",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/03.webp",
+            "alt": "Detail prošívaného přehozu"
+          }
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Fotografie 4",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/04.webp",
+            "alt": "Závěsy s vzorem u oken"
+          }
+        },
+        {
+          "key": "img5",
+          "type": "image",
+          "label": "Fotografie 5",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/05.webp",
+            "alt": "Vídeňské rolety v okně restaurace"
+          }
+        },
+        {
+          "key": "img6",
+          "type": "image",
+          "label": "Fotografie 6",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/06.webp",
+            "alt": "Přehoz na posteli v podkrovním pokoji"
+          }
+        },
+        {
+          "key": "img7",
+          "type": "image",
+          "label": "Fotografie 7",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/07.webp",
+            "alt": "Závěsy s řasenými úvazy v obývací části"
+          }
+        },
+        {
+          "key": "img8",
+          "type": "image",
+          "label": "Fotografie 8",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/08.webp",
+            "alt": "Závěsy s úvazy v jídelně"
+          }
+        },
+        {
+          "key": "img9",
+          "type": "image",
+          "label": "Fotografie 9",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/09.webp",
+            "alt": "Závěs a záclona v podkrovní ložnici"
+          }
+        },
+        {
+          "key": "img10",
+          "type": "image",
+          "label": "Fotografie 10",
+          "value": {
+            "src": "/assets/realizace/ostatni-realizace/10.webp",
+            "alt": "Závěs a záclona u vany"
+          }
+        }
+      ]
+    }
+  ]
+}

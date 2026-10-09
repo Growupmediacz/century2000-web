@@ -80,7 +80,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Napište nám, co potřebujete ušít. Ozveme se do <mark class=\"todo inquiry__todo\">[DOPLNIT: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou."
+          "value": "Napište nám, co potřebujete ušít. Ozveme se vám s dotazy nebo orientační nabídkou."
         },
         {
           "key": "t8",
@@ -154,13 +154,13 @@
           "key": "r1",
           "type": "rich",
           "label": "Adresa",
-          "value": "<span class=\"jednatel-adresa-a-fakturace__label\">CENTURY 2000 s.r.o.</span> <span>Okružní 600</span> <span>285 22 Zruč nad Sázavou</span>"
+          "value": "<span class=\"jednatel-adresa-a-fakturace__label\">CENTURY 2000 s.r.o.</span> <span>Fakturační adresa: Okružní 600, 285 22 Zruč nad Sázavou</span> <span>Dodací adresa: Tomáše Bati 600, 285 22 Zruč nad Sázavou</span>"
         },
         {
           "key": "t6",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: potvrdit, zda je správně Okružní 600, nebo Tomáše Bati 600]"
+          "value": ""
         },
         {
           "key": "r2",
@@ -192,7 +192,7 @@
           "key": "t3",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: vjezd, parkování, která budova / vchod]"
+          "value": ""
         },
         {
           "key": "t4",

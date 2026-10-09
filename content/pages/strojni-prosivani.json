@@ -174,7 +174,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Hodnota",
-          "value": "max. šíře 280 cm <mark class=\"todo technicke-parametry__note\">[DOPLNIT: ověřit 240 vs. 280 cm]</mark>"
+          "value": "max. šíře 280 cm"
         },
         {
           "key": "t3",
@@ -305,8 +305,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/vzor-prosevu-kosoctverec.webp",
-            "alt": "Vzor proševu kosočtverec"
+            "src": "/assets/foto/prosev-img1.webp",
+            "alt": "Prošev v kosočtvercovém vzoru"
           }
         },
         {
@@ -320,8 +320,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/vzor-prosevu-vlnovka.webp",
-            "alt": "Vzor proševu vlnovka"
+            "src": "/assets/foto/prosev-img2.webp",
+            "alt": "Prošev ve vlnkovém vzoru"
           }
         },
         {
@@ -335,8 +335,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/vzor-prosevu-ctverec.webp",
-            "alt": "Vzor proševu čtvercová mřížka"
+            "src": "/assets/foto/prosev-img3.webp",
+            "alt": "Prošev ve čtvercovém vzoru"
           }
         },
         {
@@ -350,8 +350,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/vzor-prosevu-ornament.webp",
-            "alt": "Vzor proševu ornament"
+            "src": "/assets/foto/prosev-img4.webp",
+            "alt": "Prošev v ornamentálním vzoru"
           }
         },
         {
@@ -365,36 +365,36 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/vzor-prosevu-rostlinny.webp",
-            "alt": "Vzor proševu s rostlinným motivem"
+            "src": "/assets/foto/prosev-img5.webp",
+            "alt": "Prošev v kombinaci kruhů a vlnek"
           }
         },
         {
           "key": "t7",
           "type": "text",
           "label": "Popisek obrázku",
-          "value": "Rostlinný motiv"
+          "value": "Kruhy a vlnky"
         },
         {
           "key": "img6",
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/vzor-prosevu-medailon.webp",
-            "alt": "Prošívaný panel s uzavřeným medailonovým vzorem"
+            "src": "/assets/foto/prosev-img6.webp",
+            "alt": "Prošev se zaoblenými kosočtverci"
           }
         },
         {
           "key": "t8",
           "type": "text",
           "label": "Popisek obrázku",
-          "value": "Uzavřený medailon"
+          "value": "Zaoblený kosočtverec"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Ukázka části vzorů. Kompletní vzorník vám pošleme na vyžádání. <mark class=\"todo vzornik-prosevu__note\">[DOPLNIT: vzory musí schválit klient]</mark>"
+          "value": "Ukázka části vzorů. Kompletní vzorník vám pošleme na vyžádání."
         }
       ]
     },
@@ -509,7 +509,7 @@
           "key": "t3",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: ano/ne a podmínky]"
+          "value": "Napište nám, jaký materiál máte. Zda ho lze prošít, posoudíme podle jeho druhu a gramáže."
         },
         {
           "key": "r2",
@@ -527,13 +527,19 @@
           "key": "t5",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT]"
+          "value": "Prošev vyrábíme zakázkově i hromadně. Minimální množství domluvíme podle druhu zakázky."
         },
         {
           "key": "r3",
           "type": "rich",
           "label": "Tlačítko",
           "value": "<span>Vyrobíte i vlastní vzor?</span>"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Odpověď: vlastní vzor",
+          "value": "Nabízíme široký sortiment vzorů. Máte-li vlastní představu, napište nám a posoudíme ji."
         }
       ]
     },
@@ -553,7 +559,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Napište nám, co potřebujete ušít. Ozveme se do <mark class=\"todo inquiry__todo\">[DOPLNIT: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou."
+          "value": "Napište nám, co potřebujete ušít. Ozveme se vám s dotazy nebo orientační nabídkou."
         },
         {
           "key": "t2",

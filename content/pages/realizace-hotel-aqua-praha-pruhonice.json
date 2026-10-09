@@ -1,0 +1,102 @@
+{
+  "path": "/reference/hotel-aqua-praha-pruhonice/",
+  "name": "Hotel Aqua",
+  "editable": true,
+  "meta": {
+    "title": "Hotel Aqua, Praha – Průhonice: reference | Century 2000",
+    "description": "Pro hotel Aqua v Průhonicích u Prahy jsme šili záclony, japonské stěny a přehozy. Fotogalerie realizace."
+  },
+  "options": {
+    "type": "reference",
+    "template": "realizace",
+    "order": 6,
+    "featured": false,
+    "image": "/assets/realizace/hotel-aqua-praha-pruhonice/hlavni.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Název (H1)",
+          "value": "Hotel Aqua"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Místo",
+          "value": "Praha – Průhonice"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní fotografie",
+          "value": {
+            "src": "/assets/realizace/hotel-aqua-praha-pruhonice/hlavni.webp",
+            "alt": "Hotel Aqua: ukázka realizace"
+          }
+        }
+      ]
+    },
+    {
+      "key": "popis",
+      "label": "Popis realizace",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Co jsme šili (položky oddělte čárkou)",
+          "value": "záclony, japonské stěny, přehozy"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popis",
+          "value": "Pro hotel Aqua v Průhonicích u Prahy jsme šili záclony, japonské stěny a přehozy."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Poznámka o spolupráci",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "galerie",
+      "label": "Fotogalerie",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Fotografie 1",
+          "value": {
+            "src": "/assets/realizace/hotel-aqua-praha-pruhonice/01.webp",
+            "alt": "Hotelová postel s přehozem a polštáři"
+          }
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Fotografie 2",
+          "value": {
+            "src": "/assets/realizace/hotel-aqua-praha-pruhonice/02.webp",
+            "alt": "Japonské stěny na velkých oknech"
+          }
+        }
+      ]
+    }
+  ]
+}

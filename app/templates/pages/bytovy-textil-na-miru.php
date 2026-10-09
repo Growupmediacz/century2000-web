@@ -230,7 +230,7 @@
               </h3>
               <div data-if="f.open" data-idx="1" hidden>
                 <div class="bytovy-textil-na-miru-faq__box-3">
-                  <mark class="todo bytovy-textil-na-miru-faq__note"><?= t('caste-dotazy.t5') ?></mark>
+                  <p class="text"><?= t('caste-dotazy.t5') ?></p>
                 </div>
               </div>
             </div>
@@ -243,7 +243,7 @@
               </h3>
               <div data-if="f.open" data-idx="2" hidden>
                 <div class="bytovy-textil-na-miru-faq__box-3">
-                  <mark class="todo bytovy-textil-na-miru-faq__note"><?= t('caste-dotazy.t6') ?></mark>
+                  <p class="text"><?= t('caste-dotazy.t6') ?></p>
                 </div>
               </div>
             </div>
@@ -256,7 +256,7 @@
               </h3>
               <div data-if="f.open" data-idx="3" hidden>
                 <div class="bytovy-textil-na-miru-faq__box-3">
-                  <mark class="todo bytovy-textil-na-miru-faq__note"><?= t('caste-dotazy.t6') ?></mark>
+                  <p class="text"><?= t('caste-dotazy.t8') ?></p>
                 </div>
               </div>
             </div>

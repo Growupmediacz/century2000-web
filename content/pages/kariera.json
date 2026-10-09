@@ -142,7 +142,7 @@
           "key": "t12",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: benefity – stravenky, příspěvky, dovolená navíc…]"
+          "value": ""
         }
       ]
     },
@@ -168,7 +168,7 @@
           "key": "t3",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: aktuální pozice]"
+          "value": ""
         },
         {
           "key": "r1",
@@ -240,7 +240,7 @@
           "key": "r8",
           "type": "rich",
           "label": "Položka",
-          "value": "<span>stabilní práci, zaučení, <mark class=\"todo otevrene-pozice__note\">[DOPLNIT: mzda / benefity]</mark></span>"
+          "value": "<span>stabilní práci, zaučení</span>"
         },
         {
           "key": "t8",
@@ -252,7 +252,7 @@
           "key": "t9",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: pokud aktuální]"
+          "value": ""
         },
         {
           "key": "t10",

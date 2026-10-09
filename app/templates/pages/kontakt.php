@@ -117,7 +117,7 @@
           <address class="jednatel-adresa-a-fakturace__address">
             <?= rich('jednatel-adresa-a-fakturace.r1') ?>
           </address>
-          <p class="jednatel-adresa-a-fakturace__text"><mark class="todo jednatel-adresa-a-fakturace__note"><?= t('jednatel-adresa-a-fakturace.t6') ?></mark></p>
+          <?php if (t('jednatel-adresa-a-fakturace.t6') !== ''): ?><p class="jednatel-adresa-a-fakturace__text"><?= t('jednatel-adresa-a-fakturace.t6') ?></p><?php endif; ?>
           <p class="jednatel-adresa-a-fakturace__text-3"><?= rich('jednatel-adresa-a-fakturace.r2') ?></p>
         </div>
       </div>
@@ -132,7 +132,7 @@
           <h2 class="title-section jak-nas-najit__heading" id="h-mapa"><?= t('jak-nas-najit.t1') ?></h2>
         </div>
           <p class="text"><?= t('jak-nas-najit.t2') ?></p>
-          <p class="jak-nas-najit__text"><mark class="todo jak-nas-najit__note"><?= t('jak-nas-najit.t3') ?></mark></p>
+          <?php if (t('jak-nas-najit.t3') !== ''): ?><p class="jak-nas-najit__text"><?= t('jak-nas-najit.t3') ?></p><?php endif; ?>
           <a class="btn-primary jak-nas-najit__btn" href="https://mapy.cz/zakladni?q=Okru%C5%BEn%C3%AD%20600%2C%20285%2022%20Zru%C4%8D%20nad%20S%C3%A1zavou" target="_blank" rel="noopener"><?= t('jak-nas-najit.t4') ?></a>
         </div>
         <div class="jak-nas-najit__box">

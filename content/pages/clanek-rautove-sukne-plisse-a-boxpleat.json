@@ -1,0 +1,193 @@
+{
+  "path": "/clanky/rautove-sukne-plisse-a-boxpleat/",
+  "name": "Rautové sukně: plissé a boxpleat",
+  "editable": true,
+  "meta": {
+    "title": "Rautové sukně: řasení plissé a boxpleat | Century 2000",
+    "description": "Rautové sukně se dvěma typy řasení: plissé 1:2 a boxpleat v poměrech 1:3, 1:2 a 1:1,5. Na rubu suchý zip."
+  },
+  "options": {
+    "type": "article",
+    "template": "clanek",
+    "date": "2026-10-09",
+    "modified": "2026-10-09",
+    "order": 3,
+    "image": "/assets/clanky/rautove-sukne-plisse-a-boxpleat.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička článku",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis (H1)",
+          "value": "Rautové sukně: plissé a boxpleat"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Perex",
+          "value": "Dva typy řasení, tři poměry a suchý zip na rubu. Jak se rautové sukně liší a co určuje výsledný vzhled."
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní obrázek",
+          "value": {
+            "src": "/assets/clanky/rautove-sukne-plisse-a-boxpleat.webp",
+            "alt": "Řasená rautová sukně z bílé látky"
+          }
+        }
+      ]
+    },
+    {
+      "key": "blok-1",
+      "label": "Odstavec 1: Dva základní typy řasení",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Dva základní typy řasení"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Šijeme rautové sukně se dvěma typy řasení. Poměr udává, kolikrát je látka delší než hotová sukně: čím vyšší poměr, tím bohatší záhyby."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "Plissé 1:2\nBoxpleat, který lze řasit v poměru 1:3, 1:2 nebo 1:1,5"
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Individuální řasení",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Individuální řasení"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Pokud potřebujete jiný vzhled, dohodneme individuální řasení podle vašeho přání."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Uchycení",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Uchycení"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Rautové sukně mají z rubu našitý suchý zip o šířce 2,5 až 3 cm."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Co potřebujeme vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Co potřebujeme vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "K ušití sukně napište rozměry stolu nebo délku, kterou má sukně obepnout, a požadovanou výšku. Zvolíme spolu řasení a látku."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzba",
+      "label": "Související služba a výzva",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Štítek",
+          "value": "Související služba"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Hotelový textil"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Textilní vybavení hotelů, penzionů a restaurací od závěsů po rautové sukně."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz (adresa)",
+          "value": "/hotelovy-textil/"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz (text)",
+          "value": "Hotelový textil →"
+        }
+      ]
+    }
+  ]
+}

@@ -36,7 +36,7 @@
         <div class="nas-pribeh__stack-2">
           <p class="text"><?= t('nas-pribeh.t3') ?></p>
           <p class="text"><?= t('nas-pribeh.t4') ?></p>
-          <p class="nas-pribeh__text"><mark class="todo nas-pribeh__note"><?= t('nas-pribeh.t5') ?></mark></p>
+          <?php if (t('nas-pribeh.t5') !== ''): ?><p class="nas-pribeh__text"><?= t('nas-pribeh.t5') ?></p><?php endif; ?>
         </div>
       </div>
     </section>
@@ -55,7 +55,7 @@
             <div class="o-nas-dilna-v-cislech__stack-2"><dt class="text-muted o-nas-dilna-v-cislech__meta"><?= t('dilna-v-cislech.t6') ?></dt><dd class="serif o-nas-dilna-v-cislech__value"><?= t('dilna-v-cislech.t7') ?></dd></div>
             <div class="o-nas-dilna-v-cislech__stack-2"><dt class="text-muted o-nas-dilna-v-cislech__meta"><?= t('dilna-v-cislech.t8') ?></dt><dd class="serif o-nas-dilna-v-cislech__value"><?= t('dilna-v-cislech.t9') ?></dd></div>
             <div class="o-nas-dilna-v-cislech__stack-2"><dt class="text-muted o-nas-dilna-v-cislech__meta"><?= t('dilna-v-cislech.t10') ?></dt><dd class="serif o-nas-dilna-v-cislech__value"><?= t('dilna-v-cislech.t11') ?></dd></div>
-            <div class="o-nas-dilna-v-cislech__row"><mark class="todo o-nas-dilna-v-cislech__note"><?= t('dilna-v-cislech.t12') ?></mark></div>
+            <?php if (t('dilna-v-cislech.t12') !== ''): ?><div class="o-nas-dilna-v-cislech__row"><?= t('dilna-v-cislech.t12') ?></div><?php endif; ?>
           </dl>
         </div>
       </div>
@@ -113,7 +113,7 @@
             <h2 class="title-section lide__heading" id="h-lide"><?= t('lide.t3') ?></h2>
             <p class="lide__text"><?= t('lide.t4') ?></p>
           </div>
-          <blockquote class="lide__quote"><mark class="todo lide__note"><?= t('lide.t5') ?></mark></blockquote>
+          <?php if (t('lide.t5') !== ''): ?><blockquote class="lide__quote"><?= t('lide.t5') ?></blockquote><?php endif; ?>
           <div class="lide__row">
             <a class="link-arrow lide__link" href="tel:+420603287803"><?= t('lide.t6') ?></a>
             <a class="link-arrow lide__link" href="mailto:vobecky@century2000.cz"><?= t('lide.t7') ?></a>

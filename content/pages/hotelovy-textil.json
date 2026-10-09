@@ -213,8 +213,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/prehoz-na-postel.webp",
-            "alt": "Prošívaný pískový přehoz a dekorační polštáře na manželské posteli"
+            "src": "/assets/foto/hotelovy-prehoz.webp",
+            "alt": "Hotelová postel s přehozem a polštáři"
           }
         },
         {
@@ -234,8 +234,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/rautova-sukne.webp",
-            "alt": "Bufetový stůl s pravidelně skládanou rautovou sukní v hotelovém sále"
+            "src": "/assets/foto/rautova-sukne.webp",
+            "alt": "Řasená rautová sukně z bílé látky"
           }
         },
         {
@@ -255,8 +255,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/potahy-na-zidle-sal.webp",
-            "alt": "Řada banketních židlí s béžovými potahy a saténovými mašlemi"
+            "src": "/assets/foto/potahy-na-zidle.webp",
+            "alt": "Bílé potahy na židle s mašlí"
           }
         },
         {
@@ -276,8 +276,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/hotelova-restaurace-ubrusy.webp",
-            "alt": "Restaurace s kulatými stoly pokrytými krémovými ubrusy"
+            "src": "/assets/foto/restaurace-stoly.webp",
+            "alt": "Prostřené stoly v hotelové restauraci"
           }
         },
         {
@@ -343,7 +343,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Pro hotely, restaurace a sály dodáváme dekorační látky s nehořlavou úpravou. <mark class=\"todo nehorlave-materialy__note\">[DOPLNIT: norma / třída hořlavosti, certifikáty ke stažení]</mark>"
+          "value": "Pro hotely, restaurace a sály dodáváme dekorační látky s nehořlavou úpravou. Materiály vyhovují evropským normám BS 5867 Part 2B, M1 a B1. Více v článku <a href=\"/clanky/nehorlave-dekoracni-latky-pro-hotely/\">Nehořlavé dekorační látky pro hotely a restaurace</a>."
         }
       ]
     },
@@ -414,13 +414,13 @@
           "key": "t9",
           "type": "text",
           "label": "Podnadpis",
-          "value": "Vzorový pokoj"
+          "value": "Schválení vzorku"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "U větších zakázek vybavíme nejdřív jeden pokoj ke schválení. <mark class=\"todo jak-spolupracujeme-s-hotely__note\">[DOPLNIT: potvrdit, že to nabízíte]</mark>"
+          "value": "Před sériovou výrobou se domluvíme na vzorku a provedení."
         },
         {
           "key": "t10",
@@ -456,7 +456,7 @@
           "key": "r2",
           "type": "rich",
           "label": "Text",
-          "value": "Evidujeme vaše provedení, takže doplnit kusy po letech je snadné. <mark class=\"todo jak-spolupracujeme-s-hotely__note\">[DOPLNIT: potvrdit]</mark>"
+          "value": "Doplnit kusy lze podle dostupnosti látky. Napište nám, co potřebujete."
         }
       ]
     },
@@ -592,7 +592,7 @@
           "key": "t5",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: kapacita / typický termín]"
+          "value": "Rozsah a termín dodávky domluvíme podle zakázky. Napište nám počet pokojů a termín otevření."
         },
         {
           "key": "r3",
@@ -616,7 +616,7 @@
           "key": "r5",
           "type": "rich",
           "label": "Text",
-          "value": "Ano, provedení si evidujeme. <mark class=\"todo hotelovy-textil-faq__note\">[DOPLNIT: podmínka dostupnosti látky]</mark>"
+          "value": "Napište nám, co potřebujete doplnit. Možnost závisí především na dostupnosti stejné látky."
         }
       ]
     },
