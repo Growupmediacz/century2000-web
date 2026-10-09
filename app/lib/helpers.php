@@ -116,19 +116,51 @@ function text_lines(string $text): array
     return array_values(array_filter(array_map('trim', explode("\n", $text)), fn($l) => $l !== ''));
 }
 
-/** Body blocks ("blok-*" sections) of a page, visible only: [{h, paragraphs[], items[]}] */
-function body_blocks(array $page): array
+/**
+ * Body blocks of a page, visible only, in order. Section keys:
+ *   blok-*  text block   {type: text, id, h, paragraphs[], items[]}
+ *   foto-*  figure       {type: figure, id, src, alt, caption}
+ *   tip-*   callout box  {type: tip, id, h, paragraphs[]}
+ * $only limits the result to one type (e.g. 'text' for the fabric details on Látky a metráž).
+ */
+function body_blocks(array $page, ?string $only = null): array
 {
     $out = [];
     foreach ($page['sections'] as $s) {
-        if (!str_starts_with($s['key'], 'blok-') || empty($s['visible'])) {
+        if (empty($s['visible']) || !preg_match('/^(blok|foto|tip)-/', $s['key'], $m)) {
             continue;
         }
         $f = [];
         foreach ($s['fields'] as $field) {
             $f[$field['key']] = $field['value'];
         }
-        $out[] = ['id' => preg_match('/^blok-\d+$/', $s['key']) ? $s['key'] : substr($s['key'], 5), 'h' => (string) ($f['t1'] ?? ''), 'h3' => (string) ($f['t3'] ?? ''), 'paragraphs' => rich_paragraphs((string) ($f['r1'] ?? '')), 'items' => text_lines((string) ($f['t2'] ?? ''))];
+        $id = preg_match('/^[a-z]+-\d+$/', $s['key']) ? $s['key'] : substr($s['key'], strlen($m[1]) + 1);
+        if ($m[1] === 'foto') {
+            $img = $f['img1'] ?? ['src' => '', 'alt' => ''];
+            $b = ['type' => 'figure', 'id' => $id, 'src' => (string) ($img['src'] ?? ''), 'alt' => (string) ($img['alt'] ?? ''), 'caption' => (string) ($f['t1'] ?? '')];
+        } elseif ($m[1] === 'tip') {
+            $b = ['type' => 'tip', 'id' => $id, 'h' => (string) ($f['t1'] ?? ''), 'paragraphs' => rich_paragraphs((string) ($f['r1'] ?? ''))];
+        } else {
+            $b = ['type' => 'text', 'id' => $id, 'h' => (string) ($f['t1'] ?? ''), 'paragraphs' => rich_paragraphs((string) ($f['r1'] ?? '')), 'items' => text_lines((string) ($f['t2'] ?? ''))];
+        }
+        if ($only === null || $only === $b['type']) {
+            $out[] = $b;
+        }
     }
     return $out;
+}
+
+/** Articles for a teaser: those whose options.service equals $service (newest first), or the latest ones. */
+function articles_for(?string $service, int $limit = 3, ?string $exclude = null): array
+{
+    $list = [];
+    foreach (pages_of_type('article') as $p) {
+        if ($exclude !== null && $p['path'] === $exclude) {
+            continue;
+        }
+        if ($service === null || in_array($service, (array) ($p['options']['service'] ?? []), true)) {
+            $list[] = $p;
+        }
+    }
+    return array_slice($list, 0, $limit);
 }

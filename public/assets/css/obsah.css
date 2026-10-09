@@ -81,3 +81,15 @@
 .latky-detail__item { display: flex; flex-direction: column; gap: 12px; padding-top: 32px; border-top: 1px solid var(--line-200); scroll-margin-top: 90px; }
 .latky-detail__item .text { color: var(--ink-700); max-width: 760px; }
 
+
+/* ---------- Články: obrázky, rámeček, teaser ---------- */
+.clanek-body__figure { margin: 8px 0; display: flex; flex-direction: column; gap: 10px; }
+.clanek-body__img { aspect-ratio: 16 / 9; height: auto; border: 1px solid var(--line-200); }
+.clanek-body__figure figcaption { font-size: 14px; }
+.clanek-body__tip { border-left: 3px solid var(--bronze-600); background: var(--cream-100); padding: 18px 22px; display: flex; flex-direction: column; gap: 8px; }
+.clanek-body__tip-title { margin: 0; color: var(--bronze-700); }
+.clanek-body a { color: var(--bronze-700); text-underline-offset: 3px; }
+.clanek-body a:hover { color: var(--ink-900); }
+.clanky-teaser { border-top: 1px solid var(--line-200); background: var(--cream-50); }
+.clanky-teaser__inner { display: flex; flex-direction: column; gap: 28px; }
+.clanky-teaser__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px 24px; }

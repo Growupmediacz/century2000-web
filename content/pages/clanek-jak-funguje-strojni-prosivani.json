@@ -13,6 +13,15 @@
     "modified": "2026-10-09",
     "order": 5,
     "image": "/assets/clanky/jak-funguje-strojni-prosivani.webp",
+    "service": [
+      "/strojni-prosivani/",
+      "/matracove-chranice-a-potahy/"
+    ],
+    "related": [
+      "matracovy-potah-na-miru",
+      "matracove-chranice-s-pur-zaterem",
+      "prehozy-a-polstarky"
+    ],
     "css": [
       "obsah"
     ]
@@ -34,7 +43,7 @@
           "key": "t2",
           "type": "text",
           "label": "Perex",
-          "value": "Z čeho se prošívaný materiál skládá, čím se liší kontinuální a uzavřený vzor a jak postupovat při objednání."
+          "value": "Z čeho se prošívaný materiál skládá, čím se liší kontinuální a uzavřený vzor, kdy prošev použít a jak postupovat."
         },
         {
           "key": "img1",
@@ -49,7 +58,56 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Tři vrstvy",
+      "label": "Odstavec 1: Co je prošev",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Co je prošev"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Prošev spojuje několik vrstev textilu pravidelnými stehy do vzoru. Stehy drží vrstvy pohromadě, vznikne objemnější materiál a zároveň dekorativní reliéf.<br><br>Prošívání látek se věnujeme od roku 2000. Prošev zajišťujeme v dílně ve Zruči nad Sázavou v kontinuálním i uzavřeném vzoru. Přehled služby je na stránce <a href=\"/strojni-prosivani/\">Strojní prošívání</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/prosivany-material-vrstvy.webp",
+            "alt": "Průřez prošívaného materiálu: vrchní látka, rouno a netkaná textilie"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: průřez prošívaným materiálem."
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Tři vrstvy",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -69,13 +127,13 @@
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "vrchový materiál\nrouno\nnetkaná textilie"
+          "value": "vrchový materiál: vidíte ho a dotýkáte se ho\nrouno: dodává objem a měkkost\nnetkaná textilie: spodní vrstva, která materiál uzavře"
         }
       ]
     },
     {
-      "key": "blok-2",
-      "label": "Odstavec 2: Dva stroje, dva způsoby proševu",
+      "key": "blok-3",
+      "label": "Odstavec 3: Dva stroje, dva způsoby proševu",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -89,19 +147,42 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Kontinuální vzor se opakuje po celé metráži, uzavřený vzor je navržený na konkrétní formát."
+          "value": "Kontinuální vzor se opakuje po celé délce metráže. Prošívá se na stroji Meca a maximální šíře proševu je 280 cm. Hodí se pro prošívanou metráž, ze které se pak šijí například potahy nebo přehozy.<br><br>Uzavřený vzor je navržený na konkrétní formát, například potah nebo přehoz. Prošívá se na stroji Resta až do rozměru 300 × 300 cm."
         },
         {
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "Prošev v kontinuálním vzoru na stroji Meca, maximální šíře 280 cm\nProšev v uzavřeném vzoru na stroji Resta, až do rozměru 300 × 300 cm"
+          "value": ""
         }
       ]
     },
     {
-      "key": "blok-3",
-      "label": "Odstavec 3: Rouna a netkaná textilie",
+      "key": "foto-2",
+      "label": "Obrázek 2",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/detail-jehel-prosev.webp",
+            "alt": "Detail jehel a přítlačných patek při prošívání"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: jehly prošívacího stroje."
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Rouna a netkaná textilie",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -115,7 +196,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Do proševu dodáváme polyesterové rouno v gramážích od 80 do 400 g a netkanou textilii v gramážích od 15 do 40 g. Nabízíme široký sortiment vzorů, například kosočtverce nebo vlnky."
+          "value": "Do proševu dodáváme polyesterové rouno v gramážích od 80 do 400 g a netkanou textilii v gramážích od 15 do 40 g. Rouna i textilie prodáváme také samostatně, viz <a href=\"/latky-a-metraz/#rouna\">Polyesterová rouna a netkané textilie</a>.<br><br>Vyšší gramáž rouna znamená objemnější, měkčí materiál. Správná volba závisí na tom, co z materiálu vznikne."
         },
         {
           "key": "t2",
@@ -126,8 +207,57 @@
       ]
     },
     {
-      "key": "blok-4",
-      "label": "Odstavec 4: Kdy prošev použít",
+      "key": "blok-5",
+      "label": "Odstavec 5: Vzory proševu",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Vzory proševu"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Nabízíme široký sortiment vzorů, například kosočtverce, vlnky, čtvercovou mřížku, ornamenty, kruhy s vlnkami nebo zaoblené kosočtverce. Ukázky najdete na stránce <a href=\"/strojni-prosivani/#vzornik-prosevu\">Strojní prošívání</a>. Konkrétní možnosti a kompletní vzorník domluvíme osobně nebo pošleme na vyžádání."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-3",
+      "label": "Obrázek 3",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/prosev-img2.webp",
+            "alt": "Ilustrace proševu ve vlnkovém vzoru"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: prošev ve vlnkovém vzoru."
+        }
+      ]
+    },
+    {
+      "key": "blok-6",
+      "label": "Odstavec 6: Kdy prošev použít",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -141,19 +271,19 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Prošívání se hodí tam, kde potřebujete plošný textil s rounem:"
+          "value": "Prošívání se hodí tam, kde potřebujete plošný, objemný textil:"
         },
         {
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "potahy na matrace\npřehozy na postele i sedací soupravy\npřikrývky a ochranné návleky"
+          "value": "potahy a chrániče na matrace\npřehozy na postele i sedací soupravy\npřikrývky a ochranné návleky\ndalší výrobky, u kterých záleží na objemu a vzhledu povrchu"
         }
       ]
     },
     {
-      "key": "blok-5",
-      "label": "Odstavec 5: Zakázková i hromadná výroba",
+      "key": "blok-7",
+      "label": "Odstavec 7: Zakázková i hromadná výroba",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -167,7 +297,79 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Prošev vyrábíme zakázkově i hromadně. Při poptávce uveďte druh výrobku, rozměr, vrchový materiál a vzor, který vás zajímá. Vzory si můžete prohlédnout na stránce <a href=\"/strojni-prosivani/\">Strojní prošívání</a>."
+          "value": "Prošev vyrábíme zakázkově i hromadně, pro koncové zákazníky i pro výrobce. Minimální množství domluvíme podle druhu zakázky."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "tip-1",
+      "label": "Rámeček: Dobré vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Dobré vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Maximální šíře 280 cm platí pro kontinuální vzor na stroji Meca. Pro uzavřený vzor na stroji Resta je limit 300 × 300 cm. Pokud váš výrobek tyto rozměry přesahuje, poradíme, jak ho rozdělit."
+        }
+      ]
+    },
+    {
+      "key": "blok-8",
+      "label": "Odstavec 8: Co potřebujeme k nacenění",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Co potřebujeme k nacenění"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "druh výrobku a jeho rozměry\nvrchový materiál, nebo informaci, že ho dodáte sami\npožadovaný vzor (kontinuální, nebo uzavřený)\ngramáž rouna a množství"
+        }
+      ]
+    },
+    {
+      "key": "blok-9",
+      "label": "Odstavec 9: ",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": ""
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Pokračujte články <a href=\"/clanky/matracovy-potah-na-miru/\">Matracový potah na míru</a> a <a href=\"/clanky/prehozy-a-polstarky/\">Přehozy a polštářky</a>, nebo nám napište přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a>."
         },
         {
           "key": "t2",

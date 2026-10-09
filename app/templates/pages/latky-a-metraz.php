@@ -92,7 +92,7 @@
       </div>
     </section>
     <?php endif; ?>
-    <?php $detail = body_blocks($page); if ($detail): ?>
+    <?php $detail = body_blocks($page, 'text'); if ($detail): ?>
     <section aria-labelledby="h-detail" data-screen-label="Materiály podrobně">
       <div class="container section-pad latky-detail">
         <h2 class="title-section" id="h-detail">Materiály podrobně</h2>
@@ -239,6 +239,7 @@
       </div>
     </section>
     <?php endif; ?>
+    <?php partial('clanky-teaser'); ?>
     <?php if (visible('souvisejici-sluzby')): ?>
     <section data-screen-label="Související služby" aria-labelledby="h-souvisejici">
       <div class="container section-pad service-souvisejici-sluzby__inner">

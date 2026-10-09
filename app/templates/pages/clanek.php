@@ -1,8 +1,16 @@
 <?php
 $o = $page['options'];
 $blocks = body_blocks($page);
-$others = array_filter(pages_of_type('article'), fn($p) => $p['path'] !== $page['path']);
-$others = array_slice($others, 0, 3);
+$all = array_filter(pages_of_type('article'), fn($p) => $p['path'] !== $page['path']);
+$related = [];
+foreach ((array) ($o['related'] ?? []) as $slug) {
+    foreach ($all as $p) {
+        if ($p['path'] === '/clanky/' . $slug . '/') {
+            $related[$p['path']] = $p;
+        }
+    }
+}
+$others = array_slice($related + $all, 0, 3);
 ?>
 <div class="page">
   <?php partial('header'); ?>
@@ -28,11 +36,23 @@ $others = array_slice($others, 0, 3);
       </header>
       <div class="container clanek-body">
         <?php foreach ($blocks as $b): ?>
+          <?php if ($b['type'] === 'figure' && $b['src'] !== ''): ?>
+        <figure class="clanek-body__figure" id="<?= e($b['id']) ?>">
+          <img class="img-cover clanek-body__img" src="<?= e($b['src']) ?>" alt="<?= e($b['alt']) ?>" decoding="async" loading="lazy">
+          <?php if ($b['caption'] !== ''): ?><figcaption class="text-muted"><?= e($b['caption']) ?></figcaption><?php endif; ?>
+        </figure>
+          <?php elseif ($b['type'] === 'tip'): ?>
+        <aside class="clanek-body__tip" id="<?= e($b['id']) ?>">
+          <?php if ($b['h'] !== ''): ?><p class="eyebrow clanek-body__tip-title"><?= e($b['h']) ?></p><?php endif; ?>
+          <?php foreach ($b['paragraphs'] as $p): ?><p class="text clanek-body__p"><?= $p ?></p><?php endforeach; ?>
+        </aside>
+          <?php elseif ($b['type'] === 'text'): ?>
         <section class="clanek-body__block" id="<?= e($b['id']) ?>">
           <?php if ($b['h'] !== ''): ?><h2 class="title-card clanek-body__h2"><?= e($b['h']) ?></h2><?php endif; ?>
           <?php foreach ($b['paragraphs'] as $p): ?><p class="text clanek-body__p"><?= $p ?></p><?php endforeach; ?>
           <?php if ($b['items']): ?><ul class="clanek-body__list"><?php foreach ($b['items'] as $li): ?><li><?= e($li) ?></li><?php endforeach; ?></ul><?php endif; ?>
         </section>
+          <?php endif; ?>
         <?php endforeach; ?>
       </div>
     </article>
@@ -54,7 +74,7 @@ $others = array_slice($others, 0, 3);
     <?php if ($others): ?>
     <section class="clanek-dalsi" aria-labelledby="h-dalsi">
       <div class="container section-pad clanek-dalsi__inner">
-        <h2 class="title-section" id="h-dalsi">Další články</h2>
+        <h2 class="title-section" id="h-dalsi"><?= $related ? 'Související články' : 'Další články' ?></h2>
         <ul class="clanky-grid">
           <?php foreach ($others as $p): $im = page_field($p, 'hlavicka', 'img1'); ?>
           <li class="clanky-card"><a class="clanky-card__link" href="<?= e($p['path']) ?>">

@@ -4,7 +4,7 @@
   "editable": true,
   "meta": {
     "title": "Matracové chrániče s PUR zátěrem | Century 2000",
-    "description": "Chrániče z froté nebo flanelu s PUR zátěrem na rubu. Varianty s gumou přes roh nebo s bočnicemi a prošívané chrániče s rounem."
+    "description": "Chrániče z froté nebo flanelu s PUR zátěrem na rubu. Varianty s gumou přes roh, s bočnicemi a prošívané s rounem. Rozměry."
   },
   "options": {
     "type": "article",
@@ -13,6 +13,14 @@
     "modified": "2026-10-09",
     "order": 4,
     "image": "/assets/clanky/matracove-chranice-s-pur-zaterem.webp",
+    "service": [
+      "/matracove-chranice-a-potahy/"
+    ],
+    "related": [
+      "matracovy-potah-na-miru",
+      "jak-funguje-strojni-prosivani",
+      "prehozy-a-polstarky"
+    ],
     "css": [
       "obsah"
     ]
@@ -34,7 +42,7 @@
           "key": "t2",
           "type": "text",
           "label": "Perex",
-          "value": "Z čeho se chrániče šijí, jaké varianty nabízíme a jak je to s rozměry."
+          "value": "Z čeho se chrániče šijí, jaké varianty nabízíme, jak vybrat a jak je to s rozměry."
         },
         {
           "key": "img1",
@@ -49,7 +57,7 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Z čeho je chránič",
+      "label": "Odstavec 1: K čemu matracový chránič slouží",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -57,13 +65,13 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Z čeho je chránič"
+          "value": "K čemu matracový chránič slouží"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Matracové chrániče šijeme z froté nebo flanelu. Z rubové strany mají PUR zátěr, což je nepropustná vrstva."
+          "value": "Matracový chránič je tenká vrstva mezi matrací a ložním prádlem. Chrání matraci před znečištěním a prodlužuje její životnost. Když se zašpiní, vyperete chránič, ne celou matraci.<br><br>Chrániče vyrábíme pro hotely i domácnosti. Přehled našich výrobků najdete na stránce <a href=\"/matracove-chranice-a-potahy/\">Matracové chrániče a potahy</a>."
         },
         {
           "key": "t2",
@@ -75,7 +83,7 @@
     },
     {
       "key": "blok-2",
-      "label": "Odstavec 2: Varianty",
+      "label": "Odstavec 2: Z čeho je chránič: froté nebo flanel a PUR zátěr",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -83,25 +91,97 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Varianty"
+          "value": "Z čeho je chránič: froté nebo flanel a PUR zátěr"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Nabízíme tyto provedení:"
+          "value": "Chrániče šijeme z froté nebo flanelu. Z rubové strany mají PUR zátěr, tedy polyuretanovou vrstvu, která je nepropustná. Tekutiny tak neprojdou k matraci.<br><br>Horní strana zůstává z příjemného textilu, na kterém se leží. Zátěr je na spodní straně a při ležení ho necítíte."
         },
         {
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "chránič s PUR zátěrem a gumou přes roh\nchránič s PUR zátěrem a bočnicemi\nchránič prošívaný včetně rouna, s gumou přes roh"
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/clanky/foto/pur-vrstva.webp",
+            "alt": "Froté matracový chránič s odhaleným hladkým zátěrem na rubu"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: froté chránič a hladká nepropustná vrstva na rubu."
         }
       ]
     },
     {
       "key": "blok-3",
-      "label": "Odstavec 3: Rozměry",
+      "label": "Odstavec 3: Tři varianty",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Tři varianty"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Podle toho, kde a jak se chránič používá, nabízíme:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "chránič s PUR zátěrem a gumou přes roh: guma v rozích drží chránič na matraci\nchránič s PUR zátěrem a bočnicemi: bočnice zakrývají i boky matrace\nchránič prošívaný včetně rouna, s gumou přes roh: navíc měkká vrstva pro pohodlnější spaní"
+        }
+      ]
+    },
+    {
+      "key": "foto-2",
+      "label": "Obrázek 2",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/chranic-guma-pres-roh.webp",
+            "alt": "Prošívaný matracový chránič s gumou přes roh"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: prošívaný chránič s gumou přes roh."
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Rozměry",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -115,7 +195,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Chrániče šijeme ve standardizovaných rozměrech, které najdete v našem <a href=\"https://century2000-cz.webnode.cz/\" target=\"_blank\">e-shopu</a>. Potřebujete-li nestandardní rozměr, napište nám nebo zavolejte."
+          "value": "Chrániče šijeme ve standardizovaných rozměrech, které najdete v našem <a href=\"https://century2000-cz.webnode.cz/\">e-shopu</a>. Potřebujete-li nestandardní rozměr, napište nám nebo zavolejte. Ušijeme ho na míru."
         },
         {
           "key": "t2",
@@ -126,8 +206,8 @@
       ]
     },
     {
-      "key": "blok-4",
-      "label": "Odstavec 4: Prošívané chrániče",
+      "key": "blok-5",
+      "label": "Odstavec 5: Pro koho se který chránič hodí",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -135,13 +215,85 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Prošívané chrániče"
+          "value": "Pro koho se který chránič hodí"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Prošívané chrániče obsahují rouno. Více o možnostech proševu najdete na stránce <a href=\"/strojni-prosivani/\">Strojní prošívání</a>."
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "Hotely a penziony: chrániče na všechna lůžka, snadná výměna a praní.\nDomácnosti: chrániče i na atypické rozměry matrací.\nVýrobci a prodejci matrací: série, podmínky domluvíme podle zakázky."
+        }
+      ]
+    },
+    {
+      "key": "tip-1",
+      "label": "Rámeček: Dobré vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Dobré vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "PUR zátěr je nepropustná vrstva. Chránič proto pokládejte zátěrem dolů, k matraci. Doporučení pro praní se řídí použitým materiálem. Zeptejte se nás při objednávce."
+        }
+      ]
+    },
+    {
+      "key": "blok-6",
+      "label": "Odstavec 6: Chránič, nebo potah?",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Chránič, nebo potah?"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Chránič se pokládá na matraci a drží gumou nebo bočnicemi. Potah je naopak návlek na celou matraci se zipem. Obě řešení se doplňují. Jak potah vybrat, popisuje článek <a href=\"/clanky/matracovy-potah-na-miru/\">Matracový potah na míru</a>. Prošívané chrániče vznikají na proševacích strojích. Jak prošev funguje, vysvětluje <a href=\"/clanky/jak-funguje-strojni-prosivani/\">Jak funguje strojní prošívání</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-7",
+      "label": "Odstavec 7: ",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": ""
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Napište nám přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a> rozměr matrace a počet kusů."
         },
         {
           "key": "t2",

@@ -13,6 +13,15 @@
     "modified": "2026-10-09",
     "order": 2,
     "image": "/assets/clanky/nehorlave-dekoracni-latky-pro-hotely.webp",
+    "service": [
+      "/hotelovy-textil/",
+      "/latky-a-metraz/"
+    ],
+    "related": [
+      "blackout-dimout-nebo-zaves",
+      "rautove-sukne-plisse-a-boxpleat",
+      "zaclony-a-voaly"
+    ],
     "css": [
       "obsah"
     ]
@@ -34,7 +43,7 @@
           "key": "t2",
           "type": "text",
           "label": "Perex",
-          "value": "Co nabízíme z nehořlavých látek pro hotely, restaurace a sály a na co se při výběru zeptat."
+          "value": "Co nabízíme z nehořlavých látek pro hotely, restaurace a sály, na co se při výběru zeptat a jak postupovat."
         },
         {
           "key": "img1",
@@ -49,7 +58,56 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Co nabízíme",
+      "label": "Odstavec 1: Proč v hotelu řešit nehořlavost",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Proč v hotelu řešit nehořlavost"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Hotely, restaurace a společenské sály jsou veřejné prostory a pro textil v nich platí jiná pravidla než v soukromém bytě. Použití závěsů, záclon a dalšího textilu je z velké části dáno normami pro jednotlivé obory a navíc nařízeními regionálních nebo místních úřadů.<br><br>Konkrétní požadavky se mohou lišit podle typu provozu i podle místa. Proto je dobré je znát dřív, než se vybere látka, a ne až ve chvíli, kdy je zakázka ušitá."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/clanky/foto/hotel-sal.webp",
+            "alt": "Hotelový sál s dlouhými závěsy a záclonami"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: společenský sál s dlouhými závěsy a záclonami."
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Co nabízíme",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -63,45 +121,19 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Dekorační látky s nehořlavou úpravou dodáváme v šířce 300 cm, s uni vzorem i s vetkaným vzorem a v široké škále barev."
+          "value": "V nabídce máme tyto nehořlavé materiály:"
         },
         {
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "key": "blok-2",
-      "label": "Odstavec 2: Normy a předpisy",
-      "hideable": true,
-      "visible": true,
-      "fields": [
-        {
-          "key": "t1",
-          "type": "text",
-          "label": "Mezititulek (H2)",
-          "value": "Normy a předpisy"
-        },
-        {
-          "key": "r1",
-          "type": "rich",
-          "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Materiály vyhovují evropským normám BS 5867 Part 2B, M1 a B1.<br><br>Použití textilu určují normy pro jednotlivé obory a ve veřejných prostorách také nařízení regionálních nebo místních úřadů. Požadavky na váš objekt si proto ověřte předem, s výběrem materiálu vám rádi pomůžeme."
-        },
-        {
-          "key": "t2",
-          "type": "text",
-          "label": "Odrážky (každá na nový řádek)",
-          "value": ""
+          "value": "dekorační látky s nehořlavou úpravou v šířce 300 cm, s uni vzorem nebo s vetkaným vzorem, ve škále barev\nblackouty a dimouty v nehořlavém provedení (nabízíme je i v hořlavém)\nzáclony a voály, všechny v nehořlavém provedení"
         }
       ]
     },
     {
       "key": "blok-3",
-      "label": "Odstavec 3: Další nehořlavé materiály",
+      "label": "Odstavec 3: Normy BS 5867 Part 2B, M1 a B1",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -109,19 +141,39 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Další nehořlavé materiály"
+          "value": "Normy BS 5867 Part 2B, M1 a B1"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Kromě dekoračních látek máme nehořlavé i další materiály:"
+          "value": "Materiály, které nabízíme, vyhovují evropským normám BS 5867 Part 2B, M1 a B1. Jde o označení zkoušek hořlavosti textilu používaná v Evropě.<br><br>Potřebujete-li pro konkrétní zakázku doložit vlastnosti materiálu, napište nám a řekneme vám, co je k dispozici. U větších zakázek je rozumné otázku položit hned na začátku."
         },
         {
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "blackouty a dimouty v nehořlavém provedení (nabízíme je i v hořlavém)\nzáclony a voály, všechny v nehořlavém provedení"
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "tip-1",
+      "label": "Rámeček: Dobré vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Dobré vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Nehořlavost a zatemnění jsou dvě nezávislé vlastnosti. U blackoutů a dimoutů se volí zvlášť míra zatemnění a zvlášť hořlavé, nebo nehořlavé provedení. Rozdíl mezi blackoutem a dimoutem vysvětluje článek <a href=\"/clanky/blackout-dimout-nebo-zaves/\">Blackout, dimout nebo klasický závěs</a>."
         }
       ]
     },
@@ -141,7 +193,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Z nehořlavých látek šijeme závěsy, záclony, přehozy i další textil pro hotelové provozy. Nemusíte kupovat látku zvlášť: ušijeme vám hotové výrobky na míru, nebo můžete koupit látku v metráži."
+          "value": "Látku nemusíte kupovat zvlášť. Ušijeme vám hotové výrobky na míru: závěsy a záclony na pokoje, přehozy, rautové sukně a další textil pro hotelové provozy. Jak spolupracujeme s hotely, popisujeme na stránce <a href=\"/hotelovy-textil/\">Hotelový textil</a>.<br><br>Chcete-li si textil vyrobit sami nebo u jiného výrobce, prodáváme nehořlavé látky také v <a href=\"/latky-a-metraz/#nehorlave-latky\">metráži</a>."
         },
         {
           "key": "t2",
@@ -153,7 +205,7 @@
     },
     {
       "key": "blok-5",
-      "label": "Odstavec 5: Vzorky",
+      "label": "Odstavec 5: Jak vybrat pro jednotlivé prostory",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -161,13 +213,91 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Vzorky"
+          "value": "Jak vybrat pro jednotlivé prostory"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Nehořlavé látky najdete ve <a href=\"/vzorkovniky/\">vzorkovnících ke stažení</a>. Barvy se mohou lišit podle nastavení monitoru nebo tiskárny, fyzický vzorek vám pošleme na vyžádání."
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "Hotelové pokoje: nehořlavý blackout kombinovaný s nehořlavou záclonou.\nRestaurace: nehořlavý dimout nebo dekorační látka, která zatlumí slunce, ale místnost nechá světlou.\nSpolečenské sály: dekorační látky se vzorem nebo uni v šířce 300 cm, případně rautové sukně a potahy."
+        }
+      ]
+    },
+    {
+      "key": "blok-6",
+      "label": "Odstavec 6: Vzorky a vzorkovníky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Vzorky a vzorkovníky"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Vzorkovníky nehořlavých látek jsou ke stažení na stránce <a href=\"/vzorkovniky/\">Vzorkovníky</a> (například FR Double Face, FR Flamme, FR Universal, FR Night, FR Canvas nebo FR Real). Barvy se mohou lišit podle nastavení monitoru nebo tiskárny. Fyzické vzorky vám pošleme na vyžádání."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-7",
+      "label": "Odstavec 7: Jak postupovat",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Jak postupovat"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Při poptávce nám pomůže:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "počet pokojů nebo prostor, které chcete vybavit\nzda jde o nové otevření, rekonstrukci, nebo doplnění\npožadavek na zatemnění a na nehořlavost\ntermín, ke kterému textil potřebujete"
+        }
+      ]
+    },
+    {
+      "key": "blok-8",
+      "label": "Odstavec 8: ",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": ""
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Podívejte se na <a href=\"/reference/\">naše reference</a> a napište nám přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a>."
         },
         {
           "key": "t2",

@@ -13,6 +13,15 @@
     "modified": "2026-10-09",
     "order": 8,
     "image": "/assets/clanky/zaclony-a-voaly.webp",
+    "service": [
+      "/bytovy-textil-na-miru/",
+      "/latky-a-metraz/"
+    ],
+    "related": [
+      "blackout-dimout-nebo-zaves",
+      "okenni-dekorace-zaves-pelmet-roleta",
+      "prehozy-a-polstarky"
+    ],
     "css": [
       "obsah"
     ]
@@ -34,7 +43,7 @@
           "key": "t2",
           "type": "text",
           "label": "Perex",
-          "value": "Tři základní typy záclon a voálů, co mají společné a jak je ušijeme na míru."
+          "value": "Tři základní typy záclon a voálů, k čemu slouží olůvko a jak záclony ušijeme na míru."
         },
         {
           "key": "img1",
@@ -49,7 +58,33 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Tři základní typy",
+      "label": "Odstavec 1: Záclona, voál a závěs",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Záclona, voál a závěs"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Záclona je lehká, průsvitná textilie, která zjemňuje světlo a chrání před pohledy zvenčí. Voál je jemná, vzdušná záclonová tkanina. Závěs je těžší látka, kterou večer zatáhnete.<br><br>Mnoho lidí nedá dopustit na klasické záclony a voály. Ušijeme je ve vlastní dílně ve Zruči nad Sázavou už od roku 2000. Přehled najdete na stránce <a href=\"/bytovy-textil-na-miru/\">Bytový textil na míru</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Tři základní typy",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -69,39 +104,13 @@
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "hladké bez vzorku\ns proužky\nbavlněné"
-        }
-      ]
-    },
-    {
-      "key": "blok-2",
-      "label": "Odstavec 2: Co mají společné",
-      "hideable": true,
-      "visible": true,
-      "fields": [
-        {
-          "key": "t1",
-          "type": "text",
-          "label": "Mezititulek (H2)",
-          "value": "Co mají společné"
-        },
-        {
-          "key": "r1",
-          "type": "rich",
-          "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Všechny tři varianty jsou s olůvkem a nehořlavé. Ušijeme je přesně na rozměr, který potřebujete, v krátké i dlouhé variantě."
-        },
-        {
-          "key": "t2",
-          "type": "text",
-          "label": "Odrážky (každá na nový řádek)",
-          "value": ""
+          "value": "hladké bez vzorku: nenápadné, hodí se téměř všude\ns proužky: jemný vzor, který oživí okno\nbavlněné: z přírodního materiálu"
         }
       ]
     },
     {
       "key": "blok-3",
-      "label": "Odstavec 3: Barvy",
+      "label": "Odstavec 3: Co mají společné: olůvko a nehořlavost",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -109,13 +118,13 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Barvy"
+          "value": "Co mají společné: olůvko a nehořlavost"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Záclony a voály nabízíme v bílém i barevném provedení, včetně sněhově bílé a odstínu champagne."
+          "value": "Všechny tři typy jsou s olůvkem a nehořlavé. Olůvko je závaží zašité v dolním lemu. Záclona díky němu visí rovně a nelepí se, ani když okno otevřete.<br><br>Nehořlavé provedení oceníte v bytě i v hotelu. Podrobněji se mu věnuje článek <a href=\"/clanky/nehorlave-dekoracni-latky-pro-hotely/\">Nehořlavé dekorační látky pro hotely a restaurace</a>."
         },
         {
           "key": "t2",
@@ -126,8 +135,31 @@
       ]
     },
     {
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/clanky/foto/olovko-zaclona.webp",
+            "alt": "Lem bílé záclony s olůvkem u okna"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: lem záclony s olůvkem."
+        }
+      ]
+    },
+    {
       "key": "blok-4",
-      "label": "Odstavec 4: Do bytu i do hotelu",
+      "label": "Odstavec 4: Barvy a rozměry",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -135,13 +167,13 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Do bytu i do hotelu"
+          "value": "Barvy a rozměry"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Šijeme záclony a voály v klasických rozměrech i na specifický rozměr pro hotely a restaurace."
+          "value": "Záclony a voály nabízíme v bílém i barevném provedení, včetně sněhově bílé a odstínu champagne.<br><br>Šijeme je přesně na rozměr, který potřebujete, v krátké i dlouhé variantě. Vyrábíme klasické velikosti do panelových bytů i rozměry na míru pro hotely a restaurace."
         },
         {
           "key": "t2",
@@ -153,7 +185,7 @@
     },
     {
       "key": "blok-5",
-      "label": "Odstavec 5: Z metráže",
+      "label": "Odstavec 5: Záclona v kombinaci se závěsem",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -161,13 +193,111 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Z metráže"
+          "value": "Záclona v kombinaci se závěsem"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Chcete si záclony ušít sami? V nabídce máme <a href=\"/latky-a-metraz/#zaclony\">záclonovinu v metráži</a>."
+          "value": "Záclona se často kombinuje se závěsem. Přes den zjemní světlo záclona, večer zatáhnete závěs. Rozdíl mezi zatemňujícími a klasickými látkami vysvětluje článek <a href=\"/clanky/blackout-dimout-nebo-zaves/\">Blackout, dimout nebo klasický závěs: jak vybrat</a>.<br><br>Možnosti uchycení záclon (řasicí páska, tunýlek, kroužky nebo poutka) popisuje článek <a href=\"/clanky/okenni-dekorace-zaves-pelmet-roleta/\">Okenní dekorace</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-6",
+      "label": "Odstavec 6: Záclonovina z metráže",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Záclonovina z metráže"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Chcete si záclony ušít sami? V nabídce máme <a href=\"/latky-a-metraz/#zaclony\">záclonovinu v metráži</a>. Na přání ji ušijeme i my."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "tip-1",
+      "label": "Rámeček: Dobré vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Dobré vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Šířka záclony bývá větší než šířka okna, aby se látka nahrnula. Konkrétní řasení a rozměr určíme podle vašeho okna a podle toho, jak má záclona vypadat."
+        }
+      ]
+    },
+    {
+      "key": "blok-7",
+      "label": "Odstavec 7: Jak postupovat",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Jak postupovat"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "změřte šířku a výšku okna (návod je na stránce Bytový textil na míru)\nvyberte typ: hladká, s proužky, nebo bavlněná\nnapište nám barvu a délku (krátká, nebo dlouhá)\npošleme vzorky a nabídku"
+        }
+      ]
+    },
+    {
+      "key": "blok-8",
+      "label": "Odstavec 8: ",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": ""
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Napište nám přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a>."
         },
         {
           "key": "t2",
