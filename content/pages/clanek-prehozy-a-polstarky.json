@@ -13,6 +13,16 @@
     "modified": "2026-10-09",
     "order": 10,
     "image": "/assets/clanky/prehozy-a-polstarky.webp",
+    "service": [
+      "/bytovy-textil-na-miru/",
+      "/hotelovy-textil/",
+      "/strojni-prosivani/"
+    ],
+    "related": [
+      "jak-funguje-strojni-prosivani",
+      "okenni-dekorace-zaves-pelmet-roleta",
+      "matracovy-potah-na-miru"
+    ],
     "css": [
       "obsah"
     ]
@@ -34,7 +44,7 @@
           "key": "t2",
           "type": "text",
           "label": "Perex",
-          "value": "Jaká provedení přehozů šijeme a co lze vyrobit k nim, od polštářků po prošívané potahy."
+          "value": "Jaká provedení přehozů šijeme a co lze vyrobit k nim: od polštářků po prošívané potahy."
         },
         {
           "key": "img1",
@@ -49,7 +59,33 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Čtyři provedení přehozů",
+      "label": "Odstavec 1: Přehoz jako dekorace i praktický doplněk",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Přehoz jako dekorace i praktický doplněk"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Přehoz sjednotí vzhled postele a lůžko zakryje. V hotelu je to součást vizuální identity pokoje, doma doplněk, který ladí se závěsy nebo ložnicí.<br><br>Vyrábíme různé druhy přehozů na zakázku. Na základě konzultace jsme schopni vyrobit téměř jakýkoliv potah. Přehled najdete na stránce <a href=\"/bytovy-textil-na-miru/\">Bytový textil na míru</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Čtyři provedení přehozů",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -63,19 +99,42 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Přehozy vyrábíme na zakázku:"
+          "value": ""
         },
         {
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "prošívané, podšívkované\nneprošívané, nepodšívkované\nneprošívané, podšívkované\ns volánem, hladkým nebo řaseným"
+          "value": "prošívaný, podšívkovaný: objemnější, s vrstvou rouna\nneprošívaný, nepodšívkovaný: lehký a jednoduchý\nneprošívaný, podšívkovaný: hladký povrch s podšívkou, která dodá hmotnost\ns volánem, hladkým nebo řaseným: volán zakryje okraj matrace"
         }
       ]
     },
     {
-      "key": "blok-2",
-      "label": "Odstavec 2: Prošev",
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/prehoz-s-volanem.webp",
+            "alt": "Prošívaný přehoz s řaseným volánem"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: prošívaný přehoz s řaseným volánem."
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Prošev: vzory a možnosti",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -83,13 +142,13 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Prošev"
+          "value": "Prošev: vzory a možnosti"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Nabízíme různé druhy proševů. Na základě konzultace jsme schopni vyrobit téměř jakýkoli potah. Přehled vzorů a možností najdete na stránce <a href=\"/strojni-prosivani/\">Strojní prošívání</a>."
+          "value": "U prošívaných přehozů záleží na vzoru. Nabízíme různé druhy proševů, například kosočtverce nebo vlnky. Jak prošev funguje a jaké vzory máme, vysvětluje článek <a href=\"/clanky/jak-funguje-strojni-prosivani/\">Jak funguje strojní prošívání a kdy ho použít</a>."
         },
         {
           "key": "t2",
@@ -100,8 +159,8 @@
       ]
     },
     {
-      "key": "blok-3",
-      "label": "Odstavec 3: Polštářky",
+      "key": "blok-4",
+      "label": "Odstavec 4: Polštářky a návleky",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -109,13 +168,157 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Polštářky"
+          "value": "Polštářky a návleky"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "K přehozům ušijeme polštářky s libovolným motivem, se vzorem i čistě bílé, s výplní i prošívané. Vyrábíme také bavlněné návleky na polštáře."
+          "value": "K přehozům ušijeme polštářky s libovolným motivem, se vzorem i čistě bílé, s výplní i prošívané. Vyrábíme také bavlněné návleky na polštáře.<br><br>Polštářky lze ušít ze stejné látky jako závěsy. Látky najdete v sekci <a href=\"/latky-a-metraz/#dekoracni-latky\">Dekorační látky</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-2",
+      "label": "Obrázek 2",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/vypln-polstare.webp",
+            "alt": "Prošívaný polštář"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: prošívaný polštář."
+        }
+      ]
+    },
+    {
+      "key": "blok-5",
+      "label": "Odstavec 5: Přehozy pro hotely",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Přehozy pro hotely"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Přehozy šijeme i pro hotely. Mezi naše reference patří přehozy a prachovky (sukně na postele) pro <a href=\"/reference/hotel-corinthia-tower-praha/\">Hotel Corinthia Tower</a>, závěsy, přehozy a polštářky pro <a href=\"/reference/hotel-four-season-praha/\">Hotel Four Seasons</a> nebo přehozy pro <a href=\"/reference/hotel-aqua-praha-pruhonice/\">Hotel Aqua</a>. Více o spolupráci s hotely najdete na stránce <a href=\"/hotelovy-textil/\">Hotelový textil</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-3",
+      "label": "Obrázek 3",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/hotelovy-prehoz.webp",
+            "alt": "Hotelová postel s prošívaným přehozem a válcovými polštáři"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: hotelová postel s přehozem a polštáři."
+        }
+      ]
+    },
+    {
+      "key": "tip-1",
+      "label": "Rámeček: Dobré vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Dobré vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Přehoz, polštáře a závěsy vypadají nejlépe, když vznikají společně ze sladěných látek. Při objednávce nám napište, co už máte, pošleme vzorky, které se k tomu hodí."
+        }
+      ]
+    },
+    {
+      "key": "blok-6",
+      "label": "Odstavec 6: Jak postupovat",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Jak postupovat"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "změřte postel (šířka, délka, požadovaný přesah u volánu)\nrozhodněte, zda chcete prošívaný, nebo hladký přehoz, s volánem, nebo bez\nvyberte látku a případně vzor proševu\nnapište nám a pošleme vzorky a nabídku"
+        }
+      ]
+    },
+    {
+      "key": "blok-7",
+      "label": "Odstavec 7: ",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": ""
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Navazující články: <a href=\"/clanky/okenni-dekorace-zaves-pelmet-roleta/\">Okenní dekorace</a> a <a href=\"/clanky/matracovy-potah-na-miru/\">Matracový potah na míru</a>. Napište nám přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a>."
         },
         {
           "key": "t2",

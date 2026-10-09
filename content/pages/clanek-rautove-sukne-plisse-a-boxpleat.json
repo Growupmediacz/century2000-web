@@ -4,7 +4,7 @@
   "editable": true,
   "meta": {
     "title": "Rautové sukně: řasení plissé a boxpleat | Century 2000",
-    "description": "Rautové sukně se dvěma typy řasení: plissé 1:2 a boxpleat v poměrech 1:3, 1:2 a 1:1,5. Na rubu suchý zip."
+    "description": "Rautové sukně se dvěma typy řasení: plissé 1:2 a boxpleat 1:3, 1:2 a 1:1,5. Na rubu suchý zip. Jak vybrat a co potřebujeme."
   },
   "options": {
     "type": "article",
@@ -13,6 +13,14 @@
     "modified": "2026-10-09",
     "order": 3,
     "image": "/assets/clanky/rautove-sukne-plisse-a-boxpleat.webp",
+    "service": [
+      "/hotelovy-textil/"
+    ],
+    "related": [
+      "latky-na-ubrusy-a-prostirani",
+      "nehorlave-dekoracni-latky-pro-hotely",
+      "prehozy-a-polstarky"
+    ],
     "css": [
       "obsah"
     ]
@@ -34,7 +42,7 @@
           "key": "t2",
           "type": "text",
           "label": "Perex",
-          "value": "Dva typy řasení, tři poměry a suchý zip na rubu. Jak se rautové sukně liší a co určuje výsledný vzhled."
+          "value": "Dva typy řasení, tři poměry a suchý zip na rubu. Jak se rautové sukně liší a co určuje jejich vzhled."
         },
         {
           "key": "img1",
@@ -49,7 +57,7 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Dva základní typy řasení",
+      "label": "Odstavec 1: K čemu rautová sukně slouží",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -57,25 +65,100 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Dva základní typy řasení"
+          "value": "K čemu rautová sukně slouží"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Šijeme rautové sukně se dvěma typy řasení. Poměr udává, kolikrát je látka delší než hotová sukně: čím vyšší poměr, tím bohatší záhyby."
+          "value": "Rautová sukně je látka, která obepíná stůl a zakrývá jeho nohy i prostor pod ním. Z obyčejného stolu tak vznikne bufetový nebo slavnostní stůl, který vypadá jednotně a upraveně.<br><br>Šijeme je pro hotely, restaurace a další provozy. Víc o spolupráci s hotely najdete na stránce <a href=\"/hotelovy-textil/\">Hotelový textil</a>."
         },
         {
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "Plissé 1:2\nBoxpleat, který lze řasit v poměru 1:3, 1:2 nebo 1:1,5"
+          "value": ""
         }
       ]
     },
     {
       "key": "blok-2",
-      "label": "Odstavec 2: Individuální řasení",
+      "label": "Odstavec 2: Plissé 1:2",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Plissé 1:2"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Plissé jsou jemné, pravidelné záhyby. Poměr 1:2 znamená, že látka je dvakrát delší než hotová sukně. Pokud má sukně obepnout stůl o obvodu 5 metrů, spotřebuje se 10 metrů látky.<br><br>Takové řasení působí lehce a elegantně a hodí se na velké sady stolů, které mají vypadat jednotně."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/clanky/foto/raut-plisse-boxpleat.webp",
+            "alt": "Dvě rautové sukně: jemné plissé a široký boxpleat"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: plissé (vlevo) a boxpleat (vpravo)."
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Boxpleat: poměry 1:3, 1:2 a 1:1,5",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Boxpleat: poměry 1:3, 1:2 a 1:1,5"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Boxpleat jsou širší, plochější záhyby. Lze je řasit ve třech poměrech: 1:3, 1:2 nebo 1:1,5. Čím vyšší první číslo, tím bohatší záhyby a tím víc látky sukně spotřebuje.<br><br>Poměr 1:1,5 je nejúspornější a záhyby jsou nejplošší. Poměr 1:3 je nejbohatší a sukně vypadá plněji. Vybírá se podle toho, jaký dojem chcete a kolik látky chcete použít."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Individuální řasení",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -89,7 +172,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Pokud potřebujete jiný vzhled, dohodneme individuální řasení podle vašeho přání."
+          "value": "Pokud vám žádný z poměrů nevyhovuje, domluvíme individuální řasení podle vašeho přání. Napište nám, jak sukně má vypadat, nebo pošlete fotku."
         },
         {
           "key": "t2",
@@ -100,8 +183,31 @@
       ]
     },
     {
-      "key": "blok-3",
-      "label": "Odstavec 3: Uchycení",
+      "key": "foto-2",
+      "label": "Obrázek 2",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/rautova-sukne.webp",
+            "alt": "Řasená rautová sukně na bufetovém stole"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: rautová sukně na bufetovém stole."
+        }
+      ]
+    },
+    {
+      "key": "blok-5",
+      "label": "Odstavec 5: Uchycení suchým zipem",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -109,13 +215,13 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Uchycení"
+          "value": "Uchycení suchým zipem"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Rautové sukně mají z rubu našitý suchý zip o šířce 2,5 až 3 cm."
+          "value": "Rautové sukně šijeme s našitým suchým zipem o šířce 2,5 až 3 cm. Zip je z rubu sukně a sukni tak jednoduše upevníte na okraj stolu, snadno ji sundáte a při dalším použití zase nasadíte."
         },
         {
           "key": "t2",
@@ -126,8 +232,28 @@
       ]
     },
     {
-      "key": "blok-4",
-      "label": "Odstavec 4: Co potřebujeme vědět",
+      "key": "tip-1",
+      "label": "Rámeček: Dobré vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Dobré vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Při výběru látky počítejte s provozem. Pro hotely a sály se hodí látky v nehořlavém provedení, o kterých píšeme v článku <a href=\"/clanky/nehorlave-dekoracni-latky-pro-hotely/\">Nehořlavé dekorační látky pro hotely a restaurace</a>. Péči o textil probereme při výběru látky."
+        }
+      ]
+    },
+    {
+      "key": "blok-6",
+      "label": "Odstavec 6: Co potřebujeme pro nabídku",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -135,13 +261,39 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Co potřebujeme vědět"
+          "value": "Co potřebujeme pro nabídku"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "K ušití sukně napište rozměry stolu nebo délku, kterou má sukně obepnout, a požadovanou výšku. Zvolíme spolu řasení a látku."
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "rozměry stolů: délku, šířku a požadovanou výšku sukně\npočet stolů nebo sukní\ntyp řasení a poměr (plissé 1:2, boxpleat 1:3, 1:2 nebo 1:1,5, případně individuální)\nbarvu nebo vybranou látku\nzda potřebujete nehořlavé provedení"
+        }
+      ]
+    },
+    {
+      "key": "blok-7",
+      "label": "Odstavec 7: Navazující téma",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Navazující téma"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "K rautovým sukním se často objednávají ubrusy a prostírání. O nich píšeme v článku <a href=\"/clanky/latky-na-ubrusy-a-prostirani/\">Látky na ubrusy a prostírání</a>. Hotové realizace pro hotely si můžete prohlédnout v sekci <a href=\"/reference/\">Reference</a>.<br><br>Napište nám přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a>."
         },
         {
           "key": "t2",

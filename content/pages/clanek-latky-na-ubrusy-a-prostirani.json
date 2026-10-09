@@ -4,7 +4,7 @@
   "editable": true,
   "meta": {
     "title": "Látky na ubrusy a prostírání | Century 2000",
-    "description": "Ubrusy kulaté, oválné, jídelní, svatební i kuchyňské. Šití na zakázku, dodávky pro catering a hotely a látky na ubrusy v metráži."
+    "description": "Ubrusy kulaté, oválné, jídelní, svatební i kuchyňské. Šití na zakázku, dodávky pro catering a hotely a látky v metráži."
   },
   "options": {
     "type": "article",
@@ -13,6 +13,15 @@
     "modified": "2026-10-09",
     "order": 7,
     "image": "/assets/clanky/latky-na-ubrusy-a-prostirani.webp",
+    "service": [
+      "/latky-a-metraz/",
+      "/hotelovy-textil/"
+    ],
+    "related": [
+      "rautove-sukne-plisse-a-boxpleat",
+      "nehorlave-dekoracni-latky-pro-hotely",
+      "zaclony-a-voaly"
+    ],
     "css": [
       "obsah"
     ]
@@ -49,7 +58,56 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Typy ubrusů",
+      "label": "Odstavec 1: Ubrus, který ladí s interiérem",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Ubrus, který ladí s interiérem"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Ubrus a prostírání jsou první věc, kterou hosté vidí na stole. Zvolená látka proto ovlivňuje celý dojem z jídelny, restaurace nebo slavnostní tabule.<br><br>V šicí dílně ve Zruči nad Sázavou zajišťujeme výrobu ubrusů a prostírání na zakázku a prodáváme látky na ubrusy v metráži. Zkušenosti máme od roku 2000. Přehled látek najdete na stránce <a href=\"/latky-a-metraz/\">Látky a metráž</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/clanky/foto/ubrusy-sal.webp",
+            "alt": "Stoly v sále s bílými ubrusy různých tvarů"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: stoly s ubrusy různých tvarů."
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Typy ubrusů",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -74,8 +132,8 @@
       ]
     },
     {
-      "key": "blok-2",
-      "label": "Odstavec 2: Rozměry",
+      "key": "blok-3",
+      "label": "Odstavec 3: Rozměry",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -89,7 +147,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Rozměr ubrusu přizpůsobíme vašemu stolu. Šijeme například ubrusy o rozměru 120 × 120 nebo 130 × 130 cm a také prostírání."
+          "value": "Rozměr ubrusu přizpůsobíme vašemu stolu. Šijeme například ubrusy 120 × 120 nebo 130 × 130 cm a další rozměry podle potřeby. Vyrábíme také prostírání.<br><br>U slavnostních ubrusů se volí větší přesah přes hranu stolu než u kuchyňských. Přesný rozměr domluvíme podle stolu a podle toho, k čemu ubrus slouží."
         },
         {
           "key": "t2",
@@ -100,8 +158,8 @@
       ]
     },
     {
-      "key": "blok-3",
-      "label": "Odstavec 3: Pro domácnost i pro provozy",
+      "key": "blok-4",
+      "label": "Odstavec 4: Pro domácnost i pro provozy",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -115,7 +173,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Šijeme ubrusy do rodinných domů a bytů, stejně tak dodáváme ubrusy a prostírání pro catering, hotely a restaurace. Zakázkovou výrobu i větší dodávky zvládneme."
+          "value": "Šijeme ubrusy do rodinných domů a bytů, stejně tak dodáváme ubrusy a prostírání pro catering, hotely a restaurace. Zvládneme zakázkovou výrobu i větší dodávky.<br><br>U hotelů a restaurací se často kombinují ubrusy s rautovými sukněmi, viz <a href=\"/clanky/rautove-sukne-plisse-a-boxpleat/\">Rautové sukně: plissé a boxpleat</a>. Pro veřejné prostory se hodí látky v nehořlavém provedení, o nich píšeme v článku <a href=\"/clanky/nehorlave-dekoracni-latky-pro-hotely/\">Nehořlavé dekorační látky pro hotely a restaurace</a>."
         },
         {
           "key": "t2",
@@ -126,8 +184,8 @@
       ]
     },
     {
-      "key": "blok-4",
-      "label": "Odstavec 4: Látky v metráži",
+      "key": "blok-5",
+      "label": "Odstavec 5: Látka na ubrus v metráži",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -135,13 +193,85 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Látky v metráži"
+          "value": "Látka na ubrus v metráži"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Chcete si ubrus ušít sami? Prodáváme <a href=\"/latky-a-metraz/#ubrusoviny\">látky na ubrusy v metráži</a> v bílé i barevné variantě a ustřihneme potřebnou délku. V nabídce jsou i dekorační látky různých odstínů a vzorů."
+          "value": "Chcete si ubrus ušít sami? Prodáváme <a href=\"/latky-a-metraz/#ubrusoviny\">látky na ubrusy v metráži</a> v bílé i barevné variantě. Potřebnou délku ustřihneme. V nabídce jsou i <a href=\"/latky-a-metraz/#dekoracni-latky\">dekorační látky</a> různých odstínů a vzorů, které lze použít na ubrusy, závěsy nebo povlečení."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "tip-1",
+      "label": "Rámeček: Dobré vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Dobré vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Při měření stolu si zapište délku, šířku, tvar a výšku a rozhodněte, jak velký přesah chcete. Se zaměřením vám poradíme, stačí poslat fotku stolu a rozměry."
+        }
+      ]
+    },
+    {
+      "key": "blok-6",
+      "label": "Odstavec 6: Jak postupovat",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Jak postupovat"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": ""
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "zaměřte stůl (délka, šířka, výška, tvar)\nrozhodněte, zda potřebujete ubrus, prostírání, nebo obojí\nvyberte látku z nabídky, případně nám napište, co hledáte\nnapište nám a pošleme nabídku"
+        }
+      ]
+    },
+    {
+      "key": "blok-7",
+      "label": "Odstavec 7: ",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": ""
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Napište nám přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a>. Ukázky naší práce pro hotely najdete v sekci <a href=\"/reference/\">Reference</a>."
         },
         {
           "key": "t2",

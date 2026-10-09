@@ -13,6 +13,16 @@
     "modified": "2026-10-09",
     "order": 6,
     "image": "/assets/clanky/matracovy-potah-na-miru.webp",
+    "service": [
+      "/matracove-chranice-a-potahy/",
+      "/strojni-prosivani/",
+      "/latky-a-metraz/"
+    ],
+    "related": [
+      "matracove-chranice-s-pur-zaterem",
+      "jak-funguje-strojni-prosivani",
+      "prehozy-a-polstarky"
+    ],
     "css": [
       "obsah"
     ]
@@ -49,7 +59,7 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Prošitý nebo neprošitý",
+      "label": "Odstavec 1: Potah, který sedí na míru",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -57,65 +67,13 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Prošitý nebo neprošitý"
+          "value": "Potah, který sedí na míru"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Matracové potahy vyrábíme ve dvou variantách:"
-        },
-        {
-          "key": "t2",
-          "type": "text",
-          "label": "Odrážky (každá na nový řádek)",
-          "value": "prošitá, třívrstvá (vrchový materiál, rouno a netkaná textilie)\nneprošitá, jen z vrchového materiálu"
-        }
-      ]
-    },
-    {
-      "key": "blok-2",
-      "label": "Odstavec 2: Zip",
-      "hideable": true,
-      "visible": true,
-      "fields": [
-        {
-          "key": "t1",
-          "type": "text",
-          "label": "Mezititulek (H2)",
-          "value": "Zip"
-        },
-        {
-          "key": "r1",
-          "type": "rich",
-          "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Zip můžeme našít třemi způsoby:"
-        },
-        {
-          "key": "t2",
-          "type": "text",
-          "label": "Odrážky (každá na nový řádek)",
-          "value": "po celém obvodu\nve tvaru písmene L\nna třech stranách"
-        }
-      ]
-    },
-    {
-      "key": "blok-3",
-      "label": "Odstavec 3: Rozměry a bočnice",
-      "hideable": true,
-      "visible": true,
-      "fields": [
-        {
-          "key": "t1",
-          "type": "text",
-          "label": "Mezititulek (H2)",
-          "value": "Rozměry a bočnice"
-        },
-        {
-          "key": "r1",
-          "type": "rich",
-          "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Standardně šijeme v rozměrech například 160 × 200, 180 × 200 nebo 200 × 220 cm. Jiný rozměr připravíme na míru. Potah může mít bočnice nebo být bez nich, doplnit ho lze krycí podložkou a vyrobíme ho i do kočárku."
+          "value": "Matracový potah funguje jako návlek na matraci. Prodlužuje její životnost a zlepšuje spánek. Materiály, které používáme, jsou ochranné a nepropustné a spojují praktické provedení s kvalitním zpracováním.<br><br>V šití matracových potahů se v dílně ve Zruči nad Sázavou věnujeme od roku 2000. Za tu dobu jsme splnili stovky běžných i náročných požadavků a umíme ušít i složité potahy na míru. Přehled najdete na stránce <a href=\"/matracove-chranice-a-potahy/\">Matracové chrániče a potahy</a>."
         },
         {
           "key": "t2",
@@ -126,8 +84,132 @@
       ]
     },
     {
+      "key": "blok-2",
+      "label": "Odstavec 2: Prošitý, nebo neprošitý",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Prošitý, nebo neprošitý"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Potahy vyrábíme ve dvou variantách:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "prošitá: třívrstvá (vrchový materiál, rouno a netkaná textilie), na dotek měkčí a objemnější\nneprošitá: jen z vrchového materiálu, hladší a tenčí"
+        }
+      ]
+    },
+    {
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/matracovy-potah-hero.webp",
+            "alt": "Roh prošívaného matracového potahu"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: roh prošívaného potahu."
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Zip: po obvodu, do L, nebo na třech stranách",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Zip: po obvodu, do L, nebo na třech stranách"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Zip lze našít třemi způsoby: po celém obvodu, ve tvaru písmene L, nebo na třech stranách. Volba záleží na tom, jak matraci používáte a jak často potah svlékáte.<br><br>Neváhejte se zeptat, kterou variantu zvolit. Poradíme podle toho, jak je matrace uložená a jak se s ní manipuluje."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-2",
+      "label": "Obrázek 2",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/clanky/foto/zip-l.webp",
+            "alt": "Prošívaný potah se zipem ve tvaru písmene L"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: potah se zipem ve tvaru L."
+        }
+      ]
+    },
+    {
       "key": "blok-4",
-      "label": "Odstavec 4: Vrchové materiály",
+      "label": "Odstavec 4: Rozměry, bočnice a doplňky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Rozměry, bočnice a doplňky"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Standardně šijeme v rozměrech například 160 × 200, 180 × 200 nebo 200 × 220 cm. Potřebujete-li jiný rozměr, napište nám a připravíme návrh přesně na míru.<br><br>Potah může mít bočnice, nebo být bez nich. Doplnit ho lze krycí podložkou a vyrobíme ho i na matraci do kočárku."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-5",
+      "label": "Odstavec 5: Vrchové materiály",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -152,8 +234,8 @@
       ]
     },
     {
-      "key": "blok-5",
-      "label": "Odstavec 5: Chcete si potah ušít sami?",
+      "key": "blok-6",
+      "label": "Odstavec 6: Chcete si potah ušít sami?",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -167,7 +249,53 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "V nabídce máme i <a href=\"/latky-a-metraz/#materialy-na-potahy\">materiály na matracové potahy v metráži</a>. Šijeme od roku 2000 v dílně ve Zruči nad Sázavou."
+          "value": "V nabídce máme i <a href=\"/latky-a-metraz/#materialy-na-potahy\">materiály na matracové potahy v metráži</a>, v různých barevných provedeních. Rouno a netkanou textilii pro prošev najdete mezi <a href=\"/latky-a-metraz/#rouna\">polyesterovými rouny a netkanými textiliemi</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "tip-1",
+      "label": "Rámeček: Dobré vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Dobré vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "S nestandardními požadavky se na nás můžete obrátit. Čím přesnější rozměry a popis dodáte, tím rychleji připravíme návrh. U hotelů nebo výrobců matrací domluvíme i série."
+        }
+      ]
+    },
+    {
+      "key": "blok-7",
+      "label": "Odstavec 7: Návazné články",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Návazné články"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Chrání-li potah matraci před znečištěním, pomůže i chránič s PUR zátěrem: <a href=\"/clanky/matracove-chranice-s-pur-zaterem/\">Matracové chrániče s PUR zátěrem</a>. O samotném proševu píšeme v článku <a href=\"/clanky/jak-funguje-strojni-prosivani/\">Jak funguje strojní prošívání</a>.<br><br>Napište nám přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a> nebo zavolejte."
         },
         {
           "key": "t2",

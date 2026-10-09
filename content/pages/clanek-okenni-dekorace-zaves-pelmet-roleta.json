@@ -13,6 +13,15 @@
     "modified": "2026-10-09",
     "order": 9,
     "image": "/assets/clanky/okenni-dekorace-zaves-pelmet-roleta.webp",
+    "service": [
+      "/bytovy-textil-na-miru/",
+      "/latky-a-metraz/"
+    ],
+    "related": [
+      "zaclony-a-voaly",
+      "blackout-dimout-nebo-zaves",
+      "prehozy-a-polstarky"
+    ],
     "css": [
       "obsah"
     ]
@@ -34,7 +43,7 @@
           "key": "t2",
           "type": "text",
           "label": "Perex",
-          "value": "Přehled okenních dekorací, které šijeme, a způsobů uchycení, ze kterých můžete vybírat."
+          "value": "Přehled okenních dekorací, které šijeme, způsobů uchycení a toho, jak okno změřit."
         },
         {
           "key": "img1",
@@ -49,7 +58,7 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Závěsy a záclony",
+      "label": "Odstavec 1: Okenní dekorace jako celek",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -57,13 +66,13 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Závěsy a záclony"
+          "value": "Okenní dekorace jako celek"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Šijeme závěsy podšité i nepodšité a záclony včetně našití olůvka. Materiál můžeme nabídnout vlastní, nebo ušít z materiálu, který dodáte."
+          "value": "Okno se dá oblékat různými způsoby: závěsem, záclonou, pelmetem, roletou nebo japonskou stěnou. Vybírá se podle toho, kolik světla potřebujete, jaký je styl místnosti a jak okno využíváte.<br><br>Šijeme různé typy okenních dekorací. Materiály nabízíme vlastní, nebo šijeme z dodaného materiálu. Přehled je na stránce <a href=\"/bytovy-textil-na-miru/\">Bytový textil na míru</a>."
         },
         {
           "key": "t2",
@@ -75,7 +84,7 @@
     },
     {
       "key": "blok-2",
-      "label": "Odstavec 2: Uchycení",
+      "label": "Odstavec 2: Závěsy podšité i nepodšité",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -83,25 +92,100 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Uchycení"
+          "value": "Závěsy podšité i nepodšité"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Nabízíme různé druhy uchycení:"
+          "value": "Podšívka dodá závěsu hmotnost a lépe se s ní pracuje při řasení a pádu látky. Nepodšitý závěs je lehčí a propouští víc světla. Obojí ušijeme, vyberete podle látky a podle toho, co od závěsu čekáte.<br><br>Rozdíl mezi zatemňujícími a klasickými látkami najdete v článku <a href=\"/clanky/blackout-dimout-nebo-zaves/\">Blackout, dimout nebo klasický závěs: jak vybrat</a>."
         },
         {
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "řasicí páska\ntunýlek\nkroužky\npoutka"
+          "value": ""
         }
       ]
     },
     {
       "key": "blok-3",
-      "label": "Odstavec 3: Pelmety",
+      "label": "Odstavec 3: Záclony s olůvkem",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Záclony s olůvkem"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Záclony šijeme včetně našití olůvka, aby visely rovně. Typy a provedení popisuje článek <a href=\"/clanky/zaclony-a-voaly/\">Záclony a voály</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/clanky/foto/uchyceni-zaves.webp",
+            "alt": "Čtyři způsoby uchycení závěsu: řasicí páska, tunýlek, kroužky a poutka"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: čtyři způsoby uchycení závěsu."
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Uchycení závěsu",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Uchycení závěsu"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Nabízíme různé druhy uchycení, každé dává závěsu jiný vzhled:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "řasicí páska: pravidelné, předem dané záhyby\ntunýlek: látka nasazená na tyč jako na kapsu\nkroužky: závěs visí na tyči a posouvá se po kroužcích\npoutka: textilní smyčky, působí uvolněněji"
+        }
+      ]
+    },
+    {
+      "key": "blok-5",
+      "label": "Odstavec 5: Pelmety",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -115,7 +199,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Pelmety šijeme řasené i rovné, včetně výztuhy."
+          "value": "Pelmet je dekorativní lišta z látky nad závěsem, která zakryje kolejnici nebo tyč. Šijeme je řasené i rovné, včetně výztuhy."
         },
         {
           "key": "t2",
@@ -126,8 +210,31 @@
       ]
     },
     {
-      "key": "blok-4",
-      "label": "Odstavec 4: Japonské stěny a rolety",
+      "key": "foto-2",
+      "label": "Obrázek 2",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/pelmet-zaves.webp",
+            "alt": "Pelmet nad závěsem a záclonou"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: pelmet nad závěsem a záclonou."
+        }
+      ]
+    },
+    {
+      "key": "blok-6",
+      "label": "Odstavec 6: Japonské stěny",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -135,13 +242,131 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Japonské stěny a rolety"
+          "value": "Japonské stěny"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Z dalších okenních dekorací nabízíme japonské stěny a rolety římské, vídeňské a londýnské."
+          "value": "Japonské stěny jsou posuvné textilní panely před oknem nebo prosklenou stěnou. Hodí se na velká okna a lze je použít i k dělení prostoru. Šijeme je i pro hotelové provozy."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-3",
+      "label": "Obrázek 3",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/japonske-steny.webp",
+            "alt": "Japonské stěny před velkým oknem"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: japonské stěny před velkým oknem."
+        }
+      ]
+    },
+    {
+      "key": "blok-7",
+      "label": "Odstavec 7: Rolety",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Rolety"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Šijeme rolety římské, vídeňské a londýnské. Římská roleta se skládá do vodorovných záhybů, hodí se do kuchyně, pracovny nebo ložnice. Další typy popíšeme při konzultaci. Hotové realizace včetně vídeňských rolet najdete v sekci <a href=\"/reference/ostatni-realizace/\">Ostatní realizace</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-4",
+      "label": "Obrázek 4",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/rimska-roleta-na-miru.webp",
+            "alt": "Béžová římská roleta napůl vytažená nad oknem"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: římská roleta napůl vytažená."
+        }
+      ]
+    },
+    {
+      "key": "tip-1",
+      "label": "Rámeček: Jak změřit okno",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Jak změřit okno"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "U závěsů na tyč přičtěte k šířce okna 15 až 20 cm na každou stranu. Výšku měřte od tyče nebo kolejnice k podlaze nebo k parapetu. Rozhodněte, jestli má závěs končit těsně nad podlahou, nebo se jí mírně dotýkat. Pošlete nám rozměry a fotku okna a zbytek doladíme spolu."
+        }
+      ]
+    },
+    {
+      "key": "blok-8",
+      "label": "Odstavec 8: Výběr materiálu a postup",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Výběr materiálu a postup"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Látky vybereme společně. Dekorační látky, dimouty, blackouty i záclonoviny najdete v sekci <a href=\"/latky-a-metraz/\">Látky a metráž</a>, vzorkovníky v části <a href=\"/vzorkovniky/\">Vzorkovníky</a>.<br><br>Napište nám přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a> a pošlete fotku okna."
         },
         {
           "key": "t2",

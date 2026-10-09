@@ -271,6 +271,7 @@
       </div>
     </section>
     <?php endif; ?>
+    <?php partial('clanky-teaser'); ?>
     <?php if (visible('vyzva-na-konci-stranky')): ?>
     <section class="index-zaverecne-cta" data-screen-label="Závěrečné CTA" aria-labelledby="h-cta">
       <div class="container index-zaverecne-cta__inner">

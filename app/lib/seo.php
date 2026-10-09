@@ -137,7 +137,7 @@ function seo_head(array $page): string
         '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=Parisienne&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap">'
     );
     $l[] = '<script>if (!window.matchMedia || !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-anim")</script>';
-    foreach (array_merge(['base', 'components', 'pages'], $page['options']['css'] ?? [], ['animace']) as $css) {
+    foreach (array_unique(array_merge(['base', 'components', 'pages', 'obsah'], $page['options']['css'] ?? [], ['animace'])) as $css) {
         $l[] = '<link rel="stylesheet" href="/assets/css/' . $css . '.css?v=' . asset_version("css/$css.css") . '">';
     }
     $ga = (string) config('analytics.ga4_id', '');

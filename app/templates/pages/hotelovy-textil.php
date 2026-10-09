@@ -361,6 +361,7 @@
       </div>
     </section>
     <?php endif; ?>
+    <?php partial('clanky-teaser'); ?>
     <?php if (visible('souvisejici-sluzby')): ?>
     <section data-screen-label="Související služby" aria-labelledby="h-souvisejici">
       <div class="container section-pad service-souvisejici-sluzby__inner">

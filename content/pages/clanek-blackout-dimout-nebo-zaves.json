@@ -4,7 +4,7 @@
   "editable": true,
   "meta": {
     "title": "Blackout, dimout nebo závěs: jak vybrat | Century 2000",
-    "description": "Blackout zatemní na 100 %, dimout zhruba na 90 %. Přehled, čím se liší, hořlavá a nehořlavá provedení a jak vybrat látku."
+    "description": "Blackout zatemní na 100 %, dimout zhruba na 90 %. Rozdíly, hořlavé a nehořlavé provedení a jak vybrat látku podle místnosti."
   },
   "options": {
     "type": "article",
@@ -13,6 +13,15 @@
     "modified": "2026-10-09",
     "order": 1,
     "image": "/assets/clanky/blackout-dimout-nebo-zaves.webp",
+    "service": [
+      "/bytovy-textil-na-miru/",
+      "/latky-a-metraz/"
+    ],
+    "related": [
+      "nehorlave-dekoracni-latky-pro-hotely",
+      "zaclony-a-voaly",
+      "okenni-dekorace-zaves-pelmet-roleta"
+    ],
     "css": [
       "obsah"
     ]
@@ -34,7 +43,7 @@
           "key": "t2",
           "type": "text",
           "label": "Perex",
-          "value": "Tři druhy dekorační látky, tři míry zatemnění. Přehled, čím se liší a ke které místnosti se hodí."
+          "value": "Tři druhy dekorační látky, tři míry zatemnění. Přehled, čím se liší, ke které místnosti se hodí a jak postupovat při výběru."
         },
         {
           "key": "img1",
@@ -49,7 +58,56 @@
     },
     {
       "key": "blok-1",
-      "label": "Odstavec 1: Blackout: úplné zatemnění",
+      "label": "Odstavec 1: Tři druhy látky, tři míry zatemnění",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Tři druhy látky, tři míry zatemnění"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Když vybíráte látku na závěs, první otázka zní: kolik světla má v místnosti zůstat? Odpověď rozhoduje o tom, jestli sáhnete po blackoutu, dimoutu, nebo po klasické dekorační látce. Tyto látky se od sebe liší stavbou tkaniny, nejen barvou nebo vzorem.<br><br>V Century 2000 šijeme závěsy ze všech tří druhů a prodáváme je také jako <a href=\"/latky-a-metraz/\">látky v metráži</a>. Tento článek vysvětluje, v čem se liší, kdy se který hodí a na co se při výběru zeptat."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "foto-1",
+      "label": "Obrázek 1",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/blackout-latka.webp",
+            "alt": "Průsvitná záclona a neprůsvitný závěs u okna"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: průsvitná záclona vedle neprůsvitného závěsu."
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Blackout: úplné zatemnění",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -63,33 +121,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Blackout je dvouvrstvá dekorační látka. Z lícu vidíte strukturu, barvu nebo dekor tkaniny, z rubu je blackoutový zátěr, který látce dává zatemňovací funkci.<br><br>Zatemnění je stoprocentní."
-        },
-        {
-          "key": "t2",
-          "type": "text",
-          "label": "Odrážky (každá na nový řádek)",
-          "value": ""
-        }
-      ]
-    },
-    {
-      "key": "blok-2",
-      "label": "Odstavec 2: Dimout: výrazné ztlumení světla",
-      "hideable": true,
-      "visible": true,
-      "fields": [
-        {
-          "key": "t1",
-          "type": "text",
-          "label": "Mezititulek (H2)",
-          "value": "Dimout: výrazné ztlumení světla"
-        },
-        {
-          "key": "r1",
-          "type": "rich",
-          "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Dimout je setkávaná dekorační látka. Zatemňuje přibližně z 90 %. Místnost zcela neztmavne, ale zastínění je zpravidla o mnoho vyšší než u klasických nezatemňovacích variant."
+          "value": "Blackout je dvouvrstvá dekorační látka. Z lícu, tedy ze strany, kterou vidíte v místnosti, má strukturu, barvu nebo dekor tkaniny. Z rubu je opatřená zátěrem, který světlo nepropouští. Díky tomu je zatemnění stoprocentní.<br><br>Protože je zátěr na rubu, látka vypadá z místnosti jako běžná dekorační tkanina, jen skrz ni neprojde světlo.<br><br>Blackout se hodí všude, kde potřebujete tmu: do ložnic a dětských pokojů, na hotelové pokoje nebo do místností, kde se spí přes den či promítá."
         },
         {
           "key": "t2",
@@ -101,7 +133,33 @@
     },
     {
       "key": "blok-3",
-      "label": "Odstavec 3: Klasická dekorační látka",
+      "label": "Odstavec 3: Dimout: výrazné zastínění bez úplné tmy",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Dimout: výrazné zastínění bez úplné tmy"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Dimout je setkávaná dekorační látka. Zatemňuje přibližně z 90 %, což je stále výrazně víc než u klasických nezatemňovacích látek, ale místnost zcela neztmavne.<br><br>Rozdíl proti blackoutu je tedy v míře: dimout propustí malou část světla. Při slunci za oknem tak vznikne příjemné tlumené světlo, ale pokoj nebude úplně tmavý.<br><br>Hodí se do obývacích pokojů, jídelen, pracoven nebo restaurací, kde chcete omezit oslnění, ale nechcete místnost zatemnit úplně."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Klasická dekorační látka",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -115,7 +173,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Obyčejný závěs bez zatemňující vrstvy slouží především jako dekorace a částečné zastínění. Dekorační látky nabízíme v široké škále vzorů a odstínů a ušijeme z nich závěsy, polštářky i další doplňky."
+          "value": "Dekorační látka bez zatemňující vrstvy slouží hlavně jako ozdoba a jako clona proti pohledům zvenčí. Světlo propouští víc než dimout, proto se hodí tam, kde záleží především na vzoru, barvě a na tom, jak látka padá.<br><br>Dekorační látky nabízíme v široké škále vzorů a odstínů. Ušijeme z nich závěsy, polštářky i další doplňky, nebo je prodáme v <a href=\"/latky-a-metraz/#dekoracni-latky\">metráži</a>.<br><br>Klasický závěs se často kombinuje se záclonou nebo voálem: záclona zjemní světlo přes den, závěs zatáhnete večer. Víc o záclonách najdete v článku <a href=\"/clanky/zaclony-a-voaly/\">Záclony a voály: typy a provedení</a>."
         },
         {
           "key": "t2",
@@ -126,8 +184,8 @@
       ]
     },
     {
-      "key": "blok-4",
-      "label": "Odstavec 4: Hořlavé a nehořlavé provedení",
+      "key": "blok-5",
+      "label": "Odstavec 5: Hořlavé a nehořlavé provedení",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -141,7 +199,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Blackouty i dimouty rozlišujeme na hořlavé a nehořlavé. Použití je z velké části dáno normami pro jednotlivé obory. U některých prostor, například u záclon a závěsů ve veřejných prostorách, platí navíc nařízení regionálních nebo místních úřadů.<br><br>Materiály vyhovují evropským normám BS 5867 Part 2B, M1 a B1."
+          "value": "Blackouty i dimouty rozlišujeme na hořlavé a nehořlavé. Použití je z velké části dáno normami pro jednotlivé obory a pro některé prostory, například pro záclony a závěsy ve veřejných prostorách, platí navíc nařízení regionálních nebo místních úřadů.<br><br>Materiály, které nabízíme, vyhovují evropským normám BS 5867 Part 2B, M1 a B1. V soukromém bytě rozhodujete sami. Pro hotel, restauraci nebo sál požadavky ověřte ještě před výběrem látky.<br><br>Podrobnosti najdete v článku <a href=\"/clanky/nehorlave-dekoracni-latky-pro-hotely/\">Nehořlavé dekorační látky pro hotely a restaurace</a> a na stránce <a href=\"/hotelovy-textil/\">Hotelový textil</a>."
         },
         {
           "key": "t2",
@@ -152,8 +210,28 @@
       ]
     },
     {
-      "key": "blok-5",
-      "label": "Odstavec 5: Jak vybrat",
+      "key": "tip-1",
+      "label": "Rámeček: Dobré vědět",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis rámečku",
+          "value": "Dobré vědět"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Zatemnění ovlivňuje i to, jak závěs visí. Světlo se vždy najde okolo okraje, proto u opravdu úplné tmy řešte i šířku závěsu a uchycení: závěs by měl přesahovat okno a končit u podlahy nebo parapetu. Správné rozměry vám pomůžeme určit."
+        }
+      ]
+    },
+    {
+      "key": "blok-6",
+      "label": "Odstavec 6: Jak vybrat podle místnosti",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -161,25 +239,48 @@
           "key": "t1",
           "type": "text",
           "label": "Mezititulek (H2)",
-          "value": "Jak vybrat"
+          "value": "Jak vybrat podle místnosti"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Rozhodněte podle toho, kolik světla má v místnosti zůstat:"
+          "value": "Orientační přehled:"
         },
         {
           "key": "t2",
           "type": "text",
           "label": "Odrážky (každá na nový řádek)",
-          "value": "Chcete úplnou tmu, například v ložnici: blackout.\nStačí vám výrazné ztlumení světla: dimout.\nHledáte hlavně vzor a barvu: dekorační látka.\nVybíráte pro hotel, restauraci nebo sál: zvolte nehořlavé provedení a požadavky na objekt si ověřte předem."
+          "value": "Ložnice: blackout, pokud chcete spát za světla; dimout, pokud vám stačí tlumené světlo.\nDětský pokoj: blackout, pokud potřebujete tmu na denní spánek.\nObývací pokoj a jídelna: dimout, nebo dekorační látka se záclonou.\nPracovna: dimout, aby světlo nesvítilo na obrazovku a místnost zůstala světlá.\nHotelový pokoj: blackout v nehořlavém provedení.\nRestaurace a sály: dimout nebo dekorační látka v nehořlavém provedení."
         }
       ]
     },
     {
-      "key": "blok-6",
-      "label": "Odstavec 6: Vzorky a barvy",
+      "key": "foto-2",
+      "label": "Obrázek 2",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/clanky/nehorlave-dekoracni-latky-pro-hotely.webp",
+            "alt": "Hotelový pokoj se závěsy a záclonami"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Popisek pod obrázkem",
+          "value": "Ilustrace: hotelový pokoj se závěsy a záclonami."
+        }
+      ]
+    },
+    {
+      "key": "blok-7",
+      "label": "Odstavec 7: Vzorky a barvy",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -193,7 +294,59 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (odstavce oddělte prázdným řádkem)",
-          "value": "Látky je nejlepší vidět naživo. Odstíny nehořlavých dimoutů najdete ve <a href=\"/vzorkovniky/\">vzorkovnících ke stažení</a> (barvy se mohou lišit podle nastavení monitoru nebo tiskárny), fyzické vzorky vám pošleme na vyžádání."
+          "value": "Látku je nejlepší vidět a osahat. Nehořlavé dimouty najdete ve <a href=\"/vzorkovniky/\">vzorkovnících ke stažení</a> (FR Sateen Dimout, FR Trench Dimout, FR Linara Dimout a FR Sunrise Dimout). Barvy se mohou lišit podle nastavení monitoru nebo tiskárny, proto vám na vyžádání pošleme fyzické vzorky."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-8",
+      "label": "Odstavec 8: Jak postupovat při objednávce",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Jak postupovat při objednávce"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Postup je jednoduchý:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "Napište nám, pro jakou místnost závěs potřebujete a kolik světla má propouštět.\nPřidejte rozměry okna nebo fotku. Jak okno změřit, popisujeme na stránce Bytový textil na míru.\nUveďte, zda potřebujete nehořlavé provedení.\nSpolečně vybereme látku, pošleme vzorky a nabídku."
+        }
+      ]
+    },
+    {
+      "key": "blok-9",
+      "label": "Odstavec 9: ",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": ""
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Napište nám přes <a href=\"/kontakt/#poptavka\">poptávkový formulář</a>, nebo se nejdřív podívejte na <a href=\"/reference/\">naše reference</a>."
         },
         {
           "key": "t2",
