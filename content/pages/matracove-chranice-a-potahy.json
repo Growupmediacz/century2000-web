@@ -58,7 +58,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/foto/matracovy-potah-hero.webp",
-            "alt": "Prošívaný matracový potah"
+            "alt": "Prošívaný matracový potah se zipem na matraci"
           }
         }
       ]
@@ -337,7 +337,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/strojni-prosivani-stroj-4x3.webp",
-            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+            "alt": "Prošívací stroj prošívá krémovou látku v kosočtvercovém vzoru"
           }
         },
         {
@@ -364,7 +364,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/hotelovy-textil-pokoj-4x3.webp",
-            "alt": "Hotelový pokoj s těžkými závěsy, prošívaným běhounem a polštáři"
+            "alt": "Hotelový pokoj se závěsy, bílou záclonou a prošívaným běhounem na posteli"
           }
         },
         {

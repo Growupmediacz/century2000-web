@@ -18,3 +18,7 @@ Cíl: ověřit, jestli lze fotky z roku 2012–2015 sjednotit a zvětšit bez z�
 4. Žádné generování realizací „z nuly“.
 
 Po schválení doporučení provedu dávku (upscale vybraných fotek, ostatní klasické úpravy) a doplním ji do tohoto PR.
+
+## Aktualizace 9. 10. 2026
+
+Klient se rozhodl, že staré fotky do konceptu nezapadají. Nové ilustrace jsou vygenerované od nuly (viz `docs/image-inventory.md`, sekce 2). Reference zůstávají na skutečných fotkách, jejich případný upscale zůstává možností.

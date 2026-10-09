@@ -64,7 +64,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/latky-metraz-regal.webp",
-            "alt": "Regál s rolemi dekoračních látek seřazenými podle barev"
+            "alt": "Regál s rolemi dekoračních látek seřazenými podle odstínu"
           }
         }
       ]
@@ -81,7 +81,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/blackout-latka.webp",
-            "alt": "Průsvitná záclona a neprůsvitný blackout proti oknu"
+            "alt": "Průsvitná záclona a neprůsvitný blackout u okna"
           }
         },
         {
@@ -408,7 +408,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/vzorkovniky-latek.webp",
-            "alt": "Vzorkovníky a vzorky dekoračních látek na stole"
+            "alt": "Vzorkovníky a vzorky látek na stole"
           }
         },
         {
@@ -590,7 +590,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/zavesy-na-miru-obyvak-4x3.webp",
-            "alt": "Krémové lněné závěsy s voálovou záclonou v obývacím pokoji"
+            "alt": "Obývací pokoj s krémovými lněnými závěsy a záclonou"
           }
         },
         {
@@ -617,7 +617,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/strojni-prosivani-stroj-4x3.webp",
-            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+            "alt": "Prošívací stroj prošívá krémovou látku v kosočtvercovém vzoru"
           }
         },
         {

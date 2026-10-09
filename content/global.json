@@ -170,6 +170,12 @@
           "type": "text",
           "label": "Odkaz: Vzorkovníky",
           "value": "Vzorkovníky"
+        },
+        {
+          "key": "t23",
+          "type": "text",
+          "label": "Poznámka k ilustračním fotografiím",
+          "value": "Ilustrační fotografie na webu jsou vytvořeny pomocí umělé inteligence. Fotografie v sekci Reference jsou skutečné realizace."
         }
       ]
     }

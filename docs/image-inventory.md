@@ -2,9 +2,9 @@
 
 Zdroj: záloha starého webu 19. 2. 2024 (galerie `com_droppics`, varianta `full`, a složky `images/…`). Všechny původní fotky jsou ve zdroji nejvýše 1280 px; webové varianty jsou WebP do 1280 px (a `-640` pro karty a galerie). Alt texty jsou v `content/pages/*.json` u každého obrázku.
 
-**Pozor na původ:** soubory v `public/assets/fotky/` (návrhové fotky z Claude Design) jsou **AI ilustrace**, nejsou to fotografie realizací Century 2000. Viz sekce 2.
+**Pozor na původ:** na webu jsou skutečné fotografie jen v sekci Reference. Ostatní obrázky jsou **AI ilustrace** (viz sekce 2).
 
-## 1. Použité skutečné fotky (reference, články, služby)
+## 1. Použité skutečné fotky (jen reference)
 
 | Použití | Soubor v repu | Zdroj ve starém webu | Původní rozměr | Poznámka |
 |---|---|---|---|---|
@@ -55,94 +55,20 @@ Zdroj: záloha starého webu 19. 2. 2024 (galerie `com_droppics`, varianta `full
 | Reference ostatni-realizace: foto 8 | `assets/realizace/ostatni-realizace/08.webp` | galerie 13, `Tatry-IV.JPG` | 1280×960 | původní galerie |
 | Reference ostatni-realizace: foto 9 | `assets/realizace/ostatni-realizace/09.webp` | galerie 13, `Tatry-III.JPG` | 1280×960 | původní galerie |
 | Reference ostatni-realizace: foto 10 | `assets/realizace/ostatni-realizace/10.webp` | galerie 13, `Tatry-Sykorova.JPG` | 1280×960 | původní galerie |
-| Článek blackout-dimout-nebo-zaves | `assets/clanky/blackout-dimout-nebo-zaves.webp` | `com_droppics/21/full/balonove-zavesy-2.jpg` | – | |
-| Článek nehorlave-dekoracni-latky-pro-hotely | `assets/clanky/nehorlave-dekoracni-latky-pro-hotely.webp` | `com_droppics/21/full/balonove-zavesy-5.jpg` | – | |
-| Článek rautove-sukne-plisse-a-boxpleat | `assets/clanky/rautove-sukne-plisse-a-boxpleat.webp` | `com_droppics/34/full/rautova-sukne.JPG` | – | |
-| Článek matracove-chranice-s-pur-zatěrem | `assets/clanky/matracove-chranice-s-pur-zaterem.webp` | `siti-potahu-na-matrace/matracove-chranice.jpg` | – | |
-| Článek jak-funguje-strojni-prosivani | `assets/clanky/jak-funguje-strojni-prosivani.webp` | `com_droppics/38/full/detail-prosevu-10.JPG` | – | |
-| Článek matracovy-potah-na-miru | `assets/clanky/matracovy-potah-na-miru.webp` | `com_droppics/37/full/DSCN4290.JPG` | – | |
-| Článek latky-na-ubrusy-a-prostirani | `assets/clanky/latky-na-ubrusy-a-prostirani.webp` | `Stoly 040_6_tone.jpg` | – | |
-| Článek zaclony-a-voaly | `assets/clanky/zaclony-a-voaly.webp` | `com_droppics/13/full/BIS-FINESTRA-7.JPG` | – | |
-| Článek okenni-dekorace-zaves-pelmet-roleta | `assets/clanky/okenni-dekorace-zaves-pelmet-roleta.webp` | `com_droppics/13/full/Tatry-IV.JPG` | – | |
-| Článek prehozy-a-polstarky | `assets/clanky/prehozy-a-polstarky.webp` | `com_droppics/13/full/BIS-FINESTRA-4.JPG` | – | |
 
-Úpravy při převodu: otočení podle EXIF, zmenšení na max. 1280 px, WebP (q 80), varianta 640 px. Žádná AI úprava nebyla u publikovaných souborů použita (viz sekce 4).
+Úpravy při převodu: otočení podle EXIF, zmenšení na max. 1280 px, WebP (q 80), varianta 640 px. Skutečné fotky referencí nebyly AI upravovány. Možné zvětšení (upscale) čeká na schválení, viz sekce 4.
 
-### Reálné fotky nasazené místo AI ilustrací
+## 2. Ilustrační obrázky vytvořené pomocí AI (od 9. 10. 2026)
 
-| Místo | Soubor | Zdroj |
-|---|---|---|
-| viz obsah stránek | `assets/foto/chranic-guma-pres-roh.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/chranic-s-bocnicemi.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/hotelovy-prehoz.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/japonske-steny.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/matracovy-potah-hero.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/pelmet-zaves.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/potah-zip.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/potahy-na-zidle.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/prehoz-s-volanem.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/prosev-img1.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/prosev-img2.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/prosev-img3.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/prosev-img4.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/prosev-img5.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/prosev-img6.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/rautova-sukne.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/restaurace-stoly.webp` | galerie / `images/siti-…` ze zálohy |
-| viz obsah stránek | `assets/foto/vypln-polstare.webp` | galerie / `images/siti-…` ze zálohy |
+Na přání klienta (staré fotky nezapadají do konceptu webu) jsou **všechny ilustrační obrázky nové, vygenerované** (Higgsfield, model GPT Image 2.5, vždy podle textového zadání inspirovaného původními motivy, ne úpravou starých fotek). Sjednocený styl: měkké denní světlo, krémová a bronzová paleta, bez textu, log a obličejů.
 
-## 2. AI ilustrace v repu (`public/assets/fotky/`)
+- **Kde jsou:** `public/assets/fotky/` (hero, služby, dílna, kariéra, 4:3 karty), `public/assets/foto/` (produktové a vzorové ilustrace), `public/assets/clanky/` (hlavní obrázky článků).
+- **Označení:** v patičce webu je poznámka „Ilustrační fotografie na webu jsou vytvořeny pomocí umělé inteligence. Fotografie v sekci Reference jsou skutečné realizace.“ (pole `paticka.t23` v administraci). Stránka Strojní prošívání označuje vzory proševu jako ilustrace a dohoda konkrétního provedení probíhá na schůzce.
+- **Pravidla:** AI obrázky se nepoužívají u referencí (tam jsou jen skutečné fotky) a nevydávají se za realizace konkrétních hotelů. Lidé jsou jen záběry rukou nebo ze zadu.
+- **Vzory proševu (6):** ilustrace kosočtverce, vlnek, čtvercové mřížky, ornamentu, kruhů s vlnkami a širokého kosočtverce podle typů vzorů ze starého webu. Nejsou závazným vzorníkem.
+- **Uchování zadání:** zadání (prompty) jsou v historii session; při další změně stylu lze obrázky přegenerovat se stejnými názvy souborů.
 
-Návrhové ilustrace, nejsou realizace firmy. Nesmí být prezentovány jako reference. Stav po tomto importu:
-
-| Soubor | Kde je použit | Stav |
-|---|---|---|
-| `blackout-latka.webp` | latky-a-metraz | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `chranic-detail-rohu.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `chranic-pur-nepropustny.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `detail-jehel-prosev.webp` | strojni-prosivani | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `detail-zavesu-pelmet.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `hero-sici-dilna-mobil.webp` | index | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `hero-sici-dilna.webp` | index | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `hotelova-restaurace-ubrusy.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `hotelova-zakazka-expedice.webp` | hotelovy-textil | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `hotelovy-textil-pokoj-4x3.webp` | 404, bytovy-textil-na-miru, hotelovy-textil, index, matracove-chranice-a-potahy | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `hotelovy-textil-pokoj.webp` | hotelovy-textil | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `japonska-stena.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `kariera-svadlena.webp` | kariera | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `kariera-zauceni.webp` | dekujeme-kariera, kariera | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `latky-metraz-regal-4x3.webp` | 404, bytovy-textil-na-miru, hotelovy-textil, index, strojni-prosivani | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `latky-metraz-regal.webp` | latky-a-metraz | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `matracovy-chranic-4x3.webp` | 404, hotelovy-textil, index, strojni-prosivani | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `matracovy-chranic.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `mereni-okna-zavesy.webp` | bytovy-textil-na-miru | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `pokladaci-stul-strih.webp` | o-nas | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `potah-na-matraci-zip.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `potahy-na-zidle-sal.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `prehoz-na-postel.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `prodejna-latek.webp` | latky-a-metraz | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `prosivani-uzavreny-vzor.webp` | strojni-prosivani | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `prosivany-material-vrstvy.webp` | strojni-prosivani | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `rautova-sukne.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `rimska-roleta-na-miru.webp` | bytovy-textil-na-miru | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `role-prosivaneho-materialu.webp` | strojni-prosivani | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `ruce-pri-siti.webp` | dekujeme, index, o-nas | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `sici-dilna-celek.webp` | o-nas | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `strojni-prosivani-stroj-4x3.webp` | 404, index, latky-a-metraz, matracove-chranice-a-potahy | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `strojni-prosivani-stroj.webp` | strojni-prosivani | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `textura-prosev.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `vyplne-polstaru.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `vzor-prosevu-ctverec.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `vzor-prosevu-kosoctverec.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `vzor-prosevu-medailon.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `vzor-prosevu-ornament.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `vzor-prosevu-rostlinny.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `vzor-prosevu-vlnovka.webp` | – | už není v obsahu (nahrazeno skutečnou fotkou nebo nepoužito); soubor lze smazat |
-| `vzorkovniky-latek.webp` | latky-a-metraz | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `zavesy-na-miru-obyvak-4x3.webp` | 404, bytovy-textil-na-miru, index, latky-a-metraz | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-| `zavesy-na-miru-obyvak.webp` | bytovy-textil-na-miru | ponecháno, **AI ilustrace** (potřeba skutečné focení nebo schválení klienta) |
-
-Zvlášť citlivé: `sici-dilna-celek`, `ruce-pri-siti`, `hero-sici-dilna`, `kariera-*` (AI lidé a dílna), `strojni-prosivani-stroj` (AI stroj), `prodejna-latek` (sekce prodejna je skryta). Doporučení: nahradit skutečným focením dílny a týmu.
+Staré návrhové AI ilustrace (`vzor-prosevu-*`, `chranic-*`, `japonska-stena`, `prehoz-na-postel` a další, celkem 15 souborů) jsou z repa odstraněny.
 
 ## 3. Nepoužité fotky a důvod
 

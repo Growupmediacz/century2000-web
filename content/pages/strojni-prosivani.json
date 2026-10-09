@@ -64,7 +64,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/strojni-prosivani-stroj.webp",
-            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+            "alt": "Prošívací stroj prošívá krémovou látku v kosočtvercovém vzoru"
           }
         }
       ]
@@ -244,7 +244,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/detail-jehel-prosev.webp",
-            "alt": "Detail jehel a přítlačných patek při prošívání silné látky"
+            "alt": "Detail jehel a přítlačných patek při prošívání"
           }
         },
         {
@@ -265,7 +265,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/prosivani-uzavreny-vzor.webp",
-            "alt": "Prošívací stroj s rámem vyšívá medailonový vzor na čtvercový panel"
+            "alt": "Prošívací stroj prošívá uzavřený vzor na čtvercový panel"
           }
         },
         {
@@ -306,7 +306,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/foto/prosev-img1.webp",
-            "alt": "Prošev v kosočtvercovém vzoru"
+            "alt": "Ilustrace proševu v kosočtvercovém vzoru"
           }
         },
         {
@@ -321,7 +321,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/foto/prosev-img2.webp",
-            "alt": "Prošev ve vlnkovém vzoru"
+            "alt": "Ilustrace proševu ve vlnkovém vzoru"
           }
         },
         {
@@ -336,7 +336,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/foto/prosev-img3.webp",
-            "alt": "Prošev ve čtvercovém vzoru"
+            "alt": "Ilustrace proševu ve čtvercovém vzoru"
           }
         },
         {
@@ -351,7 +351,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/foto/prosev-img4.webp",
-            "alt": "Prošev v ornamentálním vzoru"
+            "alt": "Ilustrace proševu v ornamentálním vzoru"
           }
         },
         {
@@ -366,7 +366,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/foto/prosev-img5.webp",
-            "alt": "Prošev v kombinaci kruhů a vlnek"
+            "alt": "Ilustrace proševu v kombinaci kruhů a vlnek"
           }
         },
         {
@@ -381,20 +381,20 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/foto/prosev-img6.webp",
-            "alt": "Prošev se zaoblenými kosočtverci"
+            "alt": "Ilustrace proševu se zaoblenými kosočtverci"
           }
         },
         {
           "key": "t8",
           "type": "text",
           "label": "Popisek obrázku",
-          "value": "Zaoblený kosočtverec"
+          "value": "Široký kosočtverec"
         },
         {
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Ukázka části vzorů. Kompletní vzorník vám pošleme na vyžádání."
+          "value": "Ilustrace vybraných vzorů. Konkrétní možnosti a kompletní vzorník domluvíme osobně nebo pošleme na vyžádání."
         }
       ]
     },
@@ -644,7 +644,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/latky-metraz-regal-4x3.webp",
-            "alt": "Regál s rolemi dekoračních látek seřazenými podle barev"
+            "alt": "Regál s rolemi dekoračních látek seřazenými podle odstínu"
           }
         },
         {

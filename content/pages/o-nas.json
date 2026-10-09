@@ -40,7 +40,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/sici-dilna-celek.webp",
-            "alt": "Světlá šicí dílna s řadami průmyslových šicích strojů"
+            "alt": "Světlá šicí dílna s řadami šicích strojů a stoly na střih"
           }
         }
       ]
@@ -95,7 +95,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/pokladaci-stul-strih.webp",
-            "alt": "Dlouhý pokládací stůl s rozloženou látkou připravenou ke střihu"
+            "alt": "Dlouhý pokládací stůl s látkou připravenou ke střihu"
           }
         },
         {
@@ -322,7 +322,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/ruce-pri-siti.webp",
-            "alt": "Ruce švadleny připínají lem lněného závěsu špendlíky"
+            "alt": "Ruce připínají lem lněného závěsu špendlíky"
           }
         },
         {

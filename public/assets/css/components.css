@@ -1217,3 +1217,6 @@
   margin:0;
   color:var(--ink-900);
 }
+
+/* Poznámka o ilustračních fotografiích v patičce */
+.site-footer__ai-note { margin: 0 auto; padding: 0 clamp(16px, 2vw, 24px) 20px; font-size: 13px; color: var(--ink-500); opacity: .85; }

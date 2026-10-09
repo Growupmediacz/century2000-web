@@ -40,5 +40,6 @@
       <button class="site-footer__legal-btn" type="button" data-on-click="openCookies"><?= t('paticka.t19') ?></button>
       <a class="site-footer__legal-link" href="/mapa-stranek/"><?= t('paticka.t20') ?></a>
     </div>
-  </div>
+    <p class="container site-footer__ai-note"><?= t('paticka.t23') ?></p>
+</div>
 </footer>

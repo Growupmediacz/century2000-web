@@ -72,7 +72,7 @@ Všechno je ve stejném systému jako ostatní stránky (JSON v `content/pages/`
 - **Vzorkovníky:** PDF jsou v `public/downloads/vzorkovniky/`, seznam (název, velikost) je v `content/pages/vzorkovniky.json` v `options.files`. Nový soubor nahrajte přes FTP a doplňte řádek v JSON.
 - **Starý obsah:** texty o látkách jsou na stránce Látky a metráž v sekcích „Materiál: …“ (`blok-*`), kotvy `#blackouty`, `#zaclony` apod. používají přesměrování.
 
-Obrázky pro články a reference: WebP do 1280 px a vedle něj varianta `-640` (např. `foto.webp` a `foto-640.webp`), kterou použijí karty a galerie. Obrázky nahrané v administraci mají jen jednu variantu (WebP do 2400 px).
+Obrázky na webu jsou kromě referencí AI ilustrace (viz `docs/image-inventory.md`). Obrázky pro články a reference: WebP do 1280 px a vedle něj varianta `-640` (např. `foto.webp` a `foto-640.webp`), kterou použijí karty a galerie. Obrázky nahrané v administraci mají jen jednu variantu (WebP do 2400 px).
 
 ## Přesměrování ze starého webu
 
