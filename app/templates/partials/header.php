@@ -30,7 +30,7 @@
           <div class="container site-header__mega-inner">
             
               <a class="site-header__mega-item" href="/bytovy-textil-na-miru/">
-                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/zavesy-na-miru-obyvak-4x3.webp" alt="" decoding="async" loading="lazy"></div>
+                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/menu-byt.webp" alt="" decoding="async" loading="lazy"></div>
                 <div class="site-header__mega-body">
                   <span class="serif site-header__mega-title">Bytový textil na míru</span>
                   <span class="text-muted site-header__mega-desc">Závěsy, záclony, rolety a přehozy</span>
@@ -38,7 +38,7 @@
               </a>
             
               <a class="site-header__mega-item" href="/hotelovy-textil/">
-                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/hotelovy-textil-pokoj-4x3.webp" alt="" decoding="async" loading="lazy"></div>
+                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/menu-hotel.webp" alt="" decoding="async" loading="lazy"></div>
                 <div class="site-header__mega-body">
                   <span class="serif site-header__mega-title">Hotelový textil</span>
                   <span class="text-muted site-header__mega-desc">Vybavení hotelů, penzionů a restaurací</span>
@@ -46,7 +46,7 @@
               </a>
             
               <a class="site-header__mega-item" href="/strojni-prosivani/">
-                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/strojni-prosivani-stroj-4x3.webp" alt="" decoding="async" loading="lazy"></div>
+                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/menu-prosev.webp" alt="" decoding="async" loading="lazy"></div>
                 <div class="site-header__mega-body">
                   <span class="serif site-header__mega-title">Strojní prošívání</span>
                   <span class="text-muted site-header__mega-desc">Prošev metráže do šíře 280 cm</span>
@@ -54,7 +54,7 @@
               </a>
             
               <a class="site-header__mega-item" href="/matracove-chranice-a-potahy/">
-                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/matracovy-chranic-4x3.webp" alt="" decoding="async" loading="lazy"></div>
+                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/menu-matrace.webp" alt="" decoding="async" loading="lazy"></div>
                 <div class="site-header__mega-body">
                   <span class="serif site-header__mega-title">Matracové chrániče a potahy</span>
                   <span class="text-muted site-header__mega-desc">Chrániče s PUR, potahy, výplně</span>
@@ -62,7 +62,7 @@
               </a>
             
               <a class="site-header__mega-item" href="/latky-a-metraz/">
-                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/latky-metraz-regal-4x3.webp" alt="" decoding="async" loading="lazy"></div>
+                <div class="site-header__mega-media"><img class="img-cover" src="/assets/fotky/menu-latky.webp" alt="" decoding="async" loading="lazy"></div>
                 <div class="site-header__mega-body">
                   <span class="serif site-header__mega-title">Látky a metráž</span>
                   <span class="text-muted site-header__mega-desc">Dekorační látky, blackouty, rouna</span>
