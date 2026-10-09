@@ -1,0 +1,83 @@
+/* Century 2000 – články, detail reference, vzorkovníky, karty referencí */
+
+/* ---------- Article / reference detail ---------- */
+.clanek-hero { background: var(--cream-50); border-bottom: 1px solid var(--line-200); }
+.clanek-hero__inner { display: flex; flex-direction: column; gap: 18px; padding: clamp(40px, 5vw, 72px) clamp(16px, 2vw, 24px) 32px; max-width: 880px; margin: 0 auto; }
+.clanek-hero__crumbs { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.clanek-hero__crumbs a { color: var(--ink-500); }
+.clanek-hero__rule { background: var(--bronze-600); }
+.clanek-hero__title { text-wrap: balance; }
+.clanek-hero__perex { font-size: clamp(17px, 1.4vw, 20px); line-height: 1.6; color: var(--ink-700); }
+.clanek-hero__date { margin: 0; }
+.clanek-hero__media { max-width: 1040px; padding: 0 clamp(16px, 2vw, 24px) 40px; }
+.clanek-hero__img { aspect-ratio: 16 / 9; height: auto; }
+
+.clanek-body { max-width: 760px; padding: 48px clamp(16px, 2vw, 24px) 64px; display: flex; flex-direction: column; gap: 32px; color: var(--ink-700); font-size: 17px; line-height: 1.7; }
+.clanek-body__block { display: flex; flex-direction: column; gap: 14px; }
+.clanek-body__h2 { margin-top: 8px; }
+.clanek-body__p { margin: 0; }
+.clanek-body__note { margin: 0; padding-top: 8px; border-top: 1px solid var(--line-200); }
+.clanek-body__list { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 6px; }
+.clanek-body__list li::marker { color: var(--bronze-600); }
+
+.clanek-cta { background: var(--cream-100); border-top: 1px solid var(--line-200); border-bottom: 1px solid var(--line-200); }
+.clanek-cta__inner { display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: center; justify-content: space-between; padding: 48px clamp(16px, 2vw, 24px); }
+.clanek-cta__text { flex: 1 1 380px; display: flex; flex-direction: column; gap: 10px; }
+.clanek-cta__eyebrow { color: var(--bronze-700); }
+.clanek-cta__heading { margin: 0; font-weight: 500; font-size: clamp(24px, 2.4vw, 30px); }
+.clanek-cta__buttons { display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; }
+.clanek-cta__btn { padding: 16px 28px; font-size: 15px; text-decoration: none; display: inline-block; }
+
+/* ---------- Article cards ---------- */
+.clanky-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 28px; }
+.clanky-card { background: var(--paper); border: 1px solid var(--line-200); }
+.clanky-card__link { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; }
+.clanky-card__media { display: block; aspect-ratio: 16 / 10; overflow: hidden; background: var(--cream-100); }
+.clanky-card__media img { transition: transform .4s; }
+.clanky-card__link:is(:hover, :focus-visible) img { transform: scale(1.03); }
+.clanky-card__body { display: flex; flex-direction: column; gap: 10px; padding: 20px 22px 24px; flex: 1; }
+.clanky-card__title { font-size: 21px; line-height: 1.3; color: var(--ink-900); }
+.clanky-card__perex { color: var(--ink-700); font-size: 16px; line-height: 1.55; }
+.clanky-card__body .link-arrow { margin-top: auto; padding-top: 6px; }
+.clanek-dalsi { border-top: 1px solid var(--line-200); }
+.clanek-dalsi__inner { display: flex; flex-direction: column; gap: 32px; }
+
+/* ---------- Reference cards and gallery ---------- */
+.reference-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 28px; }
+.reference-card { background: var(--paper); border: 1px solid var(--line-200); }
+.reference-card__link { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: inherit; }
+.reference-card__media { display: block; aspect-ratio: 3 / 2; overflow: hidden; background: var(--cream-100); }
+.reference-card__media img { transition: transform .4s; }
+.reference-card__link:is(:hover, :focus-visible) img { transform: scale(1.03); }
+.reference-card__body { display: flex; flex-direction: column; gap: 6px; padding: 18px 22px 22px; flex: 1; }
+.reference-card__title { font-size: 22px; color: var(--ink-900); }
+.reference-card__text { color: var(--ink-700); font-size: 15px; }
+.reference-card__body .link-arrow { margin-top: auto; padding-top: 10px; }
+.realizace-galerie { display: flex; flex-direction: column; gap: 28px; }
+.realizace-galerie__grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 14px; }
+.realizace-galerie__grid li { aspect-ratio: 4 / 3; overflow: hidden; background: var(--cream-100); }
+.realizace-galerie__grid a { display: block; height: 100%; }
+.realizace-galerie__grid img { transition: transform .4s; }
+.realizace-galerie__grid a:is(:hover, :focus-visible) img { transform: scale(1.04); }
+
+.pruh-duvery__name { color: var(--ink-700); font-size: clamp(18px, 1.6vw, 22px); text-decoration: none; text-align: center; }
+.pruh-duvery__name:hover { color: var(--bronze-700); }
+.index-reference__label { text-decoration: none; }
+.index-reference__label:hover { color: var(--bronze-700); }
+
+/* ---------- Vzorkovníky ---------- */
+.vzorkovniky { display: flex; flex-direction: column; gap: 20px; }
+.vzorkovniky__warning { margin: 0; max-width: 680px; }
+.vzorkovniky__list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+.vzorkovniky__item { background: var(--paper); border: 1px solid var(--line-200); }
+.vzorkovniky__link { display: flex; flex-direction: column; gap: 4px; padding: 18px 22px; text-decoration: none; height: 100%; }
+.vzorkovniky__link:is(:hover, :focus-visible) { background: var(--cream-100); }
+.vzorkovniky__title { font-size: 19px; color: var(--ink-900); }
+.vzorkovniky-partner { background: var(--cream-100); border-top: 1px solid var(--line-200); }
+.vzorkovniky-partner__inner { display: flex; flex-direction: column; gap: 16px; max-width: 820px; }
+.vzorkovniky-partner__inner .text { color: var(--ink-700); }
+
+.latky-detail { display: flex; flex-direction: column; gap: 40px; }
+.latky-detail__item { display: flex; flex-direction: column; gap: 12px; padding-top: 32px; border-top: 1px solid var(--line-200); scroll-margin-top: 90px; }
+.latky-detail__item .text { color: var(--ink-700); max-width: 760px; }
+

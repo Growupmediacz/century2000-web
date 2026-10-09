@@ -1,0 +1,193 @@
+{
+  "path": "/clanky/latky-na-ubrusy-a-prostirani/",
+  "name": "Látky na ubrusy a prostírání",
+  "editable": true,
+  "meta": {
+    "title": "Látky na ubrusy a prostírání | Century 2000",
+    "description": "Ubrusy kulaté, oválné, jídelní, svatební i kuchyňské. Šití na zakázku, dodávky pro catering a hotely a látky na ubrusy v metráži."
+  },
+  "options": {
+    "type": "article",
+    "template": "clanek",
+    "date": "2026-10-09",
+    "modified": "2026-10-09",
+    "order": 7,
+    "image": "/assets/clanky/latky-na-ubrusy-a-prostirani.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička článku",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis (H1)",
+          "value": "Látky na ubrusy a prostírání"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Perex",
+          "value": "Jaké ubrusy šijeme, v jakých rozměrech a jak vybrat, když si chcete ubrus ušít sami."
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní obrázek",
+          "value": {
+            "src": "/assets/clanky/latky-na-ubrusy-a-prostirani.webp",
+            "alt": "Kulatý stůl s lněným ubrusem a prostíráním"
+          }
+        }
+      ]
+    },
+    {
+      "key": "blok-1",
+      "label": "Odstavec 1: Typy ubrusů",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Typy ubrusů"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Ušijeme ubrusy v těchto provedeních:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "kulaté\noválné\njídelní\nsváteční\nsvatební\nkuchyňské"
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Rozměry",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Rozměry"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Rozměr ubrusu přizpůsobíme vašemu stolu. Šijeme například ubrusy o rozměru 120 × 120 nebo 130 × 130 cm a také prostírání."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Pro domácnost i pro provozy",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Pro domácnost i pro provozy"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Šijeme ubrusy do rodinných domů a bytů, stejně tak dodáváme ubrusy a prostírání pro catering, hotely a restaurace. Zakázkovou výrobu i větší dodávky zvládneme."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Látky v metráži",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Látky v metráži"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Chcete si ubrus ušít sami? Prodáváme <a href=\"/latky-a-metraz/#ubrusoviny\">látky na ubrusy v metráži</a> v bílé i barevné variantě a ustřihneme potřebnou délku. V nabídce jsou i dekorační látky různých odstínů a vzorů."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzba",
+      "label": "Související služba a výzva",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Štítek",
+          "value": "Související služba"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Látky a metráž"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Dekorační látky, blackouty, dimouty, ubrusoviny a látky s nehořlavou úpravou."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz (adresa)",
+          "value": "/latky-a-metraz/"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz (text)",
+          "value": "Látky a metráž →"
+        }
+      ]
+    }
+  ]
+}

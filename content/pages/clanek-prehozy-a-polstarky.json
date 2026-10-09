@@ -1,0 +1,167 @@
+{
+  "path": "/clanky/prehozy-a-polstarky/",
+  "name": "Přehozy a polštářky: prošívané, podšité i s volánem",
+  "editable": true,
+  "meta": {
+    "title": "Přehozy a polštářky na míru | Century 2000",
+    "description": "Prošívané a neprošívané přehozy, podšívkované i bez podšívky, s hladkým nebo řaseným volánem. Polštářky se vzorem i bílé."
+  },
+  "options": {
+    "type": "article",
+    "template": "clanek",
+    "date": "2026-10-09",
+    "modified": "2026-10-09",
+    "order": 10,
+    "image": "/assets/clanky/prehozy-a-polstarky.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička článku",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis (H1)",
+          "value": "Přehozy a polštářky: prošívané, podšité i s volánem"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Perex",
+          "value": "Jaká provedení přehozů šijeme a co lze vyrobit k nim, od polštářků po prošívané potahy."
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní obrázek",
+          "value": {
+            "src": "/assets/clanky/prehozy-a-polstarky.webp",
+            "alt": "Prošívaný přehoz s volánem a polštářky"
+          }
+        }
+      ]
+    },
+    {
+      "key": "blok-1",
+      "label": "Odstavec 1: Čtyři provedení přehozů",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Čtyři provedení přehozů"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Přehozy vyrábíme na zakázku:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "prošívané, podšívkované\nneprošívané, nepodšívkované\nneprošívané, podšívkované\ns volánem, hladkým nebo řaseným"
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Prošev",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Prošev"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Nabízíme různé druhy proševů. Na základě konzultace jsme schopni vyrobit téměř jakýkoli potah. Přehled vzorů a možností najdete na stránce <a href=\"/strojni-prosivani/\">Strojní prošívání</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Polštářky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Polštářky"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "K přehozům ušijeme polštářky s libovolným motivem, se vzorem i čistě bílé, s výplní i prošívané. Vyrábíme také bavlněné návleky na polštáře."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzba",
+      "label": "Související služba a výzva",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Štítek",
+          "value": "Související služba"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Bytový textil na míru"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Závěsy, záclony, rolety, japonské stěny a přehozy šité podle vašich rozměrů."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz (adresa)",
+          "value": "/bytovy-textil-na-miru/"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz (text)",
+          "value": "Bytový textil →"
+        }
+      ]
+    }
+  ]
+}

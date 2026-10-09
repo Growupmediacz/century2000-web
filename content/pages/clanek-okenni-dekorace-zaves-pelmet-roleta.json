@@ -1,0 +1,193 @@
+{
+  "path": "/clanky/okenni-dekorace-zaves-pelmet-roleta/",
+  "name": "Okenní dekorace: závěsy, pelmety, rolety a uchycení",
+  "editable": true,
+  "meta": {
+    "title": "Okenní dekorace: závěsy, pelmety, rolety | Century 2000",
+    "description": "Podšité i nepodšité závěsy, záclony s olůvkem, pelmety, japonské stěny a římské, vídeňské a londýnské rolety. Přehled uchycení."
+  },
+  "options": {
+    "type": "article",
+    "template": "clanek",
+    "date": "2026-10-09",
+    "modified": "2026-10-09",
+    "order": 9,
+    "image": "/assets/clanky/okenni-dekorace-zaves-pelmet-roleta.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička článku",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis (H1)",
+          "value": "Okenní dekorace: závěsy, pelmety, rolety a uchycení"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Perex",
+          "value": "Přehled okenních dekorací, které šijeme, a způsobů uchycení, ze kterých můžete vybírat."
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní obrázek",
+          "value": {
+            "src": "/assets/clanky/okenni-dekorace-zaves-pelmet-roleta.webp",
+            "alt": "Okno se závěsy, pelmetem a římskou roletou"
+          }
+        }
+      ]
+    },
+    {
+      "key": "blok-1",
+      "label": "Odstavec 1: Závěsy a záclony",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Závěsy a záclony"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Šijeme závěsy podšité i nepodšité a záclony včetně našití olůvka. Materiál můžeme nabídnout vlastní, nebo ušít z materiálu, který dodáte."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Uchycení",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Uchycení"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Nabízíme různé druhy uchycení:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "řasicí páska\ntunýlek\nkroužky\npoutka"
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Pelmety",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Pelmety"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Pelmety šijeme řasené i rovné, včetně výztuhy."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Japonské stěny a rolety",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Japonské stěny a rolety"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Z dalších okenních dekorací nabízíme japonské stěny a rolety římské, vídeňské a londýnské."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzba",
+      "label": "Související služba a výzva",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Štítek",
+          "value": "Související služba"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Bytový textil na míru"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Závěsy, záclony, rolety, japonské stěny a přehozy šité podle vašich rozměrů."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz (adresa)",
+          "value": "/bytovy-textil-na-miru/"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz (text)",
+          "value": "Bytový textil →"
+        }
+      ]
+    }
+  ]
+}

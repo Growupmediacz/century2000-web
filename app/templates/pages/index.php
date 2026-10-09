@@ -36,10 +36,9 @@
       <div class="container pruh-duvery__inner">
         <p class="serif pruh-duvery__text"><?= t('pruh-duvery.t1') ?></p>
         <ul class="pruh-duvery__list">
-          <li class="pruh-duvery__item"><img class="pruh-duvery__img" src="<?= img('pruh-duvery.img1') ?>" alt="<?= alt('pruh-duvery.img1') ?>" decoding="async" loading="lazy"></li>
-          <li class="pruh-duvery__item"><img class="pruh-duvery__img" src="<?= img('pruh-duvery.img2') ?>" alt="<?= alt('pruh-duvery.img2') ?>" decoding="async" loading="lazy"></li>
-          <li class="pruh-duvery__item"><img class="pruh-duvery__img" src="<?= img('pruh-duvery.img3') ?>" alt="<?= alt('pruh-duvery.img3') ?>" decoding="async" loading="lazy"></li>
-          <li class="pruh-duvery__item"><img class="pruh-duvery__img" src="<?= img('pruh-duvery.img4') ?>" alt="<?= alt('pruh-duvery.img4') ?>" decoding="async" loading="lazy"></li>
+          <?php foreach (array_filter(pages_of_type('reference'), fn($r) => !empty($r['options']['featured'])) as $r): ?>
+          <li class="pruh-duvery__item"><a class="serif pruh-duvery__name" href="<?= e($r['path']) ?>"><?= e(preg_replace('/^Hotel /', '', $r['name'])) ?></a></li>
+          <?php endforeach; ?>
         </ul>
         <a class="link-arrow pruh-duvery__link" href="/reference/"><?= t('pruh-duvery.t2') ?></a>
       </div>
@@ -224,34 +223,12 @@
           <a class="btn-secondary index-reference__btn" href="/reference/"><?= t('reference.t4') ?></a>
         </div>
         <ul class="index-reference__list">
+          <?php foreach (pages_of_type('reference') as $r): $pl = page_field($r, 'hlavicka', 't2'); ?>
             <li class="index-reference__item">
-              <span class="serif index-reference__label"><?= t('reference.t5') ?></span>
-              <span class="text-muted"><?= t('reference.t6') ?></span>
+              <a class="serif index-reference__label" href="<?= e($r['path']) ?>"><?= e($r['name']) ?></a>
+              <span class="text-muted"><?= e((string) ($pl['value'] ?? '')) ?></span>
             </li>
-            <li class="index-reference__item">
-              <span class="serif index-reference__label"><?= t('reference.t7') ?></span>
-              <span class="text-muted"><?= t('reference.t6') ?></span>
-            </li>
-            <li class="index-reference__item">
-              <span class="serif index-reference__label"><?= t('reference.t8') ?></span>
-              <span class="text-muted"><?= t('reference.t6') ?></span>
-            </li>
-            <li class="index-reference__item">
-              <span class="serif index-reference__label"><?= t('reference.t9') ?></span>
-              <span class="text-muted"><?= t('reference.t10') ?></span>
-            </li>
-            <li class="index-reference__item">
-              <span class="serif index-reference__label"><?= t('reference.t11') ?></span>
-              <span class="text-muted"><?= t('reference.t6') ?></span>
-            </li>
-            <li class="index-reference__item">
-              <span class="serif index-reference__label"><?= t('reference.t12') ?></span>
-              <span class="text-muted"><?= t('reference.t6') ?></span>
-            </li>
-            <li class="index-reference__item">
-              <span class="serif index-reference__label"><?= t('reference.t13') ?></span>
-              <span class="text-muted"><?= t('reference.t14') ?></span>
-            </li>
+          <?php endforeach; ?>
         </ul>
       </div>
     </section>

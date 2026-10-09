@@ -20,7 +20,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/hero-sici-dilna.webp",
-            "alt": "Švadlena šije lněný závěs na průmyslovém šicím stroji v textilní dílně"
+            "alt": "Ruce švadleny vedou lněnou látku pod jehlou šicího stroje v dílně"
           }
         },
         {
@@ -29,7 +29,7 @@
           "label": "Obrázek (mobil)",
           "value": {
             "src": "/assets/fotky/hero-sici-dilna-mobil.webp",
-            "alt": "Ruce švadleny vedou krémovou lněnou látku pod jehlou šicího stroje"
+            "alt": "Ruce švadleny vedou lněnou látku pod jehlou šicího stroje"
           }
         },
         {
@@ -168,7 +168,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/zavesy-na-miru-obyvak-4x3.webp",
-            "alt": "Krémové lněné závěsy s voálovou záclonou v obývacím pokoji"
+            "alt": "Obývací pokoj s krémovými lněnými závěsy a záclonou"
           }
         },
         {
@@ -195,7 +195,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/hotelovy-textil-pokoj-4x3.webp",
-            "alt": "Hotelový pokoj s těžkými závěsy, prošívaným běhounem a polštáři"
+            "alt": "Hotelový pokoj se závěsy, bílou záclonou a prošívaným běhounem na posteli"
           }
         },
         {
@@ -222,7 +222,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/strojni-prosivani-stroj-4x3.webp",
-            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+            "alt": "Prošívací stroj prošívá krémovou látku v kosočtvercovém vzoru"
           }
         },
         {
@@ -276,7 +276,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/latky-metraz-regal-4x3.webp",
-            "alt": "Regál s rolemi dekoračních látek seřazenými podle barev"
+            "alt": "Regál s rolemi dekoračních látek seřazenými podle odstínu"
           }
         },
         {
@@ -425,7 +425,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Popisek",
-          "value": "maximální šíře proševu <mark class=\"todo index-dilna-v-cislech__note\">[DOPLNIT: ověřit 240 vs. 280 cm]</mark>"
+          "value": "maximální šíře proševu"
         },
         {
           "key": "t8",
@@ -535,7 +535,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Hotový textil vám předáme nebo doručíme. <mark class=\"todo index-jak-zakazka-probiha__note\">[DOPLNIT: montáž ano/ne]</mark>"
+          "value": "Hotový textil vám předáme nebo doručíme. Montáž dle dohody."
         }
       ]
     },
@@ -643,7 +643,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/ruce-pri-siti.webp",
-            "alt": "Ruce švadleny připínají lem lněného závěsu špendlíky"
+            "alt": "Ruce připínají lem lněného závěsu špendlíky"
           }
         },
         {

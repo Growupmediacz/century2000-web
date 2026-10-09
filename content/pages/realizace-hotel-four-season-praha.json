@@ -1,0 +1,120 @@
+{
+  "path": "/reference/hotel-four-season-praha/",
+  "name": "Hotel Four Seasons",
+  "editable": true,
+  "meta": {
+    "title": "Hotel Four Seasons, Praha: reference | Century 2000",
+    "description": "Pro hotel Four Seasons v Praze jsme šili závěsy, přehozy a polštářky. Fotogalerie realizace."
+  },
+  "options": {
+    "type": "reference",
+    "template": "realizace",
+    "order": 1,
+    "featured": true,
+    "image": "/assets/realizace/hotel-four-season-praha/hlavni.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Název (H1)",
+          "value": "Hotel Four Seasons"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Místo",
+          "value": "Praha"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní fotografie",
+          "value": {
+            "src": "/assets/realizace/hotel-four-season-praha/hlavni.webp",
+            "alt": "Hotel Four Seasons: ukázka realizace"
+          }
+        }
+      ]
+    },
+    {
+      "key": "popis",
+      "label": "Popis realizace",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Co jsme šili (položky oddělte čárkou)",
+          "value": "závěsy, přehozy, polštářky"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Popis",
+          "value": "Pro hotel Four Seasons v Praze jsme šili závěsy, přehozy a polštářky."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Poznámka o spolupráci",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "galerie",
+      "label": "Fotogalerie",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Fotografie 1",
+          "value": {
+            "src": "/assets/realizace/hotel-four-season-praha/01.webp",
+            "alt": "Čelo postele s drapérií a přehoz s polštářky"
+          }
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Fotografie 2",
+          "value": {
+            "src": "/assets/realizace/hotel-four-season-praha/02.webp",
+            "alt": "Pokoj se závěsy a přehozem přes postel"
+          }
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Fotografie 3",
+          "value": {
+            "src": "/assets/realizace/hotel-four-season-praha/03.webp",
+            "alt": "Salonek se závěsy u oken"
+          }
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Fotografie 4",
+          "value": {
+            "src": "/assets/realizace/hotel-four-season-praha/04.webp",
+            "alt": "Závěsy a záclona u francouzského okna"
+          }
+        }
+      ]
+    }
+  ]
+}

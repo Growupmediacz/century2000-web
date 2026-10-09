@@ -18,7 +18,19 @@
                 <li><a class="mapa-stranek__link" href="/latky-a-metraz/"><?= t('mapa-stranek.t8') ?></a></li>
               </ul>
             </li>
-            <li class="mapa-stranek__item"><a class="serif mapa-stranek__link-2" href="/reference/"><?= t('mapa-stranek.t9') ?></a></li>
+            <li class="mapa-stranek__item-2">
+              <a class="serif mapa-stranek__link-2" href="/reference/"><?= t('mapa-stranek.t9') ?></a>
+              <ul class="mapa-stranek__list-2">
+                <?php foreach (pages_of_type('reference') as $r): ?><li><a class="mapa-stranek__link" href="<?= e($r['path']) ?>"><?= e($r['name']) ?></a></li><?php endforeach; ?>
+              </ul>
+            </li>
+            <li class="mapa-stranek__item-2">
+              <a class="serif mapa-stranek__link-2" href="/clanky/">Články</a>
+              <ul class="mapa-stranek__list-2">
+                <?php foreach (pages_of_type('article') as $r): ?><li><a class="mapa-stranek__link" href="<?= e($r['path']) ?>"><?= e($r['name']) ?></a></li><?php endforeach; ?>
+              </ul>
+            </li>
+            <li class="mapa-stranek__item"><a class="serif mapa-stranek__link-2" href="/vzorkovniky/">Vzorkovníky ke stažení</a></li>
             <li class="mapa-stranek__item"><a class="serif mapa-stranek__link-2" href="/o-nas/"><?= t('mapa-stranek.t10') ?></a></li>
             <li class="mapa-stranek__item"><a class="serif mapa-stranek__link-2" href="/kariera/"><?= t('mapa-stranek.t11') ?></a></li>
             <li class="mapa-stranek__item"><a class="serif mapa-stranek__link-2" href="/kontakt/"><?= t('mapa-stranek.t12') ?></a></li>

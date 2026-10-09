@@ -115,7 +115,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Adresa",
-          "value": "<span>CENTURY 2000 s.r.o., Okružní 600, 285 22 Zruč nad Sázavou <mark class=\"todo site-footer__todo\">[DOPLNIT: potvrdit adresu]</mark></span> <span>IČ 26141116, DIČ CZ26141116</span> <span>Datová schránka jq7vgn3</span>"
+          "value": "<span>CENTURY 2000 s.r.o.</span> <span>Fakturační adresa: Okružní 600, 285 22 Zruč nad Sázavou</span> <span>Dodací adresa: Tomáše Bati 600, 285 22 Zruč nad Sázavou</span> <span>IČ 26141116, DIČ CZ26141116</span> <span>Datová schránka jq7vgn3</span>"
         },
         {
           "key": "r2",
@@ -146,6 +146,36 @@
           "type": "text",
           "label": "Odkaz / tlačítko",
           "value": "Mapa stránek"
+        },
+        {
+          "key": "t21",
+          "type": "text",
+          "label": "Odkaz: Články",
+          "value": "Články"
+        },
+        {
+          "key": "t22",
+          "type": "text",
+          "label": "Odkaz: Vzorkovníky",
+          "value": "Vzorkovníky"
+        },
+        {
+          "key": "t21",
+          "type": "text",
+          "label": "Odkaz: Články",
+          "value": "Články"
+        },
+        {
+          "key": "t22",
+          "type": "text",
+          "label": "Odkaz: Vzorkovníky",
+          "value": "Vzorkovníky"
+        },
+        {
+          "key": "t23",
+          "type": "text",
+          "label": "Poznámka k ilustračním fotografiím",
+          "value": "Ilustrační fotografie na webu jsou vytvořeny pomocí umělé inteligence. Fotografie v sekci Reference jsou skutečné realizace."
         }
       ]
     }

@@ -1,0 +1,219 @@
+{
+  "path": "/clanky/jak-funguje-strojni-prosivani/",
+  "name": "Jak funguje strojní prošívání a kdy ho použít",
+  "editable": true,
+  "meta": {
+    "title": "Jak funguje strojní prošívání | Century 2000",
+    "description": "Prošev ve třech vrstvách na strojích Meca (šíře do 280 cm) a Resta (uzavřený vzor do 300 × 300 cm). Gramáže roun a netkané textilie."
+  },
+  "options": {
+    "type": "article",
+    "template": "clanek",
+    "date": "2026-10-09",
+    "modified": "2026-10-09",
+    "order": 5,
+    "image": "/assets/clanky/jak-funguje-strojni-prosivani.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička článku",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis (H1)",
+          "value": "Jak funguje strojní prošívání a kdy ho použít"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Perex",
+          "value": "Z čeho se prošívaný materiál skládá, čím se liší kontinuální a uzavřený vzor a jak postupovat při objednání."
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní obrázek",
+          "value": {
+            "src": "/assets/clanky/jak-funguje-strojni-prosivani.webp",
+            "alt": "Detail tří vrstev prošívaného materiálu"
+          }
+        }
+      ]
+    },
+    {
+      "key": "blok-1",
+      "label": "Odstavec 1: Tři vrstvy",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Tři vrstvy"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Prošívaný textil se skládá ze tří vrstev:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "vrchový materiál\nrouno\nnetkaná textilie"
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Dva stroje, dva způsoby proševu",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Dva stroje, dva způsoby proševu"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Kontinuální vzor se opakuje po celé metráži, uzavřený vzor je navržený na konkrétní formát."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "Prošev v kontinuálním vzoru na stroji Meca, maximální šíře 280 cm\nProšev v uzavřeném vzoru na stroji Resta, až do rozměru 300 × 300 cm"
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Rouna a netkaná textilie",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Rouna a netkaná textilie"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Do proševu dodáváme polyesterové rouno v gramážích od 80 do 400 g a netkanou textilii v gramážích od 15 do 40 g. Nabízíme široký sortiment vzorů, například kosočtverce nebo vlnky."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Kdy prošev použít",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Kdy prošev použít"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Prošívání se hodí tam, kde potřebujete plošný textil s rounem:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "potahy na matrace\npřehozy na postele i sedací soupravy\npřikrývky a ochranné návleky"
+        }
+      ]
+    },
+    {
+      "key": "blok-5",
+      "label": "Odstavec 5: Zakázková i hromadná výroba",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Zakázková i hromadná výroba"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Prošev vyrábíme zakázkově i hromadně. Při poptávce uveďte druh výrobku, rozměr, vrchový materiál a vzor, který vás zajímá. Vzory si můžete prohlédnout na stránce <a href=\"/strojni-prosivani/\">Strojní prošívání</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzba",
+      "label": "Související služba a výzva",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Štítek",
+          "value": "Související služba"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Strojní prošívání"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Prošev materiálů v kontinuálním i uzavřeném vzoru na strojích Meca a Resta."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz (adresa)",
+          "value": "/strojni-prosivani/"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz (text)",
+          "value": "Strojní prošívání →"
+        }
+      ]
+    }
+  ]
+}

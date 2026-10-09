@@ -121,3 +121,38 @@ function content_field(string $ref): ?array
     }
     return null;
 }
+
+/** Pages of one type (options.type: "article" | "reference"), sorted by options.date (newest first) or options.order. */
+function pages_of_type(string $type): array
+{
+    $list = [];
+    foreach (content_pages() as $name => $page) {
+        if (($page['options']['type'] ?? '') === $type) {
+            $list[(string) $name] = $page;
+        }
+    }
+    uasort($list, function ($a, $b) use ($type) {
+        $oa = $a['options'];
+        $ob = $b['options'];
+        if ($type === 'reference') {
+            return ($oa['order'] ?? 99) <=> ($ob['order'] ?? 99);
+        }
+        return [(string) ($ob['date'] ?? ''), $oa['order'] ?? 0] <=> [(string) ($oa['date'] ?? ''), $ob['order'] ?? 0];
+    });
+    return $list;
+}
+
+/** First field of the given type in a page (e.g. the main image), or null. */
+function page_field(array $page, string $section, string $key): ?array
+{
+    foreach ($page['sections'] as $s) {
+        if ($s['key'] === $section) {
+            foreach ($s['fields'] as $f) {
+                if ($f['key'] === $key) {
+                    return $f;
+                }
+            }
+        }
+    }
+    return null;
+}

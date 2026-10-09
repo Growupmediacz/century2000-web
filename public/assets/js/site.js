@@ -78,6 +78,23 @@
     window.dispatchEvent(new CustomEvent('c2000-consent', { detail: c }));
   };
   const stored = readConsent();
+
+  /* Analytics: Google Analytics 4 is loaded only after consent, and only when an ID is configured (config.php). */
+  const loadAnalytics = () => {
+    const meta = document.querySelector('meta[name="c2000-ga4"]');
+    if (!meta || window.__c2000ga) { return; }
+    window.__c2000ga = true;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', meta.content, { anonymize_ip: true });
+    const s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(meta.content);
+    document.head.appendChild(s);
+  };
+  if (stored && stored.analytics) { loadAnalytics(); }
+  window.addEventListener('c2000-consent', e => { if (e.detail && e.detail.analytics) { loadAnalytics(); } });
   const wantSettings = /[?&#]cookies=settings/.test(location.search + location.hash);
 
   $$('[data-c="CookieLista"]').forEach(root => {

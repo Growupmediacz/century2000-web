@@ -57,8 +57,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/matracovy-chranic.webp",
-            "alt": "Bílý prošívaný matracový chránič na matraci"
+            "src": "/assets/foto/matracovy-potah-hero.webp",
+            "alt": "Prošívaný matracový potah se zipem na matraci"
           }
         }
       ]
@@ -80,8 +80,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/chranic-pur-nepropustny.webp",
-            "alt": "Kapky vody na nepropustném matracovém chrániči"
+            "src": "/assets/foto/chranic-s-bocnicemi.webp",
+            "alt": "Matracový chránič s bočnicemi"
           }
         },
         {
@@ -101,8 +101,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/chranic-detail-rohu.webp",
-            "alt": "Roh matracového chrániče s pružnou gumou"
+            "src": "/assets/foto/chranic-guma-pres-roh.webp",
+            "alt": "Prošívaný matracový chránič s gumou přes roh"
           }
         },
         {
@@ -122,8 +122,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/potah-na-matraci-zip.webp",
-            "alt": "Prošívaný potah matrace s rozepnutým zipem"
+            "src": "/assets/foto/potah-zip.webp",
+            "alt": "Roh prošívaného matracového potahu se zipem"
           }
         },
         {
@@ -143,8 +143,8 @@
           "type": "image",
           "label": "Obrázek",
           "value": {
-            "src": "/assets/fotky/vyplne-polstaru.webp",
-            "alt": "Výplně polštářů a lněný povlak se zipem na dřevěném stole"
+            "src": "/assets/foto/vypln-polstare.webp",
+            "alt": "Prošívaný polštář"
           }
         },
         {
@@ -195,7 +195,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Potahy a chrániče v sériích pod vaší značkou. <mark class=\"todo matracove-chranice-a-potahy-pro-koho__note\">[DOPLNIT: potvrdit výrobu pod cizí značkou]</mark>"
+          "value": "Potahy a chrániče v sériích. Podmínky domluvíme podle zakázky."
         },
         {
           "key": "t5",
@@ -259,7 +259,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Vyrábíme ve standardních rozměrech i na míru. <mark class=\"todo rozmery__note\">[DOPLNIT: standardní rozměry a výšky matrací]</mark>"
+          "value": "Standardně šijeme například v rozměrech 160 × 200, 180 × 200 a 200 × 220 cm. Další rozměry vyrobíme na míru."
         }
       ]
     },
@@ -279,7 +279,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Napište nám, co potřebujete ušít. Ozveme se do <mark class=\"todo inquiry__todo\">[DOPLNIT: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou."
+          "value": "Napište nám, co potřebujete ušít. Ozveme se vám s dotazy nebo orientační nabídkou."
         },
         {
           "key": "t2",
@@ -337,7 +337,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/strojni-prosivani-stroj-4x3.webp",
-            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+            "alt": "Prošívací stroj prošívá krémovou látku v kosočtvercovém vzoru"
           }
         },
         {
@@ -364,7 +364,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/hotelovy-textil-pokoj-4x3.webp",
-            "alt": "Hotelový pokoj s těžkými závěsy, prošívaným běhounem a polštáři"
+            "alt": "Hotelový pokoj se závěsy, bílou záclonou a prošívaným běhounem na posteli"
           }
         },
         {

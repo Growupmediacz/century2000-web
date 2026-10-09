@@ -1,0 +1,193 @@
+{
+  "path": "/clanky/matracove-chranice-s-pur-zaterem/",
+  "name": "Matracové chrániče s PUR zátěrem",
+  "editable": true,
+  "meta": {
+    "title": "Matracové chrániče s PUR zátěrem | Century 2000",
+    "description": "Chrániče z froté nebo flanelu s PUR zátěrem na rubu. Varianty s gumou přes roh nebo s bočnicemi a prošívané chrániče s rounem."
+  },
+  "options": {
+    "type": "article",
+    "template": "clanek",
+    "date": "2026-10-09",
+    "modified": "2026-10-09",
+    "order": 4,
+    "image": "/assets/clanky/matracove-chranice-s-pur-zaterem.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička článku",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis (H1)",
+          "value": "Matracové chrániče s PUR zátěrem"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Perex",
+          "value": "Z čeho se chrániče šijí, jaké varianty nabízíme a jak je to s rozměry."
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní obrázek",
+          "value": {
+            "src": "/assets/clanky/matracove-chranice-s-pur-zaterem.webp",
+            "alt": "Matracový chránič s PUR zátěrem na posteli"
+          }
+        }
+      ]
+    },
+    {
+      "key": "blok-1",
+      "label": "Odstavec 1: Z čeho je chránič",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Z čeho je chránič"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Matracové chrániče šijeme z froté nebo flanelu. Z rubové strany mají PUR zátěr, což je nepropustná vrstva."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Varianty",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Varianty"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Nabízíme tyto provedení:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "chránič s PUR zátěrem a gumou přes roh\nchránič s PUR zátěrem a bočnicemi\nchránič prošívaný včetně rouna, s gumou přes roh"
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Rozměry",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Rozměry"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Chrániče šijeme ve standardizovaných rozměrech, které najdete v našem <a href=\"https://century2000-cz.webnode.cz/\" target=\"_blank\">e-shopu</a>. Potřebujete-li nestandardní rozměr, napište nám nebo zavolejte."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Prošívané chrániče",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Prošívané chrániče"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Prošívané chrániče obsahují rouno. Více o možnostech proševu najdete na stránce <a href=\"/strojni-prosivani/\">Strojní prošívání</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzba",
+      "label": "Související služba a výzva",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Štítek",
+          "value": "Související služba"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Matracové chrániče a potahy"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Chrániče s PUR zátěrem, prošívané chrániče a potahy na matrace."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz (adresa)",
+          "value": "/matracove-chranice-a-potahy/"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz (text)",
+          "value": "Chrániče a potahy →"
+        }
+      ]
+    }
+  ]
+}

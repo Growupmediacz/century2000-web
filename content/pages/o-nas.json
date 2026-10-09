@@ -32,7 +32,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text (desktop)",
-          "value": "Jsme rodinná dílna s průmyslovou kapacitou. Ušijeme jeden závěs do obýváku stejně pečlivě jako vybavení celého hotelu. <mark class=\"todo o-nas-hero__note\">[DOPLNIT: potvrdit „rodinná“]</mark>"
+          "value": "Jsme dílna s průmyslovou kapacitou. Ušijeme jeden závěs do obýváku stejně pečlivě jako vybavení celého hotelu."
         },
         {
           "key": "img1",
@@ -40,7 +40,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/sici-dilna-celek.webp",
-            "alt": "Světlá šicí dílna s řadami průmyslových šicích strojů"
+            "alt": "Světlá šicí dílna s řadami šicích strojů a stoly na střih"
           }
         }
       ]
@@ -79,7 +79,7 @@
           "key": "t5",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: 2–3 milníky s rokem, např. první hotelová zakázka, nový prošívací stroj]"
+          "value": ""
         }
       ]
     },
@@ -95,7 +95,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/pokladaci-stul-strih.webp",
-            "alt": "Dlouhý pokládací stůl s rozloženou látkou připravenou ke střihu"
+            "alt": "Dlouhý pokládací stůl s látkou připravenou ke střihu"
           }
         },
         {
@@ -168,7 +168,7 @@
           "key": "t12",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: počet zaměstnanců]"
+          "value": ""
         }
       ]
     },
@@ -194,7 +194,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Úzce spolupracujeme s italským partnerem. Díky tomu máme přístup k moderním technologiím a materiálům a spojujeme je s pečlivou prací naší dílny. <mark class=\"todo italske-know-how__note\">[DOPLNIT: název partnera a v čem spolupráce spočívá]</mark>"
+          "value": "Úzce spolupracujeme s italským partnerem. Díky tomu máme přístup k moderním technologiím a materiálům a spojujeme je s pečlivou prací naší dílny."
         }
       ]
     },
@@ -294,7 +294,7 @@
           "key": "t5",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: 1–2 věty od jednatele, např. proč firmu vede]"
+          "value": ""
         },
         {
           "key": "t6",
@@ -322,7 +322,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/ruce-pri-siti.webp",
-            "alt": "Ruce švadleny připínají lem lněného závěsu špendlíky"
+            "alt": "Ruce připínají lem lněného závěsu špendlíky"
           }
         },
         {

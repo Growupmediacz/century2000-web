@@ -87,3 +87,48 @@ function rate_limit_reset(string $bucket): void
 {
     @unlink(RUNTIME_DIR . '/ratelimit/' . hash('sha256', $bucket . '|' . client_ip()) . '.json');
 }
+
+/** "9. října 2026" from an ISO date. */
+function cs_date(string $iso): string
+{
+    $m = ['', 'ledna', 'února', 'března', 'dubna', 'května', 'června', 'července', 'srpna', 'září', 'října', 'listopadu', 'prosince'];
+    $t = strtotime($iso);
+    return $t ? (int) date('j', $t) . '. ' . $m[(int) date('n', $t)] . ' ' . date('Y', $t) : '';
+}
+
+/** Smaller variant of an image (name-640.webp) when it exists next to the original, else the original. */
+function img_small(string $src): string
+{
+    $small = preg_replace('/\.(webp|jpe?g|png)$/i', '-640.$1', $src);
+    return $small !== $src && is_file(PUBLIC_DIR . $small) ? $small : $src;
+}
+
+/** Paragraphs from a rich field: blocks separated by two <br>. */
+function rich_paragraphs(string $html): array
+{
+    $parts = preg_split('~(?:<br\s*/?>\s*){2,}~i', trim($html)) ?: [];
+    return array_values(array_filter(array_map('trim', $parts), fn($p) => $p !== ''));
+}
+
+/** Bullet items from a text field: one per line. */
+function text_lines(string $text): array
+{
+    return array_values(array_filter(array_map('trim', explode("\n", $text)), fn($l) => $l !== ''));
+}
+
+/** Body blocks ("blok-*" sections) of a page, visible only: [{h, paragraphs[], items[]}] */
+function body_blocks(array $page): array
+{
+    $out = [];
+    foreach ($page['sections'] as $s) {
+        if (!str_starts_with($s['key'], 'blok-') || empty($s['visible'])) {
+            continue;
+        }
+        $f = [];
+        foreach ($s['fields'] as $field) {
+            $f[$field['key']] = $field['value'];
+        }
+        $out[] = ['id' => preg_match('/^blok-\d+$/', $s['key']) ? $s['key'] : substr($s['key'], 5), 'h' => (string) ($f['t1'] ?? ''), 'h3' => (string) ($f['t3'] ?? ''), 'paragraphs' => rich_paragraphs((string) ($f['r1'] ?? '')), 'items' => text_lines((string) ($f['t2'] ?? ''))];
+    }
+    return $out;
+}

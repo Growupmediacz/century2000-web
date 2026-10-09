@@ -28,7 +28,7 @@ function organization_ld(): array
         'foundingDate' => '2000',
         'vatID' => 'CZ26141116',
         'identifier' => 'IČ 26141116',
-        'address' => [ // TODO: the design marks the address [DOPLNIT: potvrdit adresu]
+        'address' => [ // fakturační adresa / sídlo z kontaktní stránky starého webu (2024): potvrdit u klienta
             '@type' => 'PostalAddress',
             'streetAddress' => 'Okružní 600',
             'postalCode' => '285 22',
@@ -54,6 +54,12 @@ function breadcrumb_ld(array $page): ?array
     if (in_array($page['path'], SERVICE_PATHS, true)) {
         $items[] = ['Služby', '/#co-sijeme'];
     }
+    $type = $page['options']['type'] ?? '';
+    if ($type === 'article') {
+        $items[] = ['Články', '/clanky/'];
+    } elseif ($type === 'reference') {
+        $items[] = ['Reference', '/reference/'];
+    }
     $items[] = [$page['name'], $page['path']];
     return [
         '@context' => 'https://schema.org',
@@ -62,6 +68,30 @@ function breadcrumb_ld(array $page): ?array
             '@type' => 'ListItem', 'position' => $n + 1, 'name' => $i[0], 'item' => $site . $i[1],
         ], $items, array_keys($items)),
     ];
+}
+
+/** Article structured data for pages of type "article". */
+function article_ld(array $page): ?array
+{
+    if (($page['options']['type'] ?? '') !== 'article') {
+        return null;
+    }
+    $site = rtrim((string) config('site_url'), '/');
+    $o = $page['options'];
+    $ld = [
+        '@context' => 'https://schema.org',
+        '@type' => 'Article',
+        'headline' => $page['name'],
+        'description' => $page['meta']['description'] ?? '',
+        'inLanguage' => 'cs',
+        'datePublished' => $o['date'] ?? null,
+        'dateModified' => $o['modified'] ?? ($o['date'] ?? null),
+        'mainEntityOfPage' => $site . $page['path'],
+        'image' => $site . ($o['image'] ?? DEFAULT_IMAGE),
+        'author' => ['@type' => 'Organization', 'name' => 'CENTURY 2000 s.r.o.'],
+        'publisher' => ['@type' => 'Organization', 'name' => 'CENTURY 2000 s.r.o.', 'logo' => ['@type' => 'ImageObject', 'url' => $site . '/assets/logo/century2000-logo.svg']],
+    ];
+    return array_filter($ld, fn($v) => $v !== null);
 }
 
 function seo_head(array $page): string
@@ -87,7 +117,7 @@ function seo_head(array $page): string
     if (!$noindex) {
         array_push($l,
             '<link rel="canonical" href="' . e($url) . '">',
-            '<meta property="og:type" content="website">',
+            '<meta property="og:type" content="' . (($page['options']['type'] ?? '') === 'article' ? 'article' : 'website') . '">',
             '<meta property="og:locale" content="cs_CZ">',
             '<meta property="og:site_name" content="Century 2000">',
             '<meta property="og:title" content="' . e($title) . '">',
@@ -107,9 +137,13 @@ function seo_head(array $page): string
     foreach (array_merge(['base', 'components', 'pages'], $page['options']['css'] ?? []) as $css) {
         $l[] = '<link rel="stylesheet" href="/assets/css/' . $css . '.css?v=' . asset_version("css/$css.css") . '">';
     }
+    $ga = (string) config('analytics.ga4_id', '');
+    if (preg_match('/^G-[A-Z0-9]{6,12}$/', $ga)) {
+        $l[] = '<meta name="c2000-ga4" content="' . e($ga) . '">'; // loaded by site.js only after consent
+    }
     $l[] = '<script src="/assets/js/site.js?v=' . asset_version('js/site.js') . '" defer></script>';
     if (!$noindex) {
-        $ld = array_filter([in_array($page['path'], ['/', '/kontakt/', '/o-nas/'], true) ? organization_ld() : null, breadcrumb_ld($page)]);
+        $ld = array_filter([in_array($page['path'], ['/', '/kontakt/', '/o-nas/'], true) ? organization_ld() : null, breadcrumb_ld($page), article_ld($page)]);
         foreach ($ld as $data) {
             $l[] = '<script type="application/ld+json">' . json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>';
         }
@@ -132,7 +166,7 @@ function sitemap_xml(): string
         if (is_noindex($page)) {
             continue;
         }
-        $mod = date('Y-m-d', filemtime(content_file((string) $name)));
+        $mod = $page['options']['modified'] ?? date('Y-m-d', filemtime(content_file((string) $name)));
         $out .= '  <url><loc>' . e($site . $page['path']) . "</loc><lastmod>$mod</lastmod></url>\n";
     }
     return $out . "</urlset>\n";

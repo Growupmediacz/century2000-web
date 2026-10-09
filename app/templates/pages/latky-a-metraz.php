@@ -92,6 +92,20 @@
       </div>
     </section>
     <?php endif; ?>
+    <?php $detail = body_blocks($page); if ($detail): ?>
+    <section aria-labelledby="h-detail" data-screen-label="Materiály podrobně">
+      <div class="container section-pad latky-detail">
+        <h2 class="title-section" id="h-detail">Materiály podrobně</h2>
+        <?php foreach ($detail as $b): ?>
+        <div class="latky-detail__item" id="<?= e($b['id']) ?>">
+          <h3 class="title-card"><?= e($b['h']) ?></h3>
+          <?php foreach ($b['paragraphs'] as $p): ?><p class="text"><?= $p ?></p><?php endforeach; ?>
+          <?php if ($b['items']): ?><ul class="clanek-body__list"><?php foreach ($b['items'] as $li): ?><li><?= e($li) ?></li><?php endforeach; ?></ul><?php endif; ?>
+        </div>
+        <?php endforeach; ?>
+      </div>
+    </section>
+    <?php endif; ?>
     <?php if (visible('vzorkovniky')): ?>
     <section class="vzorkovniky" data-screen-label="Vzorkovníky" aria-labelledby="h-vzorkovniky">
       <div class="container section-pad vzorkovniky__inner">
@@ -104,6 +118,7 @@
           <h2 class="title-section vzorkovniky__heading" id="h-vzorkovniky"><?= t('vzorkovniky.t1') ?></h2>
         </div>
           <p class="text vzorkovniky__text"><?= t('vzorkovniky.t2') ?></p>
+          <a class="link-arrow" href="/vzorkovniky/">Vzorkovníky ke stažení (PDF) →</a>
         </div>
       </div>
     </section>
@@ -131,7 +146,7 @@
               <dd class="prodejna__value"><?= t('prodejna.t7') ?></dd>
             </div>
           </dl>
-          <p class="prodejna__text"><mark class="todo prodejna__note"><?= t('prodejna.t8') ?></mark></p>
+          <?php if (t('prodejna.t8') !== ''): ?><p class="prodejna__text"><?= t('prodejna.t8') ?></p><?php endif; ?>
         </div>
       </div>
     </section>

@@ -1,0 +1,219 @@
+{
+  "path": "/clanky/matracovy-potah-na-miru/",
+  "name": "Matracový potah na míru: varianty, zip a materiály",
+  "editable": true,
+  "meta": {
+    "title": "Matracový potah na míru: varianty a zip | Century 2000",
+    "description": "Prošité i neprošité matracové potahy na míru, zip po obvodu, ve tvaru L nebo na třech stranách. Přehled vrchových materiálů."
+  },
+  "options": {
+    "type": "article",
+    "template": "clanek",
+    "date": "2026-10-09",
+    "modified": "2026-10-09",
+    "order": 6,
+    "image": "/assets/clanky/matracovy-potah-na-miru.webp",
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "hlavicka",
+      "label": "Hlavička článku",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis (H1)",
+          "value": "Matracový potah na míru: varianty, zip a materiály"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Perex",
+          "value": "Jaké varianty potahů šijeme, jak vybrat zip a ze kterých vrchových materiálů můžete volit."
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Hlavní obrázek",
+          "value": {
+            "src": "/assets/clanky/matracovy-potah-na-miru.webp",
+            "alt": "Prošívaný matracový potah se zipem rozložený na posteli"
+          }
+        }
+      ]
+    },
+    {
+      "key": "blok-1",
+      "label": "Odstavec 1: Prošitý nebo neprošitý",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Prošitý nebo neprošitý"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Matracové potahy vyrábíme ve dvou variantách:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "prošitá, třívrstvá (vrchový materiál, rouno a netkaná textilie)\nneprošitá, jen z vrchového materiálu"
+        }
+      ]
+    },
+    {
+      "key": "blok-2",
+      "label": "Odstavec 2: Zip",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Zip"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Zip můžeme našít třemi způsoby:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "po celém obvodu\nve tvaru písmene L\nna třech stranách"
+        }
+      ]
+    },
+    {
+      "key": "blok-3",
+      "label": "Odstavec 3: Rozměry a bočnice",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Rozměry a bočnice"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Standardně šijeme v rozměrech například 160 × 200, 180 × 200 nebo 200 × 220 cm. Jiný rozměr připravíme na míru. Potah může mít bočnice nebo být bez nich, doplnit ho lze krycí podložkou a vyrobíme ho i do kočárku."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-4",
+      "label": "Odstavec 4: Vrchové materiály",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Vrchové materiály"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Nabízíme tyto vrchové materiály:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "Medilux\nKamen\nMantova bílá\nLurex\nKwatro\nTencel\nBasic\nTrimtex\nMattes\nNew Yersey"
+        }
+      ]
+    },
+    {
+      "key": "blok-5",
+      "label": "Odstavec 5: Chcete si potah ušít sami?",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek (H2)",
+          "value": "Chcete si potah ušít sami?"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "V nabídce máme i <a href=\"/latky-a-metraz/#materialy-na-potahy\">materiály na matracové potahy v metráži</a>. Šijeme od roku 2000 v dílně ve Zruči nad Sázavou."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzba",
+      "label": "Související služba a výzva",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Štítek",
+          "value": "Související služba"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Matracové chrániče a potahy"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Chrániče s PUR zátěrem, prošívané chrániče a potahy na matrace."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz (adresa)",
+          "value": "/matracove-chranice-a-potahy/"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz (text)",
+          "value": "Chrániče a potahy →"
+        }
+      ]
+    }
+  ]
+}

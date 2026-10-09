@@ -44,7 +44,7 @@
           "key": "t5",
           "type": "text",
           "label": "Text (desktop)",
-          "value": "Materiály, ze kterých šijeme, si můžete koupit i sami. V naší prodejně ve Zruči nad Sázavou nebo vybrané zboží v e-shopu."
+          "value": "Materiály, ze kterých šijeme, si můžete koupit i sami: vybrané zboží v e-shopu, ostatní na dotaz."
         },
         {
           "key": "t6",
@@ -64,7 +64,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/latky-metraz-regal.webp",
-            "alt": "Regál s rolemi dekoračních látek seřazenými podle barev"
+            "alt": "Regál s rolemi dekoračních látek seřazenými podle odstínu"
           }
         }
       ]
@@ -81,7 +81,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/blackout-latka.webp",
-            "alt": "Průsvitná záclona a neprůsvitný blackout proti oknu"
+            "alt": "Průsvitná záclona a neprůsvitný blackout u okna"
           }
         },
         {
@@ -189,6 +189,214 @@
       ]
     },
     {
+      "key": "blok-dekoracni-latky",
+      "label": "Materiál: Dekorační látky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek",
+          "value": "Dekorační látky"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Dekorační látky nabízíme v metráži a šijeme z nich na míru závěsy, polštářky, ubrusy i další doplňky. Do polštářků nabízíme motivy se vzorem i čistě bílé, s výplní nebo prošívané.<br><br>Metráž můžete použít na závěsy, povlečení nebo ubrusy."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-nehorlave-latky",
+      "label": "Materiál: Dekorační látky s nehořlavou úpravou",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek",
+          "value": "Dekorační látky s nehořlavou úpravou"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Nabízíme dekorační látky o šířce 300 cm s uni vzorem nebo s vetkaným vzorem, ve široké škále barev.<br><br>Materiály jsou s nehořlavou úpravou a odpovídají evropským normám BS 5867 Part 2B, M1 a B1. Více v článku <a href=\"/clanky/nehorlave-dekoracni-latky-pro-hotely/\">Nehořlavé dekorační látky pro hotely a restaurace</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-blackouty",
+      "label": "Materiál: Blackouty",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek",
+          "value": "Blackouty"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Blackout je dvouvrstvá dekorační látka. Z lícu je struktura, barva nebo dekor tkaniny, z rubu blackoutový zátěr, který látku stoprocentně zatemňuje. Rozlišujeme hořlavé a nehořlavé blackouty; materiály vyhovují normám BS 5867 Part 2B, M1 a B1.<br><br>Rozdíl proti dimoutu vysvětluje článek <a href=\"/clanky/blackout-dimout-nebo-zaves/\">Blackout, dimout nebo klasický závěs</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-dimouty",
+      "label": "Materiál: Dimouty",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek",
+          "value": "Dimouty"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Dimout je setkávaná dekorační látka, která zatemňuje přibližně z 90 %. Zastínění je stále výrazně vyšší než u klasických nezatemňovacích látek. Rozlišujeme hořlavé a nehořlavé dimouty; materiály vyhovují normám BS 5867 Part 2B, M1 a B1."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-zaclony",
+      "label": "Materiál: Záclony a voály",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek",
+          "value": "Záclony a voály"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Nabízíme tři základní typy záclon a voálů: hladké bez vzorku, s proužky a bavlněné. Všechny jsou s olůvkem a nehořlavé, v bílém i barevném provedení. Ušijeme je na míru nebo si můžete koupit látku v metráži.<br><br>Přehled typů je v článku <a href=\"/clanky/zaclony-a-voaly/\">Záclony a voály</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-ubrusoviny",
+      "label": "Materiál: Ubrusoviny",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek",
+          "value": "Ubrusoviny"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Prodáváme látky na ubrusy v metráži v bílé i barevné variantě a ustřihneme potřebnou délku. Ubrusy a prostírání šijeme také na zakázku.<br><br>Více v článku <a href=\"/clanky/latky-na-ubrusy-a-prostirani/\">Látky na ubrusy a prostírání</a>."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-rouna",
+      "label": "Materiál: Polyesterová rouna a netkané textilie",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek",
+          "value": "Polyesterová rouna a netkané textilie"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Polyesterová rouna nabízíme v gramážích od 80 do 400 g a šířkách 150 až 300 cm. Netkané textilie nabízíme v gramážích od 14 do 40 g a šířce 240 cm."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "blok-materialy-na-potahy",
+      "label": "Materiál: Materiály na matracové potahy",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Mezititulek",
+          "value": "Materiály na matracové potahy"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text (odstavce oddělte prázdným řádkem)",
+          "value": "Sortiment materiálů vhodný na prošev a na výrobu matracových potahů. Vrchové materiály, které používáme:"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Odrážky (každá na nový řádek)",
+          "value": "Medilux\nKamen\nMantova bílá\nLurex\nKwatro\nTencel\nBasic\nTrimtex\nMattes\nNew Yersey"
+        }
+      ]
+    },
+    {
       "key": "vzorkovniky",
       "label": "Vzorkovníky",
       "hideable": true,
@@ -200,7 +408,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/vzorkovniky-latek.webp",
-            "alt": "Vzorkovníky a vzorky dekoračních látek na stole"
+            "alt": "Vzorkovníky a vzorky látek na stole"
           }
         },
         {
@@ -221,7 +429,7 @@
       "key": "prodejna",
       "label": "Prodejna",
       "hideable": true,
-      "visible": true,
+      "visible": false,
       "fields": [
         {
           "key": "img1",
@@ -278,7 +486,7 @@
           "key": "t8",
           "type": "text",
           "label": "Doplnit",
-          "value": "[DOPLNIT: potvrdit adresu a otevírací dobu prodejny]"
+          "value": ""
         }
       ]
     },
@@ -324,7 +532,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Napište nám, co potřebujete ušít. Ozveme se do <mark class=\"todo inquiry__todo\">[DOPLNIT: 1 pracovního dne]</mark> s dotazy nebo orientační nabídkou."
+          "value": "Napište nám, co potřebujete ušít. Ozveme se vám s dotazy nebo orientační nabídkou."
         },
         {
           "key": "t2",
@@ -382,7 +590,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/zavesy-na-miru-obyvak-4x3.webp",
-            "alt": "Krémové lněné závěsy s voálovou záclonou v obývacím pokoji"
+            "alt": "Obývací pokoj s krémovými lněnými závěsy a záclonou"
           }
         },
         {
@@ -409,7 +617,7 @@
           "label": "Obrázek",
           "value": {
             "src": "/assets/fotky/strojni-prosivani-stroj-4x3.webp",
-            "alt": "Vícejehlový prošívací stroj prošívá širokou metráž do kosočtverců"
+            "alt": "Prošívací stroj prošívá krémovou látku v kosočtvercovém vzoru"
           }
         },
         {

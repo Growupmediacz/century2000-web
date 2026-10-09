@@ -72,7 +72,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Buňka tabulky (desktop)",
-          "value": "cookie s volbou souhlasu <mark class=\"todo zasady-cookies__note\">[DOPLNIT: název a doba]</mark>"
+          "value": "záznam c2000-consent v úložišti prohlížeče s vaší volbou, bez omezení doby (do smazání v prohlížeči)"
         },
         {
           "key": "t10",
@@ -120,7 +120,7 @@
           "key": "t17",
           "type": "text",
           "label": "Doplnit (desktop)",
-          "value": "[DOPLNIT: Google Ads / Meta, pokud se budou používat]"
+          "value": "zatím žádné nepoužíváme"
         },
         {
           "key": "t18",

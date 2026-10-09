@@ -36,7 +36,7 @@
           "key": "r2",
           "type": "rich",
           "label": "Text",
-          "value": "Správcem je CENTURY 2000 s.r.o., IČ 26141116, se sídlem Okružní 600, 285 22 Zruč nad Sázavou <mark class=\"todo zasady-ochrany-osobnich-udaju__note\">[DOPLNIT: potvrdit adresu]</mark>. Kontakt pro otázky k osobním údajům: <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"mailto:info@century2000.cz\">info@century2000.cz</a>, <a class=\"zasady-ochrany-osobnich-udaju__link-2\" href=\"tel:+420603287803\">+420 603 287 803</a>."
+          "value": "Správcem je CENTURY 2000 s.r.o., IČ 26141116, se sídlem Okružní 600, 285 22 Zruč nad Sázavou. Kontakt pro otázky k osobním údajům: <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"mailto:info@century2000.cz\">info@century2000.cz</a>, <a class=\"zasady-ochrany-osobnich-udaju__link-2\" href=\"tel:+420603287803\">+420 603 287 803</a>."
         },
         {
           "key": "t3",
@@ -174,7 +174,7 @@
           "key": "r4",
           "type": "rich",
           "label": "Text",
-          "value": "Údaje neprodáváme. Přístup k nim mohou mít jen naši dodavatelé, kteří nám pomáhají web a komunikaci provozovat: poskytovatel hostingu webu <mark class=\"todo zasady-ochrany-osobnich-udaju__note\">[DOPLNIT]</mark>, Microsoft (e-mail, Microsoft 365), Google (Google Analytics, jen se souhlasem) <mark class=\"todo zasady-ochrany-osobnich-udaju__note\">[DOPLNIT: další, např. účetní]</mark>."
+          "value": "Údaje neprodáváme. Přístup k nim mohou mít jen naši dodavatelé, kteří nám pomáhají web a komunikaci provozovat: poskytovatel hostingu webu (Webglobe), Microsoft (e-mail, Microsoft 365) a Google (Google Analytics, jen se souhlasem)."
         },
         {
           "key": "t24",

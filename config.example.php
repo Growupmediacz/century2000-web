@@ -11,8 +11,15 @@ return [
     // Web served from a subfolder? e.g. '/web'. Empty = domain root.
     'base_path' => '',
 
-    // true = hide the whole site from search engines (preview on a test domain).
+    // INDEXING SWITCH. true = whole site is hidden from search engines (noindex meta + robots.txt "Disallow: /").
+    // Keep true on the preview/test domain. Set to false ONLY when the site goes live on century2000.cz.
     'demo' => false,
+
+    // Google Analytics 4 measurement ID (G-XXXXXXXXXX), supplied by the client. Empty = no analytics code is
+    // loaded at all. With an ID the script is loaded only after the visitor accepts analytics cookies.
+    'analytics' => [
+        'ga4_id' => '',
+    ],
 
     // Random string for signing form tokens. set-password.php generates it.
     'secret' => '',

@@ -6,7 +6,11 @@
     "title": "Reference – hotely a interiéry, které jsme vybavili textilem | Century 2000",
     "description": "Šili jsme textil pro Four Seasons, Le Palais, Corinthia nebo Hotel International Brno. Podívejte se, pro koho pracujeme."
   },
-  "options": {},
+  "options": {
+    "css": [
+      "obsah"
+    ]
+  },
   "sections": [
     {
       "key": "uvodni-blok",
@@ -24,13 +28,13 @@
           "key": "t2",
           "type": "text",
           "label": "Text",
-          "value": "Za více než 25 let jsme ušili textil pro pětihvězdičkové hotely, restaurace i desítky domácností. Tady je výběr z nich."
+          "value": "Za více než 25 let jsme ušili textil pro hotely, restaurace i domácnosti. Tady je výběr z našich realizací."
         }
       ]
     },
     {
       "key": "hotely-pro-ktere-sijeme",
-      "label": "Hotely, pro které šijeme",
+      "label": "Realizace (karty se plní z jednotlivých referencí)",
       "hideable": true,
       "visible": true,
       "fields": [
@@ -38,115 +42,13 @@
           "key": "t1",
           "type": "text",
           "label": "Nadpis",
-          "value": "Hotely, pro které šijeme"
-        },
-        {
-          "key": "img1",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/four-seasons-praha.webp",
-            "alt": "Four Seasons Praha"
-          }
+          "value": "Hotely a interiéry, které jsme vybavili"
         },
         {
           "key": "t2",
           "type": "text",
-          "label": "Podnadpis",
-          "value": "Hotel Four Seasons"
-        },
-        {
-          "key": "t3",
-          "type": "text",
-          "label": "Text",
-          "value": "Praha"
-        },
-        {
-          "key": "img2",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/le-palais-praha.png",
-            "alt": "Le Palais Praha"
-          }
-        },
-        {
-          "key": "t4",
-          "type": "text",
-          "label": "Podnadpis",
-          "value": "Hotel Le Palais"
-        },
-        {
-          "key": "img3",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/corinthia-praha-orez.png",
-            "alt": "Corinthia Praha"
-          }
-        },
-        {
-          "key": "t5",
-          "type": "text",
-          "label": "Podnadpis",
-          "value": "Hotel Corinthia Tower"
-        },
-        {
-          "key": "img4",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/hotel-international-brno.png",
-            "alt": "Hotel International Brno"
-          }
-        },
-        {
-          "key": "t6",
-          "type": "text",
-          "label": "Podnadpis",
-          "value": "Hotel International"
-        },
-        {
-          "key": "t7",
-          "type": "text",
-          "label": "Text",
-          "value": "Brno"
-        },
-        {
-          "key": "t8",
-          "type": "text",
-          "label": "Doplnit",
-          "value": "logo doplníme"
-        },
-        {
-          "key": "t9",
-          "type": "text",
-          "label": "Podnadpis",
-          "value": "Palác u Kočků"
-        },
-        {
-          "key": "t10",
-          "type": "text",
-          "label": "Podnadpis",
-          "value": "Hotel 1. Republika"
-        },
-        {
-          "key": "t11",
-          "type": "text",
-          "label": "Podnadpis",
-          "value": "Hotel Aqua"
-        },
-        {
-          "key": "t12",
-          "type": "text",
-          "label": "Text",
-          "value": "Průhonice"
-        },
-        {
-          "key": "t13",
-          "type": "text",
-          "label": "Doplnit",
-          "value": "[DOPLNIT: co jsme dodali, např. závěsy a přehozy na pokoje]"
+          "label": "Poznámka pod seznamem",
+          "value": ""
         }
       ]
     },

@@ -19,58 +19,20 @@
           <span class="rule hotely-pro-ktere-sijeme__rule" aria-hidden="true"></span>
           <h2 class="title-section hotely-pro-ktere-sijeme__heading" id="h-hotely"><?= t('hotely-pro-ktere-sijeme.t1') ?></h2>
         </div>
-        <ul class="hotely-pro-ktere-sijeme__list">
-            <li class="hotely-pro-ktere-sijeme__item">
-              <div class="hotely-pro-ktere-sijeme__row"><img class="hotely-pro-ktere-sijeme__img" src="<?= img('hotely-pro-ktere-sijeme.img1') ?>" alt="<?= alt('hotely-pro-ktere-sijeme.img1') ?>" decoding="async" loading="lazy"></div>
-              <div class="hotely-pro-ktere-sijeme__stack-2">
-                <h3 class="serif hotely-pro-ktere-sijeme__subheading"><?= t('hotely-pro-ktere-sijeme.t2') ?></h3>
-                <span class="text-muted"><?= t('hotely-pro-ktere-sijeme.t3') ?></span>
-              </div>
-            </li>
-            <li class="hotely-pro-ktere-sijeme__item">
-              <div class="hotely-pro-ktere-sijeme__row"><img class="hotely-pro-ktere-sijeme__img" src="<?= img('hotely-pro-ktere-sijeme.img2') ?>" alt="<?= alt('hotely-pro-ktere-sijeme.img2') ?>" decoding="async" loading="lazy"></div>
-              <div class="hotely-pro-ktere-sijeme__stack-2">
-                <h3 class="serif hotely-pro-ktere-sijeme__subheading"><?= t('hotely-pro-ktere-sijeme.t4') ?></h3>
-                <span class="text-muted"><?= t('hotely-pro-ktere-sijeme.t3') ?></span>
-              </div>
-            </li>
-            <li class="hotely-pro-ktere-sijeme__item">
-              <div class="hotely-pro-ktere-sijeme__row"><img class="hotely-pro-ktere-sijeme__img" src="<?= img('hotely-pro-ktere-sijeme.img3') ?>" alt="<?= alt('hotely-pro-ktere-sijeme.img3') ?>" decoding="async" loading="lazy"></div>
-              <div class="hotely-pro-ktere-sijeme__stack-2">
-                <h3 class="serif hotely-pro-ktere-sijeme__subheading"><?= t('hotely-pro-ktere-sijeme.t5') ?></h3>
-                <span class="text-muted"><?= t('hotely-pro-ktere-sijeme.t3') ?></span>
-              </div>
-            </li>
-            <li class="hotely-pro-ktere-sijeme__item">
-              <div class="hotely-pro-ktere-sijeme__row"><img class="hotely-pro-ktere-sijeme__img" src="<?= img('hotely-pro-ktere-sijeme.img4') ?>" alt="<?= alt('hotely-pro-ktere-sijeme.img4') ?>" decoding="async" loading="lazy"></div>
-              <div class="hotely-pro-ktere-sijeme__stack-2">
-                <h3 class="serif hotely-pro-ktere-sijeme__subheading"><?= t('hotely-pro-ktere-sijeme.t6') ?></h3>
-                <span class="text-muted"><?= t('hotely-pro-ktere-sijeme.t7') ?></span>
-              </div>
-            </li>
-            <li class="hotely-pro-ktere-sijeme__item">
-              <div class="hotely-pro-ktere-sijeme__row-2"><mark class="hotely-pro-ktere-sijeme__note"><?= t('hotely-pro-ktere-sijeme.t8') ?></mark></div>
-              <div class="hotely-pro-ktere-sijeme__stack-2">
-                <h3 class="serif hotely-pro-ktere-sijeme__subheading"><?= t('hotely-pro-ktere-sijeme.t9') ?></h3>
-                <span class="text-muted"><?= t('hotely-pro-ktere-sijeme.t3') ?></span>
-              </div>
-            </li>
-            <li class="hotely-pro-ktere-sijeme__item">
-              <div class="hotely-pro-ktere-sijeme__row-2"><mark class="hotely-pro-ktere-sijeme__note"><?= t('hotely-pro-ktere-sijeme.t8') ?></mark></div>
-              <div class="hotely-pro-ktere-sijeme__stack-2">
-                <h3 class="serif hotely-pro-ktere-sijeme__subheading"><?= t('hotely-pro-ktere-sijeme.t10') ?></h3>
-                <span class="text-muted"><?= t('hotely-pro-ktere-sijeme.t3') ?></span>
-              </div>
-            </li>
-            <li class="hotely-pro-ktere-sijeme__item">
-              <div class="hotely-pro-ktere-sijeme__row-2"><mark class="hotely-pro-ktere-sijeme__note"><?= t('hotely-pro-ktere-sijeme.t8') ?></mark></div>
-              <div class="hotely-pro-ktere-sijeme__stack-2">
-                <h3 class="serif hotely-pro-ktere-sijeme__subheading"><?= t('hotely-pro-ktere-sijeme.t11') ?></h3>
-                <span class="text-muted"><?= t('hotely-pro-ktere-sijeme.t12') ?></span>
-              </div>
-            </li>
+        <ul class="reference-grid">
+          <?php foreach (pages_of_type('reference') as $r): $im = page_field($r, 'hlavicka', 'img1'); $pl = page_field($r, 'hlavicka', 't2'); $ds = page_field($r, 'popis', 't1'); ?>
+          <li class="reference-card"><a class="reference-card__link" href="<?= e($r['path']) ?>">
+            <span class="reference-card__media"><img class="img-cover" src="<?= e(img_small($im['value']['src'])) ?>" alt="<?= e($im['value']['alt'] ?? '') ?>" decoding="async" loading="lazy"></span>
+            <span class="reference-card__body">
+              <span class="serif reference-card__title"><?= e($r['name']) ?></span>
+              <?php if (!empty($pl['value'])): ?><span class="text-muted"><?= e($pl['value']) ?></span><?php endif; ?>
+              <?php if (!empty($ds['value'])): ?><span class="text reference-card__text"><?= e(ucfirst((string) $ds['value'])) ?></span><?php endif; ?>
+              <span class="link-arrow">Fotogalerie →</span>
+            </span>
+          </a></li>
+          <?php endforeach; ?>
         </ul>
-        <p class="text-muted hotely-pro-ktere-sijeme__meta"><mark class="todo hotely-pro-ktere-sijeme__note-2"><?= t('hotely-pro-ktere-sijeme.t13') ?></mark></p>
+        <?php if (t('hotely-pro-ktere-sijeme.t2') !== ''): ?><p class="text-muted hotely-pro-ktere-sijeme__meta"><?= t('hotely-pro-ktere-sijeme.t2') ?></p><?php endif; ?>
       </div>
     </section>
     <?php endif; ?>
