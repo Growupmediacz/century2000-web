@@ -71,7 +71,13 @@ Návrh obrazovek: `docs/cms-navrh/` (Higgsfield, statické obrázky).
 
 ## SEO
 
-Čisté adresy, titulek a popis každé stránky (editovatelné), canonical, Open Graph, strukturovaná data firmy a drobečkové navigace, dynamická `sitemap.xml` a `robots.txt`, `noindex` pro děkovací stránky, 404 a interní stránky (`/nahled/`, `/design-system/`). Doménu a údaje o firmě nastavíte v `config.php` (`site_url`) a v `app/lib/seo.php`.
+- **Titulky a popisy:** každá stránka má vlastní titulek (do 60 znaků) a popis (100–160 znaků), upravují se v administraci v sekci „Vyhledávače (SEO)“. Jedna `<h1>` na stránku (desktopová kopie nadpisu v hero je `<p role="heading">`).
+- **Hlavička:** canonical, Open Graph (výchozí obrázek pro sdílení `public/assets/og/century2000-og.jpg`, 1200 × 630, s rozměry a alt textem), Twitter card, `lang="cs"`.
+- **Strukturovaná data** (`app/lib/seo.php`, `structured_data()`): jeden propojený `@graph` na každé stránce. Firma (`Organization` + `LocalBusiness` s údaji z obchodního rejstříku, adresou, otevírací dobou, IČO a DIČ), `WebSite`, `WebPage` (`ContactPage`, `AboutPage`, `CollectionPage`), drobečková navigace, `Service` na stránkách služeb, `Article` u článků a `FAQPage` z rozbalovacích otázek (čte se z vykreslené stránky, takže úpravy v administraci se propíšou samy). Ověřeno validátorem schema.org bez chyb.
+- **Rychlost:** obrázky dostanou `width` a `height` automaticky (`add_image_sizes()` v `app/lib/render.php`), stránka se při načítání neposouvá. Úvodní fotka má `srcset` a `fetchpriority="high"`, písma jsou lokálně s `preload`.
+- **Sitemap a robots:** dynamická `sitemap.xml` (bez skrytých a interních stránek), `robots.txt` blokuje `/admin/` a `/odeslat/`. `noindex` pro děkovací stránky, 404 a interní stránky (`/nahled/`, `/design-system/`). Celý web je `noindex`, dokud je v `config.php` `'demo' => true`.
+- **Přesměrování:** staré adresy z Joomly přes `.htaccess` (301), odkazy na sekce dosavadního jednostránkového webu (`/#kontakt`, `/#reference`, `/#o-nas`, `/#oblasti`) přes `site.js`.
+- Údaje o firmě jsou v `content/global.json` (patička) a v `app/lib/seo.php`.
 
 ## Reference, články, vzorkovníky: jak přidat a upravit
 

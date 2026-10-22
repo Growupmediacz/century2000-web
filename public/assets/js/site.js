@@ -5,6 +5,17 @@
 
   $$('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 
+  /* Links to sections of the previous one-page site (century2000.cz/#kontakt …) lead to the new pages */
+  const OLD_ANCHORS = { kontakt: '/kontakt/', reference: '/reference/', 'o-nas': '/o-nas/', oblasti: '#co-sijeme' };
+  const logo = document.querySelector('.site-header__logo');
+  const home = logo ? new URL(logo.getAttribute('href'), location.href).pathname : '/';
+  const anchor = location.hash.slice(1);
+  if (location.pathname === home && OLD_ANCHORS[anchor] && !document.getElementById(anchor)) {
+    const to = OLD_ANCHORS[anchor];
+    if (to.startsWith('#')) { location.hash = to; }
+    else { location.replace(home.replace(/\/$/, '') + to); }
+  }
+
   /* ---------- Header: mega menu (desktop) + burger menu (mobile) ---------- */
   $$('[data-c="Hlavicka"]').forEach(header => {
     const pinned = header.dataset.pMegaOpen === 'true';

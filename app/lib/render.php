@@ -106,13 +106,29 @@ function render_page(string $name): string
     include APP_DIR . '/templates/pages/' . ($page['options']['template'] ?? $name) . '.php';
     $body = trim((string) ob_get_clean());
 
-    $html = "<!DOCTYPE html>\n<html lang=\"cs\">\n<head>\n" . seo_head($page) . "\n</head>\n<body>\n$body\n" . tracking_custom('body') . "</body>\n</html>\n";
+    $html = "<!DOCTYPE html>\n<html lang=\"cs\">\n<head>\n" . seo_head($page, $body) . "\n</head>\n<body>\n$body\n" . tracking_custom('body') . "</body>\n</html>\n";
     return finalize_html($html, $page['path'], !empty($page['options']['absolute']));
+}
+
+/**
+ * width/height on local raster images that lack them, so the browser reserves the space before the image loads
+ * (no layout shift, better Core Web Vitals). CSS keeps the real size (img { height: auto } in base.css).
+ */
+function add_image_sizes(string $html): string
+{
+    static $sizes = [];
+    return preg_replace_callback('#<img\b(?![^>]*\swidth=)([^>]*?)\ssrc="(/[^"?]+\.(?:webp|jpe?g|png|gif))"#i', function ($m) use (&$sizes) {
+        $file = PUBLIC_DIR . $m[2];
+        $sizes[$m[2]] ??= is_file($file) ? (@getimagesize($file) ?: null) : null;
+        $size = $sizes[$m[2]];
+        return $size ? "<img{$m[1]} src=\"{$m[2]}\" width=\"{$size[0]}\" height=\"{$size[1]}\"" : $m[0];
+    }, $html) ?? $html;
 }
 
 /** aria-current on links to the current page; base path for root-relative URLs. */
 function finalize_html(string $html, string $path, bool $absolute = false): string
 {
+    $html = add_image_sizes($html);
     $html = preg_replace('/(<a\b[^>]*\shref="' . preg_quote($path, '/') . '")/', '$1 aria-current="page"', $html);
     $base = rtrim((string) config('base_path', ''), '/');
     if ($base !== '') {
