@@ -571,7 +571,7 @@
           "key": "r2",
           "type": "rich",
           "label": "Text",
-          "value": "Odesláním souhlasíte se <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">zpracováním osobních údajů</a> za účelem vyřízení poptávky."
+          "value": "Údaje z formuláře použijeme jen k vyřízení vaší poptávky. Více v <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásadách ochrany osobních údajů</a>."
         },
         {
           "key": "t3",

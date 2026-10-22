@@ -107,6 +107,7 @@ function seo_head(array $page): string
         '<meta charset="utf-8">',
         '<meta name="viewport" content="width=device-width, initial-scale=1">',
         '<title>' . e($title) . '</title>',
+        tracking_head(), // Consent Mode v2 defaults: before any other script
     ];
     if ($desc !== '') {
         $l[] = '<meta name="description" content="' . e($desc) . '">';
@@ -132,17 +133,17 @@ function seo_head(array $page): string
         '<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">',
         '<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">',
         '<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">',
-        '<link rel="preconnect" href="https://fonts.googleapis.com">',
-        '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>',
-        '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&amp;family=Parisienne&amp;family=Playfair+Display:ital,wght@0,500;0,600;1,500&amp;display=swap">'
+        '<link rel="preload" href="/assets/fonts/barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin>',
+        '<link rel="preload" href="/assets/fonts/playfair-display-500-latin.woff2" as="font" type="font/woff2" crossorigin>',
+        '<link rel="stylesheet" href="/assets/fonts/fonts.css?v=' . asset_version('fonts/fonts.css') . '">'
     );
     $l[] = '<script>if (!window.matchMedia || !matchMedia("(prefers-reduced-motion: reduce)").matches) document.documentElement.classList.add("js-anim")</script>';
     foreach (array_unique(array_merge(['base', 'components', 'pages', 'obsah'], $page['options']['css'] ?? [], ['animace'])) as $css) {
         $l[] = '<link rel="stylesheet" href="/assets/css/' . $css . '.css?v=' . asset_version("css/$css.css") . '">';
     }
-    $ga = (string) config('analytics.ga4_id', '');
-    if (preg_match('/^G-[A-Z0-9]{6,12}$/', $ga)) {
-        $l[] = '<meta name="c2000-ga4" content="' . e($ga) . '">'; // loaded by site.js only after consent
+    $custom = trim(tracking_custom('head'));
+    if ($custom !== '') {
+        $l[] = $custom;
     }
     $l[] = '<script src="/assets/js/site.js?v=' . asset_version('js/site.js') . '" defer></script>';
     $l[] = '<script src="/assets/js/animace.js?v=' . asset_version('js/animace.js') . '" defer></script>';

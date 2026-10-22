@@ -198,3 +198,11 @@ a.adm-list__main:hover .adm-list__title { color: var(--bronze); }
   .adm-table__row--head > :nth-child(5) { display: none; }
   .adm-table__row > :nth-child(5) { grid-column: 2 / -1; }
 }
+
+/* measurement codes */
+.adm-radio { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid var(--line); background: #fff; cursor: pointer; }
+.adm-radio input { margin-top: 4px; accent-color: var(--bronze); }
+.adm-field select { padding: 10px 12px; border: 1px solid var(--field); background: #fff; font: inherit; color: var(--ink); max-width: 100%; }
+.adm-code-input { font-family: ui-monospace, Menlo, monospace !important; font-size: 13px !important; }
+.adm-field .adm-error { margin: 0; font-size: 13px; }
+.adm-warning { margin: 0 0 24px; padding: 14px 16px; border: 1px solid #C08A2E; background: #FBF3E4; color: #6B4A12; }

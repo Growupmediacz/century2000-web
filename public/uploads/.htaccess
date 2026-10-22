@@ -3,3 +3,7 @@
   Require all denied
 </FilesMatch>
 Options -ExecCGI
+# Only images are served from here
+<FilesMatch "\.(?!(webp|jpe?g|png|gif)$)[^.]+$">
+  Require all denied
+</FilesMatch>

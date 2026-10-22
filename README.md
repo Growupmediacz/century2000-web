@@ -43,7 +43,9 @@ Pro testování nastavte v `config.php` `'transport' => 'log'`. E-maily se pak n
 2. Složky `content/`, `www/uploads/` a `www/downloads/vzorkovniky/` musí mít právo zápisu (PHP do nich ukládá). PHP limit `upload_max_filesize` / `post_max_size` nastavte aspoň na 40 MB kvůli PDF vzorkovníkům.
 3. V `config.php` nastavte `mail.from` (schránka na doméně webu, např. `web@century2000.cz`) a `mail.to`.
    `transport => 'mail'` funguje na Webglobe bez dalšího nastavení. Spolehlivější je `smtp` s přihlášením ke schránce.
-4. V `public/.htaccess` odkomentujte přesměrování na HTTPS a www.
+4. Na hostingu zapněte SSL certifikát (Webglobe: Let's Encrypt zdarma). `.htaccess` přesměruje všechny adresy na HTTPS sám. Přesměrování na `www` odkomentujte až na ostré doméně.
+5. `public/.user.ini` nastaví PHP: chyby se nezobrazují návštěvníkům, limit nahrávání 40 MB, bezpečné session. Pokud hosting `.user.ini` nečte, nastavte to samé v administraci hostingu.
+6. Přístup do administrace: `php tools/set-password.php` vytvoří `config.php` s heslem. Pro ukázku klientovi je v lokálním `config.php` dočasný účet (viz Zabezpečení). Klient si heslo změní sám v Administrace → Nastavení.
 
 **Při dalších nasazeních nepřepisujte `content/`, `www/uploads/`, `www/downloads/vzorkovniky/` ani `config.php`.** Jsou v nich úpravy klienta a hesla.
 
@@ -86,12 +88,32 @@ Obrázky na webu jsou kromě referencí AI ilustrace (viz `docs/image-inventory.
 
 Zdroj je `app/redirects.php`. Po úpravě spusťte `php tools/sync-redirects.php`, přegeneruje blok v `public/.htaccess` a `docs/redirects.md`. PHP router přesměrovává také sám, statický náhled používá stránky s meta refresh.
 
-## Analytika
+## Měřicí kódy a Google Consent Mode v2
 
-V `config.php` nastavte `'analytics' => ['ga4_id' => 'G-XXXXXXXXXX']` až po dodání ID od klienta. Bez ID se žádný měřicí kód nenačítá, s ID se Google Analytics načte až po souhlasu s analytickými cookies (volba je v `localStorage` pod klíčem `c2000-consent`).
+Kódy se zadávají v **Administrace → Měřicí kódy** (uloží se do `content/mereni.json`, ten není v Gitu): Google Analytics 4, Google Tag Manager, Google Ads, Meta Pixel, Sklik a dva vlastní kódy s volbou kategorie souhlasu. Kód je v `app/lib/tracking.php` a `public/assets/js/site.js`.
+
+- Na začátku `<head>` se nastaví `gtag('consent', 'default', …)` se vším `denied` (`ad_storage`, `ad_user_data`, `ad_personalization`, `analytics_storage`) a `ads_data_redaction`. Dřívější volbu návštěvníka script použije hned (`consent update`), ještě před načtením tagů.
+- Po volbě v liště: `gtag('consent', 'update', …)` a událost `c2000_consent_update` v `dataLayer` (pro spouštěče v GTM). Analytické = `analytics_storage`, marketingové = `ad_*`.
+- **Základní režim** (výchozí): tagy Googlu se načtou až po souhlasu. **Pokročilý**: načtou se hned a do souhlasu posílají jen anonymní signály (modelování konverzí). Meta Pixel, Sklik a vlastní kódy se v obou režimech spustí až po souhlasu.
+- Souhlas platí 12 měsíců (`localStorage` `c2000-consent`, `v: 2`), pak se lišta zobrazí znovu. Po odvolání souhlasu se smažou cookies `_ga*`, `_gcl_*`, `_fbp`, `_fbc` a stránka se načte znovu.
+- Tabulka v Zásadách cookies se skládá podle vyplněných nástrojů (`tracking_cookie_rows()`).
+- Ověření: v Google Tag Assistant (tagassistant.google.com) musí být před souhlasem vidět „Consent default: denied“ a po kliknutí na „Přijmout vše“ „Consent update: granted“.
+
+## Zabezpečení
+
+- **Dočasný přístup pro ukázku** je jen v lokálním `config.php` (není v Gitu). Administrace při jednoduchém hesle ukazuje varování, dokud se heslo nezmění v Nastavení. Nové heslo musí mít aspoň 10 znaků.
+- Přihlášení: max. 5 pokusů za 15 minut z jedné IP, session jen přes HttpOnly cookie se `SameSite=Strict` (na HTTPS i `Secure`), odhlášení po 4 hodinách nečinnosti, CSRF token u všech formulářů administrace.
+- Administrace posílá přísnou Content Security Policy (jen vlastní skripty a styly) a nejde vložit do rámu.
+- Web: HTTPS + HSTS, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, základní CSP (bez pluginů, formuláře jen na vlastní web, žádné vkládání cizími weby), bez výpisu složek.
+- Zablokované: `app/`, `content/`, `tools/`, `docs/`, `config.php`, skryté soubory a soubory `.json`, `.md`, `.log`, `.ini`, `.bak` apod. V `uploads/` jdou jen obrázky, v `downloads/` jen PDF, nikde nejde spustit PHP.
+- Nahrané fotky se přeuloží přes GD (odstraní se případný škodlivý obsah), u PDF se kontroluje hlavička souboru.
+- Formuláře: honeypot, podepsaný časový token, limit 5 odeslání za 10 minut, jednořádková pole bez řídicích znaků (nejde podstrčit hlavičku e-mailu). Záznamy limitů (hash IP) se mažou po 1 dni.
+- PHP chyby se návštěvníkům nezobrazují (`app/bootstrap.php`, `public/.user.ini`).
+- Písma jsou na vlastním serveru (`public/assets/fonts/`), web při načtení nekontaktuje Google.
 
 ## Před spuštěním
 
-- **Zapnutí indexace (jediná volba):** na ostré doméně nastavte v `config.php` `'demo' => false`. Do té doby je celý web `noindex` a `robots.txt` zakazuje vše. Na testovací doméně a v náhledu nechte `true`. Ke spuštění patří také: odkomentovat přesměrování na HTTPS a www v `public/.htaccess`, nastavit `site_url`, `mail.*` a doplnit ID analytiky.
-- **Značky `[DOPLNIT: …]`** zůstaly jen v Zásadách ochrany osobních údajů (datum účinnosti a lhůty uchování údajů, ke kontrole klientem nebo právníkem). Seznam otázek pro klienta je v popisu pull requestu. Adresa firmy je v patičce (`content/global.json`) a v `app/lib/seo.php`.
-- **Cookies:** souhlas se ukládá do prohlížeče (`c2000-consent`) a vyvolá událost `c2000-consent`, na kterou se napojí analytika.
+- **Zapnutí indexace (jediná volba):** na ostré doméně nastavte v `config.php` `'demo' => false`. Do té doby je celý web `noindex` a `robots.txt` zakazuje vše. Na testovací doméně a v náhledu nechte `true`. Ke spuštění patří také: odkomentovat přesměrování na www v `public/.htaccess`, nastavit `site_url`, `mail.*` a vyplnit měřicí kódy v administraci.
+- **Právní texty** (Zásady ochrany osobních údajů, Zásady cookies) jsou doplněné podle GDPR, zákona č. 110/2019 Sb. a § 89 zákona o elektronických komunikacích, údaje o firmě podle obchodního rejstříku. Klient nebo právník by měl zkontrolovat lhůty uložení a seznam dodavatelů (hosting, e-mail, účetní). Upravují se v administraci, šablona `app/templates/pages/pravni.php`.
+- **Dočasný přístup** do administrace vyměnit za vlastní heslo klienta.
+- **Cookies:** souhlas se ukládá do prohlížeče (`c2000-consent`) a vyvolá událost `c2000-consent` (viz Měřicí kódy).

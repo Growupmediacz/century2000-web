@@ -21,6 +21,11 @@ function admin_handle(): void
     header('X-Frame-Options: DENY');
     header('X-Robots-Tag: noindex, nofollow');
     header('Cache-Control: no-store');
+    header('X-Content-Type-Options: nosniff');
+    header('Referrer-Policy: same-origin');
+    // The admin has no inline scripts or styles: allow only its own files (blob: = preview of a chosen photo)
+    header("Content-Security-Policy: default-src 'self'; img-src 'self' data: blob:; style-src 'self'; script-src 'self'; "
+        . "font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'");
     admin_session_start();
 
     $action = (string) ($_GET['a'] ?? 'dashboard');
@@ -54,6 +59,8 @@ function admin_handle(): void
         'catalog-upload' => admin_catalog_upload(),
         'catalog-save' => admin_catalog_save(),
         'settings' => admin_settings(),
+        'tracking' => admin_tracking(),
+        'tracking-save' => admin_tracking_save(),
         'password' => admin_password(),
         default => admin_dashboard(),
     };
@@ -80,6 +87,12 @@ function admin_password_hash(): string
     $file = RUNTIME_DIR . '/admin.json';
     $data = is_file($file) ? json_decode((string) file_get_contents($file), true) : null;
     return (string) ($data['password_hash'] ?? config('admin.password_hash'));
+}
+
+/** Temporary / too simple password (e.g. the demo login): the admin shows a warning until it is changed. */
+function admin_password_is_weak(string $password): bool
+{
+    return mb_strlen($password) < 10 || in_array(mb_strtolower($password), ['admin', 'heslo', 'password', 'century2000', '1234567890'], true);
 }
 
 function admin_configured(): bool
@@ -133,11 +146,15 @@ function admin_login(): void
         csrf_check();
         if (!rate_limit('login', 5, 900, false)) {
             $error = 'Příliš mnoho neúspěšných pokusů. Zkuste to znovu za 15 minut.';
-        } elseif (hash_equals((string) config('admin.user'), (string) ($_POST['user'] ?? ''))
-            && password_verify((string) ($_POST['password'] ?? ''), admin_password_hash())) {
+        } elseif (
+            // both checks always run, so the response time does not reveal whether the user name was right
+            (int) hash_equals(mb_strtolower((string) config('admin.user')), mb_strtolower(trim((string) ($_POST['user'] ?? ''))))
+            & (int) password_verify((string) ($_POST['password'] ?? ''), admin_password_hash())
+        ) {
             rate_limit_reset('login');
             session_regenerate_id(true);
             $_SESSION['admin'] = true;
+            $_SESSION['weak_password'] = admin_password_is_weak((string) ($_POST['password'] ?? ''));
             unset($_SESSION['csrf']);
             redirect(admin_url());
         } else {
@@ -644,6 +661,49 @@ function admin_catalog_save(): void
     redirect(admin_url('catalogs'));
 }
 
+// ---------------------------------------------------------------- measurement codes
+
+function admin_tracking(): void
+{
+    admin_view('tracking', ['title' => 'Měřicí kódy', 'nav' => 'tracking', 't' => tracking_settings(), 'errors' => $_SESSION['tracking_errors'] ?? []]);
+    unset($_SESSION['tracking_errors']);
+}
+
+function admin_tracking_save(): void
+{
+    if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+        redirect(admin_url('tracking'));
+    }
+    $t = tracking_settings();
+    $errors = [];
+    $t['mode'] = ($_POST['mode'] ?? '') === 'advanced' ? 'advanced' : 'basic';
+    foreach (TRACKING_IDS as $key => [$label, $re]) {
+        $v = strtoupper(preg_replace('/\s+/', '', (string) ($_POST[$key] ?? '')) ?? '');
+        if ($v !== '' && !preg_match($re, $v)) {
+            $errors[$key] = "$label: „" . mb_substr($v, 0, 40) . '“ nemá správný tvar, pole zůstalo beze změny.';
+            continue;
+        }
+        $t[$key] = $v;
+    }
+    $custom = [];
+    foreach ([0, 1] as $i) {
+        $c = (array) ($_POST['custom'][$i] ?? []);
+        $custom[] = [
+            'label' => clean_text((string) ($c['label'] ?? ''), 120),
+            'category' => in_array($c['category'] ?? '', ['necessary', 'analytics', 'marketing'], true) ? $c['category'] : 'marketing',
+            'place' => ($c['place'] ?? '') === 'head' ? 'head' : 'body',
+            // the admin is trusted to paste third-party snippets; only size and control characters are limited
+            'code' => mb_substr(preg_replace('/[\x00-\x08\x0B\x0C\x0E-\x1F]/u', '', str_replace("\r\n", "\n", (string) ($c['code'] ?? ''))) ?? '', 0, 20000),
+        ];
+    }
+    $t['custom'] = $custom;
+    $t['updated'] = date('c');
+    tracking_save($t);
+    $_SESSION['tracking_errors'] = $errors;
+    flash($errors ? 'Uloženo, ale některá ID nemají správný tvar (viz níže).' : 'Měřicí kódy jsou uložené a platí na celém webu.', $errors ? 'error' : 'ok');
+    redirect(admin_url('tracking'));
+}
+
 // ---------------------------------------------------------------- settings
 
 function admin_settings(): void
@@ -660,13 +720,15 @@ function admin_password(): void
     $new = (string) ($_POST['new'] ?? '');
     if (!password_verify($current, admin_password_hash())) {
         flash('Současné heslo není správně.', 'error');
-    } elseif (mb_strlen($new) < 10) {
-        flash('Nové heslo musí mít aspoň 10 znaků.', 'error');
+    } elseif (admin_password_is_weak($new)) {
+        flash('Nové heslo musí mít aspoň 10 znaků a nesmí to být jednoduché heslo typu „admin“.', 'error');
     } elseif ($new !== (string) ($_POST['again'] ?? '')) {
         flash('Nová hesla se neshodují.', 'error');
     } else {
         write_file_atomic(RUNTIME_DIR . '/admin.json', json_encode(['password_hash' => password_hash($new, PASSWORD_DEFAULT), 'changed' => date('c')]) . "\n");
+        @chmod(RUNTIME_DIR . '/admin.json', 0600);
         session_regenerate_id(true);
+        $_SESSION['weak_password'] = admin_password_is_weak($new);
         flash('Heslo je změněné. Příště se přihlaste novým heslem.');
     }
     redirect(admin_url('settings'));

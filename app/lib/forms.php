@@ -83,7 +83,10 @@ function handle_form(string $type): void
     $values = [];
     foreach ($form['fields'] as $k => $_) {
         $values[$k] = trim(str_replace("\r\n", "\n", (string) ($_POST[$k] ?? '')));
-        $values[$k] = mb_substr($values[$k], 0, $k === 'message' || $k === 'about' ? 5000 : 200);
+        $multiline = $k === 'message' || $k === 'about';
+        // one-line fields go into the e-mail subject: no line breaks or other control characters
+        $values[$k] = preg_replace($multiline ? '/[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]/u' : '/[\x00-\x1F\x7F]/u', ' ', $values[$k]) ?? '';
+        $values[$k] = mb_substr($values[$k], 0, $multiline ? 5000 : 200);
     }
     $errors = [];
     foreach ($form['required'] as $k) {

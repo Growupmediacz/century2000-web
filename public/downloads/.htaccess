@@ -1,0 +1,12 @@
+# Downloads (PDF catalogues) only – never run scripts from here
+<FilesMatch "\.(php|phtml|phar|pl|py|cgi|sh)$">
+  Require all denied
+</FilesMatch>
+Options -ExecCGI
+# Only PDF files are served from here
+<FilesMatch "\.(?!pdf$)[^.]+$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>

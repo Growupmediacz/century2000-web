@@ -391,7 +391,7 @@
       </label>
       <div data-if="e.file" hidden><span class="inquiry__error">Soubor je větší než 10 MB.</span></div>
     </div>
-    <p class="text-muted inquiry__consent">Odesláním souhlasíte se <a class="inquiry__consent-link" href="/zasady-ochrany-osobnich-udaju/">zpracováním osobních údajů</a> za účelem vyřízení poptávky.</p>
+    <p class="text-muted inquiry__consent">Údaje z formuláře použijeme jen k vyřízení vaší poptávky. Více v <a class="inquiry__consent-link" href="/zasady-ochrany-osobnich-udaju/">Zásadách ochrany osobních údajů</a>.</p>
     <button class="btn-primary inquiry__submit" type="submit">Odeslat poptávku</button>
   </form>
   <aside class="inquiry__aside">

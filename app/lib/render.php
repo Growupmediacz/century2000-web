@@ -106,7 +106,7 @@ function render_page(string $name): string
     include APP_DIR . '/templates/pages/' . ($page['options']['template'] ?? $name) . '.php';
     $body = trim((string) ob_get_clean());
 
-    $html = "<!DOCTYPE html>\n<html lang=\"cs\">\n<head>\n" . seo_head($page) . "\n</head>\n<body>\n$body\n</body>\n</html>\n";
+    $html = "<!DOCTYPE html>\n<html lang=\"cs\">\n<head>\n" . seo_head($page) . "\n</head>\n<body>\n$body\n" . tracking_custom('body') . "</body>\n</html>\n";
     return finalize_html($html, $page['path'], !empty($page['options']['absolute']));
 }
 

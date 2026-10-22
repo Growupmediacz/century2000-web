@@ -290,7 +290,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Odesláním souhlasíte se zpracováním osobních údajů pro účely výběru zaměstnanců. <a class=\"formular-pro-uchazece__link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásady ochrany osobních údajů</a>"
+          "value": "Údaje z formuláře použijeme jen pro výběr zaměstnanců. Více v <a class=\"formular-pro-uchazece__link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásadách ochrany osobních údajů</a>."
         },
         {
           "key": "t3",
