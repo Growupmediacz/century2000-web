@@ -236,9 +236,9 @@
       <p class="serif ds-pruh-log__text">Šijeme pro hotely, které zná celý svět</p>
       <ul class="ds-pruh-log__list">
         <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/four-seasons-praha.webp" alt="Four Seasons Praha" decoding="async" loading="lazy"></li>
-        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/le-palais-praha.png" alt="Le Palais Praha" decoding="async" loading="lazy"></li>
-        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/corinthia-praha-orez.png" alt="Corinthia Praha" decoding="async" loading="lazy"></li>
-        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/hotel-international-brno.png" alt="Hotel International Brno" decoding="async" loading="lazy"></li>
+        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/le-palais-praha.webp" alt="Le Palais Praha" decoding="async" loading="lazy"></li>
+        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/corinthia-tower-praha.webp" alt="Corinthia Praha" decoding="async" loading="lazy"></li>
+        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/hotel-international-brno.webp" alt="Hotel International Brno" decoding="async" loading="lazy"></li>
       </ul>
       <a class="link-arrow ds-pruh-log__link" href="#">Všechny reference →</a>
     </div>

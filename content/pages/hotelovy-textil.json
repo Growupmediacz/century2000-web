@@ -74,44 +74,8 @@
       "label": "Loga klientů",
       "hideable": true,
       "visible": true,
-      "fields": [
-        {
-          "key": "img1",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/four-seasons-praha.webp",
-            "alt": "Four Seasons Praha"
-          }
-        },
-        {
-          "key": "img2",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/le-palais-praha.png",
-            "alt": "Le Palais Praha"
-          }
-        },
-        {
-          "key": "img3",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/corinthia-praha-orez.png",
-            "alt": "Corinthia Praha"
-          }
-        },
-        {
-          "key": "img4",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/hotel-international-brno.png",
-            "alt": "Hotel International Brno"
-          }
-        }
-      ]
+      "fields": [],
+      "note": "Loga hotelů se upravují u jednotlivých referencí (Reference → hotel → Logo hotelu). Zobrazí se reference se zapnutou volbou „Zobrazit na úvodní stránce“."
     },
     {
       "key": "pro-koho",

@@ -3,29 +3,29 @@
   <main>
     <?php if (visible('uvodni-blok')): ?>
     <section class="index-hero" data-screen-label="Hero" aria-labelledby="hero-h1">
-      <div class="show-desktop">
-        <img class="img-cover index-hero__img" src="<?= img('uvodni-blok.img1') ?>" alt="<?= alt('uvodni-blok.img1') ?>" decoding="async">
+      <div class="index-hero__media">
+        <picture>
+          <source media="(max-width: 1023px)" srcset="<?= img('uvodni-blok.img2') ?>">
+          <img class="img-cover index-hero__img" src="<?= img('uvodni-blok.img1') ?>"<?= img_srcset(content_field('uvodni-blok.img1')['value']['src'] ?? '', '100vw') ?> alt="<?= alt('uvodni-blok.img1') ?>" decoding="async" fetchpriority="high">
+        </picture>
         <div class="index-hero__overlay" aria-hidden="true"></div>
       </div>
-      <div class="show-mobile">
-        <img class="index-hero__img--mobile" src="<?= img('uvodni-blok.img2') ?>" alt="<?= alt('uvodni-blok.img2') ?>" decoding="async">
-      </div>
+      <?php if (t('uvodni-blok.t2') !== ''): ?>
+      <p class="index-hero__ornament" aria-hidden="true"><?= tbr('uvodni-blok.t2') ?><span class="index-hero__ornament-line"></span></p>
+      <?php endif; ?>
       <div class="container index-hero__inner">
         <div class="index-hero__stack">
-          <p class="index-hero__text-2">
-            <span class="eyebrow index-hero__eyebrow"><?= t('uvodni-blok.t1') ?></span>
-            <span class="index-hero__label"><?= t('uvodni-blok.t2') ?></span>
-          </p>
-          <h1 class="title-hero index-hero__title" id="hero-h1"><?= t('uvodni-blok.t3') ?></h1>
-          <p class="text index-hero__text"><?= t('uvodni-blok.t4') ?></p>
+          <p class="index-hero__eyebrow"><?= t('uvodni-blok.t1') ?></p>
+          <h1 class="index-hero__title" id="hero-h1"><?= tbr('uvodni-blok.t3') ?></h1>
+          <p class="index-hero__text"><?= t('uvodni-blok.t4') ?></p>
           <div class="index-hero__row">
-            <a class="btn-primary index-hero__btn-2" href="/kontakt/#poptavka"><?= t('uvodni-blok.t5') ?></a>
-            <a class="btn-secondary index-hero__btn" href="#co-sijeme"><?= t('uvodni-blok.t6') ?></a>
+            <a class="index-hero__btn-2" href="<?= e(link_value('uvodni-blok.u1', '/kontakt/#poptavka')) ?>"><?= t('uvodni-blok.t5') ?><svg aria-hidden="true" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+            <a class="index-hero__btn" href="<?= e(link_value('uvodni-blok.u2', '#co-sijeme')) ?>"><?= t('uvodni-blok.t6') ?></a>
           </div>
-          <ul class="index-hero__list">
-            <li class="index-hero__item"><svg class="index-hero__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4 H16 L20 8 V20 H5 Z"></path><path d="M16 4 V8 H20"></path><path d="M8 12 H17 M8 15 H17 M8 18 H13"></path></svg><?= t('uvodni-blok.t7') ?></li>
-            <li class="index-hero__item"><svg class="index-hero__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20 H21"></path><path d="M6 20 V15 H10 V9 C10 7 11 6 13 6 H20 V10 H15 V15 H18 V20"></path><path d="M17 15 V18"></path><circle cx="6.5" cy="9" r="2"></circle></svg><?= t('uvodni-blok.t8') ?></li>
-            <li class="index-hero__item"><svg class="index-hero__ico" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16 L14 6 L18 10 L8 20 Z"></path><path d="M7.5 12.5 L9.5 14.5 M10 10 L12 12 M12.5 7.5 L14.5 9.5"></path><path d="M20 4 L21 3"></path></svg><?= t('uvodni-blok.t9') ?></li>
+          <ul class="index-hero__badges">
+            <?php foreach (['t7' => 'kvalitni-materialy', 't8' => 'vlastni-vyroba', 't9' => 'individualni-pristup', 't10' => 'dlouholete-zkusenosti'] as $fk => $icon): if (t("uvodni-blok.$fk") === '') continue; ?>
+            <li class="index-hero__badge"><?= icon_svg('hero/' . $icon, 'index-hero__ico') ?><span><?= tbr("uvodni-blok.$fk") ?></span></li>
+            <?php endforeach; ?>
           </ul>
         </div>
       </div>
@@ -36,8 +36,8 @@
       <div class="container pruh-duvery__inner">
         <p class="serif pruh-duvery__text"><?= t('pruh-duvery.t1') ?></p>
         <ul class="pruh-duvery__list">
-          <?php foreach (array_filter(pages_of_type('reference'), fn($r) => !empty($r['options']['featured'])) as $r): ?>
-          <li class="pruh-duvery__item"><a class="serif pruh-duvery__name" href="<?= e($r['path']) ?>"><?= e(preg_replace('/^Hotel /', '', $r['name'])) ?></a></li>
+          <?php foreach (featured_references() as $r): ?>
+          <li class="pruh-duvery__item"><a class="serif pruh-duvery__name" href="<?= e($r['path']) ?>"><?php if ($r['logo'] !== ''): ?><img class="pruh-duvery__img" src="<?= e($r['logo']) ?>" alt="<?= e($r['alt'] ?: $r['name']) ?>" decoding="async" loading="lazy"><?php else: ?><?= e($r['name']) ?><?php endif; ?></a></li>
           <?php endforeach; ?>
         </ul>
         <a class="link-arrow pruh-duvery__link" href="/reference/"><?= t('pruh-duvery.t2') ?></a>

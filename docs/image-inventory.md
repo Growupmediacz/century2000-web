@@ -95,3 +95,13 @@ Výsledky pilotu: `docs/higgsfield-pilot.md`.
 - Všech 47 fotek referencí (hlavní + galerie) prošlo zvětšením na 2K přes Higgsfield (nástroj Upscale, bez generativních zásahů, ověřeno v pilotu). U 37 fotek proběhlo zvětšení u Higgsfieldu, u 9 fotek (jejich úlohy v Higgsfieldu zůstaly viset) je použito lokální zvětšení Lanczos s jemným doostřením. Tyto soubory jdou kdykoli nahradit: `hotel-1-republika-praha/01`, `hotel-aqua-praha-pruhonice/02`, `hotel-corinthia-tower-praha/02`, `hotel-four-season-praha/hlavni`, `hotel-le-palais-praha/02`, `ostatni-realizace/01`, `ostatni-realizace/03`, `palac-u-kocku-praha/04`, `palac-u-kocku-praha/05`.
 - **Filtr (varianta „jemný“):** napůl aplikované vyvážení bílé (potlačení žlutého nádechu), mírné snížení sytosti (asi 8 %), měkčí stíny, jemný krémový závoj. Všechny fotky mají stejné nastavení, barvy a vzory látek zůstávají rozeznatelné. Postup je zdokumentovaný v tomto souboru, parametry jsou v popisu PR.
 - Zdrojem pro zvětšení byly webové verze (WebP do 1280 px, u některých 800 px), ne původní JPEG ze zálohy.
+
+## 5. Úvodní hero a loga hotelů ze stávajícího webu (22. 10. 2026)
+
+Na přání klienta má úvodní blok stejnou podobu jako na century2000.cz. Převzato ze stávajícího webu:
+
+- `public/assets/fotky/hero-interier-zavesy.webp` (2066 px) a varianty `-1280`, `-640`: interiér se závěsy z úvodu century2000.cz
+- `public/assets/ikony/hero/*.svg`: 4 ikony předností (kvalitní materiály, vlastní výroba, individuální přístup, dlouholeté zkušenosti), barva se řídí CSS (`currentColor`)
+- `public/assets/reference-loga/*.webp`: loga Four Seasons, Le Palais, Hotel International Brno, Corinthia, oříznutá a převedená do WebP s průhledností. Dřívější PNG/WebP verze stejných log byly nahrazeny.
+
+Původní hero `hero-sici-dilna.webp` zůstává jako výchozí obrázek pro sdílení (Open Graph).

@@ -47,6 +47,25 @@
       ]
     },
     {
+      "key": "logo",
+      "label": "Logo hotelu",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Logo",
+          "optional": true,
+          "value": {
+            "src": "/assets/reference-loga/le-palais-praha.webp",
+            "alt": "Logo Le Palais Praha"
+          },
+          "help": "Nejlépe PNG s průhledným pozadím. Na webu se zobrazí šedě, barevně po najetí myší. Bez loga se ukáže název hotelu."
+        }
+      ]
+    },
+    {
       "key": "popis",
       "label": "Popis realizace",
       "hideable": false,

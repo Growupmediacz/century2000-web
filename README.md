@@ -40,12 +40,12 @@ Pro testování nastavte v `config.php` `'transport' => 'log'`. E-maily se pak n
 
 1. Na FTP nahrajte obsah složky `public/` do `www/` a vedle `www/` složky `app/`, `content/` a soubor `config.php`.
    Pokud hosting soubory mimo `www/` nedovolí, dejte vše do `www/`. `.htaccess` pak zablokuje přístup do `app/`, `content/` a ke `config.php`.
-2. Složky `content/` a `www/uploads/` musí mít právo zápisu (PHP do nich ukládá).
+2. Složky `content/`, `www/uploads/` a `www/downloads/vzorkovniky/` musí mít právo zápisu (PHP do nich ukládá). PHP limit `upload_max_filesize` / `post_max_size` nastavte aspoň na 40 MB kvůli PDF vzorkovníkům.
 3. V `config.php` nastavte `mail.from` (schránka na doméně webu, např. `web@century2000.cz`) a `mail.to`.
    `transport => 'mail'` funguje na Webglobe bez dalšího nastavení. Spolehlivější je `smtp` s přihlášením ke schránce.
 4. V `public/.htaccess` odkomentujte přesměrování na HTTPS a www.
 
-**Při dalších nasazeních nepřepisujte `content/`, `www/uploads/` ani `config.php`.** Jsou v nich úpravy klienta a hesla.
+**Při dalších nasazeních nepřepisujte `content/`, `www/uploads/`, `www/downloads/vzorkovniky/` ani `config.php`.** Jsou v nich úpravy klienta a hesla.
 
 ## Náhled pro klienta (GitHub Pages)
 
@@ -54,8 +54,16 @@ Náhled ukazuje obsah z Gitu, ne úpravy z administrace na ostrém webu. Formul�
 
 ## Administrace
 
-- přihlášení jménem a heslem (heslo nastaví `php tools/set-password.php`), po 5 chybných pokusech se přihlašování na 15 minut zablokuje
-- stránky rozdělené na sekce: texty, formátovaný text (tučně, kurzíva, odkazy), obrázky s popisem a přepínač **Zobrazit sekci na webu**
+Návrh obrazovek: `docs/cms-navrh/` (Higgsfield, statické obrázky).
+
+- přihlášení jménem a heslem (heslo nastaví `php tools/set-password.php`), po 5 chybných pokusech se přihlašování na 15 minut zablokuje. Klient si heslo změní sám v **Nastavení**, nové heslo se uloží do `content/.runtime/admin.json` a má přednost před `config.php`
+- **Přehled:** rychlé akce (úvodní stránka, nová reference, nový článek, vzorkovník), naposledy upravené stránky, stav webu (testovací režim, zálohy)
+- stránky rozdělené na sekce: texty (u víceřádkových polí Enter = nový řádek na webu), formátovaný text (tučně, kurzíva, odkazy), obrázky s popisem, nápověda u polí a přepínač **Zobrazit sekci na webu**
+- **Úvodní stránka, hero:** nadtitulek, nadpis, text, dvě tlačítka (text i odkaz), ozdobný ručně psaný nápis, fotka pro počítač a mobil, 4 přednosti s ikonami (`public/assets/ikony/hero/`)
+- **Reference:** seznam s pořadím (šipky), logem a přepínačem **Na úvodní stránce**. V detailu logo hotelu (nahrát / odstranit), fotky, texty, **Zobrazit referenci na webu**, smazání
+- **Články:** skládají se z bloků Odstavec, Obrázek s popiskem, Rámeček „Dobré vědět“. Bloky jde přidat, posunout a odstranit. Datum, služby, u kterých se článek nabízí, **Zobrazit článek na webu** (nový článek je skrytý, dokud ho klient nezapne), smazání
+- **Vzorkovníky:** nahrání PDF (max. 40 MB, kontroluje se, že jde o PDF), přejmenování, pořadí, skrytí, smazání
+- smazané články, reference a PDF se přesunou do `content/backups/_smazane/`, nic se nemaže natrvalo
 - nahrané fotky se automaticky otočí, zmenší na max. 2400 px a převedou do WebP
 - před každým uložením se uloží předchozí verze. **Historie verzí** umožní obnovit kteroukoli z posledních 30.
 
@@ -67,9 +75,9 @@ Náhled ukazuje obsah z Gitu, ne úpravy z administrace na ostrém webu. Formul�
 
 Všechno je ve stejném systému jako ostatní stránky (JSON v `content/pages/`, úpravy v administraci):
 
-- **Článek:** `/admin/` → *Články* → pole „Název nového článku“ → *Přidat článek*. Otevře se editor: hlavička (nadpis, perex, obrázek), až tři odstavce (mezititulek, text, odrážky), související služba. Další odstavce přidáte zkopírováním sekce `blok-N` v JSON souboru `content/pages/clanek-<slug>.json`. Kromě odstavců (`blok-N`) umí článek obrázek s popiskem (`foto-N`) a rámeček „Dobré vědět“ (`tip-N`). Pořadí sekcí v souboru je pořadí v článku. V `options.related` jsou adresy souvisejících článků a v `options.service` stránky služeb, na kterých se článek nabízí jako doporučený. Adresa je `/clanky/<slug>/`, zařadí se do výpisu, sitemapy a strukturovaných dat (Article). Články jsou odkazované z patičky, ne z hlavního menu.
-- **Reference (realizace):** `/admin/` → *Reference* → *Přidat realizaci*. Každá realizace má vlastní stránku `/reference/<slug>/` (hlavní fotka, co jsme šili, popis, poznámka o spolupráci, galerie). Karty na stránce Reference, seznam na úvodní stránce a na stránce Hotelový textil se plní z těchto souborů, takže jsou vždy shodné. Pořadí určuje `options.order`, v pruhu důvěry na úvodní stránce se zobrazí realizace s `options.featured: true`. Loga hotelů se nepoužívají, jen textové názvy.
-- **Vzorkovníky:** PDF jsou v `public/downloads/vzorkovniky/`, seznam (název, velikost) je v `content/pages/vzorkovniky.json` v `options.files`. Nový soubor nahrajte přes FTP a doplňte řádek v JSON.
+- **Článek:** `/admin/` → *Články* → pole „Název nového článku“ → *Napsat článek*. Otevře se editor: hlavička (nadpis, perex, obrázek), bloky (odstavec `blok-N`, obrázek s popiskem `foto-N`, rámeček „Dobré vědět“ `tip-N`), související služba. Bloky se přidávají, posouvají a mažou tlačítky v editoru. Pořadí sekcí v souboru je pořadí v článku. Stejné bloky dostane každá stránka s `options.blocks: true`. V `options.related` jsou adresy souvisejících článků a v `options.service` stránky služeb, na kterých se článek nabízí jako doporučený. Adresa je `/clanky/<slug>/`, zařadí se do výpisu, sitemapy a strukturovaných dat (Article). Články jsou odkazované z patičky, ne z hlavního menu.
+- **Reference (realizace):** `/admin/` → *Reference* → *Přidat realizaci*. Každá realizace má vlastní stránku `/reference/<slug>/` (hlavní fotka, co jsme šili, popis, poznámka o spolupráci, galerie). Karty na stránce Reference, seznam na úvodní stránce a na stránce Hotelový textil se plní z těchto souborů, takže jsou vždy shodné. Pořadí určuje `options.order` (v administraci šipkami), v pruhu pod úvodní fotkou a na stránce Hotelový textil se zobrazí realizace s `options.featured: true` (přepínač „Na úvodní stránce“). Logo hotelu je v sekci `logo` dané reference (`public/assets/reference-loga/`), bez loga se ukáže název hotelu.
+- **Vzorkovníky:** `/admin/` → *Vzorkovníky*. PDF jsou v `public/downloads/vzorkovniky/` (složka musí mít právo zápisu), seznam (název, velikost, skrytí) je v `content/pages/vzorkovniky.json` v `options.files`.
 - **Starý obsah:** texty o látkách jsou na stránce Látky a metráž v sekcích „Materiál: …“ (`blok-*`), kotvy `#blackouty`, `#zaclony` apod. používají přesměrování.
 
 Obrázky na webu jsou kromě referencí AI ilustrace (viz `docs/image-inventory.md`). Obrázky pro články a reference: WebP do 1280 px a vedle něj varianta `-640` (např. `foto.webp` a `foto-640.webp`), kterou použijí karty a galerie. Obrázky nahrané v administraci mají jen jednu variantu (WebP do 2400 px).

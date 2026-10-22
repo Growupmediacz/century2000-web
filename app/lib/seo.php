@@ -167,7 +167,7 @@ function sitemap_xml(): string
     $site = rtrim((string) config('site_url'), '/');
     $out = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n";
     foreach (content_pages() as $name => $page) {
-        if (is_noindex($page)) {
+        if (is_noindex($page) || !empty($page['options']['hidden'])) {
             continue;
         }
         $mod = $page['options']['modified'] ?? date('Y-m-d', filemtime(content_file((string) $name)));
