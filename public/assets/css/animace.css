@@ -71,3 +71,9 @@
 
 /* Ikony „Pro koho šijeme“: větší a výraznější */
 svg[width="48"] { width: 60px; height: 60px; stroke-width: 1.4; }
+
+/* Paralaxa úvodních fotek (animace.js): rámeček ořízne přesah, fotka je o 10 % větší, aby posun neodkryl okraj. Jen na počítači. */
+.index-hero__media, .service-hero__box, .clanek-hero__media { overflow: hidden; }
+@media (prefers-reduced-motion: no-preference) and (min-width: 1024px) {
+  .js-anim .index-hero__img, .js-anim .service-hero__img, .js-anim .clanek-hero__img { scale: 1.1; }
+}
