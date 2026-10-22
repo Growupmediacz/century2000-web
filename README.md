@@ -108,11 +108,15 @@ Kódy se zadávají v **Administrace → Měřicí kódy** (uloží se do `conte
 ## Zabezpečení
 
 - **Dočasný přístup pro ukázku** je jen v lokálním `config.php` (není v Gitu). Administrace při jednoduchém hesle ukazuje varování, dokud se heslo nezmění v Nastavení. Nové heslo musí mít aspoň 10 znaků.
-- Přihlášení: max. 5 pokusů za 15 minut z jedné IP, session jen přes HttpOnly cookie se `SameSite=Strict` (na HTTPS i `Secure`), odhlášení po 4 hodinách nečinnosti, CSRF token u všech formulářů administrace.
+- Přihlášení: max. 5 chybných pokusů za 15 minut z jedné IP a 50 za hodinu celkem (proti hádání hesla z mnoha adres), každý chybný pokus se zdrží, odpověď neprozradí, jestli bylo špatně jméno, nebo heslo.
+- Session jen přes HttpOnly cookie se `SameSite=Strict` (na HTTPS i `Secure`), přísný režim session, nové ID po přihlášení a každých 15 minut, odhlášení po 4 hodinách nečinnosti a nejpozději po 12 hodinách.
+- CSRF token u všech formulářů administrace; akce, které něco mění (uložení, mazání, obnovení, odhlášení…), jdou jen metodou POST.
 - Administrace posílá přísnou Content Security Policy (jen vlastní skripty a styly) a nejde vložit do rámu.
-- Web: HTTPS + HSTS, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, základní CSP (bez pluginů, formuláře jen na vlastní web, žádné vkládání cizími weby), bez výpisu složek.
+- Web: HTTPS + HSTS, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, bez výpisu složek. Stránky posílají CSP z PHP (`public_csp()` v `app/lib/tracking.php`): skripty jen z webu a z domén měřicích nástrojů vyplněných v administraci, skript z cizí domény prohlížeč zablokuje. Při použití GTM nebo vlastního kódu s vloženým skriptem stačí HTTPS, protože ty si načítají skripty odkudkoli.
+- Formuláře po chybě vracejí jen na stránku vlastního webu (žádné otevřené přesměrování).
+- Bezpečnostní test (`docs/bezpecnost.md`) prošel: CSRF, akce přes GET, path traversal, XSS v textech i formátovaném textu, nahrání PHP místo fotky, obří rozlišení, polyglot obrázek, PDF s PHP, podvržení hlavičky e-mailu, otevřené přesměrování, zámek přihlášení, CSP.
 - Zablokované: `app/`, `content/`, `tools/`, `docs/`, `config.php`, skryté soubory a soubory `.json`, `.md`, `.log`, `.ini`, `.bak` apod. V `uploads/` jdou jen obrázky, v `downloads/` jen PDF, nikde nejde spustit PHP.
-- Nahrané fotky se přeuloží přes GD (odstraní se případný škodlivý obsah), u PDF se kontroluje hlavička souboru.
+- Nahrané fotky se přeuloží přes GD (odstraní se případný škodlivý obsah), max. 50 megapixelů (ochrana proti „zip bombě“ z obrázku). U PDF se kontroluje hlavička souboru a přípona je vždy `.pdf`. V `uploads/` a `downloads/` je PHP vypnuté i pro případ jiného nastavení serveru.
 - Formuláře: honeypot, podepsaný časový token, limit 5 odeslání za 10 minut, jednořádková pole bez řídicích znaků (nejde podstrčit hlavičku e-mailu). Záznamy limitů (hash IP) se mažou po 1 dni.
 - PHP chyby se návštěvníkům nezobrazují (`app/bootstrap.php`, `public/.user.ini`).
 - Písma jsou na vlastním serveru (`public/assets/fonts/`), web při načtení nekontaktuje Google.

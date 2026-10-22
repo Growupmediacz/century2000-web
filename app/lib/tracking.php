@@ -128,3 +128,44 @@ function tracking_cookie_rows(): array
     }
     return $rows;
 }
+
+/**
+ * Content Security Policy for the public pages: scripts only from this site and from the measurement tools that are
+ * filled in the admin. An injected <script src="https://attacker…"> is then blocked by the browser.
+ * GTM and custom codes can load scripts from anywhere (that is what they are for), so with them only HTTPS is required.
+ */
+function public_csp(): string
+{
+    $t = tracking_settings();
+    $hosts = [];
+    $open = $t['gtm_id'] !== '';
+    if ($t['ga4_id'] !== '' || $t['ads_id'] !== '' || $t['gtm_id'] !== '') {
+        array_push($hosts, 'https://www.googletagmanager.com', 'https://*.google-analytics.com', 'https://*.analytics.google.com');
+    }
+    if ($t['ads_id'] !== '' || $t['gtm_id'] !== '') {
+        array_push($hosts, 'https://www.googleadservices.com', 'https://googleads.g.doubleclick.net', 'https://www.google.com', 'https://*.googlesyndication.com');
+    }
+    if ($t['meta_pixel'] !== '') {
+        $hosts[] = 'https://connect.facebook.net';
+    }
+    if ($t['sklik_id'] !== '') {
+        array_push($hosts, 'https://c.seznam.cz', 'https://*.seznam.cz');
+    }
+    foreach ($t['custom'] as $c) {
+        if (trim((string) $c['code']) === '') {
+            continue;
+        }
+        preg_match_all('#\bsrc=["\']?(https://[a-z0-9.-]+)#i', (string) $c['code'], $m);
+        $hosts = array_merge($hosts, $m[1]);
+        // inline loaders (Hotjar, LinkedIn…) add their scripts from code we cannot see in advance
+        if (preg_match('#<script\b(?![^>]*\bsrc=)#i', (string) $c['code'])) {
+            $open = true;
+        }
+    }
+    // inline scripts: Consent Mode defaults, JSON config, tracking loaders
+    $script = $open ? "'self' 'unsafe-inline' https:" : trim("'self' 'unsafe-inline' " . implode(' ', array_unique($hosts)));
+    return "default-src 'self'; script-src $script; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; "
+        . "font-src 'self'; connect-src 'self' https:; frame-src 'self' https:; media-src 'self' https:; "
+        . "object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'"
+        . (($_SERVER['HTTPS'] ?? '') !== '' && $_SERVER['HTTPS'] !== 'off' ? '; upgrade-insecure-requests' : '');
+}

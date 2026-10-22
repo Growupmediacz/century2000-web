@@ -11,6 +11,10 @@
 declare(strict_types=1);
 
 const ADMIN_IDLE = 4 * 3600;
+const ADMIN_MAX_SESSION = 12 * 3600;
+const ADMIN_POST_ACTIONS = ['logout', 'save', 'restore', 'new', 'delete', 'ref-update', 'catalog-upload', 'catalog-save',
+    'tracking-save', 'password'];
+const IMAGE_MAX_PIXELS = 50_000_000;
 const IMAGE_MAX_UPLOAD = 20 * 1024 * 1024;
 const IMAGE_MAX_SIDE = 2400;
 const PDF_MAX_UPLOAD = 40 * 1024 * 1024;
@@ -42,6 +46,9 @@ function admin_handle(): void
     }
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         csrf_check();
+    } elseif (in_array($action, ADMIN_POST_ACTIONS, true)) {
+        // state-changing actions never run from a plain link (CSRF), only from the admin's own forms
+        redirect(admin_url());
     }
     match ($action) {
         'logout' => admin_logout(),
@@ -74,11 +81,18 @@ function admin_session_start(): void
     session_name('c2000admin');
     session_set_cookie_params(['path' => url('/admin/'), 'httponly' => true, 'samesite' => 'Strict', 'secure' => $https]);
     session_start();
-    if (isset($_SESSION['seen']) && time() - $_SESSION['seen'] > ADMIN_IDLE) {
+    $now = time();
+    if ((isset($_SESSION['seen']) && $now - $_SESSION['seen'] > ADMIN_IDLE)
+        || (isset($_SESSION['started']) && $now - $_SESSION['started'] > ADMIN_MAX_SESSION)) {
         $_SESSION = [];
         session_regenerate_id(true);
     }
-    $_SESSION['seen'] = time();
+    $_SESSION['started'] ??= $now;
+    if (!empty($_SESSION['admin']) && $now - ($_SESSION['renewed'] ?? 0) > 900) {
+        session_regenerate_id(true); // a stolen session ID stops working within 15 minutes
+        $_SESSION['renewed'] = $now;
+    }
+    $_SESSION['seen'] = $now;
 }
 
 /** Password changed in the admin (content/.runtime/admin.json) wins over the one in config.php. */
@@ -144,7 +158,7 @@ function admin_login(): void
     $error = null;
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         csrf_check();
-        if (!rate_limit('login', 5, 900, false)) {
+        if (!rate_limit('login', 5, 900, false) || !rate_limit_global('login-all', 50, 3600, false)) {
             $error = 'Příliš mnoho neúspěšných pokusů. Zkuste to znovu za 15 minut.';
         } elseif (
             // both checks always run, so the response time does not reveal whether the user name was right
@@ -159,6 +173,8 @@ function admin_login(): void
             redirect(admin_url());
         } else {
             rate_limit('login', 5, 900);
+            rate_limit_global('login-all', 50, 3600);
+            usleep(random_int(400_000, 900_000)); // slows down password guessing
             $error = 'Nesprávné jméno nebo heslo.';
         }
     }
@@ -883,6 +899,9 @@ function save_uploaded_image(array $file): string
     }
     $info = @getimagesize($file['tmp_name']);
     $type = $info[2] ?? 0;
+    if ($info && $info[0] * $info[1] > IMAGE_MAX_PIXELS) {
+        throw new RuntimeException('fotka má příliš velké rozlišení (max. 50 megapixelů).');
+    }
     $img = match ($type) {
         IMAGETYPE_JPEG => @imagecreatefromjpeg($file['tmp_name']),
         IMAGETYPE_PNG => @imagecreatefrompng($file['tmp_name']),

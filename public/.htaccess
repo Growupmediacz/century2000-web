@@ -88,9 +88,9 @@ FileETag None
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
   Header always set Cross-Origin-Opener-Policy "same-origin"
-  # Basic CSP that does not limit measurement codes from the admin: no plugins, no foreign <base>, forms only to this site,
-  # no framing by other sites, HTTP resources upgraded to HTTPS
-  Header always set Content-Security-Policy "object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+  # Basic CSP for static files. HTML pages send a stricter one from PHP (public_csp() in app/lib/tracking.php,
+  # scripts only from this site and the measurement tools set in the admin; the admin has its own, strictest one).
+  Header setifempty Content-Security-Policy "object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
   # Browsers remember to use HTTPS only (sent only over HTTPS)
   Header always set Strict-Transport-Security "max-age=31536000" env=HTTPS
   Header unset X-Powered-By

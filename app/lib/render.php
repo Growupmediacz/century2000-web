@@ -176,5 +176,6 @@ function handle_request(): void
         $name = '404';
     }
     header('Content-Type: text/html; charset=utf-8');
+    header('Content-Security-Policy: ' . public_csp());
     echo render_page($name);
 }

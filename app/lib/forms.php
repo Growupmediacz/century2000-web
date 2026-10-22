@@ -148,7 +148,11 @@ function form_back_url(): string
     $host = (string) ($_SERVER['HTTP_HOST'] ?? '');
     $path = url('/kontakt/');
     if ($ref !== '' && parse_url($ref, PHP_URL_HOST) === explode(':', $host)[0]) {
-        $path = (string) parse_url($ref, PHP_URL_PATH);
+        $refPath = (string) parse_url($ref, PHP_URL_PATH);
+        // only a plain local path: "//other.site" or "/\other.site" would make the redirect leave the site
+        if (preg_match('#^/(?![/\\\\])[\w/.-]*$#u', $refPath)) {
+            $path = $refPath;
+        }
     }
     return $path . '?';
 }
