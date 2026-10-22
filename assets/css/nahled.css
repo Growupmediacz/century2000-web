@@ -1,0 +1,18 @@
+/* Internal overview board (/nahled/): every page at desktop and mobile width */
+body:has(.board-section) { background: #E7E0D6; font-family: var(--font-sans); color: var(--ink-900); }
+.board-intro { padding: 48px 64px 0; }
+.board-intro__eyebrow { margin: 0 0 8px; font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--bronze-700); }
+.board-intro__title { margin: 0 0 20px; font-family: var(--font-serif); font-weight: 500; font-size: 32px; }
+.board-intro__nav { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 15px; }
+.board-section { padding: 64px; display: flex; flex-direction: column; gap: 48px; border-bottom: 1px solid var(--stone-300); }
+.board-section__title { margin: 0; font-family: var(--font-serif); font-weight: 500; font-size: 40px; }
+.board-row { display: flex; gap: 64px; align-items: flex-start; padding-bottom: 48px; border-bottom: 1px solid var(--stone-300); }
+.board-row:last-child { border-bottom: 0; }
+.board-frame { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.board-frame figcaption { display: flex; align-items: center; gap: 12px; font-size: 15px; }
+.board-badge { background: var(--ink-900); color: var(--white); font-weight: 600; padding: 4px 10px; }
+.board-frame iframe { display: block; border: 0; background: var(--cream-50); height: 1200px; }
+.board-frame__desktop { width: 1440px; }
+.board-frame__mobile { width: 390px; }
+.board-frame__desktop.is-fixed { height: 900px; border: 1px solid var(--field-border); }
+.board-frame__mobile.is-fixed { height: 844px; border: 1px solid var(--field-border); }

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /odeslat/
+
+Sitemap: https://www.century2000.cz/sitemap.xml
