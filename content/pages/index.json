@@ -3,88 +3,120 @@
   "name": "Úvod",
   "editable": true,
   "meta": {
-    "title": "Zakázková výroba bytového a hotelového textilu | Century 2000",
+    "title": "Výroba bytového a hotelového textilu na míru | Century 2000",
     "description": "Šijeme závěsy, záclony a hotelový textil na míru, prošíváme metráž a prodáváme látky. Vlastní výroba ve Zruči nad Sázavou od roku 2000."
   },
   "options": {},
   "sections": [
     {
       "key": "uvodni-blok",
-      "label": "Úvodní blok",
+      "label": "Úvodní blok (hero)",
       "hideable": true,
       "visible": true,
       "fields": [
         {
           "key": "img1",
           "type": "image",
-          "label": "Obrázek",
+          "label": "Fotografie (počítač)",
           "value": {
-            "src": "/assets/fotky/hero-sici-dilna.webp",
-            "alt": "Ruce švadleny vedou lněnou látku pod jehlou šicího stroje v dílně"
-          }
+            "src": "/assets/fotky/hero-interier-zavesy.webp",
+            "alt": "Bytový textil v prosvětleném interiéru s jemnými závěsy"
+          },
+          "help": "Široká fotka, ideálně 2000 × 750 px. Důležitý motiv mějte v pravé polovině, vlevo je text."
         },
         {
           "key": "img2",
           "type": "image",
-          "label": "Obrázek (mobil)",
+          "label": "Fotografie (mobil)",
           "value": {
-            "src": "/assets/fotky/hero-sici-dilna-mobil.webp",
-            "alt": "Ruce švadleny vedou lněnou látku pod jehlou šicího stroje"
-          }
+            "src": "/assets/fotky/hero-interier-zavesy-1280.webp",
+            "alt": "Bytový textil v prosvětleném interiéru s jemnými závěsy"
+          },
+          "help": "Zobrazí se na telefonu nad textem."
         },
         {
           "key": "t1",
           "type": "text",
           "label": "Nadtitulek",
-          "value": "Textil"
-        },
-        {
-          "key": "t2",
-          "type": "text",
-          "label": "Text",
-          "value": "s příběhem"
+          "value": "Zakázková výroba bytového a hotelového textilu"
         },
         {
           "key": "t3",
           "type": "text",
           "label": "Hlavní nadpis",
-          "value": "Zakázková výroba textilu pro domovy, hotely i výrobce"
+          "value": "Detaily,\nkteré tvoří domov",
+          "multiline": true,
+          "help": "Enter = nový řádek. Nadpis se píše velkými písmeny automaticky."
         },
         {
           "key": "t4",
           "type": "text",
-          "label": "Text",
-          "value": "Od závěsů do obýváku po vybavení celého hotelu. Šijeme na míru ve vlastní dílně ve Zruči nad Sázavou už od roku 2000."
+          "label": "Text pod nadpisem",
+          "value": "Kvalitní materiály, precizní zpracování a individuální přístup. Vyrábíme textilní produkty na míru pro domácnosti, hotely i komerční prostory.",
+          "multiline": true
         },
         {
           "key": "t5",
           "type": "text",
-          "label": "Odkaz / tlačítko",
+          "label": "Hlavní tlačítko – text",
           "value": "Nezávazná poptávka"
+        },
+        {
+          "key": "u1",
+          "type": "text",
+          "label": "Hlavní tlačítko – odkaz",
+          "value": "/kontakt/#poptavka",
+          "help": "Adresa stránky, např. /kontakt/ nebo /hotelovy-textil/"
         },
         {
           "key": "t6",
           "type": "text",
-          "label": "Odkaz / tlačítko",
-          "value": "Co šijeme"
+          "label": "Druhé tlačítko – text",
+          "value": "Naše produkty"
+        },
+        {
+          "key": "u2",
+          "type": "text",
+          "label": "Druhé tlačítko – odkaz",
+          "value": "#co-sijeme",
+          "help": "#co-sijeme = posun na nabídku služeb níže na stránce"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Ozdobný ručně psaný nápis (vpravo na fotce)",
+          "value": "Textil\ns příběhem",
+          "multiline": true,
+          "help": "Prázdné = nápis se nezobrazí."
         },
         {
           "key": "t7",
           "type": "text",
-          "label": "Položka",
-          "value": "Kvalitní materiály"
+          "label": "Přednost 1 (ikona diamant)",
+          "value": "Kvalitní\nmateriály",
+          "multiline": true,
+          "help": "Prázdné = přednost se nezobrazí."
         },
         {
           "key": "t8",
           "type": "text",
-          "label": "Položka",
-          "value": "Vlastní výroba"
+          "label": "Přednost 2 (ikona ozubené kolo)",
+          "value": "Vlastní\nvýroba",
+          "multiline": true
         },
         {
           "key": "t9",
           "type": "text",
-          "label": "Položka",
-          "value": "Individuální přístup"
+          "label": "Přednost 3 (ikona lidé)",
+          "value": "Individuální\npřístup",
+          "multiline": true
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Přednost 4 (ikona fajfka)",
+          "value": "Dlouholeté\nzkušenosti",
+          "multiline": true
         }
       ]
     },
@@ -101,48 +133,13 @@
           "value": "Šijeme pro hotely, které zná celý svět"
         },
         {
-          "key": "img1",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/four-seasons-praha.webp",
-            "alt": "Four Seasons Praha"
-          }
-        },
-        {
-          "key": "img2",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/le-palais-praha.png",
-            "alt": "Le Palais Praha"
-          }
-        },
-        {
-          "key": "img3",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/corinthia-praha-orez.png",
-            "alt": "Corinthia Praha"
-          }
-        },
-        {
-          "key": "img4",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/hotel-international-brno.png",
-            "alt": "Hotel International Brno"
-          }
-        },
-        {
           "key": "t2",
           "type": "text",
           "label": "Odkaz / tlačítko",
           "value": "Všechny reference →"
         }
-      ]
+      ],
+      "note": "Loga hotelů se upravují u jednotlivých referencí (Reference → hotel → Logo hotelu). Zobrazí se reference se zapnutou volbou „Zobrazit na úvodní stránce“."
     },
     {
       "key": "rozcestnik-sluzeb",

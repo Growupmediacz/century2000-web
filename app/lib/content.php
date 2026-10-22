@@ -3,8 +3,9 @@
  * Content storage: one JSON file per page in content/pages/, shared content (footer) in content/global.json.
  *
  * Page JSON:
- *   path, name, editable, meta {title, description}, options {image, css, absolute},
- *   sections [ {key, label, hideable, visible, fields [ {key, type: text|rich|image, label, value} ]} ]
+ *   path, name, editable, meta {title, description}, options {image, css, absolute, hidden},
+ *   sections [ {key, label, hideable, visible, note?, fields [ {key, type: text|rich|image, label, value, help?, multiline?, optional?} ]} ]
+ * options.hidden = article or reference switched off in the admin: not listed, not in the sitemap, 404 on the web.
  */
 declare(strict_types=1);
 
@@ -96,7 +97,7 @@ function content_pages(): array
 function page_by_path(string $path): ?string
 {
     foreach (content_pages() as $name => $page) {
-        if ($page['path'] === $path) {
+        if ($page['path'] === $path && empty($page['options']['hidden'])) {
             return (string) $name;
         }
     }
@@ -127,7 +128,7 @@ function pages_of_type(string $type): array
 {
     $list = [];
     foreach (content_pages() as $name => $page) {
-        if (($page['options']['type'] ?? '') === $type) {
+        if (($page['options']['type'] ?? '') === $type && empty($page['options']['hidden'])) {
             $list[(string) $name] = $page;
         }
     }
@@ -155,4 +156,18 @@ function page_field(array $page, string $section, string $key): ?array
         }
     }
     return null;
+}
+
+/** References marked "show on the home page", in order: [path, name, logo src|'', logo alt]. */
+function featured_references(): array
+{
+    $out = [];
+    foreach (pages_of_type('reference') as $r) {
+        if (!empty($r['options']['featured'])) {
+            $logo = page_field($r, 'logo', 'img1')['value'] ?? [];
+            $out[] = ['path' => $r['path'], 'name' => preg_replace('/^Hotel /', '', $r['name']),
+                      'logo' => (string) ($logo['src'] ?? ''), 'alt' => (string) ($logo['alt'] ?? '')];
+        }
+    }
+    return $out;
 }

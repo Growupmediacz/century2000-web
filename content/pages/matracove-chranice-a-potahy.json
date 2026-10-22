@@ -3,7 +3,7 @@
   "name": "Matracové chrániče a potahy",
   "editable": true,
   "meta": {
-    "title": "Matracové chrániče s PUR zátěrem a potahy na matrace | Century 2000",
+    "title": "Matracové chrániče a potahy na matrace | Century 2000",
     "description": "Vyrábíme matracové chrániče s PUR zátěrem, prošívané chrániče, potahy na matrace a výplně polštářů. Pro hotely i výrobce."
   },
   "options": {
@@ -291,7 +291,7 @@
           "key": "r2",
           "type": "rich",
           "label": "Text",
-          "value": "Odesláním souhlasíte se <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">zpracováním osobních údajů</a> za účelem vyřízení poptávky."
+          "value": "Údaje z formuláře použijeme jen k vyřízení vaší poptávky. Více v <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásadách ochrany osobních údajů</a>."
         },
         {
           "key": "t3",

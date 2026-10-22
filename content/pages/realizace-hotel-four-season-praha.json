@@ -4,7 +4,7 @@
   "editable": true,
   "meta": {
     "title": "Hotel Four Seasons, Praha: reference | Century 2000",
-    "description": "Pro hotel Four Seasons v Praze jsme šili závěsy, přehozy a polštářky. Fotogalerie realizace."
+    "description": "Pro hotel Four Seasons v Praze jsme šili závěsy, přehozy a polštářky na míru. Prohlédněte si fotogalerii realizace od Century 2000."
   },
   "options": {
     "type": "reference",
@@ -43,6 +43,25 @@
             "src": "/assets/realizace/hotel-four-season-praha/hlavni.webp",
             "alt": "Hotel Four Seasons: ukázka realizace"
           }
+        }
+      ]
+    },
+    {
+      "key": "logo",
+      "label": "Logo hotelu",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Logo",
+          "optional": true,
+          "value": {
+            "src": "/assets/reference-loga/four-seasons-praha.webp",
+            "alt": "Logo Four Seasons Hotels and Resorts"
+          },
+          "help": "Nejlépe PNG s průhledným pozadím. Na webu se zobrazí šedě, barevně po najetí myší. Bez loga se ukáže název hotelu."
         }
       ]
     },

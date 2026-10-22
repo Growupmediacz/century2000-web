@@ -4,7 +4,7 @@
   "editable": true,
   "meta": {
     "title": "Hotel 1. Republika, Praha: reference | Century 2000",
-    "description": "Zakázka pro hotel 1. Republika v Praze. Fotogalerie realizace."
+    "description": "Textil pro hotel 1. Republika v Praze, realizovaný se studiem Dédecor a designérkou Dagmar Frulovou. Fotogalerie zakázky od Century 2000."
   },
   "options": {
     "type": "reference",
@@ -43,6 +43,25 @@
             "src": "/assets/realizace/hotel-1-republika-praha/hlavni.webp",
             "alt": "Hotel 1. Republika: ukázka realizace"
           }
+        }
+      ]
+    },
+    {
+      "key": "logo",
+      "label": "Logo hotelu",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Logo",
+          "optional": true,
+          "value": {
+            "src": "",
+            "alt": ""
+          },
+          "help": "Nejlépe PNG s průhledným pozadím. Na webu se zobrazí šedě, barevně po najetí myší. Bez loga se ukáže název hotelu."
         }
       ]
     },

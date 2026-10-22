@@ -7,7 +7,7 @@
         <div class="kariera-hero__grid">
           <div class="kariera-hero__stack--desktop">
             <div class="kariera-hero__stack"><span class="eyebrow kariera-hero__eyebrow"><?= t('uvodni-blok.t1') ?></span><span class="rule kariera-hero__rule" aria-hidden="true"></span></div>
-            <h1 class="title-hero kariera-hero__title--desktop" id="hero-h1"><?= t('uvodni-blok.t2') ?></h1>
+            <p class="title-hero kariera-hero__title--desktop" role="heading" aria-level="1"><?= t('uvodni-blok.t2') ?></p>
             <p class="text kariera-hero__text--desktop"><?= t('uvodni-blok.t3') ?></p>
             <div class="kariera-hero__row--desktop">
               <a class="btn-primary kariera-hero__btn-2" href="#pozice"><?= t('uvodni-blok.t4') ?></a>

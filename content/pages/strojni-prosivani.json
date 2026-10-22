@@ -3,7 +3,7 @@
   "name": "Strojní prošívání",
   "editable": true,
   "meta": {
-    "title": "Strojní prošívání látek a prošev metráže do šíře 280 cm | Century 2000",
+    "title": "Strojní prošívání látek do šíře 280 cm | Century 2000",
     "description": "Prošíváme polyesterová rouna a netkané textilie v kontinuálním i uzavřeném vzoru. Stroje Meca a Resta, gramáže roun 80–400 g."
   },
   "options": {
@@ -571,7 +571,7 @@
           "key": "r2",
           "type": "rich",
           "label": "Text",
-          "value": "Odesláním souhlasíte se <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">zpracováním osobních údajů</a> za účelem vyřízení poptávky."
+          "value": "Údaje z formuláře použijeme jen k vyřízení vaší poptávky. Více v <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásadách ochrany osobních údajů</a>."
         },
         {
           "key": "t3",

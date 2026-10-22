@@ -2,17 +2,32 @@
 DirectoryIndex index.php
 Options -Indexes
 AddDefaultCharset UTF-8
+AddType font/woff2 .woff2
+FileETag None
+
+# Files that must never be downloaded (backups, logs, notes, configs)
+<FilesMatch "(\.(bak|old|orig|swp|log|sql|sqlite|ini|md|sh|lock|dist|json|yml|yaml|env)|~)$">
+  Require all denied
+</FilesMatch>
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # Uncomment on production to force HTTPS and www:
-  # RewriteCond %{HTTPS} off [OR]
-  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # SSL certificate validation (Let's Encrypt) must stay reachable over HTTP
+  RewriteRule ^\.well-known/acme-challenge/ - [L]
+
+  # HTTPS everywhere (except the local dev server). Works on any domain, incl. the test domain.
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$ [NC]
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Uncomment on production (century2000.cz) to force www:
+  # RewriteCond %{HTTP_HOST} ^century2000\.cz$ [NC]
   # RewriteRule ^ https://www.century2000.cz%{REQUEST_URI} [L,R=301]
 
-  # Never serve app code, content or config (when they live inside the web root)
-  RewriteRule ^(app|content|tools)(/|$) - [F,L]
+  # Never serve app code, content, docs or config (when they live inside the web root)
+  RewriteRule ^(app|content|tools|docs|vendor|node_modules)(/|$) - [F,L]
   RewriteRule ^config(\.example)?\.php$ - [F,L]
   RewriteRule (^|/)\. - [F,L]
 
@@ -62,8 +77,22 @@ AddDefaultCharset UTF-8
   AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml text/plain
 </IfModule>
 
+<IfModule mod_expires.c>
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()"
+  Header always set Cross-Origin-Opener-Policy "same-origin"
+  # Basic CSP for static files. HTML pages send a stricter one from PHP (public_csp() in app/lib/tracking.php,
+  # scripts only from this site and the measurement tools set in the admin; the admin has its own, strictest one).
+  Header setifempty Content-Security-Policy "object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+  # Browsers remember to use HTTPS only (sent only over HTTPS)
+  Header always set Strict-Transport-Security "max-age=31536000" env=HTTPS
+  Header unset X-Powered-By
+  Header always unset X-Powered-By
 </IfModule>

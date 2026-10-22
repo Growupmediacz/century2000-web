@@ -46,6 +46,9 @@ rcopy(PUBLIC_DIR . '/uploads', "$out/uploads");
 
 $count = 0;
 foreach (content_pages() as $name => $page) {
+    if (!empty($page['options']['hidden'])) {
+        continue;
+    }
     $html = render_page((string) $name);
     // No PHP on static hosting: drop the form endpoint and spam fields, JS redirects to the thank-you page.
     $html = preg_replace('/\saction="[^"]*"/', '', $html);

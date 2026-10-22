@@ -71,6 +71,31 @@ function rate_limit(string $bucket, int $max, int $window, bool $hit = true): bo
     $file = RUNTIME_DIR . '/ratelimit/' . hash('sha256', $bucket . '|' . client_ip()) . '.json';
     ensure_dir(dirname($file));
     $now = time();
+    if (random_int(1, 50) === 1) {
+        foreach (glob(dirname($file) . '/*.json') ?: [] as $old) {
+            if (filemtime($old) < $now - 86400) {
+                @unlink($old);
+            }
+        }
+    }
+    $hits = is_file($file) ? (json_decode((string) file_get_contents($file), true) ?: []) : [];
+    $hits = array_values(array_filter($hits, fn($t) => $t > $now - $window));
+    if (count($hits) >= $max) {
+        return false;
+    }
+    if ($hit) {
+        $hits[] = $now;
+        file_put_contents($file, json_encode($hits), LOCK_EX);
+    }
+    return true;
+}
+
+/** Rate limit over all visitors together (e.g. password guessing spread over many IP addresses). */
+function rate_limit_global(string $bucket, int $max, int $window, bool $hit = true): bool
+{
+    $file = RUNTIME_DIR . '/ratelimit/global-' . preg_replace('/[^a-z0-9-]/', '', $bucket) . '.json';
+    ensure_dir(dirname($file));
+    $now = time();
     $hits = is_file($file) ? (json_decode((string) file_get_contents($file), true) ?: []) : [];
     $hits = array_values(array_filter($hits, fn($t) => $t > $now - $window));
     if (count($hits) >= $max) {

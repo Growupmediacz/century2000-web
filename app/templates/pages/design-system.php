@@ -236,9 +236,9 @@
       <p class="serif ds-pruh-log__text">Šijeme pro hotely, které zná celý svět</p>
       <ul class="ds-pruh-log__list">
         <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/four-seasons-praha.webp" alt="Four Seasons Praha" decoding="async" loading="lazy"></li>
-        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/le-palais-praha.png" alt="Le Palais Praha" decoding="async" loading="lazy"></li>
-        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/corinthia-praha-orez.png" alt="Corinthia Praha" decoding="async" loading="lazy"></li>
-        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/hotel-international-brno.png" alt="Hotel International Brno" decoding="async" loading="lazy"></li>
+        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/le-palais-praha.webp" alt="Le Palais Praha" decoding="async" loading="lazy"></li>
+        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/corinthia-tower-praha.webp" alt="Corinthia Praha" decoding="async" loading="lazy"></li>
+        <li class="ds-pruh-log__item"><img class="ds-pruh-log__img" src="/assets/reference-loga/hotel-international-brno.webp" alt="Hotel International Brno" decoding="async" loading="lazy"></li>
       </ul>
       <a class="link-arrow ds-pruh-log__link" href="#">Všechny reference →</a>
     </div>
@@ -391,7 +391,7 @@
       </label>
       <div data-if="e.file" hidden><span class="inquiry__error">Soubor je větší než 10 MB.</span></div>
     </div>
-    <p class="text-muted inquiry__consent">Odesláním souhlasíte se <a class="inquiry__consent-link" href="/zasady-ochrany-osobnich-udaju/">zpracováním osobních údajů</a> za účelem vyřízení poptávky.</p>
+    <p class="text-muted inquiry__consent">Údaje z formuláře použijeme jen k vyřízení vaší poptávky. Více v <a class="inquiry__consent-link" href="/zasady-ochrany-osobnich-udaju/">Zásadách ochrany osobních údajů</a>.</p>
     <button class="btn-primary inquiry__submit" type="submit">Odeslat poptávku</button>
   </form>
   <aside class="inquiry__aside">

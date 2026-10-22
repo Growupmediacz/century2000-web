@@ -27,7 +27,7 @@ html { scroll-behavior: smooth; }
 body { -webkit-font-smoothing: antialiased; }
 :where(a) { color: var(--bronze-700); }
 :where(a):hover { color: var(--ink-900); }
-img { max-width: 100%; }
+img { max-width: 100%; height: auto; }
 
 /* State toggled by assets/js/site.js (menus, accordions, cookie bar, form errors) */
 [data-if] { display: contents; }

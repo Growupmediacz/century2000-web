@@ -120,8 +120,8 @@
         {
           "key": "r2",
           "type": "rich",
-          "label": "Text",
-          "value": "© <span data-year>2026</span> CENTURY 2000 s.r.o."
+          "label": "Copyright a údaje o firmě",
+          "value": "© <span data-year>2026</span> CENTURY 2000 s.r.o., IČO 26141116, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 73850"
         },
         {
           "key": "t17",
@@ -146,18 +146,6 @@
           "type": "text",
           "label": "Odkaz / tlačítko",
           "value": "Mapa stránek"
-        },
-        {
-          "key": "t21",
-          "type": "text",
-          "label": "Odkaz: Články",
-          "value": "Články"
-        },
-        {
-          "key": "t22",
-          "type": "text",
-          "label": "Odkaz: Vzorkovníky",
-          "value": "Vzorkovníky"
         },
         {
           "key": "t21",
