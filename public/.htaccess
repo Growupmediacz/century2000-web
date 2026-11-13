@@ -22,12 +22,12 @@ FileETag None
   RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$ [NC]
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # Uncomment on production (century2000.cz) to force www:
-  # RewriteCond %{HTTP_HOST} ^century2000\.cz$ [NC]
-  # RewriteRule ^ https://www.century2000.cz%{REQUEST_URI} [L,R=301]
+  # Production: century2000.cz → www.century2000.cz (applies only on that host, not on test domains)
+  RewriteCond %{HTTP_HOST} ^century2000\.cz$ [NC]
+  RewriteRule ^ https://www.century2000.cz%{REQUEST_URI} [L,R=301]
 
   # Never serve app code, content, docs or config (when they live inside the web root)
-  RewriteRule ^(app|content|tools|docs|vendor|node_modules)(/|$) - [F,L]
+  RewriteRule ^(app|content|_seed|tools|docs|vendor|node_modules)(/|$) - [F,L]
   RewriteRule ^config(\.example)?\.php$ - [F,L]
   RewriteRule (^|/)\. - [F,L]
 
