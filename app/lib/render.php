@@ -147,6 +147,21 @@ function handle_request(): void
         $path = substr($path, strlen($base)) ?: '/';
     }
 
+    // Hosting build: right after a deploy the links to client files are missing, so the first request for
+    // such a file ends up here – bootstrap has recreated the link by now, serve the file once.
+    if (HOSTING_BUILD && preg_match('#^/(uploads|downloads/vzorkovniky)/.+\.(webp|jpe?g|png|gif|pdf)$#i', $path, $m)) {
+        $file = realpath(PUBLIC_DIR . $path);
+        $data = realpath(DATA_DIR);
+        if ($file !== false && $data !== false && str_starts_with($file, $data . '/') && is_file($file)) {
+            $types = ['webp' => 'image/webp', 'jpg' => 'image/jpeg', 'jpeg' => 'image/jpeg', 'png' => 'image/png', 'gif' => 'image/gif', 'pdf' => 'application/pdf'];
+            header('Content-Type: ' . $types[strtolower($m[2])]);
+            header('Content-Length: ' . filesize($file));
+            header('X-Content-Type-Options: nosniff');
+            readfile($file);
+            return;
+        }
+    }
+
     if ($path === '/sitemap.xml') {
         header('Content-Type: application/xml; charset=utf-8');
         echo sitemap_xml();
