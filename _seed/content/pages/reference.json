@@ -1,0 +1,150 @@
+{
+  "path": "/reference/",
+  "name": "Reference",
+  "editable": true,
+  "meta": {
+    "title": "Reference hotelů a interiérů s naším textilem | Century 2000",
+    "description": "Šili jsme textil pro Four Seasons, Le Palais, Corinthia nebo Hotel International Brno. Podívejte se, pro koho pracujeme."
+  },
+  "options": {
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "uvodni-blok",
+      "label": "Úvodní blok",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Hlavní nadpis",
+          "value": "Realizace, které mluví za nás"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Za více než 25 let jsme ušili textil pro hotely, restaurace i domácnosti. Tady je výběr z našich realizací."
+        }
+      ]
+    },
+    {
+      "key": "hotely-pro-ktere-sijeme",
+      "label": "Realizace (karty se plní z jednotlivých referencí)",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Hotely a interiéry, které jsme vybavili"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Poznámka pod seznamem",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "key": "dalsi-oblasti",
+      "label": "Další oblasti",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Další oblasti"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Restaurace a sály"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Ubrusy, rautové sukně a potahy na židle pro gastro provozy a akce."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Bytové interiéry"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Závěsy a dekorace ve spolupráci s architekty a designéry."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Výrobci matrací"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Prošívané materiály a potahy v sériích."
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Export"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Text",
+          "value": "Zakázky pro zákazníky v Itálii, Německu, Anglii a Rakousku."
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Text",
+          "value": "Podrobné případové studie s fotografiemi připravujeme."
+        }
+      ]
+    },
+    {
+      "key": "vyzva-na-konci-stranky",
+      "label": "Výzva na konci stránky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Chcete být další v našem seznamu?"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Napište nám, co chystáte. Poradíme s materiálem i postupem."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Odeslat poptávku"
+        }
+      ]
+    }
+  ]
+}

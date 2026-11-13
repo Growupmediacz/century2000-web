@@ -1,0 +1,668 @@
+{
+  "path": "/bytovy-textil-na-miru/",
+  "name": "Bytový textil na míru",
+  "editable": true,
+  "meta": {
+    "title": "Závěsy a záclony na míru – bytový textil | Century 2000",
+    "description": "Šijeme závěsy, záclony, římské rolety, japonské stěny, přehozy a ubrusy na míru. Pro domácnosti, architekty i designéry."
+  },
+  "options": {
+    "image": "/assets/fotky/zavesy-na-miru-obyvak.webp"
+  },
+  "sections": [
+    {
+      "key": "uvodni-blok",
+      "label": "Úvodní blok",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Služby"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "/"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Položka (desktop)",
+          "value": "Bytový textil na míru"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Hlavní nadpis (desktop)",
+          "value": "Bytový textil šitý na míru vašeho interiéru"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text (desktop)",
+          "value": "Závěs, který sedí na centimetr. Přehoz, který ladí s postelí. Šijeme bytové dekorace podle vašich rozměrů a představ – samostatně i ve spolupráci s bytovými designéry a architekty."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Poptat bytový textil"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Odkaz / tlačítko (desktop)",
+          "value": "Jak změřit okno"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/zavesy-na-miru-obyvak.webp",
+            "alt": "Obývací pokoj s krémovými lněnými závěsy a záclonou"
+          }
+        }
+      ]
+    },
+    {
+      "key": "pro-koho",
+      "label": "Pro koho",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Pro koho"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Domácnosti"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Chcete textil přesně na vaše okna, ne hotové rozměry z obchodu."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Architekti a designéři"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Potřebujete spolehlivou dílnu, která ušije přesně podle vašeho návrhu."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Developeři a showroomy"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Vybavíme vzorové byty i více jednotek najednou."
+        }
+      ]
+    },
+    {
+      "key": "co-sijeme",
+      "label": "Co šijeme",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Co šijeme"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Okenní a bytové dekorace"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/zavesy-na-miru-obyvak-4x3.webp",
+            "alt": "Obývací pokoj s krémovými lněnými závěsy a záclonou"
+          }
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Závěsy a záclony"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Na tyč, kolejnici i do stropní lišty. Různé typy řasení, podle toho, jak má textil padat."
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/rimska-roleta-na-miru.webp",
+            "alt": "Béžová lněná římská roleta napůl vytažená nad oknem"
+          }
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Římské rolety"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Čisté skládání do vodorovných skladů. Hodí se do kuchyně, pracovny i ložnice."
+        },
+        {
+          "key": "img3",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/japonske-steny.webp",
+            "alt": "Japonské stěny (posuvné panely) před velkým oknem"
+          }
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Japonské stěny"
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "Posuvné panely pro velká okna a prosklené stěny. Můžou sloužit i jako příčka v prostoru."
+        },
+        {
+          "key": "img4",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/pelmet-zaves.webp",
+            "alt": "Pelmet nad závěsy a záclonou"
+          }
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Pelmety"
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Text",
+          "value": "Čalouněné kryty nad závěs, které schovají kolejnici a dodají oknu tvar."
+        },
+        {
+          "key": "img5",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/prehoz-s-volanem.webp",
+            "alt": "Prošívaný přehoz s řaseným volánem"
+          }
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Přehozy a polštářky"
+        },
+        {
+          "key": "t12",
+          "type": "text",
+          "label": "Text",
+          "value": "Prošívané přehozy a dekorační polštáře ze stejné látky jako závěsy."
+        },
+        {
+          "key": "img6",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/foto/ubrusy-potahy.webp",
+            "alt": "Jídelní stůl s ubrusem a židle s potahy v obývacím prostoru"
+          }
+        },
+        {
+          "key": "t14",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Ubrusy a potahy"
+        },
+        {
+          "key": "t15",
+          "type": "text",
+          "label": "Text",
+          "value": "Ubrusy na míru vašeho stolu a potahy na židle i sedací nábytek."
+        }
+      ]
+    },
+    {
+      "key": "materialy",
+      "label": "Materiály",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadtitulek",
+          "value": "Materiály"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Látky vybereme společně"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Dekorační látky, dimouty pro příjemné tlumení světla, blackouty pro úplné zatemnění a záclonoviny. Vzorkovníky vám rádi připravíme nebo si je prohlédněte přímo u nás ve Zruči nad Sázavou."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "Vyžádat vzorkovník"
+        }
+      ]
+    },
+    {
+      "key": "jak-zmerit-okno",
+      "label": "Jak změřit okno",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/mereni-okna-zavesy.webp",
+            "alt": "Měření šířky okna metrem, na parapetu vzorkovník"
+          }
+        },
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Jak správně změřit okno"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "1"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Změřte šířku: u závěsů na tyč přičtěte k šířce okna 15–20 cm na každou stranu."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "2"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "Změřte výšku od tyče nebo kolejnice k podlaze (nebo k parapetu)."
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "3"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Rozhodněte, jestli má závěs končit těsně nad podlahou, nebo se na ni má mírně položit."
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "4"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Pošlete nám rozměry a fotku okna. Zbytek doladíme spolu."
+        }
+      ]
+    },
+    {
+      "key": "jak-zakazka-probiha",
+      "label": "Jak zakázka probíhá",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Jak zakázka probíhá"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "01"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Poptávka"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Rozměry, fotka, představa."
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Text",
+          "value": "02"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Výběr látky"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Vzorky a doporučení."
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Text",
+          "value": "03"
+        },
+        {
+          "key": "t9",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Nabídka"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Domluvíme cenu a termín."
+        },
+        {
+          "key": "t10",
+          "type": "text",
+          "label": "Text",
+          "value": "04"
+        },
+        {
+          "key": "t11",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Ušití a předání"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Text",
+          "value": "Hotové dekorace předáme nebo pošleme. Montáž dle dohody."
+        }
+      ]
+    },
+    {
+      "key": "caste-dotazy",
+      "label": "Časté dotazy",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Časté dotazy"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Tlačítko",
+          "value": "<span>Ušijete i jeden závěs?</span>"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "−"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Ano. Šijeme od jednoho kusu po vybavení celých objektů."
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Tlačítko",
+          "value": "<span>Jak dlouho výroba trvá?</span>"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "+"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "Doba výroby závisí na zakázce a na dostupnosti látky. Termín vám sdělíme v nabídce."
+        },
+        {
+          "key": "r3",
+          "type": "rich",
+          "label": "Tlačítko",
+          "value": "<span>Můžu si přinést vlastní látku?</span>"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Doplnit",
+          "value": "Ano. Šijeme z našich materiálů i z látky, kterou dodáte."
+        },
+        {
+          "key": "r4",
+          "type": "rich",
+          "label": "Tlačítko",
+          "value": "<span>Děláte i montáž?</span>"
+        },
+        {
+          "key": "r5",
+          "type": "rich",
+          "label": "Tlačítko",
+          "value": "<span>Jak se o závěsy starat?</span>"
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Ke každé zakázce vám předáme doporučení pro praní a údržbu podle zvolené látky."
+        },
+        {
+          "key": "t8",
+          "type": "text",
+          "label": "Odpověď: montáž",
+          "value": "Montáž dle dohody. Napište nám, jak potřebujete dekorace osadit."
+        }
+      ]
+    },
+    {
+      "key": "poptavka",
+      "label": "Poptávka",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Pošlete nám rozměry a fotku okna"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Napište nám, co potřebujete ušít. Ozveme se vám s dotazy nebo orientační nabídkou."
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Příloha (fotka, náčrt nebo výkres, max. 10 MB)"
+        },
+        {
+          "key": "r2",
+          "type": "rich",
+          "label": "Text",
+          "value": "Údaje z formuláře použijeme jen k vyřízení vaší poptávky. Více v <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásadách ochrany osobních údajů</a>."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Raději telefonicky?"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "+420 603 287 803"
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Odkaz / tlačítko",
+          "value": "info@century2000.cz"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Po–Pá 7:00–15:30"
+        }
+      ]
+    },
+    {
+      "key": "souvisejici-sluzby",
+      "label": "Související služby",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Související služby"
+        },
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/latky-metraz-regal-4x3.webp",
+            "alt": "Regál s rolemi dekoračních látek seřazenými podle odstínu"
+          }
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Látky a metráž"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Text",
+          "value": "Dekorační látky, blackouty, dimouty, ubrusoviny a látky s nehořlavou úpravou."
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Text",
+          "value": "Látky a metráž →"
+        },
+        {
+          "key": "img2",
+          "type": "image",
+          "label": "Obrázek",
+          "value": {
+            "src": "/assets/fotky/hotelovy-textil-pokoj-4x3.webp",
+            "alt": "Hotelový pokoj se závěsy, bílou záclonou a prošívaným běhounem na posteli"
+          }
+        },
+        {
+          "key": "t5",
+          "type": "text",
+          "label": "Podnadpis",
+          "value": "Hotelový textil"
+        },
+        {
+          "key": "t6",
+          "type": "text",
+          "label": "Text",
+          "value": "Kompletní textilní vybavení hotelů, penzionů a restaurací. Od závěsů na pokoje po rautové sukně."
+        },
+        {
+          "key": "t7",
+          "type": "text",
+          "label": "Text",
+          "value": "Hotelový textil →"
+        }
+      ]
+    }
+  ]
+}

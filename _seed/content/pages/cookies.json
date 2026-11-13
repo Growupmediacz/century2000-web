@@ -1,0 +1,182 @@
+{
+  "path": "/cookies/",
+  "name": "Zásady cookies",
+  "editable": true,
+  "meta": {
+    "title": "Zásady cookies | Century 2000",
+    "description": "Jaké cookies používá web century2000.cz, k čemu slouží, jak dlouho platí a jak svůj souhlas změníte nebo odvoláte."
+  },
+  "options": {
+    "template": "pravni"
+  },
+  "sections": [
+    {
+      "key": "uvod",
+      "label": "Úvod",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Hlavní nadpis",
+          "value": "Zásady cookies"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Úvodní text",
+          "value": "Cookies jsou malé textové soubory, které web ukládá do vašeho prohlížeče. Podobně funguje i úložiště prohlížeče (localStorage). Nezbytné cookies potřebujeme, aby web fungoval. Ostatní používáme jen tehdy, když s nimi v liště cookies souhlasíte. Volbu si pamatujeme 12 měsíců, potom se zeptáme znovu.<br><br>Správcem je CENTURY 2000 s.r.o., IČO 26141116, Okružní 600, 285 22 Zruč nad Sázavou."
+        }
+      ]
+    },
+    {
+      "key": "oddil-1",
+      "label": "Oddíl: Jaké cookies používáme",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Jaké cookies používáme"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Seznam odpovídá nástrojům, které na webu právě používáme.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "cookies",
+      "label": "Tabulka cookies (vyplní se sama podle Měřicích kódů)",
+      "hideable": false,
+      "visible": true,
+      "note": "Tabulku nejde upravit ručně. Sestaví se podle nástrojů vyplněných v administraci v sekci Měřicí kódy.",
+      "fields": []
+    },
+    {
+      "key": "oddil-2",
+      "label": "Oddíl: Právní základ",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Právní základ"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Nezbytné cookies ukládáme bez souhlasu podle § 89 odst. 3 zákona č. 127/2005 Sb., o elektronických komunikacích, protože bez nich web nemůže fungovat. Analytické a marketingové cookies jen s vaším souhlasem (čl. 6 odst. 1 písm. a) GDPR).",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-3",
+      "label": "Oddíl: Nástroje Googlu a režim souhlasu",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Nástroje Googlu a režim souhlasu"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Na webu používáme Google Consent Mode v2. Dokud nesouhlasíte, dostávají nástroje Googlu signál „nesouhlas“: neukládají cookies a údaje nepoužívají k reklamě. Když souhlas udělíte nebo odvoláte, informaci jim hned předáme.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-4",
+      "label": "Oddíl: Předávání údajů mimo EU",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Předávání údajů mimo EU"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Společnosti Google a Meta mohou údaje zpracovávat i ve Spojených státech. Jsou certifikovány v rámci EU-US Data Privacy Framework, pro který Evropská komise uznala odpovídající úroveň ochrany. Podrobnosti najdete v zásadách <a href=\"https://policies.google.com/privacy?hl=cs\" target=\"_blank\" rel=\"noopener\">Googlu</a> a <a href=\"https://www.facebook.com/privacy/policy/\" target=\"_blank\" rel=\"noopener\">Meta</a>.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-5",
+      "label": "Oddíl: Jak souhlas změnit nebo odvolat",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Jak souhlas změnit nebo odvolat"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Svou volbu můžete kdykoli změnit tlačítkem níže nebo odkazem <strong>Nastavení cookies</strong> v patičce webu. Po odvolání souhlasu cookies dané kategorie smažeme. Cookies můžete také smazat nebo zablokovat v nastavení prohlížeče, některé části webu pak ale nemusí fungovat správně.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "tlacitko",
+      "label": "Tlačítko nastavení cookies",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Text tlačítka",
+          "value": "Změnit nastavení cookies"
+        }
+      ]
+    },
+    {
+      "key": "oddil-6",
+      "label": "Oddíl: Kontakt",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Kontakt"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "S dotazy nám napište na <a href=\"mailto:info@century2000.cz\">info@century2000.cz</a>. Jak zpracováváme osobní údaje, popisují <a href=\"/zasady-ochrany-osobnich-udaju/\">Zásady ochrany osobních údajů</a>.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    }
+  ]
+}

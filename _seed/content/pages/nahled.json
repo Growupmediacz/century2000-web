@@ -1,0 +1,15 @@
+{
+  "path": "/nahled/",
+  "name": "Náhled webu",
+  "editable": false,
+  "meta": {
+    "title": "Náhled webu | Century 2000",
+    "description": ""
+  },
+  "options": {
+    "css": [
+      "nahled"
+    ]
+  },
+  "sections": []
+}

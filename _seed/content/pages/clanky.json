@@ -1,0 +1,62 @@
+{
+  "path": "/clanky/",
+  "name": "Články",
+  "editable": true,
+  "meta": {
+    "title": "Články o textilu, látkách a šití | Century 2000",
+    "description": "Praktické články o dekoračních látkách, zatemnění, prošívání, matracových potazích a hotelovém textilu od dílny Century 2000."
+  },
+  "options": {
+    "css": [
+      "obsah"
+    ]
+  },
+  "sections": [
+    {
+      "key": "uvodni-blok",
+      "label": "Úvodní blok",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Články"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Praktické texty z naší dílny: jak vybrat látku, jak se šije a co z čeho vyrobíme."
+        }
+      ]
+    },
+    {
+      "key": "vyzva-na-konci-stranky",
+      "label": "Výzva na konci stránky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Máte otázku k textilu?"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Text",
+          "value": "Napište nám, co potřebujete ušít. Ozveme se s dotazy nebo orientační nabídkou."
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Tlačítko",
+          "value": "Odeslat poptávku"
+        }
+      ]
+    }
+  ]
+}

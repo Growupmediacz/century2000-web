@@ -1,0 +1,24 @@
+# Downloads (PDF catalogues) only – never run scripts from here
+<FilesMatch "\.(php\d?|phtml|phar|pl|py|cgi|sh|htm|html|svg|js)$">
+  Require all denied
+</FilesMatch>
+Options -ExecCGI
+# Only PDF files are served from here
+<FilesMatch "\.(?!pdf$)[^.]+$">
+  Require all denied
+</FilesMatch>
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+# Never interpret anything here as PHP, whatever the server setup
+<IfModule mod_php.c>
+  php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+  php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+  php_flag engine off
+</IfModule>
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
