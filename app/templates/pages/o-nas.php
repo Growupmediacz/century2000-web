@@ -7,7 +7,7 @@
         <div class="o-nas-hero__grid">
           <div class="o-nas-hero__stack--desktop">
             <div class="o-nas-hero__stack"><span class="eyebrow o-nas-hero__eyebrow"><?= t('uvodni-blok.t1') ?></span><span class="rule o-nas-hero__rule" aria-hidden="true"></span></div>
-            <h1 class="title-hero o-nas-hero__title--desktop" id="hero-h1"><?= t('uvodni-blok.t2') ?></h1>
+            <p class="title-hero o-nas-hero__title--desktop" role="heading" aria-level="1"><?= t('uvodni-blok.t2') ?></p>
             <p class="text o-nas-hero__text--desktop"><?= rich('uvodni-blok.r1') ?></p>
           </div>
           <div class="o-nas-hero__box">

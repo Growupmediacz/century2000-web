@@ -4,14 +4,16 @@
   "editable": true,
   "meta": {
     "title": "Zásady ochrany osobních údajů | Century 2000",
-    "description": ""
+    "description": "Jak CENTURY 2000 s.r.o. zpracovává osobní údaje z poptávek, zakázek a přihlášek do výběrového řízení a jaká máte práva podle GDPR."
   },
-  "options": {},
+  "options": {
+    "template": "pravni"
+  },
   "sections": [
     {
-      "key": "zasady-ochrany-osobnich-udaju",
-      "label": "Zásady ochrany osobních údajů",
-      "hideable": true,
+      "key": "uvod",
+      "label": "Úvod",
+      "hideable": false,
       "visible": true,
       "fields": [
         {
@@ -23,188 +25,442 @@
         {
           "key": "r1",
           "type": "rich",
+          "label": "Úvodní text",
+          "value": "Tyto zásady popisují, jak zpracováváme osobní údaje zákazníků, zájemců o naše služby, uchazečů o zaměstnání a návštěvníků webu. Řídíme se nařízením Evropského parlamentu a Rady (EU) 2016/679 (GDPR) a zákonem č. 110/2019 Sb., o zpracování osobních údajů.<br><br>Účinné od 22. října 2026."
+        }
+      ]
+    },
+    {
+      "key": "oddil-1",
+      "label": "Oddíl: 1. Kdo je správcem údajů",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "1. Kdo je správcem údajů"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
           "label": "Text",
-          "value": "Jak zpracováváme osobní údaje, které nám pošlete přes web. Účinné od <mark class=\"todo zasady-ochrany-osobnich-udaju__note\">[DOPLNIT: datum]</mark>."
+          "value": "Správcem osobních údajů je společnost <strong>CENTURY 2000 s.r.o.</strong>, IČO 26141116, DIČ CZ26141116, se sídlem Okružní 600, 285 22 Zruč nad Sázavou, zapsaná v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 73850.<br><br>Ve věcech osobních údajů nás kontaktujte e-mailem na <a href=\"mailto:info@century2000.cz\">info@century2000.cz</a>, telefonicky na <a href=\"tel:+420603287803\">+420 603 287 803</a> nebo poštou na adrese sídla. Pověřence pro ochranu osobních údajů jsme nejmenovali, zákon nám tuto povinnost neukládá.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-2",
+      "label": "Oddíl: 2. Jaké údaje zpracováváme, proč a jak dlouho",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "2. Jaké údaje zpracováváme, proč a jak dlouho"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Zpracováváme jen údaje, které nám sami pošlete (formulářem, e-mailem, telefonicky) nebo které vznikají při používání webu. Odkazy na článek 6 odst. 1 se týkají GDPR.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "ucel-1",
+      "label": "Tabulka účelů: Vyřízení poptávky a příprava nabídky",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Účel",
+          "value": "Vyřízení poptávky a příprava nabídky"
         },
         {
           "key": "t2",
           "type": "text",
-          "label": "Nadpis",
-          "value": "1. Správce osobních údajů"
-        },
-        {
-          "key": "r2",
-          "type": "rich",
-          "label": "Text",
-          "value": "Správcem je CENTURY 2000 s.r.o., IČ 26141116, se sídlem Okružní 600, 285 22 Zruč nad Sázavou. Kontakt pro otázky k osobním údajům: <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"mailto:info@century2000.cz\">info@century2000.cz</a>, <a class=\"zasady-ochrany-osobnich-udaju__link-2\" href=\"tel:+420603287803\">+420 603 287 803</a>."
+          "label": "Údaje",
+          "value": "jméno a příjmení, e-mail, telefon, firma, vybraná služba, text zprávy, přiložené soubory (rozměry, výkresy, fotografie)"
         },
         {
           "key": "t3",
           "type": "text",
-          "label": "Nadpis",
-          "value": "2. Jaké údaje zpracováváme a proč"
+          "label": "Právní základ",
+          "value": "jednání o smlouvě na vaši žádost (písm. b)"
         },
         {
           "key": "t4",
           "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Účel"
+          "label": "Jak dlouho",
+          "value": "po dobu vyřizování; pokud smlouvu neuzavřeme, nejdéle 3 roky od poslední komunikace"
+        }
+      ]
+    },
+    {
+      "key": "ucel-2",
+      "label": "Tabulka účelů: Realizace zakázky, dodání a reklamace",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Účel",
+          "value": "Realizace zakázky, dodání a reklamace"
         },
         {
-          "key": "t5",
+          "key": "t2",
           "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Údaje"
+          "label": "Údaje",
+          "value": "identifikační, kontaktní a dodací údaje, údaje o objednávce"
         },
         {
-          "key": "t6",
+          "key": "t3",
           "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Právní základ"
+          "label": "Právní základ",
+          "value": "plnění smlouvy (písm. b)"
         },
         {
-          "key": "t7",
+          "key": "t4",
           "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Jak dlouho"
+          "label": "Jak dlouho",
+          "value": "po dobu trvání smlouvy a záruky a dále 3 roky (promlčecí lhůta)"
+        }
+      ]
+    },
+    {
+      "key": "ucel-3",
+      "label": "Tabulka účelů: Účetnictví a daně",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Účel",
+          "value": "Účetnictví a daně"
         },
         {
-          "key": "t8",
+          "key": "t2",
           "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Vyřízení poptávky a příprava nabídky"
+          "label": "Údaje",
+          "value": "fakturační údaje (jméno nebo firma, adresa, IČO, DIČ), údaje na dokladech"
         },
         {
-          "key": "t9",
+          "key": "t3",
           "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "jméno, e-mail, telefon, firma, obsah zprávy, přílohy"
+          "label": "Právní základ",
+          "value": "právní povinnost (písm. c), zákon o účetnictví a zákon o DPH"
         },
         {
-          "key": "t10",
+          "key": "t4",
           "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "jednání o uzavření smlouvy"
-        },
+          "label": "Jak dlouho",
+          "value": "10 let od konce roku, ve kterém byl doklad vystaven"
+        }
+      ]
+    },
+    {
+      "key": "ucel-4",
+      "label": "Tabulka účelů: Výběr zaměstnanců",
+      "hideable": true,
+      "visible": true,
+      "fields": [
         {
-          "key": "t11",
+          "key": "t1",
           "type": "text",
-          "label": "Doplnit (desktop)",
-          "value": "[DOPLNIT: např. 3 roky od poslední komunikace]"
-        },
-        {
-          "key": "t12",
-          "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Plnění smlouvy a účetnictví"
-        },
-        {
-          "key": "t13",
-          "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "identifikační a fakturační údaje"
-        },
-        {
-          "key": "t14",
-          "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "plnění smlouvy, právní povinnost"
-        },
-        {
-          "key": "t15",
-          "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "po dobu stanovenou zákonem (účetní a daňové předpisy)"
-        },
-        {
-          "key": "t16",
-          "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
+          "label": "Účel",
           "value": "Výběr zaměstnanců"
         },
         {
-          "key": "t17",
+          "key": "t2",
           "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "jméno, kontakt, životopis, zkušenosti"
+          "label": "Údaje",
+          "value": "jméno a příjmení, telefon, e-mail, pozice, informace o vás a vašich zkušenostech"
         },
         {
-          "key": "t18",
+          "key": "t3",
           "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "jednání o pracovní smlouvě / souhlas"
+          "label": "Právní základ",
+          "value": "jednání o pracovní smlouvě na vaši žádost (písm. b)"
         },
         {
-          "key": "t19",
+          "key": "t4",
           "type": "text",
-          "label": "Doplnit (desktop)",
-          "value": "[DOPLNIT: např. 6 měsíců, déle jen se souhlasem]"
-        },
+          "label": "Jak dlouho",
+          "value": "do konce výběrového řízení, nejpozději 6 měsíců od přijetí přihlášky; déle jen s vaším výslovným souhlasem"
+        }
+      ]
+    },
+    {
+      "key": "ucel-5",
+      "label": "Tabulka účelů: Běžná komunikace s vámi",
+      "hideable": true,
+      "visible": true,
+      "fields": [
         {
-          "key": "t20",
+          "key": "t1",
           "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Měření návštěvnosti webu"
+          "label": "Účel",
+          "value": "Běžná komunikace s vámi"
         },
         {
-          "key": "t21",
+          "key": "t2",
           "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "cookies a online identifikátory"
+          "label": "Údaje",
+          "value": "kontaktní údaje a obsah e-mailů a telefonátů"
         },
         {
-          "key": "t22",
+          "key": "t3",
           "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "souhlas"
+          "label": "Právní základ",
+          "value": "oprávněný zájem odpovídat na dotazy (písm. f)"
         },
         {
-          "key": "r3",
-          "type": "rich",
-          "label": "Buňka tabulky (desktop)",
-          "value": "viz <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"/cookies/\">Zásady cookies</a>"
+          "key": "t4",
+          "type": "text",
+          "label": "Jak dlouho",
+          "value": "3 roky od poslední komunikace"
+        }
+      ]
+    },
+    {
+      "key": "ucel-6",
+      "label": "Tabulka účelů: Bezpečnost webu a ochrana proti spamu",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Účel",
+          "value": "Bezpečnost webu a ochrana proti spamu"
         },
         {
-          "key": "t23",
+          "key": "t2",
+          "type": "text",
+          "label": "Údaje",
+          "value": "IP adresa (pro ochranu formulářů a přihlášení jen v nevratně zašifrované podobě), technické záznamy serveru"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Právní základ",
+          "value": "oprávněný zájem na bezpečném provozu webu (písm. f)"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Jak dlouho",
+          "value": "ochranné záznamy nejvýše 1 den; záznamy serveru podle poskytovatele hostingu, obvykle několik týdnů"
+        }
+      ]
+    },
+    {
+      "key": "ucel-7",
+      "label": "Tabulka účelů: Měření návštěvnosti a marketing",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Účel",
+          "value": "Měření návštěvnosti a marketing"
+        },
+        {
+          "key": "t2",
+          "type": "text",
+          "label": "Údaje",
+          "value": "cookies a online identifikátory, údaje o zařízení a prohlížeči, chování na webu"
+        },
+        {
+          "key": "t3",
+          "type": "text",
+          "label": "Právní základ",
+          "value": "váš souhlas (písm. a) a § 89 odst. 3 zákona o elektronických komunikacích"
+        },
+        {
+          "key": "t4",
+          "type": "text",
+          "label": "Jak dlouho",
+          "value": "souhlas platí 12 měsíců, doby uložení jednotlivých cookies jsou v Zásadách cookies"
+        }
+      ]
+    },
+    {
+      "key": "oddil-3",
+      "label": "Oddíl: 3. Musíte nám údaje poskytnout?",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
           "type": "text",
           "label": "Nadpis",
-          "value": "3. Kdo má k údajům přístup"
+          "value": "3. Musíte nám údaje poskytnout?"
         },
         {
-          "key": "r4",
+          "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Údaje neprodáváme. Přístup k nim mohou mít jen naši dodavatelé, kteří nám pomáhají web a komunikaci provozovat: poskytovatel hostingu webu (Webglobe), Microsoft (e-mail, Microsoft 365) a Google (Google Analytics, jen se souhlasem)."
-        },
+          "value": "Poskytnutí údajů je dobrovolné. Bez kontaktu ale nemůžeme odpovědět na poptávku, připravit nabídku ani posoudit přihlášku do výběrového řízení. Fakturační údaje potřebujeme, abychom mohli splnit zákonné povinnosti.<br><br>Nerozhodujeme o vás automatizovaně a údaje nepoužíváme k profilování.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-4",
+      "label": "Oddíl: 4. Kdo má k údajům přístup",
+      "hideable": true,
+      "visible": true,
+      "fields": [
         {
-          "key": "t24",
+          "key": "t1",
           "type": "text",
           "label": "Nadpis",
-          "value": "4. Vaše práva"
+          "value": "4. Kdo má k údajům přístup"
         },
         {
-          "key": "r5",
+          "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Máte právo požádat o přístup ke svým údajům, jejich opravu nebo výmaz, omezení zpracování a přenositelnost. Můžete vznést námitku proti zpracování a kdykoli odvolat souhlas. Stačí napsat na <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"mailto:info@century2000.cz\">info@century2000.cz</a>."
-        },
+          "value": "Údaje neprodáváme ani je nepředáváme dalším firmám pro jejich vlastní reklamu. Přístup k nim mají jen naši zaměstnanci, kteří je potřebují pro svou práci, a dodavatelé, kteří pro nás údaje zpracovávají podle našich pokynů a jsou vázáni mlčenlivostí:<br><br>• poskytovatel hostingu webu (Webglobe),<br>• Microsoft (e-mail a kancelářské aplikace Microsoft 365),<br>• účetní a daňový poradce,<br>• dopravci a kurýři, pokud vám zboží posíláme,<br>• poskytovatelé měřicích a reklamních nástrojů (Google, případně Meta nebo Seznam), jen pokud s tím souhlasíte v liště cookies. Aktuální seznam je v <a href=\"/cookies/\">Zásadách cookies</a>.<br><br>Údaje můžeme předat také soudům, policii nebo jiným úřadům, pokud nám to ukládá zákon.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-5",
+      "label": "Oddíl: 5. Předávání údajů mimo Evropskou unii",
+      "hideable": true,
+      "visible": true,
+      "fields": [
         {
-          "key": "r6",
-          "type": "rich",
-          "label": "Text",
-          "value": "Pokud se domníváte, že s údaji nezacházíme správně, můžete podat stížnost u Úřadu pro ochranu osobních údajů (<a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"https://www.uoou.cz\" target=\"_blank\" rel=\"noopener\">www.uoou.cz</a>)."
-        },
-        {
-          "key": "t25",
+          "key": "t1",
           "type": "text",
           "label": "Nadpis",
-          "value": "5. Cookies"
+          "value": "5. Předávání údajů mimo Evropskou unii"
         },
         {
-          "key": "r7",
+          "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Informace o cookies najdete v <a class=\"zasady-ochrany-osobnich-udaju__link\" href=\"/cookies/\">Zásadách cookies</a>."
+          "value": "Údaje zpracováváme v Evropské unii. Někteří dodavatelé (Microsoft, Google, Meta) mohou údaje zpracovávat také ve Spojených státech. Jsou certifikováni v rámci EU-US Data Privacy Framework, pro který Evropská komise rozhodnutím z 10. července 2023 uznala odpovídající úroveň ochrany. Pro ostatní případy používají standardní smluvní doložky schválené Evropskou komisí.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-6",
+      "label": "Oddíl: 6. Vaše práva",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "6. Vaše práva"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Ve vztahu ke svým údajům máte právo:<br><br>• na přístup – zjistit, jaké údaje o vás zpracováváme, a dostat jejich kopii (čl. 15 GDPR),<br>• na opravu nepřesných nebo neúplných údajů (čl. 16),<br>• na výmaz, pokud údaje už nepotřebujeme nebo je zpracováváme neoprávněně (čl. 17),<br>• na omezení zpracování, například po dobu ověřování přesnosti (čl. 18),<br>• na přenositelnost údajů, které jste nám poskytli na základě smlouvy nebo souhlasu (čl. 20),<br>• vznést námitku proti zpracování na základě oprávněného zájmu (čl. 21),<br>• kdykoli odvolat souhlas. Souhlas s cookies změníte odkazem <strong>Nastavení cookies</strong> v patičce webu. Odvolání nemá vliv na zpracování, které proběhlo před ním.<br><br>Žádost pošlete na <a href=\"mailto:info@century2000.cz\">info@century2000.cz</a>. Vyřídíme ji bezplatně a nejpozději do jednoho měsíce. Pokud nebude jasné, že žádost posíláte vy, můžeme vás požádat o ověření totožnosti.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-7",
+      "label": "Oddíl: 7. Stížnost u dozorového úřadu",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "7. Stížnost u dozorového úřadu"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Pokud se domníváte, že s vašimi údaji nezacházíme v souladu s předpisy, můžete podat stížnost u Úřadu pro ochranu osobních údajů, Pplk. Sochora 27, 170 00 Praha 7, <a href=\"https://uoou.gov.cz\" target=\"_blank\" rel=\"noopener\">uoou.gov.cz</a>. Budeme rádi, když se nejdřív obrátíte na nás, problém se pokusíme vyřešit.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-8",
+      "label": "Oddíl: 8. Jak údaje chráníme",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "8. Jak údaje chráníme"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Web používá šifrované spojení (HTTPS). Přístup k údajům mají jen pověřené osoby s vlastními přihlašovacími údaji. Data pravidelně zálohujeme a dodavatele vybíráme tak, aby údaje chránili stejně pečlivě jako my.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-9",
+      "label": "Oddíl: 9. Cookies",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "9. Cookies"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Jak na webu používáme cookies a podobné technologie, popisují <a href=\"/cookies/\">Zásady cookies</a>.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-10",
+      "label": "Oddíl: 10. Změny těchto zásad",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "10. Změny těchto zásad"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Zásady můžeme upravit, například když začneme používat nový nástroj nebo se změní předpisy. Aktuální verze je vždy na této stránce, datum účinnosti najdete nahoře.",
+          "help": "Nový odstavec = dvakrát Enter."
         }
       ]
     }

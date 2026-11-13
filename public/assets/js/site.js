@@ -5,6 +5,17 @@
 
   $$('[data-year]').forEach(el => { el.textContent = new Date().getFullYear(); });
 
+  /* Links to sections of the previous one-page site (century2000.cz/#kontakt …) lead to the new pages */
+  const OLD_ANCHORS = { kontakt: '/kontakt/', reference: '/reference/', 'o-nas': '/o-nas/', oblasti: '#co-sijeme' };
+  const logo = document.querySelector('.site-header__logo');
+  const home = logo ? new URL(logo.getAttribute('href'), location.href).pathname : '/';
+  const anchor = location.hash.slice(1);
+  if (location.pathname === home && OLD_ANCHORS[anchor] && !document.getElementById(anchor)) {
+    const to = OLD_ANCHORS[anchor];
+    if (to.startsWith('#')) { location.hash = to; }
+    else { location.replace(home.replace(/\/$/, '') + to); }
+  }
+
   /* ---------- Header: mega menu (desktop) + burger menu (mobile) ---------- */
   $$('[data-c="Hlavicka"]').forEach(header => {
     const pinned = header.dataset.pMegaOpen === 'true';
@@ -70,31 +81,119 @@
     });
   });
 
-  /* ---------- Cookie bar ---------- */
+  /* ---------- Cookie bar and Google Consent Mode v2 ---------- */
+  // Choice is stored for 12 months (version 2 = with Consent Mode); then the bar asks again.
+  // Defaults (all denied) are set by the inline script at the top of <head> (app/lib/tracking.php).
   const CONSENT_KEY = 'c2000-consent';
-  const readConsent = () => { try { return JSON.parse(localStorage.getItem(CONSENT_KEY)); } catch (e) { return null; } };
+  const CONSENT_MAX_AGE = 365 * 24 * 3600 * 1000;
+  const readConsent = () => {
+    try {
+      const c = JSON.parse(localStorage.getItem(CONSENT_KEY));
+      return c && c.v === 2 && Date.now() - new Date(c.date).getTime() < CONSENT_MAX_AGE ? c : null;
+    } catch (e) { return null; }
+  };
+  const gtag = function () { window.dataLayer = window.dataLayer || []; window.dataLayer.push(arguments); };
+  const consentSignals = c => ({
+    analytics_storage: c.analytics ? 'granted' : 'denied',
+    ad_storage: c.marketing ? 'granted' : 'denied',
+    ad_user_data: c.marketing ? 'granted' : 'denied',
+    ad_personalization: c.marketing ? 'granted' : 'denied'
+  });
+  // Withdrawn consent: remove the cookies the tools have already set on our domain
+  const dropCookies = prefixes => document.cookie.split(';').map(x => x.split('=')[0].trim())
+    .filter(n => prefixes.some(p => n === p || n.startsWith(p)))
+    .forEach(n => {
+      const host = location.hostname.replace(/^www\./, '');
+      ['', '; domain=' + host, '; domain=.' + host].forEach(d => { document.cookie = n + '=; Max-Age=0; path=/' + d; });
+    });
   const writeConsent = c => {
-    try { localStorage.setItem(CONSENT_KEY, JSON.stringify({ ...c, date: new Date().toISOString() })); } catch (e) { /* storage blocked */ }
-    window.dispatchEvent(new CustomEvent('c2000-consent', { detail: c }));
+    const prev = readConsent();
+    const record = { v: 2, analytics: !!c.analytics, marketing: !!c.marketing, date: new Date().toISOString() };
+    try { localStorage.setItem(CONSENT_KEY, JSON.stringify(record)); } catch (e) { /* storage blocked */ }
+    gtag('consent', 'update', consentSignals(record));
+    window.dataLayer.push({ event: 'c2000_consent_update', consent_analytics: record.analytics, consent_marketing: record.marketing });
+    if (prev && ((prev.analytics && !record.analytics) || (prev.marketing && !record.marketing))) {
+      if (!record.analytics) { dropCookies(['_ga']); }
+      if (!record.marketing) { dropCookies(['_gcl_', '_fbp', '_fbc']); }
+      location.reload(); // scripts already running cannot be unloaded
+      return;
+    }
+    window.dispatchEvent(new CustomEvent('c2000-consent', { detail: record }));
   };
   const stored = readConsent();
 
-  /* Analytics: Google Analytics 4 is loaded only after consent, and only when an ID is configured (config.php). */
-  const loadAnalytics = () => {
-    const meta = document.querySelector('meta[name="c2000-ga4"]');
-    if (!meta || window.__c2000ga) { return; }
-    window.__c2000ga = true;
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function () { window.dataLayer.push(arguments); };
-    window.gtag('js', new Date());
-    window.gtag('config', meta.content, { anonymize_ip: true });
+  /* Measurement codes (admin → Měřicí kódy). Each one starts only when its consent category is granted. */
+  const tracking = (() => { try { return JSON.parse(document.getElementById('c2000-tracking').textContent); } catch (e) { return {}; } })();
+  const loaded = {};
+  const addScript = (src, attrs) => {
     const s = document.createElement('script');
     s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(meta.content);
+    s.src = src;
+    Object.assign(s, attrs || {});
     document.head.appendChild(s);
   };
-  if (stored && stored.analytics) { loadAnalytics(); }
-  window.addEventListener('c2000-consent', e => { if (e.detail && e.detail.analytics) { loadAnalytics(); } });
+  const once = (key, fn) => { if (!loaded[key]) { loaded[key] = true; fn(); } };
+  const loadGoogle = () => once('google', () => {
+    const tagId = tracking.ga4_id || tracking.ads_id;
+    if (tagId) {
+      gtag('js', new Date());
+      if (tracking.ga4_id) { gtag('config', tracking.ga4_id); }
+      if (tracking.ads_id) { gtag('config', tracking.ads_id); }
+      addScript('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(tagId));
+    }
+    if (tracking.gtm_id) {
+      window.dataLayer.push({ 'gtm.start': Date.now(), event: 'gtm.js' });
+      addScript('https://www.googletagmanager.com/gtm.js?id=' + encodeURIComponent(tracking.gtm_id));
+    }
+  });
+  const loadMeta = () => once('meta', () => {
+    /* Meta Pixel base code */
+    const n = window.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
+    if (!window._fbq) { window._fbq = n; }
+    n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+    addScript('https://connect.facebook.net/en_US/fbevents.js');
+    window.fbq('consent', 'grant');
+    window.fbq('init', tracking.meta_pixel);
+    window.fbq('track', 'PageView');
+  });
+  const loadSklik = () => once('sklik', () => {
+    addScript('https://c.seznam.cz/js/rc.js', { onload: () => {
+      if (window.rc && window.rc.retargetingHit) { window.rc.retargetingHit({ rtgId: Number(tracking.sklik_id), consent: 1 }); }
+    } });
+  });
+  // <script> copied from a <template> does not run; a freshly created one does
+  const liveScript = old => {
+    const s = document.createElement('script');
+    Array.from(old.attributes).forEach(a => s.setAttribute(a.name, a.value));
+    s.text = old.textContent;
+    return s;
+  };
+  const runCustom = category => $$(`template[data-c2000-code="${category}"]`).forEach(tpl => {
+    if (tpl.dataset.done) { return; }
+    tpl.dataset.done = '1';
+    const target = tpl.dataset.place === 'head' ? document.head : document.body;
+    Array.from(tpl.content.childNodes).forEach(node => {
+      const copy = node.nodeName === 'SCRIPT' ? liveScript(node) : node.cloneNode(true);
+      target.appendChild(copy);
+      if (copy.nodeType === 1 && copy.nodeName !== 'SCRIPT') {
+        $$('script', copy).forEach(old => old.replaceWith(liveScript(old)));
+      }
+    });
+  });
+  const applyConsent = c => {
+    runCustom('necessary');
+    // advanced mode: Google tags run from the start with denied consent (cookieless pings only)
+    if (tracking.mode === 'advanced' || (c && (c.analytics || c.marketing))) { loadGoogle(); }
+    if (!c) { return; }
+    if (c.analytics) { runCustom('analytics'); }
+    if (c.marketing) {
+      if (tracking.meta_pixel) { loadMeta(); }
+      if (tracking.sklik_id) { loadSklik(); }
+      runCustom('marketing');
+    }
+  };
+  applyConsent(stored);
+  window.addEventListener('c2000-consent', e => applyConsent(e.detail));
   const wantSettings = /[?&#]cookies=settings/.test(location.search + location.hash);
 
   $$('[data-c="CookieLista"]').forEach(root => {
@@ -128,8 +227,8 @@
       else if (label.startsWith('odmítnout')) { state.analytics = state.marketing = false; }
       paintAll();
       if (persistent) { setView(initialView); return; }
-      writeConsent(state);
       show(bar, false);
+      writeConsent(state);
     }));
     if (!persistent) {
       window.addEventListener('c2000-cookies', () => { show(bar, true); setView('settings'); });

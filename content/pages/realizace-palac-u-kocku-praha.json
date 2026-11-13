@@ -4,7 +4,7 @@
   "editable": true,
   "meta": {
     "title": "Palác u Kočků, Praha: reference | Century 2000",
-    "description": "Zakázka pro Palác u Kočků v Praze. Fotogalerie realizace."
+    "description": "Textil pro Palác u Kočků v Praze, realizovaný se studiem Dédecor a designérkou Dagmar Frulovou. Fotogalerie zakázky od Century 2000."
   },
   "options": {
     "type": "reference",
@@ -43,6 +43,25 @@
             "src": "/assets/realizace/palac-u-kocku-praha/hlavni.webp",
             "alt": "Palác u Kočků: ukázka realizace"
           }
+        }
+      ]
+    },
+    {
+      "key": "logo",
+      "label": "Logo hotelu",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Logo",
+          "optional": true,
+          "value": {
+            "src": "",
+            "alt": ""
+          },
+          "help": "Nejlépe PNG s průhledným pozadím. Na webu se zobrazí šedě, barevně po najetí myší. Bez loga se ukáže název hotelu."
         }
       ]
     },

@@ -13,3 +13,4 @@ handoff/
 __pycache__/
 .DS_Store
 .claude/
+content/mereni.json

@@ -4,14 +4,16 @@
   "editable": true,
   "meta": {
     "title": "Zásady cookies | Century 2000",
-    "description": ""
+    "description": "Jaké cookies používá web century2000.cz, k čemu slouží, jak dlouho platí a jak svůj souhlas změníte nebo odvoláte."
   },
-  "options": {},
+  "options": {
+    "template": "pravni"
+  },
   "sections": [
     {
-      "key": "zasady-cookies",
-      "label": "Zásady cookies",
-      "hideable": true,
+      "key": "uvod",
+      "label": "Úvod",
+      "hideable": false,
       "visible": true,
       "fields": [
         {
@@ -21,136 +23,158 @@
           "value": "Zásady cookies"
         },
         {
-          "key": "t2",
-          "type": "text",
-          "label": "Text",
-          "value": "Cookies jsou malé soubory, které web ukládá do vašeho prohlížeče. Nezbytné cookies používáme vždy, ostatní jen s vaším souhlasem."
-        },
+          "key": "r1",
+          "type": "rich",
+          "label": "Úvodní text",
+          "value": "Cookies jsou malé textové soubory, které web ukládá do vašeho prohlížeče. Podobně funguje i úložiště prohlížeče (localStorage). Nezbytné cookies potřebujeme, aby web fungoval. Ostatní používáme jen tehdy, když s nimi v liště cookies souhlasíte. Volbu si pamatujeme 12 měsíců, potom se zeptáme znovu.<br><br>Správcem je CENTURY 2000 s.r.o., IČO 26141116, Okružní 600, 285 22 Zruč nad Sázavou."
+        }
+      ]
+    },
+    {
+      "key": "oddil-1",
+      "label": "Oddíl: Jaké cookies používáme",
+      "hideable": true,
+      "visible": true,
+      "fields": [
         {
-          "key": "t3",
+          "key": "t1",
           "type": "text",
           "label": "Nadpis",
           "value": "Jaké cookies používáme"
         },
         {
-          "key": "t4",
-          "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Kategorie"
-        },
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Seznam odpovídá nástrojům, které na webu právě používáme.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "cookies",
+      "label": "Tabulka cookies (vyplní se sama podle Měřicích kódů)",
+      "hideable": false,
+      "visible": true,
+      "note": "Tabulku nejde upravit ručně. Sestaví se podle nástrojů vyplněných v administraci v sekci Měřicí kódy.",
+      "fields": []
+    },
+    {
+      "key": "oddil-2",
+      "label": "Oddíl: Právní základ",
+      "hideable": true,
+      "visible": true,
+      "fields": [
         {
-          "key": "t5",
+          "key": "t1",
           "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "K čemu slouží"
-        },
-        {
-          "key": "t6",
-          "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Příklad"
-        },
-        {
-          "key": "t7",
-          "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Souhlas"
-        },
-        {
-          "key": "t8",
-          "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Nezbytné"
-        },
-        {
-          "key": "t9",
-          "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "fungování webu a uložení vaší volby cookies"
+          "label": "Nadpis",
+          "value": "Právní základ"
         },
         {
           "key": "r1",
           "type": "rich",
-          "label": "Buňka tabulky (desktop)",
-          "value": "záznam c2000-consent v úložišti prohlížeče s vaší volbou, bez omezení doby (do smazání v prohlížeči)"
-        },
+          "label": "Text",
+          "value": "Nezbytné cookies ukládáme bez souhlasu podle § 89 odst. 3 zákona č. 127/2005 Sb., o elektronických komunikacích, protože bez nich web nemůže fungovat. Analytické a marketingové cookies jen s vaším souhlasem (čl. 6 odst. 1 písm. a) GDPR).",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-3",
+      "label": "Oddíl: Nástroje Googlu a režim souhlasu",
+      "hideable": true,
+      "visible": true,
+      "fields": [
         {
-          "key": "t10",
-          "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "není potřeba"
-        },
-        {
-          "key": "t11",
-          "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Analytické"
-        },
-        {
-          "key": "t12",
-          "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "anonymní statistiky návštěvnosti, abychom věděli, co na webu funguje"
-        },
-        {
-          "key": "t13",
-          "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "Google Analytics 4: _ga, _ga_* (až 2 roky)"
-        },
-        {
-          "key": "t14",
-          "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "ano"
-        },
-        {
-          "key": "t15",
-          "type": "text",
-          "label": "Záhlaví tabulky (desktop)",
-          "value": "Marketingové"
-        },
-        {
-          "key": "t16",
-          "type": "text",
-          "label": "Buňka tabulky (desktop)",
-          "value": "zobrazení relevantní reklamy a měření její úspěšnosti"
-        },
-        {
-          "key": "t17",
-          "type": "text",
-          "label": "Doplnit (desktop)",
-          "value": "zatím žádné nepoužíváme"
-        },
-        {
-          "key": "t18",
+          "key": "t1",
           "type": "text",
           "label": "Nadpis",
-          "value": "Jak souhlas změnit"
+          "value": "Nástroje Googlu a režim souhlasu"
         },
         {
-          "key": "r2",
+          "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Svou volbu můžete kdykoli změnit přes odkaz <strong class=\"zasady-cookies__strong\">Nastavení cookies</strong> v patičce webu. Cookies můžete také smazat nebo zablokovat v nastavení prohlížeče."
-        },
+          "value": "Na webu používáme Google Consent Mode v2. Dokud nesouhlasíte, dostávají nástroje Googlu signál „nesouhlas“: neukládají cookies a údaje nepoužívají k reklamě. Když souhlas udělíte nebo odvoláte, informaci jim hned předáme.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-4",
+      "label": "Oddíl: Předávání údajů mimo EU",
+      "hideable": true,
+      "visible": true,
+      "fields": [
         {
-          "key": "t19",
+          "key": "t1",
           "type": "text",
-          "label": "Tlačítko",
-          "value": "Změnit nastavení cookies"
+          "label": "Nadpis",
+          "value": "Předávání údajů mimo EU"
         },
         {
-          "key": "t20",
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Společnosti Google a Meta mohou údaje zpracovávat i ve Spojených státech. Jsou certifikovány v rámci EU-US Data Privacy Framework, pro který Evropská komise uznala odpovídající úroveň ochrany. Podrobnosti najdete v zásadách <a href=\"https://policies.google.com/privacy?hl=cs\" target=\"_blank\" rel=\"noopener\">Googlu</a> a <a href=\"https://www.facebook.com/privacy/policy/\" target=\"_blank\" rel=\"noopener\">Meta</a>.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "oddil-5",
+      "label": "Oddíl: Jak souhlas změnit nebo odvolat",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Nadpis",
+          "value": "Jak souhlas změnit nebo odvolat"
+        },
+        {
+          "key": "r1",
+          "type": "rich",
+          "label": "Text",
+          "value": "Svou volbu můžete kdykoli změnit tlačítkem níže nebo odkazem <strong>Nastavení cookies</strong> v patičce webu. Po odvolání souhlasu cookies dané kategorie smažeme. Cookies můžete také smazat nebo zablokovat v nastavení prohlížeče, některé části webu pak ale nemusí fungovat správně.",
+          "help": "Nový odstavec = dvakrát Enter."
+        }
+      ]
+    },
+    {
+      "key": "tlacitko",
+      "label": "Tlačítko nastavení cookies",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
+          "type": "text",
+          "label": "Text tlačítka",
+          "value": "Změnit nastavení cookies"
+        }
+      ]
+    },
+    {
+      "key": "oddil-6",
+      "label": "Oddíl: Kontakt",
+      "hideable": true,
+      "visible": true,
+      "fields": [
+        {
+          "key": "t1",
           "type": "text",
           "label": "Nadpis",
           "value": "Kontakt"
         },
         {
-          "key": "r3",
+          "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "S dotazy nám napište na <a class=\"zasady-cookies__link\" href=\"mailto:info@century2000.cz\">info@century2000.cz</a>. Více o zpracování údajů najdete v <a class=\"zasady-cookies__link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásadách ochrany osobních údajů</a>."
+          "value": "S dotazy nám napište na <a href=\"mailto:info@century2000.cz\">info@century2000.cz</a>. Jak zpracováváme osobní údaje, popisují <a href=\"/zasady-ochrany-osobnich-udaju/\">Zásady ochrany osobních údajů</a>.",
+          "help": "Nový odstavec = dvakrát Enter."
         }
       ]
     }

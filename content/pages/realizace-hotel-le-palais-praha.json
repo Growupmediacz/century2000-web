@@ -4,7 +4,7 @@
   "editable": true,
   "meta": {
     "title": "Hotel Le Palais, Praha: reference | Century 2000",
-    "description": "Zakázka pro hotel Le Palais v Praze. Fotogalerie realizace."
+    "description": "Textil pro pražský hotel Le Palais, realizovaný se studiem Dédecor a designérkou Dagmar Frulovou. Fotogalerie zakázky od Century 2000."
   },
   "options": {
     "type": "reference",
@@ -43,6 +43,25 @@
             "src": "/assets/realizace/hotel-le-palais-praha/hlavni.webp",
             "alt": "Hotel Le Palais: ukázka realizace"
           }
+        }
+      ]
+    },
+    {
+      "key": "logo",
+      "label": "Logo hotelu",
+      "hideable": false,
+      "visible": true,
+      "fields": [
+        {
+          "key": "img1",
+          "type": "image",
+          "label": "Logo",
+          "optional": true,
+          "value": {
+            "src": "/assets/reference-loga/le-palais-praha.webp",
+            "alt": "Logo Le Palais Praha"
+          },
+          "help": "Nejlépe PNG s průhledným pozadím. Na webu se zobrazí šedě, barevně po najetí myší. Bez loga se ukáže název hotelu."
         }
       ]
     },

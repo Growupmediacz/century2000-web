@@ -1,4 +1,4 @@
-<?php $files = $page['options']['files'] ?? []; ?>
+<?php $files = array_filter($page['options']['files'] ?? [], fn($f) => empty($f['hidden'])); ?>
 <div class="page">
   <?php partial('header'); ?>
   <main>

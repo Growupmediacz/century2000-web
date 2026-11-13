@@ -12,7 +12,7 @@
                 <li class="service-hero__item" aria-current="page"><?= t('uvodni-blok.t3') ?></li>
               </ol>
             </nav>
-            <h1 class="title-hero service-hero__title--desktop" id="hero-h1"><?= t('uvodni-blok.t4') ?></h1>
+            <p class="title-hero service-hero__title--desktop" role="heading" aria-level="1"><?= t('uvodni-blok.t4') ?></p>
             <p class="text service-hero__text--desktop"><?= t('uvodni-blok.t5') ?></p>
             <div class="service-hero__row--desktop">
               <a class="btn-primary service-hero__btn-2" href="#poptavka"><?= t('uvodni-blok.t6') ?></a>
@@ -46,10 +46,9 @@
     <?php if (visible('loga-klientu')): ?>
     <section class="pruh-log" data-screen-label="Pruh log" aria-label="Reference hotelů">
       <ul class="container pruh-log__inner">
-        <li class="pruh-log__item"><img class="pruh-log__img" src="<?= img('loga-klientu.img1') ?>" alt="<?= alt('loga-klientu.img1') ?>" decoding="async" loading="lazy"></li>
-        <li class="pruh-log__item"><img class="pruh-log__img" src="<?= img('loga-klientu.img2') ?>" alt="<?= alt('loga-klientu.img2') ?>" decoding="async" loading="lazy"></li>
-        <li class="pruh-log__item"><img class="pruh-log__img" src="<?= img('loga-klientu.img3') ?>" alt="<?= alt('loga-klientu.img3') ?>" decoding="async" loading="lazy"></li>
-        <li class="pruh-log__item"><img class="pruh-log__img" src="<?= img('loga-klientu.img4') ?>" alt="<?= alt('loga-klientu.img4') ?>" decoding="async" loading="lazy"></li>
+        <?php foreach (featured_references() as $r): if ($r['logo'] === '') continue; ?>
+        <li class="pruh-log__item"><a href="<?= e($r['path']) ?>"><img class="pruh-log__img" src="<?= e($r['logo']) ?>" alt="<?= e($r['alt'] ?: $r['name']) ?>" decoding="async" loading="lazy"></a></li>
+        <?php endforeach; ?>
       </ul>
     </section>
     <?php endif; ?>

@@ -1,5 +1,21 @@
 # Uploaded images only – never run scripts from here
-<FilesMatch "\.(php|phtml|phar|pl|py|cgi|sh)$">
+<FilesMatch "\.(php\d?|phtml|phar|pl|py|cgi|sh|htm|html|svg|js)$">
   Require all denied
 </FilesMatch>
 Options -ExecCGI
+# Only images are served from here
+<FilesMatch "\.(?!(webp|jpe?g|png|gif)$)[^.]+$">
+  Require all denied
+</FilesMatch>
+# Never interpret anything here as PHP, whatever the server setup
+<IfModule mod_php.c>
+  php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+  php_flag engine off
+</IfModule>
+<IfModule mod_php8.c>
+  php_flag engine off
+</IfModule>
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8 .phar
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8 .phar

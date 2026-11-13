@@ -3,7 +3,7 @@
   "name": "Hotelový textil",
   "editable": true,
   "meta": {
-    "title": "Hotelový textil na míru – vybavení hotelů a restaurací | Century 2000",
+    "title": "Hotelový textil na míru pro hotely a penziony | Century 2000",
     "description": "Kompletní textilní vybavení hotelů, penzionů a restaurací. Závěsy, přehozy, rautové sukně, potahy na židle i látky s nehořlavou úpravou."
   },
   "options": {
@@ -74,44 +74,8 @@
       "label": "Loga klientů",
       "hideable": true,
       "visible": true,
-      "fields": [
-        {
-          "key": "img1",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/four-seasons-praha.webp",
-            "alt": "Four Seasons Praha"
-          }
-        },
-        {
-          "key": "img2",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/le-palais-praha.png",
-            "alt": "Le Palais Praha"
-          }
-        },
-        {
-          "key": "img3",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/corinthia-praha-orez.png",
-            "alt": "Corinthia Praha"
-          }
-        },
-        {
-          "key": "img4",
-          "type": "image",
-          "label": "Obrázek",
-          "value": {
-            "src": "/assets/reference-loga/hotel-international-brno.png",
-            "alt": "Hotel International Brno"
-          }
-        }
-      ]
+      "fields": [],
+      "note": "Loga hotelů se upravují u jednotlivých referencí (Reference → hotel → Logo hotelu). Zobrazí se reference se zapnutou volbou „Zobrazit na úvodní stránce“."
     },
     {
       "key": "pro-koho",
@@ -648,7 +612,7 @@
           "key": "r1",
           "type": "rich",
           "label": "Text",
-          "value": "Odesláním souhlasíte se <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">zpracováním osobních údajů</a> za účelem vyřízení poptávky."
+          "value": "Údaje z formuláře použijeme jen k vyřízení vaší poptávky. Více v <a class=\"inquiry__consent-link\" href=\"/zasady-ochrany-osobnich-udaju/\">Zásadách ochrany osobních údajů</a>."
         },
         {
           "key": "t4",

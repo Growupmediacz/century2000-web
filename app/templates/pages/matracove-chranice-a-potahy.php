@@ -12,7 +12,7 @@
                 <li class="matracove-chranice-a-potahy-hero__item" aria-current="page"><?= t('uvodni-blok.t3') ?></li>
               </ol>
             </nav>
-            <h1 class="title-hero matracove-chranice-a-potahy-hero__title--desktop" id="hero-h1"><?= t('uvodni-blok.t4') ?></h1>
+            <p class="title-hero matracove-chranice-a-potahy-hero__title--desktop" role="heading" aria-level="1"><?= t('uvodni-blok.t4') ?></p>
             <p class="text matracove-chranice-a-potahy-hero__text--desktop"><?= t('uvodni-blok.t5') ?></p>
             <div class="matracove-chranice-a-potahy-hero__row--desktop">
               <a class="btn-primary matracove-chranice-a-potahy-hero__btn--desktop" href="#poptavka"><?= t('uvodni-blok.t6') ?></a>

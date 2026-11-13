@@ -21,13 +21,21 @@
       var max = document.documentElement.scrollHeight - window.innerHeight;
       bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, y / max) : 0) + ')';
       if (header) { header.classList.toggle('is-scrolled', y > 8); }
-      if (root.classList.contains('js-anim')) {
-        parallax.forEach(function (el) { if (y < 900) { el.style.translate = '0 ' + Math.round(y * 0.08) + 'px'; } });
+      // Paralaxa jen na počítači. Fotka je v CSS zvětšená o 10 % (scale: 1.1) a posun nepřekročí polovinu přesahu,
+      // takže se nikdy neodkryje okraj ani nevznikne mezera pod překryvným přechodem.
+      if (root.classList.contains('js-anim') && window.innerWidth >= 1024) {
+        parallax.forEach(function (el) {
+          var room = Math.max(0, el.offsetHeight * 0.05 - 2);
+          el.style.translate = '0 ' + Math.round(Math.min(y * 0.05, room)) + 'px';
+        });
+      } else {
+        parallax.forEach(function (el) { el.style.translate = ''; });
       }
       ticking = false;
     });
   }
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
   onScroll();
 
   if (!root.classList.contains('js-anim') || !('IntersectionObserver' in window)) { return; }
