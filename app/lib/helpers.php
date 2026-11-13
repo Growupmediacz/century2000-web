@@ -4,7 +4,7 @@ declare(strict_types=1);
 function load_config(): array
 {
     $defaults = require ROOT_DIR . '/config.example.php';
-    $file = ROOT_DIR . '/config.php';
+    $file = DATA_DIR . '/config.php';
     $local = is_file($file) ? require $file : [];
     $config = array_replace_recursive($defaults, is_array($local) ? $local : []);
     // Any other host than the production domain (Hostinger temporary domain, a test copy) is always

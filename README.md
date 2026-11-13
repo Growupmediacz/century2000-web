@@ -42,9 +42,13 @@ Web běží na webhostingu Hostinger. Každý push do `main` spustí v `.github/
 `tools/build-hostinger.sh` poskládá obsah `public_html` (soubory z `public/` + `app/` vedle nich) a uloží ho do větve `hostinger`.
 hPanel → Webové stránky → Pokročilé → GIT ji automaticky nasadí do `public_html`.
 
-- **Obsah klienta se nepřepisuje:** výchozí obsah je ve větvi ve složce `_seed/`. Aplikace ho při prvním spuštění zkopíruje do `content/`
-  a vzorkovníky do `downloads/vzorkovniky/`, jen pokud tam ještě nejsou. `content/`, `uploads/` a vzorkovníky na serveru nejsou v Gitu.
-- **`config.php`** (heslo do administrace, e-mail) se do `public_html` nahrává ručně přes Správce souborů. Bez něj web běží, jen se nejde přihlásit do administrace.
+- **Hostinger při každém nasazení nahradí celé `public_html`** (soubory, které nejsou ve větvi, smaže – ověřeno). Proto data klienta
+  nejsou v `public_html`, ale ve složce **`web-data/` vedle něj** (`domains/century2000.cz/web-data/`):
+  `content/` (texty, zálohy, heslo z administrace), `uploads/` (fotky), `vzorkovniky/` (PDF) a `config.php`.
+- Při prvním spuštění aplikace `web-data/` naplní z `_seed/` (jen to, co chybí) a do webu vytvoří odkazy `uploads/` a `downloads/vzorkovniky/`.
+  Po každém nasazení je obnoví první návštěva (`app/bootstrap.php`), soubor požádaný ještě před tím doručí PHP (`handle_request()`).
+- **`config.php`** (heslo do administrace, e-mail) se nahrává ručně přes Správce souborů do `web-data/`. Bez něj web běží, jen se nejde přihlásit do administrace.
+- Lokálně a na jiném hostingu (bez `_seed/`) se nic nemění: data jsou v kořeni projektu jako dřív.
 - **Indexace:** na jiné doméně než century2000.cz (např. dočasná doména Hostingeru) je web vždy `noindex`, nezávisle na `demo`. Spuštění = změna DNS.
 - Do větve `hostinger` necommitujte ručně, při každém buildu se přepíše. Nový obsah z kódu (nová sekce, nová stránka) se na server dostane jen přes administraci, protože `content/` se po prvním nasazení už nekopíruje.
 

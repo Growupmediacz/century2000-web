@@ -10,16 +10,20 @@ declare(strict_types=1);
 
 define('ROOT_DIR', dirname(__DIR__));
 define('APP_DIR', __DIR__);
-define('CONTENT_DIR', ROOT_DIR . '/content');
+/*
+ * Hosting build (Hostinger Git deploy, see tools/build-hostinger.sh): every deploy replaces the whole
+ * public_html, so everything the client changes (content, uploaded photos, PDF catalogues, config.php)
+ * lives in web-data/ next to public_html. Locally and on other hosts DATA_DIR is the project root.
+ */
+define('HOSTING_BUILD', is_dir(ROOT_DIR . '/_seed'));
+define('DATA_DIR', HOSTING_BUILD ? dirname(ROOT_DIR) . '/web-data' : ROOT_DIR);
+define('CONTENT_DIR', DATA_DIR . '/content');
 define('RUNTIME_DIR', CONTENT_DIR . '/.runtime');
 if (!defined('PUBLIC_DIR')) {
     define('PUBLIC_DIR', is_dir(ROOT_DIR . '/public') ? ROOT_DIR . '/public' : ROOT_DIR);
 }
 
-/*
- * Git deploy (Hostinger): the deploy branch ships the initial content in _seed/ instead of content/.
- * It is copied only when the target is missing, so a redeploy never overwrites edits made in the admin.
- */
+/* Copies the initial content shipped in _seed/ – only when the target is missing, never over client edits. */
 function seed_dir(string $from, string $to): void
 {
     if (is_dir($to) || !is_dir($from)) {
@@ -43,8 +47,19 @@ function seed_dir(string $from, string $to): void
         @rmdir($tmp);
     }
 }
-seed_dir(ROOT_DIR . '/_seed/content', ROOT_DIR . '/content');
-seed_dir(ROOT_DIR . '/_seed/vzorkovniky', PUBLIC_DIR . '/downloads/vzorkovniky');
+if (HOSTING_BUILD) {
+    seed_dir(ROOT_DIR . '/_seed/content', CONTENT_DIR);
+    seed_dir(ROOT_DIR . '/_seed/uploads', DATA_DIR . '/uploads');
+    seed_dir(ROOT_DIR . '/_seed/vzorkovniky', DATA_DIR . '/vzorkovniky');
+    // the web serves the client files through links that every deploy removes – recreate them
+    foreach (['/uploads' => '/uploads', '/vzorkovniky' => '/downloads/vzorkovniky'] as $data => $web) {
+        if (!is_link(PUBLIC_DIR . $web) && !file_exists(PUBLIC_DIR . $web) && is_dir(DATA_DIR . $data)) {
+            if (!@symlink(DATA_DIR . $data, PUBLIC_DIR . $web)) {
+                error_log('Century 2000: cannot link ' . PUBLIC_DIR . $web);
+            }
+        }
+    }
+}
 
 mb_internal_encoding('UTF-8');
 // Errors go to the log, never to the page (paths and code would leak). The built-in dev server shows them.
