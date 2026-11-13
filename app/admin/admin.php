@@ -616,17 +616,17 @@ function admin_catalog_upload(): void
     }
     $base = slugify(pathinfo((string) $f['name'], PATHINFO_FILENAME)) ?: 'vzorkovnik';
     $rel = CATALOG_DIR . '/' . $base . '.pdf';
-    for ($n = 2; is_file(PUBLIC_DIR . $rel); $n++) {
+    for ($n = 2; is_file(web_path($rel)); $n++) {
         $rel = CATALOG_DIR . "/$base-$n.pdf";
     }
-    ensure_dir(PUBLIC_DIR . CATALOG_DIR);
-    if (!move_uploaded_file($f['tmp_name'], PUBLIC_DIR . $rel)) {
+    ensure_dir(web_path(CATALOG_DIR));
+    if (!move_uploaded_file($f['tmp_name'], web_path($rel))) {
         flash('Soubor se nepodařilo uložit, zkuste to znovu.', 'error');
         redirect(admin_url('catalogs'));
     }
     $page = content_load('vzorkovniky');
     $page['options']['files'][] = ['file' => $rel, 'title' => $title !== '' ? $title : pathinfo((string) $f['name'], PATHINFO_FILENAME),
-                                   'size' => format_size((int) filesize(PUBLIC_DIR . $rel))];
+                                   'size' => format_size((int) filesize(web_path($rel)))];
     content_save('vzorkovniky', $page);
     flash('Vzorkovník je nahraný a na webu.');
     redirect(admin_url('catalogs'));
@@ -670,7 +670,7 @@ function admin_catalog_save(): void
         if (str_starts_with($file, CATALOG_DIR . '/') && !str_contains($file, '..')) {
             $dir = CONTENT_DIR . '/backups/_smazane';
             ensure_dir($dir);
-            @rename(PUBLIC_DIR . $file, $dir . '/' . basename($file));
+            @rename(web_path($file), $dir . '/' . basename($file));
         }
     }
     flash($deleted ? 'Uloženo. Smazané soubory: ' . count($deleted) . '.' : 'Uloženo.');
@@ -941,10 +941,10 @@ function save_uploaded_image(array $file): string
                           'ř' => 'r', 'š' => 's', 'ť' => 't', 'ú' => 'u', 'ů' => 'u', 'ý' => 'y', 'ž' => 'z', 'ä' => 'a', 'ö' => 'o', 'ü' => 'u']);
     $base = trim(preg_replace('/[^a-z0-9]+/', '-', $base) ?? '', '-') ?: 'foto';
     $rel = '/uploads/' . date('Y/m') . '/' . mb_substr($base, 0, 50) . '-' . bin2hex(random_bytes(3));
-    ensure_dir(PUBLIC_DIR . dirname($rel . '.x'));
-    if (function_exists('imagewebp') && imagewebp($img, PUBLIC_DIR . $rel . '.webp', 82)) {
+    ensure_dir(web_path(dirname($rel . '.x')));
+    if (function_exists('imagewebp') && imagewebp($img, web_path($rel) . '.webp', 82)) {
         $rel .= '.webp';
-    } elseif (imagejpeg($img, PUBLIC_DIR . $rel . '.jpg', 85)) {
+    } elseif (imagejpeg($img, web_path($rel) . '.jpg', 85)) {
         $rel .= '.jpg';
     } else {
         throw new RuntimeException('obrázek se nepodařilo uložit.');

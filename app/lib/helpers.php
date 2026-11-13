@@ -130,11 +130,27 @@ function cs_date(string $iso): string
     return $t ? (int) date('j', $t) . '. ' . $m[(int) date('n', $t)] . ' ' . date('Y', $t) : '';
 }
 
+/**
+ * File on disk for a web path like /uploads/2026/10/foto.webp. In the hosting build the client's photos
+ * and PDF catalogues live in web-data/ (outside public_html, which every deploy replaces).
+ */
+function web_path(string $rel): string
+{
+    if (HOSTING_BUILD) {
+        foreach (['/uploads' => '/uploads', '/downloads/vzorkovniky' => '/vzorkovniky'] as $web => $data) {
+            if ($rel === $web || str_starts_with($rel, $web . '/')) {
+                return DATA_DIR . $data . substr($rel, strlen($web));
+            }
+        }
+    }
+    return PUBLIC_DIR . $rel;
+}
+
 /** Smaller variant of an image (name-640.webp) when it exists next to the original, else the original. */
 function img_small(string $src): string
 {
     $small = preg_replace('/\.(webp|jpe?g|png)$/i', '-640.$1', $src);
-    return $small !== $src && is_file(PUBLIC_DIR . $small) ? $small : $src;
+    return $small !== $src && is_file(web_path($small)) ? $small : $src;
 }
 
 /** Paragraphs from a rich field: blocks separated by two <br>. */

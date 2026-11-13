@@ -32,19 +32,19 @@ function link_value(string $ref, string $default): string
 /** srcset attribute for an image with -640 / -1280 variants next to it (none for uploaded images). */
 function img_srcset(string $src, string $sizes): string
 {
-    if (!preg_match('/^(.+)\.(webp|jpe?g|png)$/i', $src, $m) || !is_file(PUBLIC_DIR . $src)) {
+    if (!preg_match('/^(.+)\.(webp|jpe?g|png)$/i', $src, $m) || !is_file(web_path($src))) {
         return '';
     }
     $set = [];
     foreach ([640, 1280] as $w) {
-        if (is_file(PUBLIC_DIR . "$m[1]-$w.$m[2]")) {
+        if (is_file(web_path("$m[1]-$w.$m[2]"))) {
             $set[] = "$m[1]-$w.$m[2] {$w}w";
         }
     }
     if (!$set) {
         return '';
     }
-    $size = @getimagesize(PUBLIC_DIR . $src);
+    $size = @getimagesize(web_path($src));
     $set[] = $src . ' ' . ($size[0] ?? 2400) . 'w';
     return ' srcset="' . e(implode(', ', $set)) . '" sizes="' . e($sizes) . '"';
 }
@@ -118,7 +118,7 @@ function add_image_sizes(string $html): string
 {
     static $sizes = [];
     return preg_replace_callback('#<img\b(?![^>]*\swidth=)([^>]*?)\ssrc="(/[^"?]+\.(?:webp|jpe?g|png|gif))"#i', function ($m) use (&$sizes) {
-        $file = PUBLIC_DIR . $m[2];
+        $file = web_path($m[2]);
         $sizes[$m[2]] ??= is_file($file) ? (@getimagesize($file) ?: null) : null;
         $size = $sizes[$m[2]];
         return $size ? "<img{$m[1]} src=\"{$m[2]}\" width=\"{$size[0]}\" height=\"{$size[1]}\"" : $m[0];
@@ -147,16 +147,24 @@ function handle_request(): void
         $path = substr($path, strlen($base)) ?: '/';
     }
 
-    // Hosting build: right after a deploy the links to client files are missing, so the first request for
-    // such a file ends up here – bootstrap has recreated the link by now, serve the file once.
+    // Hosting build: client photos and PDF catalogues live in web-data/ (see web_path()) – serve them here.
     if (HOSTING_BUILD && preg_match('#^/(uploads|downloads/vzorkovniky)/.+\.(webp|jpe?g|png|gif|pdf)$#i', $path, $m)) {
-        $file = realpath(PUBLIC_DIR . $path);
+        $file = realpath(web_path($path));
         $data = realpath(DATA_DIR);
         if ($file !== false && $data !== false && str_starts_with($file, $data . '/') && is_file($file)) {
             $types = ['webp' => 'image/webp', 'jpg' => 'image/jpeg', 'jpeg' => 'image/jpeg', 'png' => 'image/png', 'gif' => 'image/gif', 'pdf' => 'application/pdf'];
+            $mtime = (int) filemtime($file);
+            $etag = '"' . dechex($mtime) . '-' . dechex((int) filesize($file)) . '"';
+            header('Cache-Control: public, max-age=2592000');
+            header('ETag: ' . $etag);
+            header('Last-Modified: ' . gmdate('D, d M Y H:i:s', $mtime) . ' GMT');
+            header('X-Content-Type-Options: nosniff');
+            if (trim((string) ($_SERVER['HTTP_IF_NONE_MATCH'] ?? '')) === $etag) {
+                http_response_code(304);
+                return;
+            }
             header('Content-Type: ' . $types[strtolower($m[2])]);
             header('Content-Length: ' . filesize($file));
-            header('X-Content-Type-Options: nosniff');
             readfile($file);
             return;
         }
