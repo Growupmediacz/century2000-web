@@ -37,3 +37,26 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  # Production on Hostinger: the deploy tree is pushed to branch `hostinger`, hPanel → Git deploys it to
+  # public_html automatically. Content edited in the admin is never part of it (see tools/build-hostinger.sh).
+  hostinger:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - run: find app public -name '*.php' -print0 | xargs -0 -n1 php -l > /dev/null
+      - run: tools/build-hostinger.sh hostinger
+      - name: Push to branch hostinger
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd hostinger
+          git init -q -b hostinger
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Hostinger build ${GITHUB_SHA::7}"
+          git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" hostinger

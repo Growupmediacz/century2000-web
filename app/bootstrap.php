@@ -16,6 +16,36 @@ if (!defined('PUBLIC_DIR')) {
     define('PUBLIC_DIR', is_dir(ROOT_DIR . '/public') ? ROOT_DIR . '/public' : ROOT_DIR);
 }
 
+/*
+ * Git deploy (Hostinger): the deploy branch ships the initial content in _seed/ instead of content/.
+ * It is copied only when the target is missing, so a redeploy never overwrites edits made in the admin.
+ */
+function seed_dir(string $from, string $to): void
+{
+    if (is_dir($to) || !is_dir($from)) {
+        return;
+    }
+    $tmp = $to . '.seed-' . bin2hex(random_bytes(4));
+    $items = new RecursiveIteratorIterator(
+        new RecursiveDirectoryIterator($from, FilesystemIterator::SKIP_DOTS),
+        RecursiveIteratorIterator::SELF_FIRST
+    );
+    @mkdir($tmp, 0755, true);
+    foreach ($items as $item) {
+        $dest = $tmp . '/' . substr($item->getPathname(), strlen($from) + 1);
+        $item->isDir() ? @mkdir($dest, 0755, true) : @copy($item->getPathname(), $dest);
+    }
+    if (!@rename($tmp, $to)) {
+        // another request was faster – keep its copy
+        foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($tmp, FilesystemIterator::SKIP_DOTS), RecursiveIteratorIterator::CHILD_FIRST) as $item) {
+            $item->isDir() ? @rmdir($item->getPathname()) : @unlink($item->getPathname());
+        }
+        @rmdir($tmp);
+    }
+}
+seed_dir(ROOT_DIR . '/_seed/content', ROOT_DIR . '/content');
+seed_dir(ROOT_DIR . '/_seed/vzorkovniky', PUBLIC_DIR . '/downloads/vzorkovniky');
+
 mb_internal_encoding('UTF-8');
 // Errors go to the log, never to the page (paths and code would leak). The built-in dev server shows them.
 if (PHP_SAPI !== 'cli-server' && PHP_SAPI !== 'cli') {

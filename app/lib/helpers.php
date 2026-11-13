@@ -6,7 +6,16 @@ function load_config(): array
     $defaults = require ROOT_DIR . '/config.example.php';
     $file = ROOT_DIR . '/config.php';
     $local = is_file($file) ? require $file : [];
-    return array_replace_recursive($defaults, is_array($local) ? $local : []);
+    $config = array_replace_recursive($defaults, is_array($local) ? $local : []);
+    // Any other host than the production domain (Hostinger temporary domain, a test copy) is always
+    // hidden from search engines, so going live is only a DNS change.
+    $host = strtolower(preg_replace('/:\d+$/', '', (string) ($_SERVER['HTTP_HOST'] ?? '')));
+    $site = strtolower((string) parse_url((string) $config['site_url'], PHP_URL_HOST));
+    $bare = fn(string $h) => preg_replace('/^www\./', '', $h);
+    if ($host !== '' && !in_array($host, ['localhost', '127.0.0.1'], true) && $bare($host) !== $bare($site)) {
+        $config['demo'] = true;
+    }
+    return $config;
 }
 
 /** Read a config value by dotted key, e.g. config('mail.to'). */
