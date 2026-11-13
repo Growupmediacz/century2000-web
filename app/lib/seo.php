@@ -14,7 +14,7 @@ function is_noindex(array $page): bool
 /** og:image:width / height for a local image (helps Facebook and LinkedIn show the preview at once). */
 function og_image_size(string $src): array
 {
-    $size = is_file(PUBLIC_DIR . $src) ? @getimagesize(PUBLIC_DIR . $src) : false;
+    $size = is_file(web_path($src)) ? @getimagesize(web_path($src)) : false;
     return $size ? ['<meta property="og:image:width" content="' . $size[0] . '">', '<meta property="og:image:height" content="' . $size[1] . '">'] : [];
 }
 

@@ -51,11 +51,19 @@ if (HOSTING_BUILD) {
     seed_dir(ROOT_DIR . '/_seed/content', CONTENT_DIR);
     seed_dir(ROOT_DIR . '/_seed/uploads', DATA_DIR . '/uploads');
     seed_dir(ROOT_DIR . '/_seed/vzorkovniky', DATA_DIR . '/vzorkovniky');
-    // the web serves the client files through links that every deploy removes – recreate them
-    foreach (['/uploads' => '/uploads', '/vzorkovniky' => '/downloads/vzorkovniky'] as $data => $web) {
-        if (!is_link(PUBLIC_DIR . $web) && !file_exists(PUBLIC_DIR . $web) && is_dir(DATA_DIR . $data)) {
-            if (!@symlink(DATA_DIR . $data, PUBLIC_DIR . $web)) {
-                error_log('Century 2000: cannot link ' . PUBLIC_DIR . $web);
+    if (!is_file(CONTENT_DIR . '/global.json')) {
+        // web-data/ could not be created – say so instead of failing somewhere later
+        http_response_code(503);
+        header('Content-Type: text/plain; charset=utf-8');
+        error_log('Century 2000: cannot write ' . DATA_DIR);
+        exit("Web se připravuje. (Nelze zapsat do složky web-data vedle public_html.)\n");
+    }
+    // Photos and PDFs are served by PHP from web-data (handle_request); where the host allows symlinks,
+    // a link lets the web server serve them directly. Every deploy removes the links, so recreate them.
+    if (function_exists('symlink')) {
+        foreach (['/uploads' => '/uploads', '/vzorkovniky' => '/downloads/vzorkovniky'] as $data => $web) {
+            if (!is_link(PUBLIC_DIR . $web) && !file_exists(PUBLIC_DIR . $web)) {
+                @symlink(DATA_DIR . $data, PUBLIC_DIR . $web);
             }
         }
     }
